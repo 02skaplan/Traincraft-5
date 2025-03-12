@@ -1,6 +1,5 @@
 package com.jcirmodelsquad.tcjcir.vehicles.rollingstock;
 
-import com.jcirmodelsquad.tcjcir.models.loads.ModelWrappedWoodOptimized_bulkhead_slice;
 import com.jcirmodelsquad.tcjcir.models.loads.ModelWrappedWoodOptimized_bulkhead_slice_For53Ft;
 import com.jcirmodelsquad.tcjcir.models.loads.Modelpipeload1;
 import net.minecraft.entity.item.EntityMinecart;
@@ -37,11 +36,18 @@ public class GSC53Foot86Bulkhead extends Freight implements IInventory {
                 { new CargoSpecification(ModelWrappedWoodOptimized_bulkhead_slice_For53Ft.class,//washaska wood
                         "loads/WrappedWood3_Washaska_Straps", "Wrapped Lumber (Washaska)", 0, 2.5, 0),
                         new CargoSpecification(ModelWrappedWoodOptimized_bulkhead_slice_For53Ft.class,
-                                "loads/WrappedWood3_Washaska_Straps", "Wrapped Lumber (Washaska)", 0, 2.185, 0),
+                                "loads/WrappedWood3_Washaska_Straps", "Wrapped Lumber (Washaska)",
+                                    new CargoSpecification.RenderParameters().setOffset(0, 2.185, 0)
+                                ),
                         new CargoSpecification(ModelWrappedWoodOptimized_bulkhead_slice_For53Ft.class,
-                                "loads/WrappedWood3_Washaska_Straps", "Wrapped Lumber (Washaska)", 0, 1.87, 0),
+                                "loads/WrappedWood3_Washaska_Straps", "Wrapped Lumber (Washaska)",
+                                    new CargoSpecification.RenderParameters().setOffset(0, 1.87, 0)
+                                ),
                         new CargoSpecification(ModelWrappedWoodOptimized_bulkhead_slice_For53Ft.class,
-                                "loads/WrappedWood3_Washaska_Straps", "Wrapped Lumber (Washaska)", 0, 1.555, 0),},
+                                "loads/WrappedWood3_Washaska_Straps", "Wrapped Lumber (Washaska)",
+                                    new CargoSpecification.RenderParameters().setOffset(0, 1.555, 0)
+                                ),
+                },
 
                 { new CargoSpecification(ModelWrappedWoodOptimized_bulkhead_slice_For53Ft.class,//washaska wood 2
                         "loads/WrappedWood3_Washaska_Straps2", "Wrapped Lumber (Washaska)", 0, 2.5, 0),

@@ -2,22 +2,134 @@ package train.common.entity;
 
 import tmt.ModelConverter;
 
+import java.util.LinkedList;
+
 /**
  * @author 02skaplan
- * <p>Stores information about an individual custom load's model, texture, and offset.</p>
+ * <p>Stores information about an individual custom load's model, texture, offset, rotation, and scale.</p>
  * <p>Models may have more than one CargoSpecification, stored in the cargoSpecificationList of its entity's CargoManager.</p>
  */
 public class CargoSpecification {
     public final Class<? extends ModelConverter> cargoModelClass;
     public final String textureFile;
     public final String textureName;
-    public final double offsetX;
-    public final double offsetY;
-    public final double offsetZ;
+    public final RenderParameters renderParameters;
 
-    public double scaleXa;
-    public double scaleYa;
-    public double scaleZa;
+    /**
+     * @author 02skaplan
+     * <p>Nested class to store information concerning the rendering of the cargo specification model.</p>
+     * <p>Contains provisions for render offsets, scales, and rotations.</p>
+     */
+    public static class RenderParameters {
+
+        /**
+         * @author 02skaplan
+         * <p>Nested sub-class to store rotation data for render parameters.</p>
+         */
+        public static class Rotation {
+
+            public final double rotateAngle;
+            public final boolean rotateX;
+            public final boolean rotateY;
+            public final boolean rotateZ;
+
+            public Rotation(double rotateAngle, boolean rotateX, boolean rotateY, boolean rotateZ) {
+                this.rotateAngle = rotateAngle;
+                this.rotateX = rotateX;
+                this.rotateY = rotateY;
+                this.rotateZ = rotateZ;
+            }
+
+        }
+
+        private double offsetX;
+        private double offsetY;
+        private double offsetZ;
+        private double scaleX;
+        private double scaleY;
+        private double scaleZ;
+        private final LinkedList<Rotation> rotations;
+
+
+        public RenderParameters() {
+            offsetX = 0D;
+            offsetY = 0D;
+            offsetZ = 0D;
+            scaleX = 0D;
+            scaleY = 0D;
+            scaleZ = 0D;
+            rotations = new LinkedList<>();
+        }
+
+        /**
+         * @author 02skaplan
+         * @param offsetX X offset relative to host model origin. 0D is default.
+         * @param offsetY Y offset relative to host model origin. 0D is default.
+         * @param offsetZ Z offset relative to host model origin. 0D is default.
+         */
+        public RenderParameters setOffset(double offsetX, double offsetY, double offsetZ) {
+            this.offsetX = offsetX;
+            this.offsetY = offsetY;
+            this.offsetZ = offsetZ;
+            return this;
+        }
+
+        /**
+         * @author 02skaplan
+         * @param scaleX X dimension scale. 0D is default. Negative values make the model smaller in this dimension; larger values make the model larger in this dimension.
+         * @param scaleY Y dimension scale. 0D is default. Negative values make the model smaller in this dimension; larger values make the model larger in this dimension.
+         * @param scaleZ Z dimension scale. 0D is default. Negative values make the model smaller in this dimension; larger values make the model larger in this dimension.
+         */
+        public RenderParameters setScale(double scaleX, double scaleY, double scaleZ) {
+            this.scaleX = scaleX;
+            this.scaleY = scaleY;
+            this.scaleZ = scaleZ;
+            return this;
+        }
+
+
+        /**
+         * @author 02skaplan
+         * <p>Adds a set of rotation parameters to the list of rotations stored in the cargo specification.</p>
+         * <p>This method can be called multiple times to add multiple rotations due to the special nature of GL11 rotation provisions.</p>
+         * @param rotateAngle Angle by which to rotate the model. 0D is default.
+         * @param rotateX Boolean whether the given rotation angle will be applied about the X-axis. False is default.
+         * @param rotateY Boolean whether the given rotation angle will be applied about the Y-axis. False is default.
+         * @param rotateZ Boolean whether the given rotation angle will be applied about the Z-axis. False is default.
+         */
+        public RenderParameters addRotation(double rotateAngle, boolean rotateX, boolean rotateY, boolean rotateZ) {
+            rotations.add(new Rotation(rotateAngle, rotateX, rotateY, rotateZ));
+            return this;
+        }
+
+        public double getOffsetX() {
+            return offsetX;
+        }
+
+        public double getOffsetY() {
+            return offsetY;
+        }
+
+        public double getOffsetZ() {
+            return offsetZ;
+        }
+
+        public double getScaleX() {
+            return scaleX;
+        }
+
+        public double getScaleY() {
+            return scaleY;
+        }
+
+        public double getScaleZ() {
+            return scaleZ;
+        }
+
+        public LinkedList<Rotation> getRotations() {
+            return rotations;
+        }
+    }
 
     /**
      * @author 02skaplan
@@ -30,24 +142,30 @@ public class CargoSpecification {
      * @param offsetY Y offset relative to host model origin.
      * @param offsetZ Z offset relative to host model origin.
      */
+
+    @Deprecated
     public CargoSpecification(Class<? extends ModelConverter> cargoModelClass, String textureFile, String textureName, double offsetX, double offsetY, double offsetZ) {
         this.cargoModelClass = cargoModelClass;
         this.textureFile = textureFile;
         this.textureName = textureName;
-        this.offsetX = offsetX;
-        this.offsetY = offsetY;
-        this.offsetZ = offsetZ;
+        this.renderParameters = new RenderParameters();
+        this.renderParameters.setOffset(offsetX, offsetY, offsetZ);
     }
 
+    @Deprecated
     public CargoSpecification(Class<? extends ModelConverter> cargoModelClass, String textureFile, String textureName, double offsetX, double offsetY, double offsetZ, double scaleX, double scaleY, double scaleZ) {
         this.cargoModelClass = cargoModelClass;
         this.textureFile = textureFile;
         this.textureName = textureName;
-        this.offsetX = offsetX;
-        this.offsetY = offsetY;
-        this.offsetZ = offsetZ;
-        this.scaleXa = scaleX;
-        this.scaleYa = scaleY;
-        this.scaleZa = scaleZ;
+        this.renderParameters = new RenderParameters();
+        this.renderParameters.setOffset(offsetX, offsetY, offsetZ);
+        this.renderParameters.setScale(scaleX, scaleY, scaleZ);
+    }
+
+    public CargoSpecification(Class<? extends ModelConverter> cargoModelClass, String textureFile, String textureName, RenderParameters renderParameters) {
+        this.cargoModelClass = cargoModelClass;
+        this.textureFile = textureFile;
+        this.textureName = textureName;
+        this.renderParameters = renderParameters;
     }
 }
