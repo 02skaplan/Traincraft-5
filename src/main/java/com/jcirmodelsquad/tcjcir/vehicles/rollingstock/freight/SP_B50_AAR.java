@@ -35,12 +35,13 @@ public class SP_B50_AAR extends AbstractStandardFreightCar
         InsertTexture(10, "Copy-Ord FMSR");
         InsertTexture(11, "B-50-28RB SP");
         InsertTexture(12, "B-50-29RB SP");
-        InsertTexture(13, "B-50-28RB Magnolia Acres");
-        InsertTexture(14, "B-50-28RB ROLX (late)");
-        InsertTexture(15, "B-50-28RB UNCLX");
-        InsertTexture(16, "Copy-Rebuild FNCC");
-        InsertTexture(17, "Copy-Rebuild FNCC (w/ herald)");
-        InsertTexture(18, "Copy-Rebuild LRR");
+        InsertTexture(13, "B-50-29RB Blank");
+        InsertTexture(14, "B-50-28RB Magnolia Acres");
+        InsertTexture(15, "B-50-28RB ROLX (late)");
+        InsertTexture(16, "B-50-28RB UNCLX");
+        InsertTexture(17, "Copy-Rebuild FNCC");
+        InsertTexture(18, "Copy-Rebuild FNCC (w/ herald)");
+        InsertTexture(19, "Copy-Rebuild LRR");
 
     }
 

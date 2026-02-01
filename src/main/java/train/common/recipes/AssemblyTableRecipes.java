@@ -122,6 +122,7 @@ public class AssemblyTableRecipes extends AbstractRecipeHandler
 				}
 			for (ItemStack dye : dyeBrown) {
 				cm.addRecipe(2, new ItemStack(itemSteel, 3, itemDamageSteel), new ItemStack(ItemIDs.freightCarTruck.item, 2), new ItemStack(ItemIDs.steelframe.item, 2), new ItemStack(itemSteel, 2, itemDamageSteel), new ItemStack(Blocks.planks, 3), null, new ItemStack(ItemIDs.boxcarDoor.item, 2), null, new ItemStack(Blocks.chest, 2), dye, new ItemStack(ItemIDs.minecartPS140.item, 1), 1);
+				cm.addRecipe(2, new ItemStack(itemSteel, 3, itemDamageSteel), new ItemStack(ItemIDs.freightCarTruck.item, 2), new ItemStack(ItemIDs.steelframe.item, 2), new ItemStack(itemSteel, 2, itemDamageSteel), new ItemStack(Blocks.planks, 3), null, new ItemStack(ItemIDs.boxcarDoor.item, 2), null, new ItemStack(Blocks.chest, 2), dye, new ItemStack(ItemIDs.minecartSP_B50_AAR.item, 1), 1);
 			}
 			/*for (ItemStack dye : dyeBrown) {
 				for (ItemStack rs : redstone) {

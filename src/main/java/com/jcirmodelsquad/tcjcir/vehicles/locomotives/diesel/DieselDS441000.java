@@ -24,6 +24,7 @@ public class DieselDS441000 extends DieselTrain {
         InsertTexture(2, "New York Central (Early)");
         InsertTexture(3, "New York Central (Late)");
         InsertTexture(4, "AGW", LockoutGroup.AGW);
+        InsertTexture(5, "Union Pacific");
     }
 
     @Override
