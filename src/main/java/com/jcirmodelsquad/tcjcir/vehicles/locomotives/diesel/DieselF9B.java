@@ -21,10 +21,11 @@ public class DieselF9B extends DieselTrain {
 
         InsertTexture(0, "Blandsville & Blankerstoner");
         InsertTexture(1, "FMSR", LockoutGroup.FMSR);
-        InsertTexture(2, "DRGW (4 stripe)");
-        InsertTexture(3, "DRGW (4 stripe, late)");
-        InsertTexture(4, "DRGW (1 stripe)");
-        InsertTexture(5, "SP Scarlet");
+        InsertTexture(2, "FNCC (Ex NP)", LockoutGroup.FNCC);
+        InsertTexture(3, "DRGW (4 stripe)");
+        InsertTexture(4, "DRGW (4 stripe, late)");
+        InsertTexture(5, "DRGW (1 stripe)");
+        InsertTexture(6, "SP Scarlet");
     }
 
     @Override

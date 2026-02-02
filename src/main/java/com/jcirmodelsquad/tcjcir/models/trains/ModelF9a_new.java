@@ -2252,7 +2252,7 @@ public class ModelF9a_new extends ModelConverter //Same as Filename
 	{
 		ModelRenderHelper.renderModelWithRollingStockLightControls(bodyModel, entity, f5);
 
-		if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 356
+		if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 20
 				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 16
 				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 11
 				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 8) {

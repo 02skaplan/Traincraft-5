@@ -21,14 +21,15 @@ public class DieselF9A extends DieselTrain {
         
         InsertTexture(0, "BN 814");
         InsertTexture(1, "FMSR", LockoutGroup.FMSR);
-        InsertTexture(2, "EMD Demonstrator");
-        InsertTexture(3, "Norfolk Southern");
-        InsertTexture(4, "DRGW (4 stripe)");
-        InsertTexture(5, "DRGW (4 stripe, late)");
-        InsertTexture(6, "DRGW (1 stripe)");
-        InsertTexture(7, "SP Scarlet (Bloodynose)");
-        InsertTexture(8, "TNO/SP Blackwidow");
-        InsertTexture(9, "TNO Halloween Scheme");
+        InsertTexture(2, "FNCC (Ex NP)", LockoutGroup.FNCC);
+        InsertTexture(3, "EMD Demonstrator");
+        InsertTexture(4, "Norfolk Southern");
+        InsertTexture(5, "DRGW (4 stripe)");
+        InsertTexture(6, "DRGW (4 stripe, late)");
+        InsertTexture(7, "DRGW (1 stripe)");
+        InsertTexture(8, "SP Scarlet (Bloodynose)");
+        InsertTexture(9, "TNO/SP Blackwidow");
+        InsertTexture(10, "TNO Halloween Scheme");
     }
 
     @Override
