@@ -26,6 +26,8 @@ public class DieselB36 extends DieselTrain {
         InsertTexture(5, "CSXT (Stealth)");
         InsertTexture(6, "CSXT (Bluedown)");
         InsertTexture(7, "Seaboard");
+        InsertTexture(8, "FNCC 161 (KIT-L, Extended DB Test Unit)");
+        InsertTexture(9, "FNCC (KIT-L)");
     }
 
     @Override

@@ -27,6 +27,7 @@ public class DieselBQ23 extends DieselTrain {
         InsertTexture(5, "CSXT Ghrey Ghonst");
         InsertTexture(6, "breaking bad if it was good");
         InsertTexture(7, "Nautilussy so sussy", LockoutGroup.CUBED);
+        InsertTexture(8, "FNCC (KIT-L)", LockoutGroup.FNCC);
     }
 
     @Override
