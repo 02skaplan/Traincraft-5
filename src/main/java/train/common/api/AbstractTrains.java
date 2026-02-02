@@ -816,6 +816,7 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 
 	public void dropCartAsItem(boolean isCreative)
 	{
+		if (!itemdropped && (CREATIVE_DROP_ROLLINGSTOCK || !isCreative))
 		{
 			itemdropped=true;
 			for (ItemStack item : getItemsDropped())
