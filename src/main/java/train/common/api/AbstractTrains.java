@@ -28,6 +28,7 @@ import train.client.gui.GuiTCTextField;
 import train.client.render.register.SubTrainRenderRecord;
 import train.common.Traincraft;
 import train.common.adminbook.ItemAdminBook;
+import train.common.api.interfaces.IMultiPartPlacementTransport;
 import train.common.blocks.BlockTCRail;
 import train.common.blocks.BlockTCRailGag;
 import train.common.core.handlers.ConfigHandler;
@@ -199,6 +200,19 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 
 	public void InsertTexture(int pos, String desc)
 	{
+		textureDescriptionMap.put(pos, desc);
+	}
+
+	public void InsertTexture(String desc, ILockoutGroup lockoutGroup)
+	{
+		int pos = textureDescriptionMap.size();
+		textureDescriptionMap.put(pos, desc);
+		lockoutMap.put(pos, lockoutGroup);
+	}
+
+	public void InsertTexture(String desc)
+	{
+		int pos = textureDescriptionMap.size();
 		textureDescriptionMap.put(pos, desc);
 	}
 
@@ -802,7 +816,6 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 
 	public void dropCartAsItem(boolean isCreative)
 	{
-		if (!itemdropped && (CREATIVE_DROP_ROLLINGSTOCK || !isCreative))
 		{
 			itemdropped=true;
 			for (ItemStack item : getItemsDropped())
