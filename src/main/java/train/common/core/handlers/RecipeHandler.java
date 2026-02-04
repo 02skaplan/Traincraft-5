@@ -463,6 +463,8 @@ public class RecipeHandler extends AbstractRecipeHandler
 		ArrayList<ItemStack> dyePink = OreDictionary.getOres("dyePink");
 		ArrayList<ItemStack> dyeCyan = OreDictionary.getOres("dyeCyan");
 
+		Item itemSteel = ItemIDs.steel.item;
+
 		// Always do this " X " instead of this "X", and do not put "" empty brackets
 
 		/* I placed it here because workbench should be one of the first recipe shown in the recipe book */
@@ -539,7 +541,7 @@ public class RecipeHandler extends AbstractRecipeHandler
 		/* All Steels From Other Mods to be converted */
 		for (ItemStack steelInstance : ingotSteel)
 		{
-			TrainCraftingManager.instance.addRecipe(new ItemStack(ItemIDs.steel.item, 1), "   ", " # ", "   ", Character.valueOf('#'), steelInstance);
+			TrainCraftingManager.instance.addRecipe(new ItemStack(itemSteel, 1), "   ", " # ", "   ", Character.valueOf('#'), steelInstance);
 		}
 
 
@@ -588,34 +590,34 @@ public class RecipeHandler extends AbstractRecipeHandler
 			TrainCraftingManager.instance.addRecipe(new ItemStack(ItemIDs.zeppelin.item, 1),  "BBB", "SES", "POP", Character.valueOf('B'), ItemIDs.balloon.item, Character.valueOf('S'), ItemIDs.propeller.item, Character.valueOf('E'), ItemIDs.controls.item, Character.valueOf('P'), ItemIDs.electmotor.item, Character.valueOf('O'), ItemIDs.seats.item );
 		}
 
-		addRecipeWithOreDic(new ItemStack(ItemIDs.transformer.item, 1), "# #", "XEX", "###", Character.valueOf('#'), ItemIDs.steel.item, Character.valueOf('E'), ItemIDs.electronicCircuit.item, Character.valueOf('X'), Items.redstone);// transformer
+		addRecipeWithOreDic(new ItemStack(ItemIDs.transformer.item, 1), "# #", "XEX", "###", Character.valueOf('#'), itemSteel, Character.valueOf('E'), ItemIDs.electronicCircuit.item, Character.valueOf('X'), Items.redstone);// transformer
 
-		addRecipeWithOreDic(new ItemStack(ItemIDs.reinforcedPlates.item, 1),  "RRR", "SSS", "CCC", Character.valueOf('R'), ItemIDs.reinforcedPlastic.item, Character.valueOf('S'), ItemIDs.steel.item, Character.valueOf('C'), Items.clay_ball);
+		addRecipeWithOreDic(new ItemStack(ItemIDs.reinforcedPlates.item, 1),  "RRR", "SSS", "CCC", Character.valueOf('R'), ItemIDs.reinforcedPlastic.item, Character.valueOf('S'), itemSteel, Character.valueOf('C'), Items.clay_ball);
 
-		addRecipeWithOreDic(new ItemStack(ItemIDs.composite_wrench.item, 1), "S S", " R "," R ", Character.valueOf('R'), ItemIDs.reinforcedPlastic.item, Character.valueOf('S'),ItemIDs.steel.item );
-		addRecipeWithOreDic(new ItemStack(ItemIDs.steelcab.item, 2),  "###", "X X", "XXX", Character.valueOf('X'), ItemIDs.steel.item, Character.valueOf('#'), Blocks.planks);// Steel cab
-		addRecipeWithOreDic(new ItemStack(BlockIDs.distilIdle.block, 1),  "###", "#F#", "###", Character.valueOf('#'), ItemIDs.steel.item, Character.valueOf('F'), ItemIDs.firebox.item );
-
-
-		addRecipeWithOreDic(new ItemStack(ItemIDs.firebox.item, 2),  "###", "#X#", "###", Character.valueOf('#'), ItemIDs.steel.item, Character.valueOf('X'), Items.flint_and_steel );// Firebox
-		addRecipeWithOreDic(new ItemStack(ItemIDs.bogie.item, 4), " # ", "#X#", " # ", Character.valueOf('#'), ItemIDs.steel.item, Character.valueOf('X'), Items.iron_ingot);// Bogie
-		addRecipeWithOreDic(new ItemStack(ItemIDs.steelframe.item, 2), "# #", "AAA", Character.valueOf('A'), ItemIDs.steel.item, Character.valueOf('#'), Items.iron_ingot);// Steel Frame
-		addRecipeWithOreDic(new ItemStack(ItemIDs.steelframe.item, 2), "   ", "# #", "AAA", Character.valueOf('A'), ItemIDs.steel.item, Character.valueOf('#'), Items.iron_ingot);// Steel Frame
-
-		addRecipeWithOreDic(new ItemStack(ItemIDs.stake.item, 1),  "   ", "IFI", "   ", Character.valueOf('I'), ItemIDs.steel.item, Character.valueOf('F'), Items.iron_ingot );
-		addRecipeWithOreDic(new ItemStack(ItemIDs.stake.item, 1),  "IFI", "   ", "   ", Character.valueOf('I'), ItemIDs.steel.item, Character.valueOf('F'), Items.iron_ingot );
-		addRecipeWithOreDic(new ItemStack(ItemIDs.stake.item, 1),  "   ", "   ", "IFI", Character.valueOf('I'), ItemIDs.steel.item, Character.valueOf('F'), Items.iron_ingot );
-
-		addRecipeWithOreDic(new ItemStack(ItemIDs.steelchimney.item, 2),  "# #", "# #", "# #", Character.valueOf('#'), ItemIDs.steel );// Bogie
-		addRecipeWithOreDic(new ItemStack(Items.flint_and_steel, 2),  "* ", " #", Character.valueOf('*'), ItemIDs.steel, Character.valueOf('#'), Items.flint );
+		addRecipeWithOreDic(new ItemStack(ItemIDs.composite_wrench.item, 1), "S S", " R "," R ", Character.valueOf('R'), ItemIDs.reinforcedPlastic.item, Character.valueOf('S'),itemSteel );
+		addRecipeWithOreDic(new ItemStack(ItemIDs.steelcab.item, 2),  "###", "X X", "XXX", Character.valueOf('X'), itemSteel, Character.valueOf('#'), Blocks.planks);// Steel cab
+		addRecipeWithOreDic(new ItemStack(BlockIDs.distilIdle.block, 1),  "###", "#F#", "###", Character.valueOf('#'), itemSteel, Character.valueOf('F'), ItemIDs.firebox.item );
 
 
-		addRecipeWithOreDic(new ItemStack(ItemIDs.transmition.item, 1),  " # ", "#X#", " # ", Character.valueOf('#'), ItemIDs.steel, Character.valueOf('X'), ItemIDs.diesel.item );// transmition
-		addRecipeWithOreDic(new ItemStack(ItemIDs.piston.item, 3),  " # ", " X ", Character.valueOf('#'), ItemIDs.steel, Character.valueOf('X'), Items.stick );// piston
-		addRecipeWithOreDic(new ItemStack(ItemIDs.camshaft.item, 3),  "###", "   ", "   ", Character.valueOf('#'), ItemIDs.steel );// camshaft
-		addRecipeWithOreDic(new ItemStack(ItemIDs.camshaft.item, 3),  "   ", "###", "   ", Character.valueOf('#'), ItemIDs.steel );// camshaft
-		addRecipeWithOreDic(new ItemStack(ItemIDs.camshaft.item, 3),  "   ", "   ", "###", Character.valueOf('#'), ItemIDs.steel );// camshaft
-		addRecipeWithOreDic(new ItemStack(ItemIDs.cylinder.item, 3),  "# #", "# #", "###", Character.valueOf('#'), ItemIDs.steel );// cylinder
+		addRecipeWithOreDic(new ItemStack(ItemIDs.firebox.item, 2),  "###", "#X#", "###", Character.valueOf('#'), itemSteel, Character.valueOf('X'), Items.flint_and_steel );// Firebox
+		addRecipeWithOreDic(new ItemStack(ItemIDs.bogie.item, 4), " # ", "#X#", " # ", Character.valueOf('#'), itemSteel, Character.valueOf('X'), Items.iron_ingot);// Bogie
+		addRecipeWithOreDic(new ItemStack(ItemIDs.steelframe.item, 2), "# #", "AAA", Character.valueOf('A'), itemSteel, Character.valueOf('#'), Items.iron_ingot);// Steel Frame
+		addRecipeWithOreDic(new ItemStack(ItemIDs.steelframe.item, 2), "   ", "# #", "AAA", Character.valueOf('A'), itemSteel, Character.valueOf('#'), Items.iron_ingot);// Steel Frame
+
+		addRecipeWithOreDic(new ItemStack(ItemIDs.stake.item, 1),  "   ", "IFI", "   ", Character.valueOf('I'), itemSteel, Character.valueOf('F'), Items.iron_ingot );
+		addRecipeWithOreDic(new ItemStack(ItemIDs.stake.item, 1),  "IFI", "   ", "   ", Character.valueOf('I'), itemSteel, Character.valueOf('F'), Items.iron_ingot );
+		addRecipeWithOreDic(new ItemStack(ItemIDs.stake.item, 1),  "   ", "   ", "IFI", Character.valueOf('I'), itemSteel, Character.valueOf('F'), Items.iron_ingot );
+
+		addRecipeWithOreDic(new ItemStack(ItemIDs.steelchimney.item, 2),  "# #", "# #", "# #", Character.valueOf('#'), itemSteel );// Bogie
+		addRecipeWithOreDic(new ItemStack(Items.flint_and_steel, 2),  "* ", " #", Character.valueOf('*'), itemSteel, Character.valueOf('#'), Items.flint );
+
+
+		addRecipeWithOreDic(new ItemStack(ItemIDs.transmition.item, 1),  " # ", "#X#", " # ", Character.valueOf('#'), itemSteel, Character.valueOf('X'), ItemIDs.diesel.item );// transmition
+		addRecipeWithOreDic(new ItemStack(ItemIDs.piston.item, 3),  " # ", " X ", Character.valueOf('#'), itemSteel, Character.valueOf('X'), Items.stick );// piston
+		addRecipeWithOreDic(new ItemStack(ItemIDs.camshaft.item, 3),  "###", "   ", "   ", Character.valueOf('#'), itemSteel );// camshaft
+		addRecipeWithOreDic(new ItemStack(ItemIDs.camshaft.item, 3),  "   ", "###", "   ", Character.valueOf('#'), itemSteel );// camshaft
+		addRecipeWithOreDic(new ItemStack(ItemIDs.camshaft.item, 3),  "   ", "   ", "###", Character.valueOf('#'), itemSteel );// camshaft
+		addRecipeWithOreDic(new ItemStack(ItemIDs.cylinder.item, 3),  "# #", "# #", "###", Character.valueOf('#'), itemSteel );// cylinder
 
 		for (ItemStack plankItem : planks) {
 			for (ItemStack steelItem: steel) {
