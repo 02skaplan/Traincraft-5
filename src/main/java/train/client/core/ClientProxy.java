@@ -13,6 +13,7 @@ import cpw.mods.fml.common.Optional;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.VillagerRegistry;
 import foxmods.playerscale.DelegatingRenderPlayer;
+import foxmods.unifiedcontrols.client.UnifiedKeyRegistry;
 import javazoom.jl.decoder.JavaLayerUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.SoundCategory;
@@ -291,7 +292,8 @@ public class ClientProxy extends CommonProxy
 					entity1 = (Entity) ent;
 			}
 		}
-		switch (ID) {
+		switch (ID)
+		{
 		case (GuiIDs.CRAFTER_TIER_I):
 			return te != null && te instanceof TileCrafterTierI ? new GuiCrafterTier(player.inventory, (TileCrafterTierI) te) : null;
 		case (GuiIDs.CRAFTER_TIER_II):
@@ -323,7 +325,7 @@ public class ClientProxy extends CommonProxy
 		case (GuiIDs.MTC_INFO):
 			return riddenByEntity != null && Loader.isModLoaded("ComputerCraft") ? new GuiMTCInfo(player) : null;
 
-			//Stationary entities while player is not riding. 
+			//Stationary entities while player is not riding.
 		case (GuiIDs.FREIGHT):
 			return entity1 != null ? new GuiFreight(player,player.inventory, entity1) : null;
 		case (GuiIDs.TENDER):
@@ -440,6 +442,7 @@ public class ClientProxy extends CommonProxy
 	@Override
 	public void registerKeyBindingHandler() {
 		FMLCommonHandler.instance().bus().register(new TCKeyHandler());
+		UnifiedKeyRegistry.init();
 	}
 	
 	@Override
