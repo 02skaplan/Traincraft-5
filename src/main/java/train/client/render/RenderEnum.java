@@ -1033,6 +1033,12 @@ public enum RenderEnum implements ITrainRenderRecord, ISubTrainRenderRecord
 			add(new double[]{0.85D, 1.4D, 0.0D});//front
 		}
 	}, "", null, 0, false),
+	CF7b( DieselCF7b.class,  new ModelCF7b(), "CF7b_", true,new float[] {-1.25F, 0.15F, 0.00F},  new float[] { 0F, 180F, 180F }, null, "smoke", 6,  new ArrayList<double[]>() {
+		{
+			add(new double[]{0.35D, 1.4D, 0.0D});//rear
+			add(new double[]{0.85D, 1.4D, 0.0D});//front
+		}
+	}, "", null, 0, false),
 	CF7hh( DieselCF7hh.class,  new ModelCF7hh(), "CF7_highhood_", true,new float[] {-1.25F, 0.15F, 0.00F},  new float[] { 0F, 180F, 180F }, null, "largesmoke", 3,  new ArrayList<double[]>() {
 		{
 			add(new double[]{0.35D, 1.4D, 0.0D});//rear

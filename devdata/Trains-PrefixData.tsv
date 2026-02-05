@@ -89,6 +89,7 @@ item.tc:minecartCE8	CE8	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.Di
 item.tc:minecartCF7angle	CF7angle	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselCF7angle	CF7_Angle_
 item.tc:minecartCF7angle2	CF7angle2	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselCF7angle2	CF7_Angle_DBRR_
 item.tc:minecartCF7angle3	CF7angle3	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselCF7angle3	CF7a_
+item.tc:minecartCF7b	CF7b	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselCF7b	CF7b_
 item.tc:minecartCF7hh	CF7hh	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselCF7hh	CF7_highhood_
 item.tc:minecartCF7round	CF7round	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselCF7round	CF7_Round_
 item.tc:minecartCF7round3	CF7round3	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselCF7round3	CF7_Round_F_
