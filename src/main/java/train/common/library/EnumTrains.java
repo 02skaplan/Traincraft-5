@@ -402,7 +402,7 @@ public enum EnumTrains implements ITrainRecord
 
 	Gunderson89FootAutorack("89ftAutorack", Gunderson89ftAutorack.class, ItemIDs.minecartGunderson89ftAutorack.item, "Autorack", 4.75, TraincraftUtil.getBytesFromColors(new String[]{"Yellow", "Orange", "LightGrey", "Blue", "Black", "Brown", "Pink"}), 8, 54, (new String[] {"Cargo: Any"})),
 	Gunderson89FootFlat("89ftFlat", Gunderson89ftFlat.class, ItemIDs.minecartGunderson89ftFlat.item, "Flatcar", 3.25, TraincraftUtil.getBytesFromColors(new String[]{"Yellow", "Blue", "Purple"}), 8, 54, (new String[] {"Cargo: Any"})),
-	StampedeRack("StampedeRack", com.jcirmodelsquad.tcjcir.vehicles.rollingstock.misc.StampedeRack.class, ItemIDs.minecartStampedeRack.item, "Livestock Car", 0, 0, 3.75, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[]{"Brown"}), 10, 0),
+	StampedeRack("StampedeRack", com.jcirmodelsquad.tcjcir.vehicles.rollingstock.misc.StampedeRack.class, ItemIDs.minecartStampedeRack.item, "Livestock Car", 0, 0, 3.75, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[]{"White", "Brown"}), 10, 0),
 	HuskyStackWellcar("40ftHuskyStackWellcar", HuskyStack2.class, ItemIDs.minecartHuskyStackWellcar.item, "Wellcar", 3, TraincraftUtil.getBytesFromColors(new String[] {"Yellow", "Blue", "Brown", "Green", "Pink", "Skin16"}), 10,54, (new String[] {"Will carry containers (for REAL) Eventually!"})),
 
 	IngotPig("IngotPig", IngotPig.class, ItemIDs.minecartIngotPig.item, "Other", 2, TraincraftUtil.getBytesFromColors(new String[] {"Brown", "Black"}), 18, 9, (new String[] {"Cargo: Ingots."})),

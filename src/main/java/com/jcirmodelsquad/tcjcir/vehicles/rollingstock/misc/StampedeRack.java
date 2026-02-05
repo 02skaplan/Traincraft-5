@@ -9,7 +9,9 @@ public class StampedeRack extends AbstractPassengerCar
 {
 	public StampedeRack(World world) {
 		super(world);
-		InsertTexture(0, "Stampeed Rack");
+		InsertTexture(0, "Blandsville Cow Express");
+		InsertTexture(1, "CSWR");
+		InsertTexture(2, "");
 	}
 
 
