@@ -32,7 +32,7 @@ public class ModelGP7U_ATSF extends ModelConverter //Same as Filename
 
 	public ModelGP7U_ATSF() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[399];
+		bodyModel = new ModelRendererTurbo[405];
 
 		initbodyModel_1();
 
@@ -443,6 +443,12 @@ public class ModelGP7U_ATSF extends ModelConverter //Same as Filename
 		bodyModel[396] = new ModelRendererTurbo(this, 260, 9, textureX, textureY); // Box 563
 		bodyModel[397] = new ModelRendererTurbo(this, 269, 2, textureX, textureY, "cull"); // Box 561 cull ptc antenna shiz
 		bodyModel[398] = new ModelRendererTurbo(this, 260, 2, textureX, textureY); // Box 563
+		bodyModel[399] = new ModelRendererTurbo(this, 94, 119, textureX, textureY, "lamp"); // Box 71 markerlight twO
+		bodyModel[400] = new ModelRendererTurbo(this, 94, 119, textureX, textureY, "lamp"); // Box 1208 makrerlight twO
+		bodyModel[401] = new ModelRendererTurbo(this, 359, 114, textureX, textureY, "lamp"); // Box 71 markerlight twO
+		bodyModel[402] = new ModelRendererTurbo(this, 359, 114, textureX, textureY, "lamp"); // Box 1208 makrerlight twO
+		bodyModel[403] = new ModelRendererTurbo(this, 332, 115, textureX, textureY, "cull"); // Box 628 cull fncc numberboard
+		bodyModel[404] = new ModelRendererTurbo(this, 332, 111, textureX, textureY, "cull"); // Box 629 cull fncc numberboard
 
 		bodyModel[0].addBox(0F, 0F, 0F, 0, 8, 20, 0F); // Box 3
 		bodyModel[0].setRotationPoint(-37.01F, 1F, -10F);
@@ -1659,6 +1665,24 @@ public class ModelGP7U_ATSF extends ModelConverter //Same as Filename
 
 		bodyModel[398].addBox(0F, 0F, 0F, 5, 1, 0, 0F); // Box 563
 		bodyModel[398].setRotationPoint(-18.5F, -22F, 10F);
+
+		bodyModel[399].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.2F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -1F, -0.25F, -0.25F, 0.55F, -0.25F, -0.25F, -0.2F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -1F, -0.25F, -0.25F, 0.55F, -0.25F, -0.25F); // Box 71 markerlight twO
+		bodyModel[399].setRotationPoint(-31.75F, -11F, -6.5F);
+
+		bodyModel[400].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0.55F, -0.25F, -0.25F, -1F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.2F, -0.25F, -0.25F, 0.55F, -0.25F, -0.25F, -1F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.2F, -0.25F, -0.25F); // Box 1208 makrerlight twO
+		bodyModel[400].setRotationPoint(-31.75F, -11F, 4.5F);
+
+		bodyModel[401].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, -0.2F, -0.25F, -0.25F, 0.55F, -0.25F, -0.25F, -1F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.2F, -0.25F, -0.25F, 0.55F, -0.25F, -0.25F, -1F, -0.25F, -0.25F); // Box 71 markerlight twO
+		bodyModel[401].setRotationPoint(31.75F, -11F, -6.5F);
+
+		bodyModel[402].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-1F, -0.25F, -0.25F, 0.55F, -0.25F, -0.25F, -0.2F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -1F, -0.25F, -0.25F, 0.55F, -0.25F, -0.25F, -0.2F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Box 1208 makrerlight twO
+		bodyModel[402].setRotationPoint(31.75F, -11F, 4.5F);
+
+		bodyModel[403].addShapeBox(0F, 0F, 0F, 4, 2, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 628 cull fncc numberboard
+		bodyModel[403].setRotationPoint(8F, -20.6F, -9.01F);
+
+		bodyModel[404].addShapeBox(0F, 0F, 0F, 4, 2, 1, 0F,0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 629 cull fncc numberboard
+		bodyModel[404].setRotationPoint(8F, -20.6F, 8.01F);
 	}
 
 	ModelBlombergBnew theBlombi = new ModelBlombergBnew();
@@ -1688,7 +1712,7 @@ public class ModelGP7U_ATSF extends ModelConverter //Same as Filename
 			theB.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
 		} else if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 1 ||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 4
-				||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 6){
+				||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 6 ||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 17){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/blombergB_2_Silver_SINGLESHOE.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslated(-1.37, -0.0, 0);//front & rear

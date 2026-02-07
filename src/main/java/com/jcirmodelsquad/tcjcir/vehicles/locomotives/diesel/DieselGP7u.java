@@ -26,7 +26,8 @@ public class DieselGP7u extends DieselTrain {
         InsertTexture(4, "Avanste Northeastern (Yard)", LockoutGroup.ANE);
         InsertTexture(5, "Fox Union Rail Resources (FURRX)");
         InsertTexture(6, "OC&G 15", LockoutGroup.CUBED);
-        InsertTexture(7, "FNCC 210-213", LockoutGroup.FNCC);
+        InsertTexture(7, "FNCC 210-213 (GP9(U) group e)", LockoutGroup.FNCC);
+        InsertTexture(8, "FNCC 235-240 (ex FMSR units)", LockoutGroup.FNCC);
 
     }
 

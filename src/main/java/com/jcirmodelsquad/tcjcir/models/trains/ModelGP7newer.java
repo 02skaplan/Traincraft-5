@@ -32,7 +32,7 @@ public class ModelGP7newer extends ModelConverter //Same as Filename
 
 	public ModelGP7newer() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[628];
+		bodyModel = new ModelRendererTurbo[630];
 
 		initbodyModel_1();
 		initbodyModel_2();
@@ -2206,6 +2206,8 @@ public class ModelGP7newer extends ModelConverter //Same as Filename
 		bodyModel[625] = new ModelRendererTurbo(this, 419, 160, textureX, textureY, "cull"); // Box 220 cull headlight enclosure
 		bodyModel[626] = new ModelRendererTurbo(this, 194, 167, textureX, textureY); // Box 635 locomotive plate
 		bodyModel[627] = new ModelRendererTurbo(this, 194, 167, textureX, textureY); // Box 636 locomotive plate
+		bodyModel[628] = new ModelRendererTurbo(this, 332, 115, textureX, textureY); // Box 628 cull fncc numberboard
+		bodyModel[629] = new ModelRendererTurbo(this, 332, 111, textureX, textureY); // Box 629 cull fncc numberboard
 
 		bodyModel[500].addBox(0F, 0F, 0F, 1, 15, 14, 0F); // Box 559
 		bodyModel[500].setRotationPoint(-12F, -19F, -7F);
@@ -2607,6 +2609,12 @@ public class ModelGP7newer extends ModelConverter //Same as Filename
 		bodyModel[627].addShapeBox(-2F, 0F, 0F, 4, 6, 0, 0F,0F, -0.125F, 0F, -2F, -0.125F, 0F, -2F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -3.125F, 0F, -2F, -3.125F, 0F, -2F, -3.125F, 0F, 0F, -3.125F, 0F); // Box 636 locomotive plate
 		bodyModel[627].setRotationPoint(-32F, -2F, 11.02F);
 		bodyModel[627].rotateAngleY = -3.14159265F;
+
+		bodyModel[628].addShapeBox(0F, 0F, 0F, 4, 2, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 628 cull fncc numberboard
+		bodyModel[628].setRotationPoint(8F, -20.6F, -9.01F);
+
+		bodyModel[629].addShapeBox(0F, 0F, 0F, 4, 2, 1, 0F,0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 629 cull fncc numberboard
+		bodyModel[629].setRotationPoint(8F, -20.6F, 8.01F);
 
 	}
 	ModelBlombergBnew theBlombi = new ModelBlombergBnew();
