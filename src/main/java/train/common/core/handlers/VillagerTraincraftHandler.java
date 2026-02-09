@@ -54,26 +54,20 @@ public class VillagerTraincraftHandler implements IVillageCreationHandler,IVilla
 		recipeList.add(new MerchantRecipe(getRandomSizedItemStack(Items.tnt_minecart, random,1), Items.emerald));
 		recipeList.add(new MerchantRecipe(getRandomSizedItemStack(Items.emerald, random,1), new ItemStack(Items.tnt_minecart)));
 		
-		for(ItemIDs item : ItemIDs.values()){
-			if(item!=null && item.item!=null)
+		for(ItemIDs item : ItemIDs.values())
+		{
+			if(item!=null && item.item!=null && item.amountForEmerald > 0)
 			{
 				if (item.amountForEmerald > 0)
 				{
-					if(item.item instanceof ItemAbstractRollingStock){
-						recipeList.add(new MerchantRecipe(new ItemStack(item.item), new ItemStack(Items.emerald,item.amountForEmerald)));
-						recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald,item.amountForEmerald), item.item));
-					}
-					else if(item.amountForEmerald>0)
-					{
-						if(!(item.item instanceof ItemAbstractRollingStock) && item.amountForEmerald>0){
-							recipeList.add(new MerchantRecipe(new ItemStack(item.item,item.amountForEmerald), Items.emerald));
-							recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald), new ItemStack(item.item,item.amountForEmerald)));
-						}
-					}
+					recipeList.add(new MerchantRecipe(new ItemStack(item.item), new ItemStack(Items.emerald,item.amountForEmerald)));
+					recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, item.amountForEmerald), item.item));
 				}
 			}
 		}
 	}
+
+
 	private ItemStack getRandomSizedStack(Block par0, Random random, int amount)
     {
         return new ItemStack(par0, random.nextInt(amount)+1, 0);
