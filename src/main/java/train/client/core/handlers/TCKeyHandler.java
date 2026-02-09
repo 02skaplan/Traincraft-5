@@ -6,11 +6,6 @@ import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.InputEvent;
-import cpw.mods.fml.common.gameevent.TickEvent;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import foxmods.unifiedcontrols.client.SharedKeyState;
-import foxmods.unifiedcontrols.client.UnifiedKeyRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.entity.player.EntityPlayer;
@@ -19,17 +14,17 @@ import net.minecraft.util.Vec3;
 import org.lwjgl.input.Keyboard;
 import train.client.gui.GuiMTCInfo;
 import train.common.Traincraft;
-import train.common.api.AbstractTrains;
 import train.common.api.Locomotive;
 import train.common.api.SteamTrain;
 import train.common.core.handlers.ConfigHandler;
 import train.common.core.network.PacketKeyPress;
 
-import java.security.Key;
-
 public class TCKeyHandler {
+	public static KeyBinding horn;
+	public static KeyBinding inventory;
 	public static KeyBinding up;
 	public static KeyBinding down;
+	public static KeyBinding idle;
 	public static KeyBinding furnace;
 	public static KeyBinding MTCScreen;
 	public static KeyBinding toggleATO;
@@ -39,18 +34,26 @@ public class TCKeyHandler {
 	public static KeyBinding remoteControlBackwards;
 	public static KeyBinding remoteControlHorn;
 	public static KeyBinding remoteControlBrake;
+	public static KeyBinding bell;
 
 	public long bellTimerMillis = System.currentTimeMillis();
 	public long storedMillis = System.currentTimeMillis();
 
 	public TCKeyHandler() {
-
+		horn = new KeyBinding("key.traincraft.horn", Keyboard.KEY_H, "key.categories.traincraft");
+		ClientRegistry.registerKeyBinding(horn);
+		inventory = new KeyBinding("key.traincraft.inventory", Keyboard.KEY_R, "key.categories.traincraft");
+		ClientRegistry.registerKeyBinding(inventory);
 		up = new KeyBinding("key.traincraft.up", Keyboard.KEY_NONE, "key.categories.traincraft");
 		ClientRegistry.registerKeyBinding(up);
 		down = new KeyBinding("key.traincraft.down", Keyboard.KEY_NONE, "key.categories.traincraft");
 		ClientRegistry.registerKeyBinding(down);
+		idle = new KeyBinding("key.traincraft.idle", Keyboard.KEY_C, "key.categories.traincraft");
+		ClientRegistry.registerKeyBinding(idle);
 		furnace = new KeyBinding("key.traincraft.furnace", Keyboard.KEY_F, "key.categories.traincraft");
 		ClientRegistry.registerKeyBinding(furnace);
+		bell = new KeyBinding("Locomotive Bell", Keyboard.KEY_B, "key.categories.traincraft");
+		ClientRegistry.registerKeyBinding(bell);
 
 
 			MTCScreen = new KeyBinding("key.traincraft.showMTCScreen", Keyboard.KEY_NONE, "key.categories.traincraft");
@@ -74,44 +77,6 @@ public class TCKeyHandler {
 
 	}
 
-	@SideOnly(Side.CLIENT)
-	@SubscribeEvent
-	public void onClientKeyPress(TickEvent.ClientTickEvent event)
-	{
-		if(event.phase == TickEvent.Phase.END) return;
-		if(Minecraft.getMinecraft().currentScreen != null) return;
-		if(!(Minecraft.getMinecraft().thePlayer.ridingEntity instanceof AbstractTrains)) return;
-
-		SharedKeyState.poll();
-
-		if (!Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen())
-		{
-			if (SharedKeyState.gui()) {
-				sendKeyControlsPacket(7);
-				if (Minecraft.getMinecraft().thePlayer.ridingEntity != null && Minecraft.getMinecraft().thePlayer.ridingEntity instanceof ExperimentalGeometryCar) {
-					Minecraft.getMinecraft().displayGuiScreen(new GuiGeometryCar(Minecraft.getMinecraft().thePlayer));
-				}
-			}
-
-			if (SharedKeyState.horn()) {
-				sendKeyControlsPacket(8);
-			}
-
-			if (SharedKeyState.sound_2()) {
-				if (Minecraft.getMinecraft().thePlayer.ridingEntity instanceof Locomotive) {
-					if(bellTimerMillis+ 1000 <System.currentTimeMillis()){//15000 for 15 seconds
-						bellTimerMillis=System.currentTimeMillis();
-					}
-				}
-				sendKeyControlsPacket(10);
-			}
-
-			if (SharedKeyState.brake()) {
-				sendKeyControlsPacket(6);
-			}
-		}
-	}
-
 	@SubscribeEvent
 	public void onKeyInput(InputEvent.KeyInputEvent event) {
 		if (!Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
@@ -121,7 +86,18 @@ public class TCKeyHandler {
 			if (down.getIsKeyPressed()) {
 				sendKeyControlsPacket(2);
 			}
-
+			if (idle.isPressed()) {
+				sendKeyControlsPacket(6);
+			}
+			if (inventory.isPressed()) {
+				sendKeyControlsPacket(7);
+				if (Minecraft.getMinecraft().thePlayer.ridingEntity != null && Minecraft.getMinecraft().thePlayer.ridingEntity instanceof ExperimentalGeometryCar) {
+					Minecraft.getMinecraft().displayGuiScreen(new GuiGeometryCar(Minecraft.getMinecraft().thePlayer));
+				}
+			}
+			if (horn.isPressed()) {
+				sendKeyControlsPacket(8);
+			}
 			/*if (lampControl.isPressed()) {
 				if (Minecraft.getMinecraft().thePlayer.ridingEntity != null && Minecraft.getMinecraft().thePlayer.ridingEntity instanceof Locomotive) {
 					Locomotive train = (Locomotive) Minecraft.getMinecraft().thePlayer.ridingEntity;
@@ -168,7 +144,14 @@ public class TCKeyHandler {
 				}
 				sendKeyControlsPacket(10);
 			}*/
-
+			if (bell.isPressed()) {
+				if (Minecraft.getMinecraft().thePlayer.ridingEntity instanceof Locomotive) {
+					if(bellTimerMillis+ 1000 <System.currentTimeMillis()){//15000 for 15 seconds
+						bellTimerMillis=System.currentTimeMillis();
+					}
+				}
+				sendKeyControlsPacket(10);
+			}
 
 
 			if (furnace.isPressed()) {
