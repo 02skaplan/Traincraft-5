@@ -45,6 +45,7 @@ public class DieselGP30 extends DieselTrain {
         InsertTexture(23, "Chessie System");
         InsertTexture(24, "Southern Pacific (Bloodynose)");
         InsertTexture(25, "PDEV", LockoutGroup.PDEV);
+        InsertTexture(26, "FMSR", LockoutGroup.FMSR);
     }
 
     @Override
