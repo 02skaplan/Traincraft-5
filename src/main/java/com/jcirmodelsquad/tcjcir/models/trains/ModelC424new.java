@@ -31,7 +31,7 @@ public class ModelC424new extends ModelConverter //Same as Filename
 
 	public ModelC424new() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[398];
+		bodyModel = new ModelRendererTurbo[403];
 
 		initbodyModel_1();
 
@@ -441,6 +441,11 @@ public class ModelC424new extends ModelConverter //Same as Filename
 		bodyModel[395] = new ModelRendererTurbo(this, 190, 21, textureX, textureY); // Box 395
 		bodyModel[396] = new ModelRendererTurbo(this, 190, 27, textureX, textureY); // Box 396
 		bodyModel[397] = new ModelRendererTurbo(this, 197, 24, textureX, textureY); // Box 397
+		bodyModel[398] = new ModelRendererTurbo(this, 134, 137, textureX, textureY); // Box 398 ph3 battery boxes
+		bodyModel[399] = new ModelRendererTurbo(this, 167, 137, textureX, textureY); // Box 399 ph3 battery box
+		bodyModel[400] = new ModelRendererTurbo(this, 6, 71, textureX, textureY); // Box 336 fncc gyra housing top
+		bodyModel[401] = new ModelRendererTurbo(this, 3, 70, textureX, textureY, "prime1"); // Box 337 Front Gyralight L top
+		bodyModel[402] = new ModelRendererTurbo(this, 3, 70, textureX, textureY, "prime1"); // Box 338 Front Gyralight R top
 
 		bodyModel[0].addBox(0F, 0F, 0F, 3, 2, 3, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-43.5F, 3F, -1.5F);
@@ -1673,6 +1678,21 @@ public class ModelC424new extends ModelConverter //Same as Filename
 
 		bodyModel[397].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 1F, 0F, 0F, 1F, 0F, 0F, 0F, 0F); // Box 397
 		bodyModel[397].setRotationPoint(-32.5F, -23.75F, 2F);
+
+		bodyModel[398].addBox(0F, 0F, 0F, 11, 3, 5, 0F); // Box 398 ph3 battery boxes
+		bodyModel[398].setRotationPoint(9.5F, 0F, -11F);
+
+		bodyModel[399].addBox(0F, 0F, 0F, 4, 3, 5, 0F); // Box 399 ph3 battery box
+		bodyModel[399].setRotationPoint(24.5F, 0F, -11F);
+
+		bodyModel[400].addBox(0F, 0F, 0F, 2, 2, 4, 0F); // Box 336 fncc gyra housing top
+		bodyModel[400].setRotationPoint(-37.75F, -13.5F, -2F);
+
+		bodyModel[401].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F); // Box 337 Front Gyralight L top
+		bodyModel[401].setRotationPoint(-38.5F, -13.5F, 0F);
+
+		bodyModel[402].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F); // Box 338 Front Gyralight R top
+		bodyModel[402].setRotationPoint(-38.5F, -13.5F, -2F);
 	}
 	ModelTypeBnew theB = new ModelTypeBnew();
 
