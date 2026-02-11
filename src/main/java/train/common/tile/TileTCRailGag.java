@@ -12,24 +12,48 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import train.common.blocks.BlockTCRail;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class TileTCRailGag extends TileEntity {
 
 	protected Random rand = new Random();
 	protected Side side;
+
 	public int originX;
 	public int originY;
 	public int originZ;
 	public String type = "";
 	public float bbHeight = 0.125f;
 
+	/**
+	 * USED AS COMPATIBILITY TO CONVERT FROM TCCE
+	 */
+	private boolean isFoxTCXOriginsCompatabilityModeEnabled = false;
+
 	@Override
 	public void readFromNBT(NBTTagCompound nbt) {
 
-		originX = nbt.getInteger("originX");
-		originY = nbt.getInteger("originY");
-		originZ = nbt.getInteger("originZ");
+		if (nbt.hasKey("Xorigins"))
+		{
+			isFoxTCXOriginsCompatabilityModeEnabled = true;
+			int[] org=nbt.getIntArray("Xorigins");
+			originX= org[0];
+
+			org=nbt.getIntArray("Yorigins");
+			originY = org[0];
+
+			org=nbt.getIntArray("Zorigins");
+			originZ = org[0];
+		}
+		else
+		{
+			originX = nbt.getInteger("originX");
+			originY = nbt.getInteger("originY");
+			originZ = nbt.getInteger("originZ");
+		}
+
 		bbHeight = nbt.getFloat("bbHeight");
 		type = nbt.getString("type");
 
@@ -42,6 +66,16 @@ public class TileTCRailGag extends TileEntity {
 		nbt.setInteger("originX", originX);
 		nbt.setInteger("originY", originY);
 		nbt.setInteger("originZ", originZ);
+
+		if (isFoxTCXOriginsCompatabilityModeEnabled)
+		{
+			nbt.setIntArray("Xorigins", new int[] { originX });
+
+			nbt.setIntArray("Yorigins", new int[] { originY });
+
+			nbt.setIntArray("Zorigins", new int[] { originZ });
+		}
+
 		nbt.setFloat("bbHeight", bbHeight);
 		if (type.equals("")){
 			type = "null";
