@@ -31,7 +31,7 @@ public class ModelC415H extends ModelConverter //Same as Filename
 
 	public ModelC415H() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[356];
+		bodyModel = new ModelRendererTurbo[369];
 
 		initbodyModel_1();
 
@@ -399,6 +399,19 @@ public class ModelC415H extends ModelConverter //Same as Filename
 		bodyModel[353] = new ModelRendererTurbo(this, 407, 119, textureX, textureY); // Box 392
 		bodyModel[354] = new ModelRendererTurbo(this, 409, 117, textureX, textureY); // Box 393
 		bodyModel[355] = new ModelRendererTurbo(this, 408, 115, textureX, textureY); // Box 394
+		bodyModel[356] = new ModelRendererTurbo(this, 288, 237, textureX, textureY); // Box 356
+		bodyModel[357] = new ModelRendererTurbo(this, 428, 119, textureX, textureY); // Box 357 mu plug WILL NOT GLOW
+		bodyModel[358] = new ModelRendererTurbo(this, 428, 114, textureX, textureY); // Box 358 mu plug WILL NOT GLOW
+		bodyModel[359] = new ModelRendererTurbo(this, 428, 84, textureX, textureY); // Box 359 mu plug WILL NOT GLOW
+		bodyModel[360] = new ModelRendererTurbo(this, 428, 79, textureX, textureY); // Box 360 mu plug WILL NOT GLOW
+		bodyModel[361] = new ModelRendererTurbo(this, 1, 238, textureX, textureY); // Box 22
+		bodyModel[362] = new ModelRendererTurbo(this, 1, 242, textureX, textureY); // Box 23
+		bodyModel[363] = new ModelRendererTurbo(this, 1, 232, textureX, textureY); // Box 280
+		bodyModel[364] = new ModelRendererTurbo(this, 1, 235, textureX, textureY); // Box 285
+		bodyModel[365] = new ModelRendererTurbo(this, 1, 213, textureX, textureY); // Box 365
+		bodyModel[366] = new ModelRendererTurbo(this, 1, 217, textureX, textureY); // Box 366
+		bodyModel[367] = new ModelRendererTurbo(this, 1, 207, textureX, textureY); // Box 367
+		bodyModel[368] = new ModelRendererTurbo(this, 1, 210, textureX, textureY); // Box 368
 
 		bodyModel[0].addBox(0F, 0F, 0F, 3, 2, 3, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-39F, 3F, -1.5F);
@@ -1500,6 +1513,53 @@ public class ModelC415H extends ModelConverter //Same as Filename
 
 		bodyModel[355].addShapeBox(0F, 0F, 0F, 3, 0, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, 0F); // Box 394
 		bodyModel[355].setRotationPoint(31F, 0F, 7F);
+
+		bodyModel[356].addBox(0F, 0F, 0F, 1, 3, 0, 0F); // Box 356
+		bodyModel[356].setRotationPoint(-1F, -28F, 0F);
+
+		bodyModel[357].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Box 357 mu plug WILL NOT GLOW
+		bodyModel[357].setRotationPoint(-35.25F, -3.1F, -5F);
+
+		bodyModel[358].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Box 358 mu plug WILL NOT GLOW
+		bodyModel[358].setRotationPoint(-35.25F, -3.1F, 3F);
+
+		bodyModel[359].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F); // Box 359 mu plug WILL NOT GLOW
+		bodyModel[359].setRotationPoint(33.25F, -3.1F, 3F);
+
+		bodyModel[360].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F); // Box 360 mu plug WILL NOT GLOW
+		bodyModel[360].setRotationPoint(33.25F, -3.1F, -5F);
+
+		bodyModel[361].addShapeBox(0F, 0F, -1F, 10, 2, 1, 0F,0F, 0F, 0.5F, 0F, 0F, 3F, 0F, 0F, -3.5F, 0F, 0F, -1F, 0F, 0F, -0.5F, -1F, 0F, 2F, -1F, 0F, -2.5F, 0F, 0F, 0F); // Box 22
+		bodyModel[361].setRotationPoint(-39F, 7F, 0F);
+		bodyModel[361].rotateAngleY = 1.57079633F;
+
+		bodyModel[362].addShapeBox(0F, 0F, -1F, 10, 2, 1, 0F,0F, 0F, 3F, 0F, 0F, 0.5F, 0F, 0F, -1F, 0F, 0F, -3.5F, -1F, 0F, 2F, 0F, 0F, -0.5F, 0F, 0F, 0F, -1F, 0F, -2.5F); // Box 23
+		bodyModel[362].setRotationPoint(-39F, 7F, -10F);
+		bodyModel[362].rotateAngleY = 1.57079633F;
+
+		bodyModel[363].addShapeBox(0F, 0F, -1F, 8, 1, 1, 0F,0F, 0F, -1F, 0F, 1F, 1F, 0F, 1F, -1.5F, 0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0F, 2F, 0F, 0F, -2.5F, 0F, 0F, -0.5F); // Box 280
+		bodyModel[363].setRotationPoint(-38F, 6F, 2F);
+		bodyModel[363].rotateAngleY = 1.57079633F;
+
+		bodyModel[364].addShapeBox(0F, 0F, -1F, 8, 1, 1, 0F,0F, 1F, 1F, 0F, 0F, -1F, 0F, 0F, 0.5F, 0F, 1F, -1.5F, 0F, 0F, 2F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -2.5F); // Box 285
+		bodyModel[364].setRotationPoint(-38F, 6F, -10F);
+		bodyModel[364].rotateAngleY = 1.57079633F;
+
+		bodyModel[365].addShapeBox(0F, 0F, 0F, 10, 2, 1, 0F,0F, 0F, 0.5F, 0F, 0F, 3F, 0F, 0F, -3.5F, 0F, 0F, -1F, 0F, 0F, -0.5F, -1F, 0F, 2F, -1F, 0F, -2.5F, 0F, 0F, 0F); // Box 365
+		bodyModel[365].setRotationPoint(37F, 7F, 0F);
+		bodyModel[365].rotateAngleY = -1.57079633F;
+
+		bodyModel[366].addShapeBox(0F, 0F, 0F, 10, 2, 1, 0F,0F, 0F, 3F, 0F, 0F, 0.5F, 0F, 0F, -1F, 0F, 0F, -3.5F, -1F, 0F, 2F, 0F, 0F, -0.5F, 0F, 0F, 0F, -1F, 0F, -2.5F); // Box 366
+		bodyModel[366].setRotationPoint(37F, 7F, 10F);
+		bodyModel[366].rotateAngleY = -1.57079633F;
+
+		bodyModel[367].addShapeBox(0F, 0F, 0F, 8, 1, 1, 0F,0F, 0F, -1F, 0F, 1F, 1F, 0F, 1F, -1.5F, 0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0F, 2F, 0F, 0F, -2.5F, 0F, 0F, -0.5F); // Box 367
+		bodyModel[367].setRotationPoint(36F, 6F, -2F);
+		bodyModel[367].rotateAngleY = -1.57079633F;
+
+		bodyModel[368].addShapeBox(0F, 0F, 0F, 8, 1, 1, 0F,0F, 1F, 1F, 0F, 0F, -1F, 0F, 0F, 0.5F, 0F, 1F, -1.5F, 0F, 0F, 2F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -2.5F); // Box 368
+		bodyModel[368].setRotationPoint(36F, 6F, 10F);
+		bodyModel[368].rotateAngleY = -1.57079633F;
 	}
 	ModelTypeBnew typeB2 = new ModelTypeBnew();
 	ModelHiAd hiAd = new ModelHiAd();
@@ -1518,7 +1578,7 @@ public class ModelC415H extends ModelConverter //Same as Filename
 			GL11.glTranslated(2.35, 0, 0);
 			typeB2.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 323 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 2312 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 5) {
+		} else if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 6 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 2312 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 5) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/HiAd_Black.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslated(-1.2, 0.0, 0);
@@ -1527,7 +1587,7 @@ public class ModelC415H extends ModelConverter //Same as Filename
 			GL11.glTranslated(2.33, 0, 0);
 			hiAd.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 13244 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 145) {
+		} else if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 6231 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 145) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/HiAd_Silver.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslated(-1.2, 0.0, 0);

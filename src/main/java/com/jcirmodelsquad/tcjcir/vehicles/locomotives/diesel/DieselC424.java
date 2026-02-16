@@ -29,9 +29,10 @@ public class DieselC424 extends DieselTrain {
         InsertTexture(8, "Nautilus", LockoutGroup.CUBED);
         InsertTexture(9, "Deadwood & La Mesa", LockoutGroup.DLMR);
         InsertTexture(10, "Penn Central");
-        InsertTexture(11, "FNCC 2nd order(KIT-L)", LockoutGroup.FNCC);
+        InsertTexture(11, "FNCC (2nd order)", LockoutGroup.FNCC);
         InsertTexture(12, "Burlington Northern");
         InsertTexture(13, "Great Lakes & Northern Territories");
+        InsertTexture(14, "FMSR (2nd Order)", LockoutGroup.FMSR);
     }
 
     @Override

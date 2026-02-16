@@ -24,6 +24,7 @@ public class DieselC415H extends DieselTrain {
         InsertTexture(3, "Southern Pacific");
         InsertTexture(4, "Southern Pacific (Red Deckplate)");
         InsertTexture(5, "Morristown, Tenneva & Southern", LockoutGroup.MTS);
+        InsertTexture(6, "Fox, Marble, & Seaboard Ry", LockoutGroup.FMSR);
     }
 
     @Override
