@@ -72,6 +72,7 @@ public enum ItemIDs {
 	atoCard("ItemATOCard", "ato_card", 5),
 	pennCentral("ItemPennCentralSimCard", "ato_card"),
 	paintbrushThing("ItemPaintbrushThing", "paintbrushthing", 20),
+	whistle("ItemWhistle","whistle", 1),
 	brakeStick("ItemBrakeStick", "item_brakestick", 5),
 	interchangeTransferReportBoard("ItemInterchangeTransferReportBoard", "item_interchangetransferreportboard", 0),
 
