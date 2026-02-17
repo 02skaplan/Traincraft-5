@@ -56,7 +56,6 @@ public class TCItems {
 
 		ItemIDs.stake.item = new ItemStacked(1200);
 		ItemIDs.brakeStick.item = new ItemBrakeStick();
-		ItemIDs.whistle.item = new ItemWhistle();
 		ItemIDs.interchangeTransferReportBoard.item = new ItemInterchangeTransferReportBoard();
 		ItemIDs.airship.item = new ItemZeppelins(0);
 		ItemIDs.zeppelin.item = new ItemZeppelins(1);
