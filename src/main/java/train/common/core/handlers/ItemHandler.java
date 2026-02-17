@@ -16,9 +16,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemSeeds;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.ItemFluidContainer;
 import net.minecraftforge.oredict.OreDictionary;
@@ -204,6 +202,8 @@ public class ItemHandler
 					return oreBlocks(itemstack);
 				case INGOT:
 					return ingotItems(itemstack);
+				case FOOD:
+					return itemstack.getItem() instanceof ItemFood;
 				default:
 					if (ConfigHandler.ROLLINGSTOCK_INVENTORY_BAN_OPEN_FLUID_CONTAINERS == false)
 					{

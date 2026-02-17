@@ -23,6 +23,7 @@ import train.common.api.*;
 import train.common.core.handlers.ConfigHandler;
 import train.common.core.util.TraincraftUtil;
 import train.common.entity.rollingStock.EntityTracksBuilder;
+import train.common.enums.CargoItemFilter;
 import train.common.library.*;
 import train.common.library.register.ITrainRecord;
 import train.common.tile.TileTCRail;
@@ -173,6 +174,38 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
             {
                 par3List.add("\u00a77" + "Reduces train weight when fueled");
             }
+        }
+
+        if (itemCacheData.isAbstractStandardFreightCar)
+        {
+            switch (itemCacheData.cargoItemFilter)
+            {
+                case LOG_WOOD:
+                    par3List.add("\u00a77" + "Cargo: Logs.");
+                    break;
+                case AGGREGATE:
+                    par3List.add("\u00a77" + "Cargo: Aggregates.");
+                    break;
+                case ORE:
+                    par3List.add("\u00a77" + "Cargo: Ores.");
+                    break;
+                case ICE_MATERIAL:
+                    par3List.add("\u00a77" + "Cargo: only ice");
+                    break;
+                case WOOD_PRODUCTS:
+                    par3List.add("\u00a77" + "Cargo: Wood Products");
+                    break;
+                case INGOT:
+                    par3List.add("\u00a77" + "Cargo: Ingots.");
+                    break;
+                case WOOD_CHIPS:
+                    par3List.add("\u00a77" + "Cargo: Woodchips/Sawdust.");
+                    break;
+                case GRAIN:
+                    par3List.add("\u00a77" + "Cargo: wheat, seeds");
+                    break;
+            }
+
         }
 
         if (additionnalInfo != null) {

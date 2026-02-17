@@ -14,5 +14,6 @@ public enum CargoItemFilter
     ORE,
     OPAQUE_BLOCKS,
     INGOT,
+    FOOD,
 
 }
