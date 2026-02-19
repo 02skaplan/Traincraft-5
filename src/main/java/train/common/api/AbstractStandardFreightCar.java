@@ -126,8 +126,6 @@ public abstract class AbstractStandardFreightCar extends Freight
         return ItemHandler.handleFreight(this, itemstack);
     }
 
-    public abstract String getInventoryName();
-
     public abstract float getOptimalDistance(EntityMinecart cart);
 }
 

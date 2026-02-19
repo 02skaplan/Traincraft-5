@@ -986,16 +986,10 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 
 
 	@Override
-	public String getCommandSenderName(){
-		String s = EntityList.getEntityString(this);
-		if (s == null) {
-			s = "generic";
-		}
-
-		return StatCollector.translateToLocal("entity." + s + ".name");
+	public String getCommandSenderName()
+	{
+		return StatCollector.translateToLocal(getCartItem().getItem().getUnlocalizedName()+".name");
 	}
-
-
 
 	public void setTicket(ForgeChunkManager.Ticket ticket){
 		this.chunkTicket = ticket;

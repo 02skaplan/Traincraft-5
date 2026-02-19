@@ -332,8 +332,9 @@ public class LiquidTank extends EntityRollingStock implements IFluidHandler, ISi
 	}
 
 	@Override
-	public String getInventoryName() {
-		return null;
+	public String getInventoryName()
+	{
+		return getCommandSenderName();
 	}
 
 	@Override

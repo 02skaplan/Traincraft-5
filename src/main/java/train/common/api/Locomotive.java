@@ -2073,4 +2073,10 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         }
         return false;
     }
+
+    @Override
+    public String getInventoryName()
+    {
+        return getCommandSenderName();
+    }
 }

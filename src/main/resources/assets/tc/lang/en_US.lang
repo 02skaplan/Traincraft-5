@@ -1770,19 +1770,6 @@ item.tc:minecartGATC4180Airslide.name=GATC 4180 Cu Ft Airslide Hopper
 item.tc:minecartACF3500.name=ACF 3500 Cu Ft Hopper
 item.tc:minecartACF3960.name=ACF 3960 Cu Ft Hopper
 
-entity.tc.Freight Round Covered Hopper.name=Round Covered Hopper
-entity.tc.Freight Ribbed Covered Hopper.name=Ribbed Covered Hopper
-entity.tc.5201 Cu Foot Hopper.name=5201 Cu Ft Hopper
-entity.tc.6260 Cu Foot Jumbo Hopper.name=6260 Cu Ft Jumbo Hopper
-entity.tc.FNCC2375Hopper.name=KSFI 2375 Cu Ft Hopper
-entity.tc.PDH2800.name=GATX 2800 Cu Ft Pressure Differential Hopper
-entity.tc.ACF2Bay.name=ACF 2980 Cu Ft 2-Bay Hopper
-entity.tc.ACF4650.name=ACF 4650 Cu Ft 3-Bay Hopper
-entity.tc.PS2_4750.name=PS2 4750 Cu Ft 3-Bay Hopper
-entity.tc.GATC4180Airslide.name=GATC 4180 Cu Ft Airslide Hopper
-entity.tc.ACF3500.name=ACF 3500 Cu Ft Hopper
-entity.tc.ACF3960.name=ACF 3960 Cu Ft Hopper
-
 item.tc:minecart60centerbeam.name=60' Center Beam
 item.tc:minecart66centerbeam.name=66' Center Beam
 item.tc:minecart73centerbeam.name=73' Center Beam
@@ -1794,19 +1781,6 @@ item.tc:minecartGSC53FootFlatcar.name=GSC 53' Flatcar
 item.tc:minecartGSC5366FootBulkhead.name=GSC 53' Bulkhead Flat (6' 6" Bulkhead)
 item.tc:minecartGSC5386FootBulkhead.name=GSC 53' Bulkhead Flat (8' 6" Bulkhead)
 item.tc:minecartMaPa35FootFlatcar.name=MA&PA 35' Flatcar
-
-
-entity.tc.60centerbeam.name=60' Center Beam
-entity.tc.66centerbeam.name=66' Center Beam
-entity.tc.73centerbeam.name=73' Center Beam
-entity.tc.63centerbeam.name=Thrall 63' Centerbeam
-entity.tc.GSI_Bulkhead.name=GSI 60' Bulkhead Flat
-entity.tc.GSC_Flatcar.name=GSC 60' Flatcar
-entity.tc.FNCC60FootBulk.name=KSFI 60' Bulkhead Flat
-entity.tc.GSC_53Flatcar.name=GSC 53' Flatcar
-entity.tc.GSC_53_66Bulkhead.name=GSC 53' Bulkhead Flat (6' 6" Bulkhead)
-entity.tc.GSC_53_86Bulkhead.name=GSC 53' Bulkhead Flat (8' 6" Bulkhead)
-entity.tc.MaPa_35Flatcar.name=MA&PA 35' Flatcar
 
 item.tc:minecartPS140.name=Pullman Standard 40' Boxcar
 item.tc:minecartPS150.name=Pullman Standard 50' Boxcar
@@ -1834,33 +1808,6 @@ item.tc:minecartSP_B50.name=SP B-50-15 and B-50-16 Boxcar
 item.tc:minecartSP_B50_AAR.name=SP B-50-28 /-29 /-31 Boxcar
 item.tc:minecartPFEr_40_23Reefer.name=PFE R-40-23 Ice Reefer
 
-
-entity.tc.PS140.name=Pullman Standard 40' Boxcar
-entity.tc.PS150.name=Pullman Standard 50' Boxcar
-entity.tc.PS160.name=Pullman Standard 60' Boxcar
-entity.tc.OWO 60 Verticube.name=KSFI 60' Verticube Boxcar
-entity.tc.MILW40boxcar.name=MILW 40' Boxcar
-entity.tc.40highcube.name=40' Hi-Cube Boxcar
-entity.tc.60 Foot Hi-Cube Boxcar.name=Gunderson 60' Hi-Cube Double Door Boxcar
-entity.tc.Reefer64.name=Trinity 64' Mechanical Reefer
-entity.tc.FNCC50FootBoxcar.name=KSFI 50' Highcube Boxcar
-entity.tc.GN40.name=Great Northern Homebuilt 40' Boxcar(s)
-entity.tc.R70Reefer.name=PFE R-70-20 Reefer
-entity.tc.R70Reefer2.name=PFE R-70-15 Reefer
-entity.tc.NSCReefer.name=National Steel Car 3294 Mechanical Reefer
-entity.tc.PCF6033.name=PC&F 6033 Cu Ft Boxcar
-entity.tc.PCF_RBL_Smooth.name=PC&F RBL Smoothside Boxcar
-entity.tc.PCF_RBL_Ribbed.name=PC&F RBL Ribbedside Boxcar
-entity.tc.PCF_B100.name=PC&F B-100-40 Boxcar
-entity.tc.ACF Railbox.name=ACF Railbox Boxcar
-entity.tc.ACF Railbox (Cushioned).name=ACF Railbox Boxcar (Cusioned)
-entity.tc.Evans5100.name=Evans-USRE 5100 Cu Ft Boxcar
-entity.tc.1912WoodBoxcar.name=1912 Wood Sheathed Boxcar
-entity.tc.PS_40t_ss_box.name=1916 Pullman MFG 40-Ton Boxcar
-entity.tc.SP_B50.name=SP B-50-15 and B-50-16
-entity.tc.SP_B50_AAR.name=SP B-50-28 /-29 /-31 Boxcar
-entity.tc.PFEr_40_23Reefer.name=PFE R-40-23 Ice Reefer
-
 item.tc:minecartVersaLongi.name=Versaflood Longitudinal Hopper
 item.tc:minecartVersaTrans.name=Versaflood Transverse Hopper
 item.tc:minecartMillGondola.name=52' Mill Gondola
@@ -1875,20 +1822,6 @@ item.tc:minecartAAR50TonHopper.name=AAR 50 Ton Hopper
 item.tc:minecartAAR70TonHopper.name=AAR 70 Ton Hopper
 item.tc:minecartMaPa35FootGondola.name=MA&PA 35' Gondola
 
-entity.tc.VersaLongi.name=Versaflood Longitudinal Hopper
-entity.tc.VersaTrans.name=Versaflood Transverse Hopper
-entity.tc.52footMillGondola.name=52' Mill Gondola
-entity.tc.Woodchip Hopper.name=Thrall 59' Woodchip Hopper
-entity.tc.Ore Jenny.name=Ore Jenny
-entity.tc.PRR GLa hopper.name= PRR GLa Hopper and clones
-entity.tc.ACF41Gon.name=AC&F 41' 6" Gondola
-entity.tc.BethgonII.name=Bethgon II Open Top Hopper
-entity.tc.67millgon.name=GSCO 67' Drop-End Mill Gondola
-entity.tc.52millgon.name=GSCO 52' Drop-End Mill Gondola
-entity.tc.AAR 50 Ton Hopper.name=AAR 50 Ton Hopper
-entity.tc.AAR 70 Ton Hopper.name=AAR 70 Ton Hopper
-entity.tc.MaPa_35Gondola.name=MA&PA 35' Gondola
-
 item.tc:minecart11000DOT111.name=11,000 Gallon Tank Car
 item.tc:minecart20600DOT111.name=20,600 Gallon Tank Car
 item.tc:minecart29080DOT111.name=29,080 Gallon Tank Car
@@ -1898,36 +1831,16 @@ item.tc:minecartgatc10000.name=GATC 10,000 Gallon Tank Car
 item.tc:minecartDUPX39200.name=DUPX 39,200 Gallon Tank Car
 
 
-entity.tc.DOT11000.name=11,000 Gallon Tank Car
-entity.tc.DOT20600.name=20,600 Gallon Tank Car
-entity.tc.DOT29080.name=29,080 Gallon Tank Car
-entity.tc.DOT17600.name=17,600 Gallon Tank Car
-entity.tc.NATX30600.name=NATX 30,600 Gallon Tank Car
-entity.tc.gatc10000.name=GATC 10,000 Gallon Tank Car
-entity.tc.DUPX39200.name=DUPX 39,200 Gallon Tank Car
-
 item.tc:minecartCoffinCar.name=Early Coffin Car
 item.tc:minecartSkeletonLogCar.name=45' Skeleton Log Car
 item.tc:minecartEarlyFlat.name=Early Flatcar
 item.tc:minecartBoulderWagon.name=Boulder Wagon
 item.tc:minecartLogcarNP.name=Log Car NP
 
-
-entity.tc.CoffinCar.name=Early Coffin Car
-entity.tc.Skeleton.name=45' Skeleton Log Car
-entity.tc.EarlyFlat.name=Early Flatcar
-entity.tc.BoulderWagon.name=Boulder Wagon
-entity.tc.LogcarNP.name=Log Car NP
-
 item.tc:minecartGunderson89ftAutorack.name=Gunderson 89' Enclosed Autorack
 item.tc:minecartGunderson89ftFlat.name=Gunderson 89' Lowbody Flat Car
 item.tc:minecartStampedeRack.name=KSFI "Stampede Rack" Stock Car
 item.tc:minecartHuskyStackWellcar.name=Gunderson 40' Husky Stack Wellcar
-
-entity.tc.89ftAutorack.name=Gunderson 89' Enclosed Autorack
-entity.tc.89ftFlat.name=Gunderson 89' Lowbody Flat Car
-entity.tc.StampedeRack.name=KSFI "Stampede Rack" Stock Car
-entity.tc.40ftHuskyStackWellcar.name=Gunderson 40' Husky Stack Wellcar
 
 item.tc:minecartIngotPig.name=Molten Ingot "Pig"
 item.tc:minecartSteelSlabFlat.name=15' Steel Slab Flat

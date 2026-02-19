@@ -35,11 +35,6 @@ public class AAR70TonHopper extends AbstractStandardFreightCar
         InsertTexture(4, "TNO Later");
     }
 
-    @Override
-    public String getInventoryName() {
-        return "AAR 70 ton hopper";
-    }
-
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) {

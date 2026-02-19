@@ -137,8 +137,9 @@ public abstract class Freight extends EntityRollingStock implements IInventory
 	}
 
 	@Override
-	public String getInventoryName() {
-		return "Freight cart";
+	public String getInventoryName()
+	{
+		return getCommandSenderName();
 	}
 
 	@Override

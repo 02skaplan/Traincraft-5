@@ -34,11 +34,6 @@ public class AAR50TonHopper extends AbstractStandardFreightCar
     }
 
     @Override
-    public String getInventoryName() {
-        return "AAR 50 ton hopper";
-    }
-
-    @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return 1.75F;
     }

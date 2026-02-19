@@ -519,5 +519,11 @@ public abstract class AbstractControlCar extends EntityRollingStock implements I
         }
     }
 
+    @Override
+    public String getInventoryName()
+    {
+        return getCommandSenderName();
+    }
+
     //endregion Implement IInventory
 }
