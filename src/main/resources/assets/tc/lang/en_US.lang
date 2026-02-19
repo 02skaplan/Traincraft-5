@@ -36,8 +36,6 @@ tile.tc:concrete_type1_americanstopper.name=Grey Concrete Train Buffer
 tile.tc:concrete_type2_americanstopper.name=Weathered Concrete Hayes Train Buffer
 tile.tc:wood_type1_americanstopper.name=Treated Wood Hayes Train Buffer
 
-
-
 tile.tc:trainWorkbench.name=Train Workbench
 tile.tc:distilActive.name=Distill (active)
 tile.tc:distilIdle.name=Distill
@@ -548,7 +546,6 @@ item.tc:tcRailEmbeddedSlopeDynamic.name=1x6 Sleeperless Slope Track (Dynamic)
 item.tc:tcRailEmbeddedLargeSlopeDynamic.name=1x12 Sleeperless Large Slope Track (Dynamic)
 item.tc:tcRailEmbeddedVeryLargeSlopeDynamic.name=1x18 Sleeperless Very Large Slope Track (Dynamic)
 
-
 <!-- ## TC Tracks - Concrete Type 1 ## -->
 item.tc:tcRail_CONCRETE_TYPE1_SmallStraight.name=1x1 Grey Concrete Straight
 item.tc:tcRail_CONCRETE_TYPE1_MediumStraight.name=1x3 Grey Concrete Straight
@@ -734,7 +731,6 @@ item.tc:tcRailSmallRoadCrossing.name=RailRoad Crossing (Black Asphalt)
 item.tc:tcRailSmallRoadCrossing1.name=RailRoad Crossing (Clean Asphalt)
 item.tc:tcRailSmallRoadCrossing2.name=RailRoad Crossing (light Gray Asphalt)
 item.tc:tcRailSmallRoadCrossingDynamic.name=RailRoad Crossing (Dynamic)
-
 
 <!-- ## TC Keybindings ## -->
 key.categories.traincraft=FoxTC (Traincraft)
@@ -942,203 +938,12 @@ item.tc:minecartLocoC41_080.name=C41 0-8-0
 item.tc:minecartLocoAlcoSC4.name=Alco SC4
 item.tc:minecartFreightL.name=Freight Car L
 
-entity.tc.Passenger Denver Rio Grande Combo.name=Denver Rio Grande Combo
-
 entity.tc.Entity Front Bogie.name=Bogie
 entity.tc.zeppelin big.name=Zeppelin One Balloon
 entity.tc.zeppelin.name=Zeppelin Two Balloons
-entity.tc.Loco Steam BR01.name=BR01 (DB)
-entity.tc.Loco Steam Cherepanov.name=Cherepanov (RU)
-entity.tc.Loco Steam BR80.name=BR80 (DB)
-entity.tc.Loco Steam 4-4-0.name=4-4-0 (US)
-entity.tc.Loco Steam Small.name=Small Steam Locomotive
-entity.tc.Loco Steam C62Class.name=C62 Class (JNR)
-entity.tc.Loco Steam D51 Short Streamlining.name=D51 (JNR) [short streamlining]
-entity.tc.Loco Steam D51 Long Streamlining.name=D51 (JNR) [short streamlining]
-entity.tc.Loco Steam ER_USSR.name=USSR 0-5-0 (SU)
-entity.tc.Loco Steam Forney.name=Forney (US)
-entity.tc.Loco Steam Mogul.name=Mogul (US)
-entity.tc.Loco Steam Shay.name=Shay (US)
-entity.tc.Loco Steam Adler.name=Adler
-entity.tc.Loco Electric Tram NY.name=Kawasaki PA4 (US)
-entity.tc.Loco Electric Yellow Wood Tram.name=Wooden Tram
-entity.tc.Loco Electric High Speed ZeroED.name=High Speed Train
-entity.tc.Loco Electric Minetrain.name=Cart Hauler
-entity.tc.Loco Electric BR_E69.name=BR E69
-entity.tc.Loco Electric VL10.name=VL10 (SU)
-entity.tc.Loco Diesel V60 DB.name=V60 (DB)
-entity.tc.Loco Diesel Shunter.name=Class 08 Shunter (UK)
-entity.tc.Loco Diesel SD70.name=SDL70M (US)
-entity.tc.Loco Diesel SD40.name=SDL40-2 (US)
-entity.tc.Loco Diesel GP7.name=GP7 (US)
-entity.tc.Loco Diesel ChME3.name=ChME3 (SU)
-entity.tc.Loco Diesel CD742.name=CD 742
-entity.tc.Loco Diesel KOF DB.name=Kof (DB)
-entity.tc.Tender C62Class.name=C62 Class Tender (JNR)
-entity.tc.Tender D51.name=D51 Tender (JNR)
-entity.tc.Tender ER_USSR.name=USSR 0-5-0 Tender (SU)
-entity.tc.Tender BR01.name=BR01 Tender (DB)
-entity.tc.Tender 4-4-0.name=4-4-0 Tender(US)
-entity.tc.Tender Heavy.name=Heavy Tender
-entity.tc.Loco Steam Heavy.name=Heavy Steam Locomotive
-entity.tc.Tender Small Black.name=Small Tender
-entity.tc.Tender Adler.name=Adler Tender
-entity.tc.Tank Wagon Yellow.name=Tank Wagon (SU)
-entity.tc.Tank Lava.name=Lava Tank Wagon
-entity.tc.Tank Wagon Grey.name=Tank Wagon
-entity.tc.Tank Wagon US.name=Tank Wagon (US)
-entity.tc.Tank Wagon DB.name=Tank Wagon (DB)
-entity.tc.Freight Trailer.name=Freight Trailer
-entity.tc.Freight Well Car.name=Freight Well Car
-entity.tc.Freight Center Beam Wood2.name=Freight Center Beam Wood
-entity.tc.Freight Center Beam Wood1.name=Freight Center Beam Wood
-entity.tc.Freight Center Beam Empty.name=Freight Center Beam
-entity.tc.Freight Gondola DB.name=Freight Gondola (DB)
-entity.tc.Freight Flat Cart Logs DB.name=Flat Car Logs (DB)
-entity.tc.Freight Flat Cart Rails DB.name=Flat Car Rails (DB)
-entity.tc.Freight Wagon DB.name=Freight Wagon (DB)
-entity.tc.Freight Open RedBrown.name=Freight Open Wagon
-entity.tc.Freight Cart Closed RedBrown.name=Freight Car Closed
-entity.tc.Freight Flat Logs.name=Flat Car Logs
-entity.tc.Freight Minecart Yellow.name=Minecart
-entity.tc.Freight Cart Small.name=Small Freight Car
-entity.tc.Freight Box Cart US.name=Box Car (US)
-entity.tc.Freight Cart US.name=Freight Car (US)
-entity.tc.Freight Flat Cart Wood US.name=Flat Car Wood (US)
-entity.tc.Freight Hopper US.name=Freight Hopper (US)
-entity.tc.Freight Open Wagon.name=Open Wagon
-entity.tc.Freight Hopper Green.name=Freight Hopper
-entity.tc.Freight Flat Cart Log.name=Flat Car Logs
-entity.tc.Freight Cart Yellow.name=Freight Car
-entity.tc.Freight Cart Red.name=Freight Wagon
-entity.tc.Flat Cart DB.name=Flat Car (DB)
-entity.tc.Tracks Builder.name=Tracks Builder
-entity.tc.Flat Cart US.name=Flat Car (US)
-entity.tc.Flat Cart SU.name=Flat Car (SU)
-entity.tc.JukeBox Cart.name=Jukebox Car
-entity.tc.Mail Wagon DB.name=Mail Wagon (DB)
-entity.tc.Caboose Logging.name=Caboose Logging Car
-entity.tc.Work Caboose.name=Work Caboose
-entity.tc.Flat Cart.name=Flat Car
-entity.tc.Work Cart Yellow.name=Work Car
-entity.tc.Stock Cart.name=Stock Car
-entity.tc.Caboose Black.name=Caboose
-entity.tc.Caboose Red.name=Caboose
-entity.tc.Passenger Tram NY.name=Kawasaki PA4 Passenger Car (US)
-entity.tc.Passenger High Speed Zero ED.name=High Speed Passenger Car
-entity.tc.Passenger 2Class DB.name=Passenger Second Class Car (DB)
-entity.tc.Passenger 1Class DB.name=Passenger First Class Car (DB)
-entity.tc.Passenger Short Green.name=Passenger Car
-entity.tc.Passenger Green Long.name=Passenger Car
-entity.tc.Passenger Small Black.name=Passenger Car
-entity.tc.Passenger Blue.name=Passenger Car
-entity.tc.Passenger Adler.name=Adler Passenger Car
-entity.tc.Passenger DB oriental.name=Passenger Orient Express
-entity.tc.Loco Steam A4 Mallard.name=A4 Mallard
-entity.tc.Tender A4 Mallard.name=A4 Mallard Tender
-entity.tc.Passenger IC4 DSB FH.name=IC4 DSB FH Passenger
-entity.tc.Passenger IC4 DSB FG.name=IC4 DSB FG Passenger
-entity.tc.Loco Diesel IC4 DSB MG.name=IC4 DSB MG
-entity.tc.DRWG Stock Cart.name=Stock Car (D&RGW)
-entity.tc.Freight Box Cart PRR.name=PRR X31 Boxcar
-entity.tc.PRR Caboose Logging.name=PRR N5c
-entity.tc.Loco Steam Alice.name=0-4-0 Alice
-entity.tc.Loco Steam glyn.name=0-4-2 GLYN
-entity.tc.Loco Steam VB Shay.name=Class A Shay
-entity.tc.Loco Steam 262T.name=2-6-2T
-entity.tc.Freight GTNG Ore Wagon.name=Open Wagon (GTNG)
-entity.tc.Loco Steam Climax.name=4-0-4 Class B
-entity.tc.Loco Steam 040VB.name=0-4-0 Vertical Boiler
-entity.tc.Passenger GS4.name=Streamlined Passenger
-entity.tc.Passenger GS4 Observatory.name=Streamlined Tavern Car
-entity.tc.Freight Slate Wagon.name=Slate Wagon
-entity.tc.ICE Restaurant.name=ICB Restaurant
-entity.tc.Loco Electric ICE 1.name=ICB
-entity.tc.Loco Diesel MILW H10-44.name=FM H10-44
-entity.tc.Passenger ICE 2nd Class.name=ICB 2nd Class Passenger
-entity.tc.Freight Cart GS4 Baggage.name=Streamlined Combo Cart
-entity.tc.Tender GS4.name=GS4 Daylight Tender
-entity.tc.Loco Steam GS4.name=GS4 Daylight
-entity.tc.Passenger ICE 1st Class.name=ICB 1st Class Passenger
-entity.tc.Passenger GS4 Tail.name=Streamlined Passenger Tail
-entity.tc.Loco Diesel EMD F-7.name=EMD F7
-entity.tc.Loco Diesel EMD F-3.name=EMD F3
-entity.tc.EMD F7 B Unit.name=EMD F7 B-unit
-entity.tc.EMD F3 B Unit.name=EMD F3 B-unit
-entity.tc.Loco Electric BR 185.name=BR 185
-entity.tc.Loco Electric Class 85.name=Class 85
-entity.tc.Loco Electric EWS Class 66.name=Class 66
-entity.tc.Loco Diesel Deltic.name=Deltic
-entity.tc.Tender Coranation Class.name=Coronation Class Tender
-entity.tc.Loco Steam Coranation Class.name=Coronation Class
-entity.tc.Freight 100 Ton Hopper.name=100 Ton Hopper
-entity.tc.Freight Ice Wagon.name=Ice Wagon
-entity.tc.Loco Diesel DD35A.name=DD35
-entity.tc.DD35 B Unit.name=DD35 B-unit
-entity.tc.Propaganda USA.name=Propaganda cart (USA)
-entity.tc.Propaganda USSR.name=Propaganda cart (USSR)
-entity.tc.Propaganda Britain.name=Propaganda cart (Britain)
-entity.tc.Propaganda Japan.name=Propaganda cart (Japan)
-entity.tc.Loco Steam Snow Plow.name=Snow Plow
-entity.tc.Loco Steam C41.name=C41
-entity.tc.Loco Steam C41T.name=C41T
-entity.tc.Tender C41.name=C41 Tender
-entity.tc.Tank Wagon Three Dome.name=Three Dome Tanker
-entity.tc.GWR Toad Brake Van.name=GWR Toad Brake Van
-entity.tc.Loco Steam Pannier.name= 0-6-0 Pannier
-entity.tc.Denver Rio Grande Baggage.name=Denver Rio Grande Baggage
-entity.tc.Denver Rio Grande Combo.name=Denver Rio Grande Combo
-entity.tc.Denver Rio Grande Passenger.name=Denver Rio Grande Passenger
-entity.tc.GE 44-ton Diesel switcher.name=GE 44 Ton Switcher
-entity.tc.Heavyweight Freight Car.name=Heavyweight Mailcar
-entity.tc.Rheingold Dining.name=Rheingold Dining
-entity.tc.Rheingold Dining Alternate.name=Rheingold Dining Alternate
-entity.tc.Passenger Rheingold.name=Rheingold Passenger
-entity.tc.Rheingold Panorama.name=Rheingold Panorama
-entity.tc.Freight Bulkhead Flat Cart.name=Bulkhead Flat Cart
-entity.tc.Loco Steam Southern 1102.name=Baldwin F-14
-entity.tc.Tender Southern1102.name=Baldwin F-14 Tender
-entity.tc.Loco Electric E10 DB.name=E10 (DB)
-entity.tc.Passenger MILW.name=Hiawatha 1935 MILW Passenger
-entity.tc.Passenger MILW Tail.name=Hiawatha 1935 MILW Beavertail
-entity.tc.MILW Baggage.name=Hiawatha 1935 MILW Baggage
-entity.tc.Loco Steam MILW Class A.name=Hiawatha 1935 Class A MILW
-entity.tc.Tender MILW.name=Tender MILW
-entity.tc.Loco Electric E103.name=E103
-entity.tc.Loco Electric CD151.name=CD 151
-entity.tc.Bamboo Flatcar Freight.name=Bamboo flatcar freight
-entity.tc.Bamboo Flatcar Engine.name=Bamboo flatcar engine
-entity.tc.Bamboo Flatcar Passenger.name=Bamboo flatcar passenger
-entity.tc.Freight Depressed Flatcar.name=Depressed Flatbed
-entity.tc.Freight German Post.name=German Mailcar
-entity.tc.Loco Steam LSSP7.name=One Truck Heisler
-entity.tc.Freight Short Covered Hopper.name=Short Covered Hopper
-entity.tc.Freight K Class Rail Box.name=K Class Rail Box
-entity.tc.Freight Long Covered Hopper.name=Long Covered Hopper
-entity.tc.Loco FOL M1.name=FOL-M1
-entity.tc.Freight Heavyweight Baggage.name=Heavyweight Baggage
-entity.tc.Loco Diesel BP4.name=BP4
-entity.tc.Freight ASTF Autorack.name=ASTF ft-41 Auto Rack
-entity.tc.Loco Fowler.name=Fowler 4F
-entity.tc.Fowler 4F Tender.name=Fowler 4F Tender
-entity.tc.Loco Electric BP4.name=BP4
-entity.tc.Loco Berkshire 765.name=Berkshire 765
-entity.tc.Loco Steam USATCUK.name=S100 (UK)
-entity.tc.Loco Steam USATCUS.name=S100 (US)
-entity.tc.1225 tender.name=Berkshire 1225 Tender
-entity.tc.Loco Berkshire 1225.name=Berkshire 1225
-entity.tc.Loco Hall Class.name=Hall Class
-entity.tc.4000GallonTender.name=4000 Gallon Tender
-entity.tc.Loco King Class.name=King Class
-entity.tc.Loco WLs40.name=WLs40
-entity.tc.Freight Car L.name=Freight Car L + bozo
-entity.tc.Loco Steam C41 0-8-0.name=C41 0-8-0
-entity.tc.Loco Steam Alco SC4.name=Alco SC4
 
 item.tc:minecartCF7_H_Angle.name=CF7 Anglecab (Heritage Model)
 item.tc:minecartCF7_H_Round.name=CF7 Roundcab (Heritage Model)
-entity.tc.CF7_H_Angle.name=CF7 Anglecab (Heritage Model)
-entity.tc.CF7_H_Round.name=CF7 Roundcab (Heritage Model)
 
 <!-- ## Fox-TC Content ## -->
 
@@ -1188,53 +993,6 @@ item.tc:minecartAlco0_6_0T.name=Alco 0-6-0T
 item.tc:minecartBrank.name=2-6-2T Branch Tank "Brank"
 item.tc:minecartLima2_8_0.name=Lima 2-8-0
 item.tc:minecartTenderLima2_8_0.name=Lima 2-8-0 Tender
-
-entity.tc.2TruckClimax.name=2 Truck Climax
-entity.tc.2TruckVerticalBoilerShay.name=2 Truck Class A Shay
-entity.tc.Skookum.name=Deep River Logging No. 7 Skookum 2-4-4-2
-entity.tc.Skookum Tender.name=Skookum Tender
-entity.tc.3 Truck Shay.name=Class 3-PC-13 3-Truck Shay
-entity.tc.3 Truck Shay Tender.name=Class 3-PC-13 3-Truck Shay Tender
-entity.tc.ClimaxB.name=50 Ton Class B Climax
-
-entity.tc.F01.name=F-01 Class 2-4-4 Forney
-entity.tc.P01a.name=P-01a Class 2-6-2 Prairie
-entity.tc.VanderbackTender.name=WRX Vanderback Tender
-entity.tc.SquanderbackTender.name=WRX Squanderback Tender
-
-entity.tc.BKno2a.name=Booth-Kelly Lumber Co. No 2 (Front)
-entity.tc.BKno2b.name=Booth-Kelly Lumber Co. No 2 (Rear)
-entity.tc.WCPBuckingBull.name=WCP Bucking Bull 2-6-6-0
-entity.tc.WCPBaler.name=WCP Baler Tender
-entity.tc.WCPMacky.name=WCP Macky 0-10-2
-
-entity.tc.Alco2102.name=Alco 2-10-2ST
-entity.tc.MK60.name=WP MK60-71 2-8-2
-entity.tc.Tender10k.name=WP 10,000 Gal Tender
-entity.tc.TenderDeseret.name=WP Deseret Tender
-entity.tc.PMNstender.name=PM N Series Tender
-entity.tc.PMNandN1.name=Pere Marquette N and N-1
-
-entity.tc.HCS_c57.name=SP-UP C57 2-8-0
-entity.tc.HCS_9k_Tender.name=SP-UP 9,000 Gal Tender
-entity.tc.HotTubTender.name=FMSR "Hot Tub" Tender
-
-entity.tc.Loco Steam C11.name=JNR C11
-entity.tc.Onion.name=Onion
-entity.tc.Onion Tender.name=Onion's Tender
-entity.tc.NP_L9.name=NP L9 Class 0-6-0
-entity.tc.NP_11C_Tender.name=NP 11C & 12C Class Tenders
-entity.tc.NP_13C_Tender.name=NP 13C Class Tender
-entity.tc.Alco460.name=ALCo 4-6-0
-entity.tc.Tender460.name=ALCo 4-6-0 Tender
-
-entity.tc.Loco Steam PELoco.name=Polar Express 1225 (Old Model, use PM N Series instead)
-entity.tc.Tender PETender.name=Polar Express Tender (Old Model, use PM N Series instead)
-
-entity.tc.Alco0-6-0T.name=Alco 0-6-0T
-entity.tc.Brank2-6-2T.name=2-6-2T Branch Tank "Brank"
-entity.tc.Lima2-8-0.name=Lima 2-8-0
-entity.tc.TenderLima2_8_0.name=Lima 2-8-0 Tender
 
 --------------------------------------------------------
 
@@ -1336,106 +1094,6 @@ item.tc:minecartTR4B.name=EMD TR4 Calf
 
 item.tc:minecartBeep.name=ATSF SWBLW (The Beep)
 
-
-entity.tc.F3A.name=EMD F3A
-entity.tc.F3B.name=EMD F3B
-entity.tc.F7A.name=EMD F7A
-entity.tc.F7B.name=EMD F7B
-entity.tc.F9A.name=EMD F9A
-entity.tc.F9B.name=EMD F9B
-entity.tc.FP7A.name=EMD FP7A
-entity.tc.FP9A.name=EMD FP9A
-entity.tc.BUnitF7B.name=EMD F7B (Unpowered)
-entity.tc.CF7angle.name=ATSF CF7 Anglecab
-entity.tc.CF7round.name=ATSF CF7 Roundcab
-entity.tc.CF7round3.name=EMD CF7 (Roundcab Freelances)
-entity.tc.CF7angle2.name=ATSF CF7 (CBRR)
-entity.tc.CF7angle3.name=EMD CF7 (Anglecab Freelances)
-entity.tc.CF7b.name=CEE CF7b
-entity.tc.CF7hh.name=CEE CF7 (GL)
-entity.tc.F40PH.name=EMD F40PH
-
-entity.tc.E7A.name=EMD E7A
-entity.tc.E7B.name=EMD E7B
-entity.tc.BUnitE7B.name=EMD E7B (Unpowered)
-entity.tc.E8A.name=EMD E8A
-entity.tc.E8B.name=EMD E8B
-entity.tc.BUnitE8B.name=EMD E8B (Unpowered)
-entity.tc.E9A.name=EMD E9A
-entity.tc.E9B.name=EMD E9B
-entity.tc.BUnitE9B.name=EMD E9B (Unpowered)
-entity.tc.CE8.name=CEE CE8
-
-entity.tc.GP7.name=EMD GP7
-entity.tc.GP7b.name=EMD GP7b
-entity.tc.BUnitGP7b.name=EMD GP7B (Unpowered)
-entity.tc.GP7u.name=EMD GP7u (ATSF)
-entity.tc.GP7f.name=EMD GP7u (ARR)
-entity.tc.GPFDL.name=EMD/CEE GPFDL
-entity.tc.GP9.name=EMD GP9
-entity.tc.GP9b.name=EMD GP9b
-entity.tc.GP7old.name=EMD GP7 (Old Model)
-entity.tc.GP13.name=EMD GP13
-entity.tc.GP15.name=EMD GP15-1
-entity.tc.GP15T.name=EMD GP15T
-entity.tc.GP18.name=EMD GP18
-entity.tc.GP20.name=EMD GP20
-entity.tc.GP30.name=EMD GP30
-entity.tc.GP35.name=EMD GP35 (Phase 1)
-entity.tc.GP38dash9W.name=MT&S GP38W-2
-entity.tc.GP38H3.name=EMD GP38H3
-entity.tc.GP38.name=EMD GP38
-entity.tc.GP38Dash2.name=EMD GP38-2
-entity.tc.GP39.name=EMD GP39
-entity.tc.GP39Dash2.name=EMD GP39-2
-entity.tc.GP39TDash2.name=EMD GP39T-2
-entity.tc.GP39TDash2B.name=EMD GP39T-2B
-entity.tc.GP40.name=EMD GP40
-entity.tc.GP40Dash2.name=EMD GP40-2
-entity.tc.GP40TC.name=EMD GP40TC
-entity.tc.GP49.name=EMD GP49
-
-entity.tc.SD9.name=EMD SD9
-entity.tc.SDL39.name=EMD SDL39
-entity.tc.SD38.name=EMD SD38
-entity.tc.SD39.name=EMD SD39
-entity.tc.SD40.name=EMD SD40
-entity.tc.SD40-2.name=EMD SD40-2
-entity.tc.SD40T-2.name=EMD SD40T-2
-entity.tc.SD40-2B.name=EMD SD40-2B
-entity.tc.SD40R.name=EMD SD40R
-entity.tc.SD40A.name=EMD SD40A
-entity.tc.SDP40.name=EMD SDP40
-entity.tc.SDP40F.name=EMD SDP40F
-entity.tc.SD40-3.name=CSX SD40-3
-entity.tc.SD45.name=EMD SD45
-entity.tc.SD45-2B.name=EMD SD45-2B
-entity.tc.SDP45.name=EMD SDP45
-entity.tc.F45.name=EMD F45
-entity.tc.FP45.name=EMD FP45
-entity.tc.SD50.name=EMD SD50
-entity.tc.SD60.name=EMD SD60
-entity.tc.SD70Mac.name=EMD SD70Mac
-entity.tc.SD70ACe.name=EMD SD70ACe
-entity.tc.SD70ACe_H.name=EMD SD70ACe (Heritable Units)
-
-entity.tc.SW1.name=EMD SW1
-entity.tc.SW8.name=EMD SW8
-entity.tc.SW9.name=EMD SW9
-entity.tc.SW10.name=EMD/UP SW10
-entity.tc.SW900.name=EMD SW900
-entity.tc.SW1000.name=EMD SW1000
-entity.tc.SW1200.name=EMD SW1200
-entity.tc.SW1500.name=EMD SW1500
-entity.tc.SW1600.name=FNCC SW1600
-entity.tc.MP900.name=Masaou MP900
-entity.tc.MP15DCW9.name=WFLW MP15BW
-
-entity.tc.TR4.name=EMD TR4 Cow
-entity.tc.TR4B.name=EMD TR4 Calf
-
-entity.tc.Beep.name=ATSF SWBLW (The Beep)
-
 --------------------------------------------------------
 
 item.tc:minecart44Ton.name=GE 44-Ton
@@ -1503,71 +1161,6 @@ item.tc:minecart4ED172T_E.name=CEE 4ED-172T (EMD 12-567BC Repower)
 item.tc:minecart4ED172T_G.name=CEE 4ED-172T (GE 7FDL-8 Repower)
 item.tc:minecart4ED172T_C.name=CEE 4ED-172T (CAT D399 Repower)
 
-entity.tc.GE 44-ton.name=GE 44-Ton
-entity.tc.23 Ton Boxcab.name=GE-23 Ton Boxcab
-entity.tc.GE 25-ton.name=GE 25-Ton
-
-entity.tc.U18B.name=GE U18B (Old Model)
-entity.tc.U18BB.name=GE U18B B-Unit
-entity.tc.U18BW.name=CEE/GE U18BW
-entity.tc.U18BWH.name=CEE U18B(W)H
-entity.tc.U18Balt.name=GE U18B (Temp. New Model)
-entity.tc.U23B.name=GE U23B
-entity.tc.U23BU.name=CEE U23B(U)
-entity.tc.U23BW.name=CEE U23B(W)
-entity.tc.SF30B.name=ATSF SF30B
-entity.tc.U23Bold.name=GE U23B (Old Model)
-entity.tc.U25B.name=GE U25B (Phase 2-4)
-entity.tc.U30BH.name=CEE U30B(H)
-entity.tc.U36B.name=GE U36B
-entity.tc.U23C.name=GE U23C
-entity.tc.U30C.name=GE U30C
-entity.tc.SF30C.name=ATSF SF30C
-entity.tc.U36C.name=GE U36C
-entity.tc.U50.name=GE U50
-entity.tc.U56.name=GE U56
-
-entity.tc.SB18R.name=CEE SB18R
-entity.tc.SB18E.name=CEE SB18E
-entity.tc.SB18B.name=CEE SB18B
-entity.tc.B23-7.name=GE B23-7
-entity.tc.B23-7_wrx.name=CEE B23-7 (WRX special order)
-entity.tc.B23-S7.name=GE B23-S7
-entity.tc.BQ23-7.name=GE BQ23-7
-entity.tc.SB23R.name=CEE/GE SB23R
-entity.tc.SB23E.name=CEE/GE SB23E
-entity.tc.B30-7.name=GE B30-7
-entity.tc.B36-7.name=GE B36-7
-entity.tc.SB36X.name=CEE SB36X Prototype
-
-entity.tc.Dash818BE.name=CEE B18-8E
-entity.tc.Dash832BWH.name=GE Dash 8-32BWH
-entity.tc.Dash839C.name=GE C39-8
-entity.tc.Dash839CE.name=GE C39-8E
-entity.tc.Dash839B.name=GE B39-8
-entity.tc.Dash840B.name=GE Dash 8-40B
-entity.tc.Dash840BB.name=GE Dash 8-40BB
-entity.tc.BUnitDash840B.name=GE Dash 8-40BB (Unpowered)
-entity.tc.Dash840BW.name=GE Dash 8-40BW
-entity.tc.Dash840C.name=GE C40-8
-entity.tc.Dash841C.name=GE C41-8
-
-entity.tc.Dash940C.name=GE Dash 9-40C
-entity.tc.Dash944CW.name=GE Dash 9-44CW
-entity.tc.AC4400CW.name=GE AC4400CW
-entity.tc.AC4400C.name=GE AC4400C
-
-entity.tc.ES44.name=GE ES44
-entity.tc.ES44h.name=GE ES44 (Heritable Units)
-entity.tc.P32.name=GE P32
-entity.tc.P40.name=GE P40
-entity.tc.P42.name=GE P42
-
-entity.tc.4ED172T.name=CEE 4ED-172T
-entity.tc.4ED172T_E.name=CEE 4ED-172T (EMD 12-567BC Repower)
-entity.tc.4ED172T_G.name=CEE 4ED-172T (GE 7FDL-8 Repower)
-entity.tc.4ED172T_C.name=CEE 4ED-172T (CAT D399 Repower)
-
 --------------------------------------------------------
 
 item.tc:minecartAlcoPA1.name=ALCo PA-1
@@ -1611,47 +1204,6 @@ item.tc:minecartS2.name=ALCo S2
 
 item.tc:minecartRSD15.name=ALCo RSD-15
 
-entity.tc.PA1.name=ALCo PA-1
-entity.tc.PB1.name=ALCo PB-1
-entity.tc.FA1.name=ALCo FA-1
-entity.tc.FB1.name=ALCo FB-1
-entity.tc.FA2.name=ALCo FA-2
-entity.tc.FB2.name=ALCo FB-2
-entity.tc.FPA4.name=MLW FPA-4
-entity.tc.FPB4.name=MLW FPB-4
-entity.tc.FAFDL.name=CEE FA-FDL
-entity.tc.FBFDL.name=CEE FB-FDL
-
-entity.tc.RS1.name=ALCo RS-1
-entity.tc.RS2.name=ALCo RS-2
-entity.tc.RS3.name=ALCo RS-3
-entity.tc.RSFDL.name=ALCo-CEE RSFDL
-
-entity.tc.C415H.name=ALCo C415 (High Visibility Cab)
-entity.tc.C415S.name=ALCo C415
-entity.tc.C415L.name=ALCo C415 (Low Clearance Cab)
-entity.tc.C424.name=ALCo C424
-entity.tc.C425.name=ALCo C425
-entity.tc.DH643.name=ALCo DH643
-entity.tc.C855a.name=ALCo C855a
-entity.tc.C855b.name=ALCo C855b
-
-entity.tc.M420.name=MLW M420
-entity.tc.M420B.name=MLW M420B
-
-entity.tc.M630.name=MLW M630 (Divot End)
-entity.tc.M630R.name=MLW M630 (Round End)
-entity.tc.M630W.name=MLW M630W
-entity.tc.M636.name=MLW M636 (Divot End)
-entity.tc.M636R.name=MLW M636 (Round End)
-entity.tc.M640.name=MLW M640
-entity.tc.M640W.name=MLW M640W
-
-entity.tc.HH660.name=ALCo HH660/HH600
-entity.tc.S2.name=ALCo S2
-
-entity.tc.RSD15.name=ALCo RSD-15
-
 --------------------------------------------------------
 
 item.tc:minecartVO1000.name=BLW VO-1000
@@ -1664,16 +1216,6 @@ item.tc:minecartDR441500BShark.name=BLW DR-4-4-1500B (Phase 3)
 item.tc:minecartRF16.name=BLH RF-16
 item.tc:minecartRF16B.name=BLH RF-16B
 
-entity.tc.VO1000.name=BLW VO-1000
-entity.tc.S12.name=BLH S12 (606A)
-entity.tc.DS441000.name=BLH DS-4-4-1000 (606SC)
-entity.tc.DR441500Phase2.name=BLW DR-4-4-1500 (Phase 2)
-entity.tc.DR441500BPhase2.name=BLW DR-4-4-1500B (Phase 2)
-entity.tc.DR441500Shark.name=BLW DR-4-4-1500 (Phase 3)
-entity.tc.DR441500BShark.name=BLW DR-4-4-1500B (Phase 3)
-entity.tc.RF16.name=BLH RF-16
-entity.tc.RF16B.name=BLH RF-16B
-
 --------------------------------------------------------
 
 item.tc:minecartH1044.name=FM H10-44
@@ -1681,13 +1223,6 @@ item.tc:minecartH16_66.name=FM H16-66
 item.tc:minecartH24_66.name=FM H24-66
 item.tc:minecartH24_66L.name=FM H24-66 (Low Ends)
 item.tc:minecartH24_66C.name=FM H24-66 (Canadian)
-
-
-entity.tc.H1044.name=FM H10-44
-entity.tc.H16-66.name=FM H16-66
-entity.tc.H24-66.name=FM H24-66
-entity.tc.H24-66L.name=FM H24-66 (Low Ends)
-entity.tc.H24-66C.name=FM H24-66 (Canadian)
 
 --------------------------------------------------------
 
@@ -1709,26 +1244,6 @@ item.tc:minecartSBMS.name=CEE SB Motor System
 
 item.tc:minecartRotaryPlow.name=Rotary Snowplow
 
-
-entity.tc.NRE3gs21b.name=NRE 3GS21B Genset
-entity.tc.gtavthing.name=GTAV Locomotive
-entity.tc.Loco FOL-M1.name=FOL-M1
-entity.tc.FOL-M1B.name=FOL-M1B
-entity.tc.BUnitFOL-M1B.name=FOL-M1B (Unpowered)
-entity.tc.Krautt.name=Krauss-Maffei ML-4000
-entity.tc.ILMC.name=I.L.M.C
-entity.tc.DD55.name=LA Switcher Company DD55
-entity.tc.TB27.name=Masaou TB27
-
-entity.tc.SlugMA.name=EMD GP Slug (SlugMA)
-entity.tc.F7BSlug.name=EMD F7B Slug
-entity.tc.S1BL.name=FNCC S1BL Slug
-entity.tc.SMSC1.name=CEE Slug Motor System, C-C, Type 1
-entity.tc.CEEslug.name=CEE rebuilt slug (U23B core)
-entity.tc.SBMS.name=CEE SB Motor System
-
-entity.tc.RotaryPlow.name=Rotary Snowplow
-
 --------------------------------------------------------
 
 item.tc:minecartEF1.name=GE-MILW EF-1
@@ -1743,18 +1258,6 @@ item.tc:minecartAEM7.name=EMD "AEM-7"
 
 item.tc:minecartB_BEL.name=CEE B-BEL (2000)
 
-
-entity.tc.EF1.name=GE-MILW EF-1
-entity.tc.EF1B.name=GE-MILW EF-1B
-entity.tc.EP1A.name=GE-MILW EP-1A
-
-entity.tc.GM6C.name=EMD GM6C
-
-entity.tc.JT7.name=CEE JT-7 "Pignose"
-
-entity.tc.AEM7.name=EMD "AEM-7"
-
-entity.tc.B-BEL.name=CEE B-BEL (2000)
 --------------------------------------------------------
 
 item.tc:minecartRoundHopper.name=Round Covered Hopper
@@ -1830,7 +1333,6 @@ item.tc:minecartNATX30600.name=NATX 30,600 Gallon Tank Car
 item.tc:minecartgatc10000.name=GATC 10,000 Gallon Tank Car
 item.tc:minecartDUPX39200.name=DUPX 39,200 Gallon Tank Car
 
-
 item.tc:minecartCoffinCar.name=Early Coffin Car
 item.tc:minecartSkeletonLogCar.name=45' Skeleton Log Car
 item.tc:minecartEarlyFlat.name=Early Flatcar
@@ -1846,11 +1348,6 @@ item.tc:minecartIngotPig.name=Molten Ingot "Pig"
 item.tc:minecartSteelSlabFlat.name=15' Steel Slab Flat
 item.tc:minecartEvansCoilCar.name=Evans Coil Car
 
-
-entity.tc.IngotPig.name=Molten Ingot Pig
-entity.tc.SteelSlabFlat.name=15' Steel Slab Flat
-entity.tc.EvansCoilCar.name=Evans Coil Car
-
 --------------------------------------------------------
 
 item.tc:minecartPCH120Commute.name=PCH-120 Commute
@@ -1860,11 +1357,6 @@ item.tc:minecartPCH100HCoach.name=PCH-100H Coach
 
 item.tc:minecartPCH130Commute2.name=PCH-130 Commute-2
 item.tc:minecartPCH130Car2.name=PCH-130 Coach
-
-entity.tc.PCH-120 Commute.name=PCH-120 Commute
-entity.tc.PCH-120 Commute Car.name=PCH-120 Commute Coach
-entity.tc.PCH-100H.name=PCH-100H
-entity.tc.PCH-100H Coach.name=PCH-100H Coach
 
 item.tc:minecartPS85Baggage.name=Pullman Standard 85' Baggage
 item.tc:minecartPSDamnitAnotherDiner.name=Pullman Standard Center-Kitchen Dining Car 2
@@ -1994,133 +1486,6 @@ item.tc:minecartLNCoach2551Series.name=L&N 2551 Series Coach
 
 item.tc:minecartMON_lightweightCoach.name=Monon 21 Series Lightweight Coach
 
-entity.tc.Freight PS 85 Baggage.name=Pullman Standard 85' Baggage
-entity.tc.PS 5-6-5 Sleeper.name=Pullman Standard 10-6 Sleeper (Center Bedroom)
-entity.tc.PS 5-6-5 Sleeper DRGW Edition.name=Pullman Standard DRGW 6-5-5 Sleeper
-entity.tc.PS 52 Seat Coach.name=Pullman Standard 52 Seat Coach
-entity.tc.PS Combine Coach.name=Pullman Standard Combine Passenger-Baggage
-entity.tc.PS Center Diner 2.name=Pullman Standard Center-Kitchen Dining Car 2
-entity.tc.PSRPO.name=Pullman Standard RPO(30')
-entity.tc.PS Lunch Counter-Lounge.name=Pullman Standard Lunch Counter-Lounge
-entity.tc.PS 30 Seat Parlor.name=Pullman Standard C&O 30 Seat Parlor
-
-entity.tc.D&RGW RPO 620 Series.name=DRGW 620 Series RPO(30')
-entity.tc.D&RGW RPO 630 Series.name=DRGW 630 Series RPO(30')
-entity.tc.D&RGW Baggage 700 Series.name=DRGW 700 Series Baggage
-entity.tc.D&RGW Baggage 740 Series.name=DRGW 740 Series Baggage
-entity.tc.D&RGW Coach 1000 Series.name=DRGW 1000 Series Coach
-entity.tc.D&RGW Coach 1005 Series.name=DRGW 1005 Series Coach
-
-entity.tc.Freight PS 73 Baggage.name=Pullman Standard PM 73' Baggage
-entity.tc.PS Center Diner.name=Pullman Standard PM Center-Kitchen Dining Car
-entity.tc.PSPMRPO.name=Pullman Standard PM RPO(15')
-entity.tc.PS 54 Seat Coach-Lounge.name=Pullman Standard PM 54 Seat Coach-Lounge (1946 version)
-entity.tc.PS 54 Seat Coach-Lounge 1950.name=Pullman Standard PM 54 Seat Coach-Lounge (1950 version)
-entity.tc.PS 58 Seat Coach-Observation.name=Pullman Standard PM 58 Seat Coach-Observation
-
-entity.tc.PS B&M 56 Seat Coach.name=Pullman Standard B&M 56 Seat Coach-Lounge
-entity.tc.PS B&M Combine.name=Pullman Standard B&M Combine Passenger-Baggage
-entity.tc.PS B&M Diner_Lounge.name=Pullman Standard B&M Diner-Lounge
-
-entity.tc.AC&F GN RPO (30' mail).name=American Car & Foundry GN RPO (30' mail section)
-entity.tc.AC&F GN 60 Seat Coach.name=American Car & Foundry GN 60 Seat Coach
-entity.tc.AC&F GN Diner-Observation.name=American Car & Foundry GN Diner-Observation
-entity.tc.AC&F GN 28 Seat Coach-Dinette.name=American Car & Foundry GN 28 Seat Coach-Dinette
-entity.tc.AC&F GN 1DR-17 Seat Parlor-Observation.name=American Car & Foundry GN 1DR-17 Seat Parlor-Observation
-entity.tc.PS GN RPO (30' mail).name=Pullman Standard GN RPO (30' mail section)
-
-entity.tc.OB 84 Seat Coach.name=Osgood Bradley 84 Seat Coach
-entity.tc.OB 92 Seat Coach.name=Osgood Bradley 92 Seat Coach
-entity.tc.OB NH Grill Car.name=Osgood Bradley NH Grill Car
-entity.tc.OB NH Commuter Lounge 5107.name=Osgood Bradley NH Commuter Lounge 5107
-entity.tc.OB Baggage-52 Seat Divided Coach.name=Osgood Bradley Baggage-52 Seat Divided Coach
-entity.tc.OB 76 Seat Divided Coach.name=Osgood Bradley 76 Seat Divided Coach
-entity.tc.OB LV 82/92 Seat Coach.name=Osgood Bradley LV 82/92 Seat Coach
-entity.tc.OB RPO (15' mail).name=Osgood Bradley RPO(15')
-entity.tc.OB 24 Seat Coach-Dinette.name=Osgood Bradley 24 Seat Coach-Dinette
-entity.tc.OB BAR 52 Seat Coach-Dinette.name=Osgood Bradley BAR 52 Seat Coach-Dinette
-
-entity.tc.PS CNW 56 Seat Coach.name=Pullman Standard CNW 56 Seat Coach-Lounge
-entity.tc.PS CNW 48 Seat Coach-Lounge.name=Pullman Standard CNW 48 Seat Coach-Nurse Room-Lounge
-entity.tc.PS CNW 20 Seat Coach-Lounge.name=Pullman Standard CNW 20 Seat Coach-Lounge
-entity.tc.PS CNW 36 Seat Coach-Dinette.name=Pullman Standard CNW 36 Seat Coach-Dinette
-entity.tc.PS CNW 56 Seat Diner.name=Pullman Standard CNW 56 Seat Diner
-entity.tc.PS CNW 48 Seat Diner.name=Pullman Standard CNW 48 Seat Diner
-entity.tc.PS CNW 1DR-22 Seat Parlor.name=Pullman Standard CNW 1 Drawing Room-22 Seat Parlor
-entity.tc.PS CNW 16-1-3 Sleeper.name=Pullman Standard CNW 16-1-3 Sleeper
-entity.tc.PS CNW 12 Seat Parlor-Observation.name=Pullman Standard CNW 12 Seat Parlor-Observation
-entity.tc.PS CNW RPO(15').name=Pullman Standard CNW RPO(15')
-entity.tc.PS CNW RPO(60').name=Pullman Standard RPO(60')
-entity.tc.PS CNW Baggage-LC-Lounge.name=Pullman Standard CNW Baggage-Lunch Counter-Lounge
-entity.tc.PS CNW RPO(15')-Baggage-LC-Lounge.name=Pullman Standard CNW RPO(15')-Baggage-Lunch Counter-Lounge
-entity.tc.PS CNW Baggage-LC-Diner.name=Pullman Standard CNW Baggage-Lunch Counter-Diner
-entity.tc.PS CNW 20 Seat Coach-Lounge (1959).name=Pullman Standard CNW 20 Seat Coach-Lounge (1959 version)
-entity.tc.PS CNW Commuter Lounge.name=Pullman Standard CNW Commuter Lounge
-entity.tc.PS CNW 27 Seat Parlor-Observation.name=Pullman Standard CNW 27 Seat Parlor-Observation
-
-entity.tc.AC&F SP 98 Seat Coach.name=AC&F SP 98 Seat Coach
-
-entity.tc.AC&F UP RPO(60').name=American Car & Foundry RPO(60')
-entity.tc.Budd Dome-54 Seat Coach.name=Budd Dome-54 Seat Coach
-
-entity.tc.Budd RDG 56 Seat Coach-Lounge.name=Budd RDG 56 Seat Coach-Lounge
-entity.tc.Budd RDG Diner-Lounge.name=Budd RDG Diner-Lounge
-entity.tc.Budd RDG 56 Seat Coach-Observation.name=Budd RDG 56 Seat Coach-Observation
-
-entity.tc.Budd CRIP 52 Seat Coach.name=Budd and Pullman Standard CRIP 52 Seat Coach
-
-entity.tc.Budd NYC 52 Seat Coach.name=Budd NYC 52 Seat Coach
-
-entity.tc.Budd CB&Q 52 Seat Coach.name=Budd CB&Q 52 Seat Coach
-entity.tc.Budd Dome-46 Seat Coach.name=Budd Dome-46 Seat Coach
-entity.tc.Budd CB&Q Dome-50 Seat Coach.name=Budd CB&Q Dome-50 Seat Coach
-entity.tc.Budd Prewar Baggage.name=Budd Prewar Baggage
-
-entity.tc.Budd ATSF 52 Seat Coach.name=Budd ATSF 52 Seat Coach
-entity.tc.Budd ATSF 48 Seat Coach.name=Budd ATSF 48 Seat Coach (news butcher stand)
-entity.tc.Budd ATSF 50 Seat Coach-Observation.name=Budd ATSF 50 Seat Coach-Observation
-entity.tc.Budd ATSF 34 Seat Parlor-Observation.name=Budd ATSF 34 Seat Parlor-Observation
-entity.tc.Budd ATSF 58 Seat Coach-Observation.name=Budd ATSF 58 Seat Coach-Observation
-entity.tc.PS ATSF 50 Seat Coach-Observation.name=Pullman Standard ATSF 50 Seat Coach-Observation
-
-entity.tc.PS C&EI RPO(15')-Baggage-LC-Lounge.name=Pullman Standard C&EI RPO(15')-Baggage-Lunch Counter-Lounge
-entity.tc.PS C&EI RPO(15')-Baggage-38 Seat Coach.name=Pullman Standard C&EI RPO(15')-Baggage-38 Seat Coach
-entity.tc.PS C&EI 60 Seat Coach.name=Pullman Standard C&EI 60 Seat Coach
-entity.tc.PS C&EI Diner.name=Pullman Standard C&EI Diner
-entity.tc.PS C&EI 1DR-28 Seat Parlor-Observation.name=Pullman Standard C&EI 1DR-28 Seat Parlor-Observation
-
-entity.tc.OB HW NH 5570-5589 Series Baggage.name=Osgood Bradley NH 5570-5589 Series Baggage
-
-entity.tc.Budd CN 68 Seat Coach-Observation.name=Budd CN 68 Seat Coach-Observation
-entity.tc.Budd CN 72 or 54 Seat Coach-Lounge.name=Budd CN 72 or 54 Seat Coach
-entity.tc.Budd CN Diner-Lounge.name=Budd CN Diner-Lounge
-entity.tc.Budd CN 39 Seat Parlor-Observation.name=Budd CN 39 Seat Parlor-Observation
-entity.tc.Budd CN 59 Seat Coach-Observation.name=Budd CN 59 Seat Coach-Observation
-entity.tc.NSC CN Baggage.name=National Steel Car 76' Baggage
-
-entity.tc.PS SOU Baggage.name=Pullman Standard SOU Baggage
-entity.tc.PS SOU RPO (30' mail).name=Pullman Standard SOU RPO (30' mail section)
-
-entity.tc.PRECO Pendulum Coach.name=Pacific Railway Equipment Company Pendulum Coach
-
-entity.tc.PS FNCC Baggage-Dinette.name=Pullman Standard FMSR Baggage-Dinette
-
-entity.tc.NYC Prewar 56 Seat Coach.name=NYC Prewar 56 Seat Coach
-
-entity.tc.MILW Prewar Baggage.name=Milwaukee Road Prewar Baggage
-entity.tc.MILW 1935 Baggage-Dinette.name=Milwaukee Road 1935 Baggage-Dinette
-entity.tc.MILW 1935 Tap-Dinette.name=Milwaukee Road 1935 Tap-Dinette
-entity.tc.MILW 1935 48 Seat Coach.name=Milwaukee Road 1935 48 Seat Coach
-entity.tc.MILW 1935 22 Seat Parlor.name=Milwaukee Road 1935 22 Seat Parlor
-entity.tc.MILW 1935 21 Seat Parlor Observation.name=Milwaukee Road 1935 21 Seat Parlor Observation
-entity.tc.MILW 1935 44 Seat Coach Observation.name=Milwaukee Road 1935 44 Seat Coach Observation
-entity.tc.MILW 1935 Dormitory-56 Seat Coach.name=Milwaukee Road 1935 Dormitory-56 Seat Coach
-
-entity.tc.AC&F L&N and KCS 60 Seat Divided Coach.name=American Car & Foundry L&N and KCS 60 Seat Divided Coach
-entity.tc.L&N Coach 2551 Series.name=L&N 2551 Series Coach
-
-entity.tc.Monon 21 Series Lightweight Coach.name=Monon 21 Series Lightweight Coach
-
 item.tc:minecartAmfleet.name=Amfleet 1 Coach
 item.tc:minecartAmfleet2.name=Amfleet 2 Coach
 item.tc:minecartAmfleetCab.name=Amfleet Cab Car
@@ -2128,15 +1493,6 @@ item.tc:minecartAmCafe.name=Amfleet Cafe Car
 item.tc:minecartAmCafe2.name=Amfleet 2 Cafe Car
 item.tc:minecartPEcooch.name=Polar Express Coach
 item.tc:minecartPEobserve.name=Polar Express Observation
-
-
-entity.tc.Amfleet.name=Amfleet 1 Coach
-entity.tc.Amfleet2.name=Amfleet 2 Coach
-entity.tc.AmfleetCab.name=Amfleet Cab Car
-entity.tc.AmCafe.name=Amfleet Cafe Car
-entity.tc.AmCafe2.name=Amfleet 2 Cafe Car
-entity.tc.PEcoach.name=Polar Express Coach
-entity.tc.PEobserve.name=Polar Express Observation
 
 --------------------------------------------------------
 
@@ -2150,24 +1506,11 @@ item.tc:minecartCA11.name=ICC CA11 Baywindow Caboose
 item.tc:minecartWPShops600Series.name=WP Shops 600 series Caboose
 item.tc:minecartCDCScaboose.name=CDCS Caboose
 
-entity.tc.WVcaboose.name=International Car Co. Wide Vision Caboose
-entity.tc.HBC1C.name=KSFI HBC1-C Caboose
-entity.tc.HBC1B.name=KSFI HBC1-B Caboose
-entity.tc.DRGWCaboose.name=DRGW 01400 Series Caboose
-entity.tc.ICC_Bobber.name=ICC Bobber Wide Vision Caboose
-entity.tc.ICCBaywindowWP.name=ICC Baywindow Caboose (WP Config)
-entity.tc.CA11.name=ICC CA11 Baywindow Caboose
-entity.tc.WPShops600Series.name=WP Shops 600 series Caboose
-entity.tc.CDCScaboose.name=CDCS Caboose
-
 --------------------------------------------------------
 item.tc:minecartW_A11.name=SEC W-A11
 item.tc:minecartW_A55.name=SEC W-A55
 item.tc:minecartW_A55_Combine.name=SEC W-A55 Combine
 
-entity.tc.SEC W-A11.name=SEC W-A11
-entity.tc.SEC W-A55.name=SEC W-A55
-entity.tc.SEC W-A55 Combine.name=SEC W-A55 Combine
 --------------------------------------------------------
 
 item.tc:minecartBigMeme.name=Leslie A425 Trailer
@@ -2188,26 +1531,7 @@ item.tc:minecartCQ310PA.name=CQ-310 (Trailing)
 item.tc:minecartKawasakiLRV.name=Kawasaki LRV
 item.tc:minecartPCC.name=PCC Streetcar
 
-entity.tc.BigMeme.name=Leslie A425 Trailer
-entity.tc.Payload.name=TF2 Payload Cart
-entity.tc.Thanos.name=Thanos Cart
-entity.tc.TGVmobile.name=TGV Highrail Van
-entity.tc.HHgregg.name=HHGregg600
-entity.tc.NXTrack Geometry Car.name=NXTrack Geometry Car
-entity.tc.aipkitExplorer.name=Aipkit Explorer
-entity.tc.Aipkit Explorer-II.name=Explorer-II
-entity.tc.Highrail Truck.name=Generic Highrail Truck
-entity.tc.Highrail Van.name=Generic Highrail Van
-entity.tc.Hustler.name=Hustler Switcher
-entity.tc.FRED.name=Flashing Rear End Device (FRED)
-
-entity.tc.CQ310PO.name=CQ-310 (Powered)
-entity.tc.CQ310PA.name=CQ-310 (Trailing)
-entity.tc.KawasakiLRV.name=Kawasaki LRV
-entity.tc.PCC.name=PCC Streetcar
-
 item.tc:minecartClass74.name=Class 74
-entity.tc.Class74.name=Class 74
 
 item.tc:minecartTwoBil.name=2-Bil Engine
 item.tc:minecartTwoBilTail.name=2-Bil Tail
@@ -2219,16 +1543,4 @@ item.tc:minecartFourCorTail.name=4-Cor Tail
 item.tc:minecartLocoNS3700Class.name=NS 3700 Class
 item.tc:minecartTenderNS3700.name=NS 3700 Tender
 
-entity.tc.TwoBil.name=2-Bil Engine
-entity.tc.TwoBilTail.name=2-Bil Tail
-entity.tc.FourCor.name=4-Cor Engine
-entity.tc.FourCorTrailerComposite.name=4-Cor Trailer Composite
-entity.tc.FourCorTrailerSecond.name=4-Cor Trailer Second
-entity.tc.FourBuf.name=4-Buf
-entity.tc.FourCorTail.name=4-Cor Tail
-entity.tc.Tender NS 3700.name=NS 3700 Tender
-entity.tc.Loco Steam NS 3700 Class.name=NS 3700 Class
-
-
 item.tc:minecartWorkdayHyrail.name=1980 Pine Workday Hi-rail Truck
-entity.tc.WorkdayHyrail.name=1980 Pine Workday Hi-rail Truck
