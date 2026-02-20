@@ -12,8 +12,8 @@ public enum CargoItemFilter
     ICE_MATERIAL,
     AGGREGATE,
     ORE,
+    REDSTONE,
     OPAQUE_BLOCKS,
     INGOT,
-    FOOD,
-
+    FOOD;
 }

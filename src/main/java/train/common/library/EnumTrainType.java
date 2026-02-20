@@ -6,6 +6,7 @@ public enum EnumTrainType
     Diesel("Diesel", "L"),
     Electric("Electric", "L"),
     Hydrogen("Hydrogen", "L"),
+
     Boxcar("Boxcar", "B"),
     Highcube("Highcube", "X"),
     HighcubeBoxcar("Highcube Boxcar", "X"),
@@ -38,6 +39,7 @@ public enum EnumTrainType
     Caboose("Caboose", "N"),
     Wellcar("Wellcar", "Q"),
     Special("Special", "O"),
+    Tender("Tender", "0"),
     Other("Other", "O");
 
     public final String TrainType;

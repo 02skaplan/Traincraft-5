@@ -202,6 +202,8 @@ public class ItemHandler
 					return oreBlocks(itemstack);
 				case INGOT:
 					return ingotItems(itemstack);
+				case REDSTONE:
+					return OreDictionary.getOres("dustRedstone").contains(itemstack);
 				case FOOD:
 					return itemstack.getItem() instanceof ItemFood;
 				default:
