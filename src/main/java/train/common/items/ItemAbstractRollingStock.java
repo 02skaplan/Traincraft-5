@@ -204,6 +204,9 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                 case GRAIN:
                     par3List.add("\u00a77" + "Cargo: wheat, seeds");
                     break;
+                case ASSEMBLED_TRAIN_TRACK:
+                    par3List.add("\u00a77" + "Cargo: only rails");
+                    break;
             }
 
         }
