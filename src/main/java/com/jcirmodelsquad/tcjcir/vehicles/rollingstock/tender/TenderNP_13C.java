@@ -10,7 +10,7 @@ import train.common.library.EnumTrains;
 public class TenderNP_13C extends Tender  {
 
 	public TenderNP_13C(World world) {
-		super(world, FluidRegistry.WATER, 0, EnumTrains.NP_13C_Tender.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world,  LiquidManager.WATER_FILTER);
 		
 	}
 	

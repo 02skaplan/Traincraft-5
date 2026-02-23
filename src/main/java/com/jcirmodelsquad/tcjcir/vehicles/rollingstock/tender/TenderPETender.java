@@ -10,7 +10,7 @@ import train.common.library.EnumTrains;
 public class TenderPETender extends Tender  {
 
 	public TenderPETender(World world) {
-		super(world, FluidRegistry.WATER, 0, EnumTrains.PETender.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world,  LiquidManager.WATER_FILTER);
 		
 	}
 

@@ -18,6 +18,8 @@ import train.common.entity.rollingStock.EntityBUnitEMDF3;
 import train.common.entity.rollingStock.EntityBUnitEMDF7;
 import train.common.library.GuiIDs;
 
+import javax.annotation.Nullable;
+
 public abstract class Tender extends Freight implements IFluidHandler, IInventory
 {
 
@@ -42,7 +44,7 @@ public abstract class Tender extends Freight implements IFluidHandler, IInventor
 		this(world, filter);
 	}
 
-	public Tender(World world, FluidStack filter)
+	public Tender(World world, @Nullable FluidStack filter)
 	{
 		super(world);
 		this.maxTank = trainSpec.getTankCapacity();

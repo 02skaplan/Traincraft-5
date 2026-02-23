@@ -11,7 +11,7 @@ import train.common.library.EnumTrains;
 public class HotTubTender extends Tender  {
 
     public HotTubTender(World world) {
-        super(world, FluidRegistry.WATER, 0, EnumTrains.HotTubTender.getTankCapacity(), LiquidManager.WATER_FILTER);
+        super(world,  LiquidManager.WATER_FILTER);
        
         InsertTexture(0, "FMSR 500", LockoutGroup.FMSR);
         InsertTexture(1, "FMSR 511", LockoutGroup.FMSR);

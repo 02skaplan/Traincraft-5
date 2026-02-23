@@ -10,7 +10,7 @@ import train.common.library.EnumTrains;
 public class TenderOnion extends Tender  {
 
 	public TenderOnion(World world) {
-		super(world, FluidRegistry.WATER, 0, EnumTrains.OnionTender.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world,  LiquidManager.WATER_FILTER);
 		
 	}
 

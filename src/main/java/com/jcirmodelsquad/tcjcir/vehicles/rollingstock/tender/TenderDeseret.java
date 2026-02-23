@@ -10,7 +10,7 @@ import train.common.library.EnumTrains;
 public class TenderDeseret extends Tender  {
 
     public TenderDeseret(World world) {
-        super(world, FluidRegistry.WATER, 0, EnumTrains.TenderDeseret.getTankCapacity(), LiquidManager.WATER_FILTER);
+        super(world,  LiquidManager.WATER_FILTER);
        
     }
 

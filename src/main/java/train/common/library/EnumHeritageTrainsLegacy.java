@@ -130,12 +130,12 @@ public enum EnumHeritageTrainsLegacy implements ITrainRecord
     /**
      * Tanks
      **/
-    tankWagon_DB("Tank Wagon DB", EntityTankWagon_DB.class, ItemIDs.minecartTankWagon_DB.item, "tankcar", 0, 0, 6, 0, 0, 0, 0, 0, 50000, (TraincraftUtil.getBytesFromColors(new String[]{"Blue", "Green"})), 18, 0),
-    tankThreeDome("Tank Wagon Three Dome", EntityTankWagonThreeDome.class, ItemIDs.minecartTankWagonThreeDome.item, "tankcar", 0, 0, 7.5, 0, 0, 0, 0, 0, 90000, (TraincraftUtil.getBytesFromColors(new String[]{"Green", "White"})), 18, 0),
-    tankWagonUS("Tank Wagon US", EntityTankWagonUS.class, ItemIDs.minecartTankWagonUS.item, "tankcar", 0, 0, 6, 0, 0, 0, 0, 0, 70000, (TraincraftUtil.getBytesFromColors(new String[]{"Black", "Grey", "Yellow", "White", "LightGrey", "Green", "Blue", "Lime", "Orange", "Cyan", "Pink", "Purple", "LightBlue", "Magenta","Red","Brown"})), 18, 0),
-    tankWagonGrey("Tank Wagon Grey", EntityTankWagon2.class, ItemIDs.minecartTankWagon2.item, "tankcar", 0, 0, 3, 0, 0, 0, 0, 0, 40000, (TraincraftUtil.getBytesFromColors(new String[]{"Blue", "White", "Orange", "Black"})), 18, 0),
-    tankCartLava("Tank Lava", EntityTankLava.class, ItemIDs.minecartWatertransp.item, "tankcar", 0, 0, 5, 0, 0, 0, 0, 0, 30000, (TraincraftUtil.getBytesFromColors(new String[]{"Empty", "Full"})), 18, 0),
-    tankWagonYellow("Tank Wagon Yellow", EntityTankWagon.class, ItemIDs.minecartTankWagon.item, "tankcar", 0, 0, 6, 0, 0, 0, 0, 0, 40000, null, 18, 0),
+    //tankWagon_DB("Tank Wagon DB", EntityTankWagon_DB.class, ItemIDs.minecartTankWagon_DB.item, "tankcar", 0, 0, 6, 0, 0, 0, 0, 0, 50000, (TraincraftUtil.getBytesFromColors(new String[]{"Blue", "Green"})), 18, 0),
+    //tankThreeDome("Tank Wagon Three Dome", EntityTankWagonThreeDome.class, ItemIDs.minecartTankWagonThreeDome.item, "tankcar", 0, 0, 7.5, 0, 0, 0, 0, 0, 90000, (TraincraftUtil.getBytesFromColors(new String[]{"Green", "White"})), 18, 0),
+    //tankWagonUS("Tank Wagon US", EntityTankWagonUS.class, ItemIDs.minecartTankWagonUS.item, "tankcar", 0, 0, 6, 0, 0, 0, 0, 0, 70000, (TraincraftUtil.getBytesFromColors(new String[]{"Black", "Grey", "Yellow", "White", "LightGrey", "Green", "Blue", "Lime", "Orange", "Cyan", "Pink", "Purple", "LightBlue", "Magenta","Red","Brown"})), 18, 0),
+    //tankWagonGrey("Tank Wagon Grey", EntityTankWagon2.class, ItemIDs.minecartTankWagon2.item, "tankcar", 0, 0, 3, 0, 0, 0, 0, 0, 40000, (TraincraftUtil.getBytesFromColors(new String[]{"Blue", "White", "Orange", "Black"})), 18, 0),
+    //tankCartLava("Tank Lava", EntityTankLava.class, ItemIDs.minecartWatertransp.item, "tankcar", 0, 0, 5, 0, 0, 0, 0, 0, 30000, (TraincraftUtil.getBytesFromColors(new String[]{"Empty", "Full"})), 18, 0),
+    //tankWagonYellow("Tank Wagon Yellow", EntityTankWagon.class, ItemIDs.minecartTankWagon.item, "tankcar", 0, 0, 6, 0, 0, 0, 0, 0, 40000, null, 18, 0),
 
     /**
      * Tenders

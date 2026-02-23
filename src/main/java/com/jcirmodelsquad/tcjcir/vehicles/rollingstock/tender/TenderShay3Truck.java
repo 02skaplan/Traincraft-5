@@ -10,7 +10,7 @@ import train.common.library.EnumTrains;
 public class TenderShay3Truck extends Tender  {
 
 	public TenderShay3Truck(World world) {
-		super(world, FluidRegistry.WATER, 0, EnumTrains.Shay3TruckTender.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world,  LiquidManager.WATER_FILTER);
 		
 	}
 

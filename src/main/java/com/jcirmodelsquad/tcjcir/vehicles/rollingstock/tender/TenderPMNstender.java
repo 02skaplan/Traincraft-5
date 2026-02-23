@@ -10,7 +10,7 @@ import train.common.library.EnumTrains;
 public class TenderPMNstender extends Tender  {
 
     public TenderPMNstender(World world) {
-        super(world, FluidRegistry.WATER, 0, EnumTrains.PMNstender.getTankCapacity(), LiquidManager.WATER_FILTER);
+        super(world,  LiquidManager.WATER_FILTER);
        
         InsertTexture(0, "Pere Marquette");
         InsertTexture(1, "C&O Early");

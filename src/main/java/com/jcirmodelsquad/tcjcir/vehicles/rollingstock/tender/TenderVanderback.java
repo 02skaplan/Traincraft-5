@@ -11,7 +11,7 @@ import train.common.library.EnumTrains;
 public class TenderVanderback extends Tender  {
 
 	public TenderVanderback(World world) {
-		super(world, FluidRegistry.WATER, 0, EnumTrains.VanderbackTender.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world,  LiquidManager.WATER_FILTER);
 		
 		InsertTexture(0, "WRX", LockoutGroup.BIDA);
 	}

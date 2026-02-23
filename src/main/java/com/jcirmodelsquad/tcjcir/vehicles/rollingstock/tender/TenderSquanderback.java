@@ -11,7 +11,7 @@ import train.common.library.EnumTrains;
 public class TenderSquanderback extends Tender  {
 
 	public TenderSquanderback(World world) {
-		super(world, FluidRegistry.WATER, 0, EnumTrains.SquanderbackTender.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world,  LiquidManager.WATER_FILTER);
 		
 		InsertTexture(0, "WRX (Logo)", LockoutGroup.BIDA);
 		InsertTexture(1, "WRX", LockoutGroup.BIDA);

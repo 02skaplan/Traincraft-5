@@ -10,7 +10,7 @@ import train.common.library.EnumTrains;
 public class TenderSkookTender extends Tender  {
 
     public TenderSkookTender(World world) {
-        super(world, FluidRegistry.WATER, 0, EnumTrains.SkookTender.getTankCapacity(), LiquidManager.WATER_FILTER);
+        super(world,  LiquidManager.WATER_FILTER);
        
     }
 

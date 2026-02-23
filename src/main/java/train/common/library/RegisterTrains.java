@@ -9,6 +9,7 @@ import train.common.entity.rollingStock.passenger.*;
 import train.common.entity.rollingStock.passenger.baggagecar.EntityFreightBaggageMILW;
 import train.common.entity.rollingStock.passenger.baggagecar.EntityFreightGS4_Baggage;
 import train.common.entity.rollingStock.passenger.baggagecar.EntityFreightHeavyweightBaggage;
+import train.common.entity.rollingStock.tanker.*;
 import train.common.entity.rollingStock.workcart.*;
 import train.common.library.register.ITrainRecord;
 import train.common.library.register.TrainRecord;
@@ -465,7 +466,7 @@ public class RegisterTrains
                                put(ItemIDs.minecartFlatCartRail_DB.item,
                                         new TrainRecord("Freight Flat Cart Rails DB", EntityFlatCarRails_DB.class, ItemIDs.minecartFlatCartRail_DB.item, "freight", 5,
                                                 new String[] {"Red", "Green", "Cyan", "Yellow"},
-                                        18).setCargoCapacity(36).setAdditionalTooltip(new String[]{"Cargo: only rails"}));
+                                        18).setCargoCapacity(36));
 
 
                                put(ItemIDs.minecartASTFAutorack.item,
@@ -557,6 +558,31 @@ public class RegisterTrains
                                     new TrainRecord("Freight Heavyweight Baggage", EntityFreightHeavyweightBaggage.class, ItemIDs.minecartHeavyweightFreight.item, "freight", 3,
                                             new String[]{"Red", "Grey"},
                                             18).setCargoCapacity(36).setAdditionalTooltip(new String[]{"Cargo: any"}));
+
+                            put(ItemIDs.minecartTankWagon_DB.item,
+                                    new TrainRecord("Tank Wagon DB", EntityTankWagon_DB.class, ItemIDs.minecartTankWagon_DB.item, EnumTrainType.Tankcar, 6,
+                                            new String[]{"Blue", "Green"},
+                                            18).setTankCapacity(50000));
+                            put(ItemIDs.minecartTankWagonThreeDome.item,
+                                    new TrainRecord("Tank Wagon Three Dome", EntityTankWagonThreeDome.class, ItemIDs.minecartTankWagonThreeDome.item, EnumTrainType.Tankcar, 7.5,
+                                            new String[]{"Green", "White"},
+                                            18).setTankCapacity(90000));
+                            put(ItemIDs.minecartTankWagonUS.item,
+                                    new TrainRecord("Tank Wagon US", EntityTankWagonUS.class, ItemIDs.minecartTankWagonUS.item, EnumTrainType.Tankcar, 6,
+                                            new String[]{"Black", "Grey", "Yellow", "White", "LightGrey", "Green", "Blue", "Lime", "Orange", "Cyan", "Pink", "Purple", "LightBlue", "Magenta","Red","Brown"},
+                                            18).setTankCapacity(70000));
+                            put(ItemIDs.minecartTankWagon2.item,
+                                    new TrainRecord("Tank Wagon Grey", EntityTankWagon2.class, ItemIDs.minecartTankWagon2.item, EnumTrainType.Tankcar, 3,
+                                            new String[]{"Blue", "White", "Orange", "Black"},
+                                            18).setTankCapacity(40000));
+                            put(ItemIDs.minecartWatertransp.item,
+                                    new TrainRecord("Tank Lava", EntityTankLava.class, ItemIDs.minecartWatertransp.item, EnumTrainType.Tankcar, 5,
+                                            new String[]{"Empty", "Full"},
+                                            18).setTankCapacity(30000));
+                            put(ItemIDs.minecartTankWagon.item,
+                                    new TrainRecord("Tank Wagon Yellow", EntityTankWagon.class, ItemIDs.minecartTankWagon.item, EnumTrainType.Tankcar, 6,
+                                            new String[]{"Black"},
+                                            18).setTankCapacity(40000));
 
                         }}, Traincraft.instance
 

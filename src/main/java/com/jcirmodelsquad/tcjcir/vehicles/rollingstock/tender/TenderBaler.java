@@ -10,7 +10,7 @@ import train.common.library.EnumTrains;
 public class TenderBaler extends Tender  {
 
     public TenderBaler(World world) {
-        super(world, FluidRegistry.WATER, 0, EnumTrains.WCPBaler.getTankCapacity(), LiquidManager.WATER_FILTER);
+        super(world,  LiquidManager.WATER_FILTER);
        
     }
 

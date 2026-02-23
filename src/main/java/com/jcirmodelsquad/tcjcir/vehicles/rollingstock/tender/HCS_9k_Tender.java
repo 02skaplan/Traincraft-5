@@ -10,7 +10,7 @@ import train.common.library.EnumTrains;
 public class HCS_9k_Tender extends Tender  {
 
     public HCS_9k_Tender(World world) {
-        super(world, FluidRegistry.WATER, 0, EnumTrains.HCS_9k_Tender.getTankCapacity(), LiquidManager.WATER_FILTER);
+        super(world,  LiquidManager.WATER_FILTER);
        
         InsertTexture(0, "Blank");
         InsertTexture(1, "SPMW");

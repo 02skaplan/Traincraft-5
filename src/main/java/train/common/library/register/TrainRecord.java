@@ -2,6 +2,7 @@ package train.common.library.register;
 
 import net.minecraft.item.Item;
 import train.common.core.util.TraincraftUtil;
+import train.common.enums.InventorySize;
 import train.common.library.EnumTrainType;
 
 public class TrainRecord implements ITrainRecord
@@ -244,7 +245,44 @@ public class TrainRecord implements ITrainRecord
     public TrainRecord setAdditionalTooltip(String[] additionalTooltip) { this.additionalTooltip = additionalTooltip; return this; }
 
     public int getCargoCapacity() { return cargoCapacity; }
-    public TrainRecord setCargoCapacity(int capacity) { this.cargoCapacity = capacity; return this; }
+
+    @Deprecated
+    /*
+        USE setCargoCapacity(InventorySize inventorySize)
+     */
+    public TrainRecord setCargoCapacity(int capacity)
+    {
+        this.cargoCapacity = capacity; return this;
+    }
+    public TrainRecord setCargoCapacity(InventorySize inventorySize)
+    {
+        switch (inventorySize)
+        {
+            case STYLE_PROFILE_0x0:
+                cargoCapacity = 0;
+                break;
+            case STYLE_PROFILE_1x9:
+                cargoCapacity = 9;
+                break;
+            case STYLE_PROFILE_2x9:
+                cargoCapacity = 18;
+                break;
+            case STYLE_PROFILE_3x9:
+                cargoCapacity = 27;
+                break;
+            case STYLE_PROFILE_4x9:
+                cargoCapacity = 36;
+                break;
+            case STYLE_PROFILE_5x9:
+                cargoCapacity = 45;
+                break;
+            case STYLE_PROFILE_6x9:
+                cargoCapacity = 54;
+                break;
+        }
+
+        return this;
+    }
 
     @Override
     public String name() { return this.entityClass.getName(); }

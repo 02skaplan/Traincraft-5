@@ -10,7 +10,7 @@ import train.common.library.EnumTrains;
 public class EntityTenderNS3700 extends Tender{
 
 	public EntityTenderNS3700(World world) {
-		super(world, FluidRegistry.WATER, 0, EnumTrains.tenderNS3700.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world,  LiquidManager.WATER_FILTER);
 
 		InsertTexture(0, "NS 3737");
 	}

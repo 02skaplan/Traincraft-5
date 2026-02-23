@@ -11,7 +11,7 @@ import train.common.library.EnumTrains;
 public class Tender10k extends Tender  {
 
     public Tender10k(World world) {
-        super(world, FluidRegistry.WATER, 0, EnumTrains.Tender10k.getTankCapacity(), LiquidManager.WATER_FILTER);
+        super(world,  LiquidManager.WATER_FILTER);
        
         InsertTexture(0, "Blank");
         InsertTexture(1, "Spoof");
