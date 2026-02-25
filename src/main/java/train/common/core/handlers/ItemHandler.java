@@ -203,7 +203,7 @@ public class ItemHandler
 				case INGOT:
 					return ingotItems(itemstack);
 				case REDSTONE:
-					return OreDictionary.getOres("dustRedstone").contains(itemstack);
+					return itemstack.getItem() instanceof ItemRedstone;
 				case FOOD:
 					return itemstack.getItem() instanceof ItemFood;
 				default:
