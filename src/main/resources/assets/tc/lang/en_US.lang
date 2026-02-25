@@ -181,7 +181,27 @@ menu.item.cz=Czech Republic
 menu.item.de=Germany
 menu.item.es=Spain
 menu.item.jp=Japan
+menu.item.se=Sweden
+menu.item.fi=Finland
+menu.item.at=Austria
 menu.item.moon=The Moon
+menu.item.ee=Estonia
+menu.item.bg=Bulgaria
+menu.item.hr=Croatia
+menu.item.cy=Cyprus`
+menu.item.gr=Greece
+menu.item.hu=Hungary
+menu.item.ie=Ireland
+menu.item.it=Italy
+menu.item.lv=Latvia
+menu.item.lt=Lithuania
+menu.item.lu=Luxembourg
+menu.item.mt=Malta
+menu.item.nl=Netherlands
+menu.item.pl=Poland
+menu.item.ro=Romania
+menu.item.sk=Slovakia
+menu.item.si=Slovenia
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
