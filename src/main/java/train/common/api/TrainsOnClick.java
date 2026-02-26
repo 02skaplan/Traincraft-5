@@ -7,6 +7,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.world.World;
 import train.common.core.network.PacketClientSideEvent;
+import train.common.items.ItemPaintbrushThing;
+import train.common.library.GuiIDs;
 import train.common.utils.InterchangeTransferReportGenerator;
 import train.common.Traincraft;
 import train.common.core.network.PacketParkingBrake;
@@ -14,6 +16,7 @@ import train.common.library.ItemIDs;
 
 public class TrainsOnClick
 {
+
 	public boolean onClickWithStake(AbstractTrains train, ItemStack itemstack, EntityPlayer playerEntity, World world) {
 		if (itemstack != null && itemstack.getItem() == ItemIDs.stake.item && !world.isRemote &&
 				(FMLCommonHandler.instance().getMinecraftServerInstance().isSinglePlayer() || !train.isLinked() || train.getTransportOwner().equals(playerEntity.getDisplayName()) || train.getTransportOwner().equals("") || train.getTransportOwner()==null)) {
@@ -137,6 +140,27 @@ public class TrainsOnClick
 			}
 
 			return false;
+		}
+
+		return false;
+	}
+
+	public boolean onClickWithPaintBrush(AbstractTrains entityRollingStock, ItemStack itemStack, EntityPlayer entityPlayer, World world)
+	{
+		if (itemStack.getItem() instanceof ItemPaintbrushThing && entityPlayer.isSneaking())
+		{
+			if (entityRollingStock.acceptedColors != null && !entityRollingStock.acceptedColors.isEmpty()) {
+				entityPlayer.openGui(Traincraft.instance, GuiIDs.PAINTBRUSH, entityPlayer.getEntityWorld(), entityRollingStock.getEntityId(), -1, (int) entityRollingStock.posZ);
+			} else if (entityRollingStock.acceptsOverlayTextures()) {
+				entityPlayer.openGui(Traincraft.instance, GuiIDs.OVERLAY_MENU, entityPlayer.getEntityWorld(), entityRollingStock.getEntityId(), -1, (int) entityPlayer.posZ);
+			}
+
+			if (entityRollingStock.acceptedColors != null && entityRollingStock.acceptedColors.isEmpty())
+			{
+				PostChatMessage(entityPlayer, "There are no other colors available.");
+			}
+
+			return true;
 		}
 
 		return false;
