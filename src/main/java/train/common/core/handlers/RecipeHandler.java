@@ -677,7 +677,7 @@ public class RecipeHandler extends AbstractRecipeHandler
 		addRecipeWithOreDic(new ItemStack(ItemIDs.sixWheelLightweightTruck.item, 2), "FSF", "WWW", "   ", 'S', ItemIDs.steel.item, 'F', new ItemStack(ItemIDs.steelframe.item), 'W', new ItemStack(ItemIDs.bogie.item)); // 6 wheel lightweight truck
 		addRecipeWithOreDic(new ItemStack(ItemIDs.sixWheelHeavyweightTruck.item, 2), "   ", "SSS", "WWW", 'S', ItemIDs.steel.item, 'W', new ItemStack(ItemIDs.bogie.item)); // 6 wheel heavyweight truck
 		addRecipeWithOreDic(new ItemStack(ItemIDs.sixWheelHeavyweightTruck.item, 2), "SSS", "WWW", "   ", 'S', ItemIDs.steel.item, 'W', new ItemStack(ItemIDs.bogie.item)); // 6 wheel heavyweight truck
-		addRecipeWithOreDic(new ItemStack(ItemIDs.passengerFluting.item, 4), "   ", " S ", "   ", 'S', ItemIDs.steel.item); // passenger car fluting
+		addRecipeWithOreDic(new ItemStack(ItemIDs.passengerFluting.item, 12), " S ", " S ", " S ", 'S', ItemIDs.steel.item); // passenger car fluting
 
 		/* interurban/streetcar parts */
 		addRecipeWithOreDic(new ItemStack(ItemIDs.trolleyPole.item, 2), "S  ", " SS", "   ", 'S', ItemIDs.steel.item); //trolley pole
