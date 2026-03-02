@@ -33,7 +33,6 @@ import train.common.blocks.BlockTCRailGag;
 import train.common.core.handlers.ConfigHandler;
 import train.common.core.handlers.TrainHandler;
 import train.common.entity.CargoManager;
-import train.common.entity.EntitySeat;
 import train.common.entity.TrustedPlayer;
 import train.common.items.ItemChunkLoaderActivator;
 import train.common.items.ItemAbstractRollingStock;
