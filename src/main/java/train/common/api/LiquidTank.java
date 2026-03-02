@@ -40,13 +40,18 @@ public class LiquidTank extends EntityRollingStock implements IFluidHandler, ISi
 
 	public LiquidTank(@Nullable FluidStack liquid, int capacity, World world) {
 		super(world);
-		this.capacity = this.trainSpec.getTankCapacity();
+		this.capacity = getTankCapacity();
 		if (world != null)
 		{
-			this.theTank = new FluidTank(liquid, this.trainSpec.getTankCapacity());
+			this.theTank = new FluidTank(liquid, getTankCapacity());
 			dataWatcher.addObject(4, 0);
 			dataWatcher.addObject(22, "");
 		}
+	}
+
+	public int getTankCapacity()
+	{
+		return trainSpec.getTankCapacity();
 	}
 
 	public int getAmount() {

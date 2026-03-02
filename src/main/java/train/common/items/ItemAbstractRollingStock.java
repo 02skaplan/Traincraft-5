@@ -147,28 +147,34 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
         if (trainRecord.getMHP() > 0) {
             par3List.add("\u00a77" + "Power: " + trainRecord.getMHP() + " " +  translate("menu.item.mhp"));
         }
-        if (trainRecord.getMass() != 0) {
+        if (trainRecord.getMass() != 0)
+        {
             par3List.add("\u00a77" + "Mass: " + (trainRecord.getMass() * 10));
         }
-        if (trainRecord.getMaxSpeed() > 0) {
-            par3List.add("\u00a77" + translate("menu.item.speed") + ": " + trainRecord.getMaxSpeed() + " km/h");
+        else if (itemCacheData.WeightKg != 0)
+        {
+            par3List.add(EnumChatFormatting.GREEN + translate("menu.item.weight") +": " + itemCacheData.WeightKg + "kg");
+        }
+
+        if (itemCacheData.maxSpeed > 0) {
+            par3List.add("\u00a77" + translate("menu.item.speed") + ": " + itemCacheData.maxSpeed + " km/h");
         }
         if (getCargoCapacity() > 0) {
             par3List.add("\u00a77" + translate("menu.item.slots") + ": " + getCargoCapacity());
         }
 
 
-        if (trainRecord.getTankCapacity() > 0)
+        if (itemCacheData.TankCapacity > 0)
         {
             String trainType = trainRecord.getTrainType().toLowerCase();
 
             if (trainType.contains("tankcar"))
             {
-                par3List.add("\u00a77" + "Capacity: " + trainRecord.getTankCapacity() + "mb.");
+                par3List.add("\u00a77" + "Capacity: " + itemCacheData.TankCapacity + "mb.");
             }
             else if (trainType.contains("tender"))
             {
-                par3List.add("\u00a77" + "Water capacity: " + trainRecord.getTankCapacity() + "mb.");
+                par3List.add("\u00a77" + "Water capacity: " + itemCacheData.TankCapacity + "mb.");
             }
             else if (trainType.contains("slug"))
             {
@@ -176,39 +182,11 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
             }
         }
 
-        if (itemCacheData.isAbstractStandardFreightCar)
-        {
-            switch (itemCacheData.cargoItemFilter)
-            {
-                case LOG_WOOD:
-                    par3List.add("\u00a77" + "Cargo: Logs.");
-                    break;
-                case AGGREGATE:
-                    par3List.add("\u00a77" + "Cargo: Aggregates.");
-                    break;
-                case ORE:
-                    par3List.add("\u00a77" + "Cargo: Ores.");
-                    break;
-                case ICE_MATERIAL:
-                    par3List.add("\u00a77" + "Cargo: only ice");
-                    break;
-                case WOOD_PRODUCTS:
-                    par3List.add("\u00a77" + "Cargo: Wood Products");
-                    break;
-                case INGOT:
-                    par3List.add("\u00a77" + "Cargo: Ingots.");
-                    break;
-                case WOOD_CHIPS:
-                    par3List.add("\u00a77" + "Cargo: Woodchips/Sawdust.");
-                    break;
-                case GRAIN:
-                    par3List.add("\u00a77" + "Cargo: wheat, seeds");
-                    break;
-                case ASSEMBLED_TRAIN_TRACK:
-                    par3List.add("\u00a77" + "Cargo: only rails");
-                    break;
-            }
+        String cargoFlavorText = getCargoFlavorText(itemCacheData);
 
+        if (cargoFlavorText != null)
+        {
+            par3List.add("\u00a77" + cargoFlavorText);
         }
 
         if (additionnalInfo != null) {
@@ -219,6 +197,36 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
 
 
         //par3List.add("\u00a77" + "Notes: "+getCargoCapacity());
+    }
+
+    private String getCargoFlavorText(RollingStockItemCache itemCacheData)
+    {
+        if (itemCacheData.isAbstractStandardFreightCar)
+        {
+            switch (itemCacheData.cargoItemFilter)
+            {
+                case LOG_WOOD:
+                    return "Cargo: Logs.";
+                case AGGREGATE:
+                    return "Cargo: Aggregates.";
+                case ORE:
+                    return "Cargo: Ores.";
+                case ICE_MATERIAL:
+                    return "Cargo: only ice";
+                case WOOD_PRODUCTS:
+                    return "Cargo: Wood Products";
+                case INGOT:
+                    return "Cargo: Ingots.";
+                case WOOD_CHIPS:
+                    return "Cargo: Woodchips/Sawdust.";
+                case GRAIN:
+                    return "Cargo: wheat, seeds";
+                case ASSEMBLED_TRAIN_TRACK:
+                    return "Cargo: only rails";
+            }
+        }
+
+        return null;
     }
 
     private static String translate(String translate){
@@ -249,12 +257,6 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
         ITrainRecord trainRecord = Traincraft.traincraftRegistry.getCurrentTrain(this);
 
         return trainRecord.getMass();
-    }
-
-    public int getMaxSpeed() {
-        ITrainRecord trainRecord = Traincraft.traincraftRegistry.getCurrentTrain(this);
-
-        return trainRecord.getMaxSpeed();
     }
 
     public int getCargoCapacity() {

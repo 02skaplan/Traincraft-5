@@ -1,7 +1,6 @@
 package train.common.items;
 
-import train.common.api.AbstractStandardFreightCar;
-import train.common.api.AbstractTrains;
+import train.common.api.*;
 import train.common.enums.CargoItemFilter;
 import train.common.library.register.ITrainRecord;
 
@@ -25,6 +24,35 @@ public class RollingStockItemCache
         {
             cargoItemFilter = null;
         }
+
+        maxSpeed = train instanceof Locomotive ? ((Locomotive) train).transportTopSpeed() : 0;
+        WeightKg = train.weightKg();
+        TankCapacity = GetTankCapacity(train);
+    }
+
+    private int GetTankCapacity(AbstractTrains abstractTrains)
+    {
+        if (abstractTrains instanceof Tender)
+        {
+            return ((Tender) abstractTrains).getTankCapacity();
+        }
+
+        if (abstractTrains instanceof LiquidTank)
+        {
+            return ((LiquidTank) abstractTrains).getTankCapacity();
+        }
+
+        if (abstractTrains instanceof DieselTrain)
+        {
+            return ((DieselTrain) abstractTrains).getTankCapacity();
+        }
+
+        if (abstractTrains instanceof SteamTrain)
+        {
+            return ((SteamTrain) abstractTrains).getTankCapacity();
+        }
+
+        return 0;
     }
 
     public final Map<Integer, String> textureDescriptionMap;
@@ -35,4 +63,9 @@ public class RollingStockItemCache
     public final String TransportYear;
     public final String TransportCountry;
     public final boolean IsFictional;
+
+    public final float maxSpeed;
+
+    public final float WeightKg;
+    public int TankCapacity;
 }

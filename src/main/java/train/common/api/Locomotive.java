@@ -44,10 +44,7 @@ import train.common.core.network.PacketParkingBrake;
 import train.common.core.network.PacketSlotsFilled;
 import train.common.entity.rollingStock.diesel.*;
 import train.common.entity.rollingStock.electric.*;
-import train.common.items.ItemATOCard;
-import train.common.items.ItemRemoteController;
-import train.common.items.ItemRemoteControllerModule;
-import train.common.items.ItemWirelessTransmitter;
+import train.common.items.*;
 import train.common.library.BetterEnumSounds;
 import train.common.library.Info;
 import train.common.library.sounds.SoundRecord;
@@ -214,6 +211,20 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         return true;
     }
 
+    @Override
+    protected boolean onItemClickEvent(ItemStack itemStack, EntityPlayer entityPlayer)
+    {
+        if (itemStack.getItem() instanceof ItemWrench
+                && entityPlayer.isSneaking() && !worldObj.isRemote)
+        {
+            destination = "";
+            entityPlayer.addChatMessage(new ChatComponentText("Destination reset"));
+            return true;
+        }
+
+        return super.onItemClickEvent(itemStack, entityPlayer);
+    }
+
     public static boolean isBetween(double x, double min, double max) {
         return x > min && x < max;
     }
@@ -337,14 +348,24 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
     public float getMaxSpeed() {
         if (trainSpec != null) {
             if (currentMassPulled > 1) {
-                float power = (float) currentMassPulled / (((float) trainSpec.getMHP()) * 0.37f);
+                float power = (float) currentMassPulled / (transportMetricHorsePower() * 0.37f);
                 if (power > 1) {
-                    return trainSpec.getMaxSpeed() / (power);
+                    return transportTopSpeed() / (power);
                 }
             }
-            return trainSpec.getMaxSpeed();
+            return transportTopSpeed();
         }
         return 50;
+    }
+
+    public float transportMetricHorsePower()
+    {
+        return (float) trainSpec.getMHP();
+    }
+
+    public float transportTopSpeed()
+    {
+        return trainSpec.getMaxSpeed();
     }
 
     /**

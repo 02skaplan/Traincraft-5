@@ -33,6 +33,7 @@ import train.common.blocks.BlockTCRailGag;
 import train.common.core.handlers.ConfigHandler;
 import train.common.core.handlers.TrainHandler;
 import train.common.entity.CargoManager;
+import train.common.entity.EntitySeat;
 import train.common.entity.TrustedPlayer;
 import train.common.items.ItemChunkLoaderActivator;
 import train.common.items.ItemAbstractRollingStock;
@@ -57,7 +58,6 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 	public boolean isAttached = false;
 	public boolean isAttaching = false;
 	public static int numberOfTrains;
-	public EntityPlayer playerEntity;
 	public double Link1;
 	public double Link2;
 	protected boolean linked = false;
@@ -79,6 +79,7 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 	 * A reference to EnumTrains containing all spec for this specific train
 	 */
 	protected ITrainRecord trainSpec;
+
 	private ITrainRenderRecord renderSpec;
 	private SubTrainRenderRecord subTrainRenderRecordSpec;
 	/**
@@ -275,7 +276,7 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 
 			// Chunk loading by default should always be disabled when placing a locomotive
 			this.setFlag(7, false);
-			this.setDefaultMass(trainSpec.getMass());
+			this.setDefaultMass(trainSpec.getMass() > 0 ? trainSpec.getMass() : weightKg() * 0.1 );
 			this.setSize(0.98f, 1.98f);
 			GetRenderSpec();
 		}
@@ -479,7 +480,8 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 		 */
 	}
 	@Override
-	public void setDead() {
+	public void setDead()
+	{
 		ForgeChunkManager.releaseTicket(chunkTicket);
 	}
 
@@ -500,30 +502,41 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 	@Override
 	public boolean interactFirst(EntityPlayer entityplayer) {
 		ItemStack itemstack = entityplayer.inventory.getCurrentItem();
-		if (!worldObj.isRemote && ConfigHandler.CHUNK_LOADING && (this instanceof Locomotive) )
+		if (!worldObj.isRemote && ConfigHandler.CHUNK_LOADING && (this instanceof Locomotive))
 		{
-			if (itemstack != null && itemstack.getItem() instanceof ItemChunkLoaderActivator)
+			if (onClickWithChunkLoader(itemstack, entityplayer))
 			{
-				this.playerEntity = entityplayer;
-				if (getFlag(7))
-				{
-					this.setFlag(7, false);
-					entityplayer.addChatMessage(new ChatComponentText("Stop loading chunks"));
-					ForgeChunkManager.releaseTicket(chunkTicket);
-					chunkTicket = null;
-				}
-				else if (!getFlag(7))
-				{
-					this.setFlag(7, true);
-					entityplayer.addChatMessage(new ChatComponentText("Start loading chunks"));
-				}
-				itemstack.damageItem(1, entityplayer);
 				return true;
-			} else if(lockThisCart(itemstack, entityplayer))
+			}
+
+			if(lockThisCart(itemstack, entityplayer))
 			{
 				return true;
 			}
 		}
+		return false;
+	}
+
+	public boolean onClickWithChunkLoader(ItemStack itemStack, EntityPlayer entityplayer)
+	{
+		if (itemStack != null && itemStack.getItem() instanceof ItemChunkLoaderActivator)
+		{
+			if (getFlag(7))
+			{
+				this.setFlag(7, false);
+				entityplayer.addChatMessage(new ChatComponentText("Stop loading chunks"));
+				ForgeChunkManager.releaseTicket(chunkTicket);
+				chunkTicket = null;
+			}
+			else
+			{
+				this.setFlag(7, true);
+				entityplayer.addChatMessage(new ChatComponentText("Start loading chunks"));
+			}
+			itemStack.damageItem(1, entityplayer);
+			return true;
+		}
+
 		return false;
 	}
 
@@ -1015,6 +1028,12 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 			getEntityData().setString("puuid", getUniqueID().toString());
 			return this.getUniqueID().toString();
 		}
+	}
+
+	/**defines the weight of the transport.*/
+	public float weightKg()
+	{
+		return (float)trainSpec.getMass()*10f;
 	}
 
 	/**
