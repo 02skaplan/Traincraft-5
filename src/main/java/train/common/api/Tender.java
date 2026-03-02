@@ -47,16 +47,21 @@ public abstract class Tender extends Freight implements IFluidHandler, IInventor
 	public Tender(World world, @Nullable FluidStack filter)
 	{
 		super(world);
-		this.maxTank = trainSpec.getTankCapacity();
+		this.maxTank = getTankCapacity();
 		if (filter == null)
-			this.theTank = LiquidManager.getInstance().new StandardTank(trainSpec.getTankCapacity());
+			this.theTank = LiquidManager.getInstance().new StandardTank(getTankCapacity());
 		if (filter != null)
-			this.theTank = LiquidManager.getInstance().new FilteredTank(trainSpec.getTankCapacity(), filter);
+			this.theTank = LiquidManager.getInstance().new FilteredTank(getTankCapacity(), filter);
 		tankArray[0] = theTank;
 		dataWatcher.addObject(4, 0);
 		this.dataWatcher.addObject(23, 0);
 		freightInventorySize = 16;
 		tenderItems = new ItemStack[freightInventorySize];
+	}
+
+	public int getTankCapacity()
+	{
+		return trainSpec.getTankCapacity();
 	}
 
 	@Override

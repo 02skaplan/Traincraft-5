@@ -54,11 +54,11 @@ public abstract class SteamTrain extends Locomotive implements IFluidHandler {
 
 	private SteamTrain(int capacity, World world, FluidStack filter) {
 		super(world);
-		this.maxTank = this.trainSpec.getTankCapacity();
+		this.maxTank = getTankCapacity();
 		if (filter == null) {
-			this.theTank = LiquidManager.getInstance().new StandardTank(this.trainSpec.getTankCapacity());
+			this.theTank = LiquidManager.getInstance().new StandardTank(getTankCapacity());
 		} else {
-			this.theTank = LiquidManager.getInstance().new FilteredTank(this.trainSpec.getTankCapacity(), filter);
+			this.theTank = LiquidManager.getInstance().new FilteredTank(getTankCapacity(), filter);
 		}
 		tankArray[0] = theTank;
 		dataWatcher.addObject(4, 0);
@@ -68,6 +68,12 @@ public abstract class SteamTrain extends Locomotive implements IFluidHandler {
 		inventorySize = numCargoSlots + numCargoSlots2 + numCargoSlots1 + fuelSlot + waterSlot;//
 		this.dataWatcher.addObject(23, 0);
 	}
+
+	public int getTankCapacity()
+	{
+		return this.trainSpec.getTankCapacity();
+	}
+
 
 	/**
 	 * returns the waterConsumption for each steam loco default is 200: rand.nextInt(200)==0
