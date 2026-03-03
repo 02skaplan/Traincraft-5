@@ -63,4 +63,10 @@ public class DieselU18Balt extends DieselTrain {
         return "GE U18B (New Model)";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
+
 }

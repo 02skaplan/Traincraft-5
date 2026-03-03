@@ -22,14 +22,16 @@ public class EntityBUnitDD35 extends LiquidTank implements IFluidHandler {
 
 	public EntityBUnitDD35(World world)
 	{
-		super(world, Traincraft.traincraftRegistry.getTrainRecord(EntityBUnitDD35.class).getTankCapacity());
+		super(world, 0);
 		initFreightWater();
-		this.theTank = LiquidManager.getInstance().new FilteredTank(Traincraft.traincraftRegistry.getTrainRecord(EntityBUnitDD35.class).getTankCapacity(), LiquidManager.dieselFilter());
+		this.theTank = LiquidManager.getInstance().new FilteredTank(getTankCapacity(), LiquidManager.dieselFilter());
 	}
 
-	
-
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 12000;
+	}
 
 	@Override
 	public void onUpdate() {

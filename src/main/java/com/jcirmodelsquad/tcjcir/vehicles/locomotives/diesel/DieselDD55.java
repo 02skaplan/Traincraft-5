@@ -50,4 +50,10 @@ public class DieselDD55 extends DieselTrain {
         return "LASC DD55";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
+
 }

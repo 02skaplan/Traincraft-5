@@ -96,4 +96,9 @@ public class SteamSkook extends SteamTrain {
         return "US";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 2000;
+    }
 }

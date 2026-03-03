@@ -46,4 +46,10 @@ public class SteamAlco460 extends SteamTrain {
 	{
 		return "US";
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 3000;
+	}
 }

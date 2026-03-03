@@ -79,4 +79,10 @@ public class SteamF01 extends SteamTrain {
 	{
 		return "US";
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 9000;
+	}
 }

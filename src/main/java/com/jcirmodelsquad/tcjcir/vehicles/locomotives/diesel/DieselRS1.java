@@ -61,7 +61,11 @@ public class DieselRS1 extends DieselTrain {
         return "ALCo RS-1";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 8000;
+    }
 
     
 

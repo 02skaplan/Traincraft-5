@@ -87,7 +87,11 @@ public class DieselDS441000 extends DieselTrain {
         return "BLH DS-4-4-1000 (606SC)";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 8000;
+    }
 
     
 

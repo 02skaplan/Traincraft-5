@@ -52,4 +52,10 @@ public class DieselBQ23 extends DieselTrain {
         return "GE BQ23-7";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
+
 }

@@ -84,7 +84,11 @@ public class DieselGP40TC extends DieselTrain {
         return "EMD GP40TC";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 16000;
+    }
 
     
 

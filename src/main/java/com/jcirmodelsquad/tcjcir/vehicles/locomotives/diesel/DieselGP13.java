@@ -71,4 +71,9 @@ public class DieselGP13 extends DieselTrain {
         return (1.14F);
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 15000;
+    }
 }

@@ -35,4 +35,9 @@ public class EntityLocoSteamNS3700Class extends SteamTrain {
 		return 0.6F;
 	}
 
+	@Override
+	public int getTankCapacity()
+	{
+		return 4000;
+	}
 }

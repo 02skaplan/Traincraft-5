@@ -60,6 +60,12 @@ public class Diesel4ED172T extends DieselTrain {
     }
 
     @Override
+    public int getTankCapacity()
+    {
+        return 16000;
+    }
+
+    @Override
     public void onRenderInsertRecord()
     {
         Traincraft.traincraftRegistry.RegisterRollingStockModel(new TrainRenderRecord(Info.modID,

@@ -50,4 +50,9 @@ public class DieselGP7f extends DieselTrain {
         return "ARR GP7u";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 18000;
+    }
 }

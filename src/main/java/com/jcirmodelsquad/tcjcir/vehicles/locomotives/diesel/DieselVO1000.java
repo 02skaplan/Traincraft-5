@@ -79,8 +79,12 @@ public class DieselVO1000 extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) {
         return (1.05F);
     }
-    
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 6000;
+    }
     
 
 

@@ -80,7 +80,11 @@ public class Dieselgtavthing extends DieselTrain {
         return "GTAV Locomotive";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 
     
 

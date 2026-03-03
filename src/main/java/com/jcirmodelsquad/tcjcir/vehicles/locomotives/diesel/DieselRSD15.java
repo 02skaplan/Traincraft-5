@@ -80,7 +80,11 @@ public class DieselRSD15 extends DieselTrain {
         return "ALCo RSD-15";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 18000;
+    }
 
 
     

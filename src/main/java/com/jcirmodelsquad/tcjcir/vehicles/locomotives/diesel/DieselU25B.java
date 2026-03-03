@@ -88,4 +88,9 @@ public class DieselU25B extends DieselTrain {
         return "GE U25B Phase 2-4";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

@@ -45,4 +45,9 @@ public class SteamPMNandN1 extends SteamTrain {
 		return 1.15F;
 	}
 
+	@Override
+	public int getTankCapacity()
+	{
+		return 6000;
+	}
 }

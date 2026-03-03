@@ -60,7 +60,11 @@ public class DieselFP7A extends DieselTrain {
         return "EMD FP7A";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 
     
     

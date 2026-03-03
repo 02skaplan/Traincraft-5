@@ -26,6 +26,10 @@ public interface ITrainRecord
 
     double getBrakeRate();
 
+    /*
+    OVERRIDE THE GET TANK CAPACITY METHOD IN THE ENTITY CLASS
+     */
+    @Deprecated
     int getTankCapacity();
 
     int[] getColors();

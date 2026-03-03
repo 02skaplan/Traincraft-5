@@ -25,4 +25,10 @@ public class EntityTankWagon extends AbstractStandardTankerCar {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.7F;
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 40000;
+	}
 }

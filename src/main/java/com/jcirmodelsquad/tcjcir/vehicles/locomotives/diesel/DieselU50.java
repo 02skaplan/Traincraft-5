@@ -50,4 +50,10 @@ public class DieselU50 extends DieselTrain {
     public String getInventoryName() {
         return "GE U50";
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 15000;
+    }
 }

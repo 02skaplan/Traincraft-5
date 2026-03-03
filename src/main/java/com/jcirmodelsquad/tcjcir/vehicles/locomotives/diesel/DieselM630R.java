@@ -51,7 +51,11 @@ public class DieselM630R extends DieselTrain {
         return "MLW M630 (Round End)";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 12000;
+    }
 
 
     

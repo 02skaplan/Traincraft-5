@@ -56,7 +56,11 @@ public class DieselM630 extends DieselTrain {
         return "MLW M630 (Divot End)";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 12000;
+    }
 
     
 

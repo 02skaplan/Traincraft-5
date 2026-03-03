@@ -5,7 +5,6 @@ import net.minecraft.world.World;
 import train.common.api.AbstractStandardTankerCar;
 
 public class EntityTankWagonUS extends AbstractStandardTankerCar {
-	public int freightInventorySize;
 
 	public EntityTankWagonUS(World world) {
 		super(world);
@@ -25,5 +24,11 @@ public class EntityTankWagonUS extends AbstractStandardTankerCar {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.6F;
+	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 70000;
 	}
 }

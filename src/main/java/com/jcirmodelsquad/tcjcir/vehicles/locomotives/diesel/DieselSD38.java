@@ -87,4 +87,10 @@ public class DieselSD38 extends DieselTrain {
     public String getInventoryName() {
         return "EMD SD38";
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 12000;
+    }
 }

@@ -80,4 +80,10 @@ public class SteamOnion extends SteamTrain {
 	{
 		return "Moon";
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 8000;
+	}
 }

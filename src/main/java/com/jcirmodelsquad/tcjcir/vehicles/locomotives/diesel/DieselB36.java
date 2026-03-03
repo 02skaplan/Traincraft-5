@@ -49,4 +49,9 @@ public class DieselB36 extends DieselTrain {
     @Override
     public String getInventoryName() { return "GE B36-7"; }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

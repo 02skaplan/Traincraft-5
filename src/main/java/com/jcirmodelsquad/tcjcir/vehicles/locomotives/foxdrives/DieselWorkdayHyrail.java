@@ -42,5 +42,10 @@ public class DieselWorkdayHyrail extends DieselTrain {
         return "1980 Pine Workday Hi-rail Truck";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 2000;
+    }
 
 }

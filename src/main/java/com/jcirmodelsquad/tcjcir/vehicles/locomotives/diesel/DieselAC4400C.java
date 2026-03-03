@@ -50,4 +50,10 @@ public class DieselAC4400C extends DieselTrain {
     public boolean isFictional(){
         return true;
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 21000;
+    }
 }

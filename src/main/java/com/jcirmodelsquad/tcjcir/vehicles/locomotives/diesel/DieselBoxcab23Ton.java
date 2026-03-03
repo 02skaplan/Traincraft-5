@@ -85,9 +85,9 @@ public class DieselBoxcab23Ton extends DieselTrain {
         return "GE 23 Ton Boxcab";
     }
 
-
-
-
-
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 4000;
+    }
 }

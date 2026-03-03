@@ -81,8 +81,12 @@ public class DieselHHgregg extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) {
         return (1F);
     }
-    
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 7000;
+    }
     
 
 

@@ -48,4 +48,9 @@ public class DieselSF30B extends DieselTrain {
         return "ATSF SF30B";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 25000;
+    }
 }

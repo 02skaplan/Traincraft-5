@@ -58,7 +58,11 @@ public class DieselSD40dash3 extends DieselTrain {
         return "CSX SD40-3";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 12000;
+    }
 
 
     

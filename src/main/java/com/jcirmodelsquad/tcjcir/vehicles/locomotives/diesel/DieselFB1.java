@@ -87,7 +87,11 @@ public class DieselFB1 extends DieselTrain {
         return "Alco FB-1";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 15000;
+    }
 
     
 

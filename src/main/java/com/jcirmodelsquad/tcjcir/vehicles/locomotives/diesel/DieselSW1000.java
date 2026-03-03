@@ -54,4 +54,10 @@ public class DieselSW1000 extends DieselTrain {
     public String getInventoryName() {
         return "EMD SW1000";
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 }

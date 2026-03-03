@@ -49,4 +49,10 @@ public class DieselDash818BE extends DieselTrain {
         return true;
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 16000;
+    }
+
 }

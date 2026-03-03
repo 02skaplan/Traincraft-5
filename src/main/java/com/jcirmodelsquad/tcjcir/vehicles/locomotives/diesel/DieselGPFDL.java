@@ -76,4 +76,10 @@ public class DieselGPFDL extends DieselTrain {
     public boolean isFictional() {
         return true;
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 18000;
+    }
 }

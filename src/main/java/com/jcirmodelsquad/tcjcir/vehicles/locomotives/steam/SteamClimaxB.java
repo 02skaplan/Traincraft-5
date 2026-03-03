@@ -44,4 +44,10 @@ public class SteamClimaxB extends SteamTrain {
 		return 1.0F;
 	}
 
+	@Override
+	public int getTankCapacity()
+	{
+		return 9000;
+	}
+
 }

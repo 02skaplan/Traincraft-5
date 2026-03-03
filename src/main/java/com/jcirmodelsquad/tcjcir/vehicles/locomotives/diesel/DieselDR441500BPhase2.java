@@ -60,7 +60,11 @@ public class DieselDR441500BPhase2 extends DieselTrain {
         return "BLW DR-4-4-1500B (Phase 2)";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 15000;
+    }
 
     
 

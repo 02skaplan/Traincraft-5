@@ -45,4 +45,10 @@ public class SteamLima2_8_0 extends SteamTrain {
 	{
 		return "US";
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 3000;
+	}
 }

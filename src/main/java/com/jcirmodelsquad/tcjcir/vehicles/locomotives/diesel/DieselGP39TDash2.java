@@ -48,4 +48,10 @@ public class DieselGP39TDash2 extends DieselTrain {
     public boolean isFictional() {
         return true;
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

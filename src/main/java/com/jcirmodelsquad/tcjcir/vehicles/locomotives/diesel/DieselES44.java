@@ -74,7 +74,11 @@ public class DieselES44 extends DieselTrain {
     }
 
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 21000;
+    }
 
 
 

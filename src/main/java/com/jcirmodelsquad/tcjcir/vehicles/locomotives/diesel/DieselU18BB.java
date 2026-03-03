@@ -82,4 +82,9 @@ public class DieselU18BB extends DieselTrain {
         return "GE U18B B-Unit";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 }

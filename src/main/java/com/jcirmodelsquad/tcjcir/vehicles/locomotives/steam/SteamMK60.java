@@ -49,4 +49,10 @@ public class SteamMK60 extends SteamTrain {
 	{
 		return "US";
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 2000;
+	}
 }

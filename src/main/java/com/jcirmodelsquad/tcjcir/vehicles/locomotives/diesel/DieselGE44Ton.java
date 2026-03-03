@@ -84,17 +84,19 @@ public class DieselGE44Ton extends DieselTrain {
 		}
 	}
 
-@Override
+	@Override
 	public String getInventoryName() {
 		return "GE 44 Ton Switcher";
 	}
-
-	
 
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (0.75F);
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 7000;
+	}
 }

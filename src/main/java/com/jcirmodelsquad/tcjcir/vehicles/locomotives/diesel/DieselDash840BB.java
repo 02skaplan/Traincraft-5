@@ -64,13 +64,6 @@ public class DieselDash840BB extends DieselTrain {
             riddenByEntity.setPosition(bogieX1, pitch, bogieZ1);
         }
     }
-    
-
-
-
-    
-
-    
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 1.4F;
@@ -86,9 +79,9 @@ public class DieselDash840BB extends DieselTrain {
         return "GE Dash 8-40B B-Unit";
     }
 
-
-
-
-
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

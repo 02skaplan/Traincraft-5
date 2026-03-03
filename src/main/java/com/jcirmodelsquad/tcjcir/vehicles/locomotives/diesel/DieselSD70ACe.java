@@ -61,4 +61,10 @@ public class DieselSD70ACe extends DieselTrain {
         return "EMD SD70ACe";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 21000;
+    }
+
 }

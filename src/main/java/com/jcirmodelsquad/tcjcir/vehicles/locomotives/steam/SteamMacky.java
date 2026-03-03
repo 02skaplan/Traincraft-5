@@ -20,11 +20,6 @@ public class SteamMacky extends SteamTrain {
         
     }
 
-    public void initLocoSteam() {
-        fuelTrain = 0;
-        locoInvent = new ItemStack[inventorySize];
-    }
-
     @Override
     public void updateRiderPosition() {
         if (riddenByEntity == null) {
@@ -89,6 +84,12 @@ public class SteamMacky extends SteamTrain {
     public String transportCountry()
     {
         return "US";
+    }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 2000;
     }
 
 }

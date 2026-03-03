@@ -45,4 +45,10 @@ public class DieselDash940C extends DieselTrain {
         return "GE Dash 9-40C";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 21000;
+    }
+
 }

@@ -55,4 +55,9 @@ public class DieselSB23E extends DieselTrain {
         return "CEE SB23E";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

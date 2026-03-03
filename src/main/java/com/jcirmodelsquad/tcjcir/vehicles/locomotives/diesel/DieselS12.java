@@ -59,4 +59,9 @@ public class DieselS12 extends DieselTrain {
         return "BLH S12 (606A)";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 8000;
+    }
 }

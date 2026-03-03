@@ -92,7 +92,11 @@ public class DieselFPA4 extends DieselTrain {
         return "MLW FPA-4";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 15000;
+    }
 
     
 

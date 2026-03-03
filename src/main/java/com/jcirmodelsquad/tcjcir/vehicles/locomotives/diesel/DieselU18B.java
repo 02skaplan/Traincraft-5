@@ -86,13 +86,6 @@ public class DieselU18B extends DieselTrain {
         }
     }
 
-
-    
-
-    
-
-    
-
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 1.2F;
     }
@@ -107,9 +100,9 @@ public class DieselU18B extends DieselTrain {
         return "GE U18B";
     }
 
-
-
-
-
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 }

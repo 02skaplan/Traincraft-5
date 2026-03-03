@@ -47,4 +47,10 @@ public class DieselDash839CE extends DieselTrain {
     public String getInventoryName() {
         return "GE C39-8E";
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

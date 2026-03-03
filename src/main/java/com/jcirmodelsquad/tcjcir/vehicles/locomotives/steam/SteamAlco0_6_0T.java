@@ -43,4 +43,10 @@ public class SteamAlco0_6_0T extends SteamTrain {
 		return 1.15F;
 	}
 
+	@Override
+	public int getTankCapacity()
+	{
+		return 8000;
+	}
+
 }

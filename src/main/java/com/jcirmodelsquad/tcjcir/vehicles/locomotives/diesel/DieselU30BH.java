@@ -49,4 +49,10 @@ public class DieselU30BH extends DieselTrain {
     public boolean isFictional() {
         return true;
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

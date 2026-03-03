@@ -39,4 +39,9 @@ public class DieselDH643 extends DieselTrain {
         return "ALCo DH643";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 16000;
+    }
 }

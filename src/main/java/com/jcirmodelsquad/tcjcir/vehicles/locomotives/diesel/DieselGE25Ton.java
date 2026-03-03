@@ -89,5 +89,9 @@ public class DieselGE25Ton extends DieselTrain {
 		return (0.6F);
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 4000;
+	}
 }

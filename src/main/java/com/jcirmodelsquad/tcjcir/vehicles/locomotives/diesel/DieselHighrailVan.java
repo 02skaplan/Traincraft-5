@@ -74,7 +74,11 @@ public class DieselHighrailVan extends DieselTrain {
         return "Generic Highrail Van";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 1000;
+    }
 
 
 

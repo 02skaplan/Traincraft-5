@@ -219,7 +219,16 @@ public class TrainRecord implements ITrainRecord
     public double getBrakeRate() { return this.brakeRate; }
     public TrainRecord setBrakeRate(double rate) { this.brakeRate = rate; return this; }
 
+    /*
+    OVERRIDE THE GET TANK CAPACITY METHOD IN THE ENTITY CLASS
+     */
+    @Deprecated
     public int getTankCapacity() { return this.tankCapacity; }
+
+    /*
+    OVERRIDE THE GET TANK CAPACITY METHOD IN THE ENTITY CLASS
+     */
+    @Deprecated
     public TrainRecord setTankCapacity(int capacity) { this.tankCapacity = capacity; return this; }
 
     public int[] getColors() { return this.colors; }

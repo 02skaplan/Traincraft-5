@@ -56,7 +56,11 @@ public class DieselTR4 extends DieselTrain {
         return "EMD TR4 Cow";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 8000;
+    }
 
 
 

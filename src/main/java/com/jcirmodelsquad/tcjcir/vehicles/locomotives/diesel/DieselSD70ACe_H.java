@@ -54,4 +54,9 @@ public class DieselSD70ACe_H extends DieselTrain {
         return "EMD SD70ACe (Heritage Units)";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 21000;
+    }
 }

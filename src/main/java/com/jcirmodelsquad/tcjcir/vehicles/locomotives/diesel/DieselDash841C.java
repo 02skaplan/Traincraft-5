@@ -55,6 +55,10 @@ public class DieselDash841C extends DieselTrain {
         return "GE C41-8";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 
 }

@@ -86,7 +86,11 @@ public class DieselP32 extends DieselTrain {
         return "Ge P40-P42";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 15000;
+    }
 
 
 

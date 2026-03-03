@@ -73,4 +73,10 @@ public class DieselB23 extends DieselTrain {
         return "1977-1984";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
+
 }

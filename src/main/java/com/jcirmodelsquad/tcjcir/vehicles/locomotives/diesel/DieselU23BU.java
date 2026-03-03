@@ -55,4 +55,10 @@ public class DieselU23BU extends DieselTrain {
     public boolean isFictional() {
         return true;
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

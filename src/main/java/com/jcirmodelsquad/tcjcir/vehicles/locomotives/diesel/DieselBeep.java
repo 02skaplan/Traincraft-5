@@ -86,9 +86,13 @@ public class DieselBeep extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) {
         return (1.05F);
     }
-    
 
-    
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 9000;
+    }
 
 
     

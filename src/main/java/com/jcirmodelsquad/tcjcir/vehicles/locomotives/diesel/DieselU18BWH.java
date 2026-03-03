@@ -47,4 +47,10 @@ public class DieselU18BWH extends DieselTrain {
         return "GE U18B(W)H";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
+
 }

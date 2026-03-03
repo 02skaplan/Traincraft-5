@@ -78,4 +78,10 @@ public class DieselMP15DCW9 extends DieselTrain {
     public boolean isFictional() {
         return true;
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 8000;
+    }
 }

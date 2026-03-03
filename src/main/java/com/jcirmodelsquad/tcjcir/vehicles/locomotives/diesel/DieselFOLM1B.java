@@ -46,4 +46,9 @@ public class DieselFOLM1B extends DieselTrain {
         return (1F);
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 15000;
+    }
 }

@@ -88,7 +88,11 @@ public class DieselSD40dash2B extends DieselTrain {
         return "EMD SD40-2B";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 12000;
+    }
 
 
     

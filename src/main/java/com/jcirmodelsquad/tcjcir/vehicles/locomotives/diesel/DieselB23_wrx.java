@@ -42,4 +42,10 @@ public class DieselB23_wrx extends DieselTrain {
         return "1977-1984";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 12000;
+    }
+
 }

@@ -52,4 +52,9 @@ public class DieselSW10 extends DieselTrain {
         return "EMD/UP SW10";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 8000;
+    }
 }

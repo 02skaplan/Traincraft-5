@@ -44,4 +44,10 @@ public class SteamShay3Truck extends SteamTrain {
 	{
 		return "US";
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 4000;
+	}
 }

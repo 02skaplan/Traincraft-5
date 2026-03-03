@@ -92,7 +92,11 @@ public class DieselH16_66 extends DieselTrain {
         return "FM H16-66";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 16000;
+    }
 
     
     

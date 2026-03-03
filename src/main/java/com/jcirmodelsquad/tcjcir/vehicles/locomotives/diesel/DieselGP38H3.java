@@ -64,13 +64,6 @@ public class DieselGP38H3 extends DieselTrain {
         }
     }
 
-
-
-
-    
-
-    
-
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 1.4F;
     }
@@ -85,9 +78,9 @@ public class DieselGP38H3 extends DieselTrain {
         return "EMD GP38H3";
     }
 
-    
-
-
-    
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 16000;
+    }
 }

@@ -69,4 +69,10 @@ public class SteamC11 extends SteamTrain {
 	{
 		return "JP";
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 16000;
+	}
 }

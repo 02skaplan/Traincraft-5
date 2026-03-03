@@ -84,4 +84,10 @@ public class DieselSB18B extends DieselTrain {
         return "CEE SB18B";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
+
 }

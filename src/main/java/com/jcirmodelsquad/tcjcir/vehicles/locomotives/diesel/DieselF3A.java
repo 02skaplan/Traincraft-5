@@ -74,4 +74,10 @@ public class DieselF3A extends DieselTrain {
     public String getInventoryName() {
         return "EMD F3a";
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 }

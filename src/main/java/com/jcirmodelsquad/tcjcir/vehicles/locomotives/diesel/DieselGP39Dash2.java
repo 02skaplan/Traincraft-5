@@ -48,4 +48,10 @@ public class DieselGP39Dash2 extends DieselTrain {
     public String getInventoryName() {
         return "EMD GP39-2";
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

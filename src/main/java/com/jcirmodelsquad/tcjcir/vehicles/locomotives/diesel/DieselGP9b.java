@@ -76,4 +76,9 @@ public class DieselGP9b extends DieselTrain {
         return "EMD GP9b";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 18000;
+    }
 }

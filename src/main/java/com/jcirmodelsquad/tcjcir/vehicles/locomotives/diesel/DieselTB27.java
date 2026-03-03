@@ -48,4 +48,9 @@ public class DieselTB27 extends DieselTrain {
         return true;
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 18000;
+    }
 }

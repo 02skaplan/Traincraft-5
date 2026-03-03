@@ -84,7 +84,11 @@ public class DieselNRE3gs21b extends DieselTrain {
         return "NRE 3GS21B Genset";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 14000;
+    }
 
     
     

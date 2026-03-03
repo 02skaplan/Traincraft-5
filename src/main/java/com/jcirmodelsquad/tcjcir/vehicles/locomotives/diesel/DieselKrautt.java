@@ -50,7 +50,11 @@ public class DieselKrautt extends DieselTrain {
         return "Krauss-Maffei ML-4000";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 
     
 

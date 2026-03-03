@@ -95,7 +95,11 @@ public class DieselS2 extends DieselTrain {
         return (1F);
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 6000;
+    }
     
 
 

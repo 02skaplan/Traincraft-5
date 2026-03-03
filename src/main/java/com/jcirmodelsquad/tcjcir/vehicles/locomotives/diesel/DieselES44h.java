@@ -89,7 +89,11 @@ public class DieselES44h extends DieselTrain {
         return "GE ES44 (Hertiable Units)";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 21000;
+    }
 
 
 

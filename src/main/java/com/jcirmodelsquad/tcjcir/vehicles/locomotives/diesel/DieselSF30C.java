@@ -85,7 +85,11 @@ public class DieselSF30C extends DieselTrain {
         return "GE SF30C";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 21000;
+    }
 
     
 

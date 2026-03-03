@@ -44,4 +44,10 @@ public class DieselAC4400CW extends DieselTrain {
         return "1993-2004";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 21000;
+    }
+
 }

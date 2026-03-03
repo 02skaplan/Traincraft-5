@@ -63,7 +63,11 @@ public class DieselF9A extends DieselTrain {
         return "EMD F9a";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 
 
 

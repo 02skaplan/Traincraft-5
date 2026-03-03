@@ -105,7 +105,11 @@ public class DieselPA1 extends DieselTrain {
         return "Alco PA-1";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 15000;
+    }
 
 
 

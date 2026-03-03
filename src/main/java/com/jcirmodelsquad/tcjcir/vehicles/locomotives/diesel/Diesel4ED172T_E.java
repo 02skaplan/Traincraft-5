@@ -41,4 +41,10 @@ public class Diesel4ED172T_E extends DieselTrain {
     public boolean isFictional() {
         return true;
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 16000;
+    }
 }

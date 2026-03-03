@@ -48,4 +48,10 @@ public class SteamP01a extends SteamTrain {
 	{
 		return "US";
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 4000;
+	}
 }

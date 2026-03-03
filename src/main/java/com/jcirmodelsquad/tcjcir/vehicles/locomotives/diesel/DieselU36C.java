@@ -98,7 +98,11 @@ public class DieselU36C extends DieselTrain {
         return "GE U36C";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 21000;
+    }
 
 
     

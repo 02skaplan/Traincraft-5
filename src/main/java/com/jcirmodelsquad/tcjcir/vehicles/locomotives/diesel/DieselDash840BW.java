@@ -62,9 +62,9 @@ public class DieselDash840BW extends DieselTrain {
         return "GE Dash 8-40BW";
     }
 
-    
-
-
-    
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

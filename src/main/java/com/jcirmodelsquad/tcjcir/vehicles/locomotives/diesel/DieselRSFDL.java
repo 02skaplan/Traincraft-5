@@ -46,4 +46,9 @@ public class DieselRSFDL extends DieselTrain {
         return "ALCo RSFDL";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 8000;
+    }
 }

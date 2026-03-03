@@ -58,4 +58,10 @@ public class DieselSB36X extends DieselTrain {
     public String transportYear() {
         return "1988";
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

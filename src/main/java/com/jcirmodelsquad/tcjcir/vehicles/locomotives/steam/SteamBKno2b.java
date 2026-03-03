@@ -70,4 +70,9 @@ public class SteamBKno2b extends SteamTrain {
 		return 0.75F;
 	}
 
+	@Override
+	public int getTankCapacity()
+	{
+		return 15000;
+	}
 }

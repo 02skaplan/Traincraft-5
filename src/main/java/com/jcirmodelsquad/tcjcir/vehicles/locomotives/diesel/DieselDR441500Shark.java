@@ -55,7 +55,11 @@ public class DieselDR441500Shark extends DieselTrain {
         return "BLW DR-4-4-1500 (Phase 3)";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 15000;
+    }
 
 
 

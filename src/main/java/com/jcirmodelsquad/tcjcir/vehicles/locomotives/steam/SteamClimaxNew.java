@@ -38,4 +38,10 @@ public class SteamClimaxNew extends SteamTrain {
 	{
 		return "US";
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 8000;
+	}
 }

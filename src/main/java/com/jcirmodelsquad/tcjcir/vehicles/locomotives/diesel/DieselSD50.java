@@ -55,4 +55,9 @@ public class DieselSD50 extends DieselTrain {
         return "EMD SD50";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 23000;
+    }
 }

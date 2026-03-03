@@ -49,4 +49,9 @@ public class DieselM640W extends DieselTrain {
         return "MLW M640W";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 12000;
+    }
 }

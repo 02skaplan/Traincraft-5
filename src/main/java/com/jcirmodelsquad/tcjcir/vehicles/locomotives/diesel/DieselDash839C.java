@@ -55,4 +55,10 @@ public class DieselDash839C extends DieselTrain {
         return "GE C39-8";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
+
 }

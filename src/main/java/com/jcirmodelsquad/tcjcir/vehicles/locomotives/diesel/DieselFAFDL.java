@@ -54,4 +54,9 @@ public class DieselFAFDL extends DieselTrain {
         return "CEE FA-FDL";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 12000;
+    }
 }

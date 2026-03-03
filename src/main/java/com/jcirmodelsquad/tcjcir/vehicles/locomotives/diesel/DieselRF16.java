@@ -61,7 +61,11 @@ public class DieselRF16 extends DieselTrain {
         return "BLH RF-16";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 15000;
+    }
 
 
 
