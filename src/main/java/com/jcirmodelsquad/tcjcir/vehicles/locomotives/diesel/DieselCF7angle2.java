@@ -51,4 +51,10 @@ public class DieselCF7angle2 extends DieselTrain {
         return "EMD CF7 (CBRR)";
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
+
 }

@@ -55,7 +55,11 @@ public class DieselCF7_H_Angle extends DieselTrain {
         return "CF7 Anglecab (Heritage Model)";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 
     
     

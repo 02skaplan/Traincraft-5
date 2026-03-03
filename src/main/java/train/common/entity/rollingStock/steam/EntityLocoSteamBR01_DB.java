@@ -41,5 +41,15 @@ public class EntityLocoSteamBR01_DB extends SteamTrain {
 		return 0.4F;
 	}
 
-	
+	@Override
+	public String transportCountry()
+	{
+		return "de";
+	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 10000;
+	}
 }

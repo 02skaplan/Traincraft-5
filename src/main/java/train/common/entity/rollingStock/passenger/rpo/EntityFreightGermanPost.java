@@ -1,4 +1,4 @@
-package train.common.entity.rollingStock;
+package train.common.entity.rollingStock.passenger.rpo;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.world.World;
@@ -14,11 +14,6 @@ public class EntityFreightGermanPost extends AbstractStandardFixedFreightCar
 	public void setupTextureDescription()
 	{
 
-	}
-
-	@Override
-	public String getInventoryName() {
-		return "Freight cart";
 	}
 
 	@Override

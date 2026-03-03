@@ -147,6 +147,11 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
         if (trainRecord.getMHP() > 0) {
             par3List.add("\u00a77" + "Power: " + trainRecord.getMHP() + " " +  translate("menu.item.mhp"));
         }
+
+        if (itemCacheData.TractiveEffort != 0){
+            par3List.add(EnumChatFormatting.GREEN + translate("menu.item.tractiveeffort") +": " + itemCacheData.TractiveEffort + " lbf");
+        }
+
         if (trainRecord.getMass() != 0)
         {
             par3List.add("\u00a77" + "Mass: " + (trainRecord.getMass() * 10));

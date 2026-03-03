@@ -16,10 +16,7 @@ public class EntityFreightCenterbeam_Empty extends AbstractStandardFixedFreightC
 
 	}
 
-	@Override
-	public String getInventoryName() {
-		return "Freight cart";
-	}
+	
 
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {

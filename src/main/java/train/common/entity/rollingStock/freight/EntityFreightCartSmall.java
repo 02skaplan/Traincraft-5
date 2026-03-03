@@ -16,10 +16,7 @@ public class EntityFreightCartSmall extends AbstractStandardFixedFreightCar impl
 
 	}
 
-	@Override
-	public String getInventoryName() {
-		return "Freight cart";
-	}
+	
 	
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {

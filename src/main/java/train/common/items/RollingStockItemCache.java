@@ -25,7 +25,17 @@ public class RollingStockItemCache
             cargoItemFilter = null;
         }
 
-        maxSpeed = train instanceof Locomotive ? ((Locomotive) train).transportTopSpeed() : 0;
+        if (train instanceof Locomotive)
+        {
+            maxSpeed = ((Locomotive) train).transportTopSpeed();
+            TractiveEffort = ((Locomotive) train).transportTractiveEffort();
+        }
+        else
+        {
+            maxSpeed = 0;
+            TractiveEffort = 0;
+        }
+
         WeightKg = train.weightKg();
         TankCapacity = GetTankCapacity(train);
     }
@@ -64,6 +74,7 @@ public class RollingStockItemCache
     public final String TransportCountry;
     public final boolean IsFictional;
 
+    public final float TractiveEffort;
     public final float maxSpeed;
 
     public final float WeightKg;

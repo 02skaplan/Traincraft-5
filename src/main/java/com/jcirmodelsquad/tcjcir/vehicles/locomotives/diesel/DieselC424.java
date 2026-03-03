@@ -51,7 +51,11 @@ public class DieselC424 extends DieselTrain {
     @Override
     public String getInventoryName() { return "ALCo C424"; }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 18000;
+    }
 
     
     

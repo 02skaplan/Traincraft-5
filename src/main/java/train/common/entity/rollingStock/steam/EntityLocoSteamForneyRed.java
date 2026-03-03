@@ -31,4 +31,10 @@ public class EntityLocoSteamForneyRed extends AbstractSteamTankEngine {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.5F;
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 8000;
+	}
 }

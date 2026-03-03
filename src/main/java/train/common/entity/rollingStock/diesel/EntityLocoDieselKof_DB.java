@@ -18,35 +18,13 @@ public class EntityLocoDieselKof_DB extends DieselTrain {
 
 	public EntityLocoDieselKof_DB(World world) {
 		super(world, EnumHeritageTrainsLegacy.locoDieselKOF.getTankCapacity(), LiquidManager.dieselFilter());
-		initLoco();
+
 	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
-	}
-
-
 
 	@Override
 	public void updateRiderPosition() {
 		riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() - 0.1F, posZ);
 	}
-	
-
-
-
-
-	@Override
-	public void onUpdate() {
-		super.onUpdate();
-		if (worldObj.isRemote) {
-			return;
-		}
-		checkInvent(locoInvent[0]);
-	}
-
-	
 
 	@Override
 	public String getInventoryName() {
@@ -59,7 +37,11 @@ public class EntityLocoDieselKof_DB extends DieselTrain {
 		return (0.6F);
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 5000;
+	}
 
 	
 }

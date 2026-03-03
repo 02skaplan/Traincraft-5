@@ -40,5 +40,15 @@ public class EntityLocoSteam4_4_0 extends SteamTrain {
 		return 0.6F;
 	}
 
-	
+	@Override
+	public String transportCountry()
+	{
+		return "US";
+	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 5000;
+	}
 }

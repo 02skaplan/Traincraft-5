@@ -68,13 +68,6 @@ public class DieselC415H extends DieselTrain {
         }
     }
 
-
-    
-
-
-
-    
-
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 1.2F;
     }
@@ -86,7 +79,11 @@ public class DieselC415H extends DieselTrain {
         return "ALCo C415 High Visibility";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 
     
 

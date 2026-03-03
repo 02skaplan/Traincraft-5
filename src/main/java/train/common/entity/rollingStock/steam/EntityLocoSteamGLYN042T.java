@@ -42,5 +42,9 @@ public class EntityLocoSteamGLYN042T extends SteamTrain {
 		return 0.9F;
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 3750;
+	}
 }

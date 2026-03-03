@@ -11,7 +11,7 @@ public class EntityTenderSmall extends Tender  {
 
 	public EntityTenderSmall(World world)
 	{
-		super(world, FluidRegistry.WATER, 0, EnumHeritageTrainsLegacy.tenderSmall.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 	}
 
 	@Override
@@ -22,5 +22,11 @@ public class EntityTenderSmall extends Tender  {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 0.8F;
+	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 5000;
 	}
 }

@@ -18,15 +18,7 @@ public class EntityLocoDieselClass66 extends DieselTrain {
 	}
 	public EntityLocoDieselClass66(World world) {
 		super(world, EnumHeritageTrainsLegacy.locoDieselEWSClass66.getTankCapacity(), LiquidManager.dieselFilter());
-		initLoco();
 	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
-	}
-
-
 
 	@Override
 	public void updateRiderPosition() {
@@ -59,7 +51,11 @@ public class EntityLocoDieselClass66 extends DieselTrain {
 		return (1F);
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 6400;
+	}
 
 	
 }

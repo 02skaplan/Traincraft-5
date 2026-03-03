@@ -66,5 +66,9 @@ public class EntityLocoSteamC41T extends SteamTrain {
 		return 0.7F;
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 16000;
+	}
 }

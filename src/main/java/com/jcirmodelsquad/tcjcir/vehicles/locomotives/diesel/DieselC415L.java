@@ -79,7 +79,11 @@ public class DieselC415L extends DieselTrain {
         return "ALCo C415 Low Clearance";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 17000;
+    }
 
     
 

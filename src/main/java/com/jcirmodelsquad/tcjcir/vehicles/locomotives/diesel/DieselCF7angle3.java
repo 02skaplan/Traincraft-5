@@ -86,4 +86,10 @@ public class DieselCF7angle3 extends DieselTrain {
     public boolean isFictional() {
         return true;
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 }

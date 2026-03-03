@@ -53,4 +53,10 @@ public class DieselCE8 extends DieselTrain {
     public String transportYear() {
         return "1980";
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 11000;
+    }
 }

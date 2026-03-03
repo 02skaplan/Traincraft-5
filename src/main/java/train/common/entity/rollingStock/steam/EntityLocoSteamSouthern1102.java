@@ -81,5 +81,9 @@ public class EntityLocoSteamSouthern1102 extends SteamTrain {
 		return 0.65F;
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 10000;
+	}
 }

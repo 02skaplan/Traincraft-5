@@ -156,6 +156,7 @@ menu.item.diesel=Diesel
 menu.item.electric=Electric
 menu.item.types=Type
 menu.item.mhp=MHP
+menu.item.tractiveeffort=Tractive effort
 menu.item.speed=Top Speed
 menu.item.weight=Weight
 menu.item.country=Country

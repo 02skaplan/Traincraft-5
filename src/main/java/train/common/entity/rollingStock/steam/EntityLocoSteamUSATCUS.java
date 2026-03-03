@@ -72,5 +72,9 @@ public class EntityLocoSteamUSATCUS extends SteamTrain {
 		return 0.65F;
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 10000;
+	}
 }

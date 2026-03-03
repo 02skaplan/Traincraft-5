@@ -17,28 +17,13 @@ public class EntityLocoDieselMILW_H1044 extends DieselTrain {
 
 	public EntityLocoDieselMILW_H1044(World world) {
 		super(world, EnumHeritageTrainsLegacy.locoDieselV60_DB.getTankCapacity(), LiquidManager.dieselFilter());
-		initLoco();
 	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
-	}
-
 	
 
 	@Override
 	public void updateRiderPosition() {
 		riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() + 0.45F, posZ);
-	}@Override
-	public void onUpdate() {
-		super.onUpdate();
-		if (worldObj.isRemote) {
-			return;
-		}
-		checkInvent(locoInvent[0]);
 	}
-
 	
 	@Override
 	public String getInventoryName() {
@@ -52,7 +37,11 @@ public class EntityLocoDieselMILW_H1044 extends DieselTrain {
 		return (0.8F);
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 8000;
+	}
 
 	
 }

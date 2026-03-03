@@ -42,6 +42,6 @@ public class DieselDH643 extends DieselTrain {
     @Override
     public int getTankCapacity()
     {
-        return 16000;
+        return 10000;
     }
 }

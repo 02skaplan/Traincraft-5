@@ -14,11 +14,12 @@ import net.minecraft.world.World;
 import train.client.render.models.ModelPassenger_DB_oriental;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
+import train.common.api.AbstractPassengerCar;
 import train.common.api.EntityRollingStock;
 import train.common.api.IPassenger;
 import train.common.library.Info;
 
-public class EntityPassengerDBOriental extends EntityRollingStock implements IPassenger {
+public class EntityPassengerDBOriental extends AbstractPassengerCar {
 
 	public EntityPassengerDBOriental(World world) {
 		super(world);
@@ -27,42 +28,6 @@ public class EntityPassengerDBOriental extends EntityRollingStock implements IPa
 	@Override
 	public void updateRiderPosition() {
 		riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() + 0.2, posZ);
-	}
-
-	
-
-	@Override
-	public boolean interactFirst(EntityPlayer entityplayer) {
-		playerEntity = entityplayer;
-		if ((super.interactFirst(entityplayer))) {
-			return false;
-		}
-		if (!worldObj.isRemote) {
-			ItemStack itemstack = entityplayer.inventory.getCurrentItem();
-			if(lockThisCart(itemstack, entityplayer))return true;
-			if (riddenByEntity != null && (riddenByEntity instanceof EntityPlayer) && riddenByEntity != entityplayer) {
-				return true;
-			}
-			if (!worldObj.isRemote) {
-				entityplayer.mountEntity(this);
-			}
-		}
-		return true;
-	}
-
-	@Override
-	public boolean canBeRidden() {
-		return true;
-	}
-
-	@Override
-	public boolean isStorageCart() {
-		return false;
-	}
-
-	@Override
-	public boolean isPoweredCart() {
-		return false;
 	}
 
 	@Override

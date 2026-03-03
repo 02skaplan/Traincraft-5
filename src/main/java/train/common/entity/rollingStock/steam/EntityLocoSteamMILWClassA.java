@@ -45,5 +45,9 @@ public class EntityLocoSteamMILWClassA extends SteamTrain {
 		return (0.8F);
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 10000;
+	}
 }

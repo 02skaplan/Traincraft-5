@@ -42,5 +42,9 @@ public class EntityLocoSteamAlice0_4_0 extends SteamTrain {
 		return 0.9F;
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 3750;
+	}
 }

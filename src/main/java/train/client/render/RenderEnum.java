@@ -30,6 +30,8 @@ import train.common.entity.rollingStock.diesel.*;
 import train.common.entity.rollingStock.electric.*;
 import train.common.entity.rollingStock.freight.*;
 import train.common.entity.rollingStock.passenger.baggagecar.*;
+import train.common.entity.rollingStock.passenger.rpo.EntityFreightGermanPost;
+import train.common.entity.rollingStock.passenger.rpo.EntityFreightHeavyweight;
 import train.common.entity.rollingStock.steam.*;
 import train.common.entity.rollingStock.tanker.*;
 import train.common.entity.rollingStock.tender.*;

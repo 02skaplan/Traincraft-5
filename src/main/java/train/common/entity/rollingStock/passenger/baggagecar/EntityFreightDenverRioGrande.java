@@ -1,12 +1,13 @@
-package train.common.entity.rollingStock;
+package train.common.entity.rollingStock.passenger.baggagecar;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.world.World;
 import train.common.api.AbstractStandardFixedFreightCar;
 
-public class EntityFreightHeavyweight extends AbstractStandardFixedFreightCar
+public class EntityFreightDenverRioGrande extends AbstractStandardFixedFreightCar
 {
-	public EntityFreightHeavyweight(World world) {
+	public EntityFreightDenverRioGrande(World world)
+	{
 		super(world);
 	}
 
@@ -23,11 +24,11 @@ public class EntityFreightHeavyweight extends AbstractStandardFixedFreightCar
 
 	@Override
 	public String getInventoryName() {
-		return "Heavyweight Mailcar";
+		return "DRG Baggage";
 	}
 
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
-		return 3.2F;
+		return 3.15F;
 	}
 }

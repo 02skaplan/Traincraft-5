@@ -9,7 +9,7 @@ import train.common.api.Tender;
 public class EntityTenderU57 extends Tender
 {
 	public EntityTenderU57(World world) {
-		super(world, FluidRegistry.WATER, 0, 10000 /*EnumTrains..getTankCapacity()*/, LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 
@@ -19,5 +19,11 @@ public class EntityTenderU57 extends Tender
 	}@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.85F;
+	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 10000;
 	}
 }

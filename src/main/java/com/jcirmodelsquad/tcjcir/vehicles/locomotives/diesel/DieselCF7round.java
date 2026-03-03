@@ -67,7 +67,11 @@ public class DieselCF7round extends DieselTrain {
         return "EMD CF7 Roundcab";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 
     
 

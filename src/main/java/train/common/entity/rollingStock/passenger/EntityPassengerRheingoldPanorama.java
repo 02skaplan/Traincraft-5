@@ -7,57 +7,24 @@ import net.minecraft.world.World;
 import train.client.render.models.ModelRheingoldPassenger_Panorama;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
+import train.common.api.AbstractPassengerCar;
 import train.common.api.EntityRollingStock;
 import train.common.api.IPassenger;
 import train.common.core.util.TraincraftUtil;
 import train.common.library.Info;
 
-public class EntityPassengerRheingoldPanorama extends EntityRollingStock implements IPassenger {
+public class EntityPassengerRheingoldPanorama extends AbstractPassengerCar
+{
 
 	public EntityPassengerRheingoldPanorama(World world) {
 		super(world);
 	}
 
-		@Override
+	@Override
 	public void updateRiderPosition() {
 		TraincraftUtil.updateRider(this,-0.5, 0.4);
 	}
 
-
-
-	@Override
-	public boolean interactFirst(EntityPlayer entityplayer) {
-		playerEntity = entityplayer;
-		if ((super.interactFirst(entityplayer))) {
-			return false;
-		}
-		if (!worldObj.isRemote) {
-			ItemStack itemstack = entityplayer.inventory.getCurrentItem();
-			if(lockThisCart(itemstack, entityplayer))return true;
-			if (riddenByEntity != null && (riddenByEntity instanceof EntityPlayer) && riddenByEntity != entityplayer) {
-				return true;
-			}
-			if (!worldObj.isRemote) {
-				entityplayer.mountEntity(this);
-			}
-		}
-		return true;
-	}
-
-	@Override
-	public boolean canBeRidden() {
-		return true;
-	}
-
-	@Override
-	public boolean isStorageCart() {
-		return false;
-	}
-
-	@Override
-	public boolean isPoweredCart() {
-		return false;
-	}
 
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {

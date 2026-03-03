@@ -19,12 +19,6 @@ public class EntityLocoDieselGP7Red extends DieselTrain
 
 	public EntityLocoDieselGP7Red(World world) {
 		super(world, EnumHeritageTrainsLegacy.locoDieselGP7Red.getTankCapacity(), LiquidManager.dieselFilter());
-		initLoco();
-	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
 	}
 
 	@Override
@@ -92,7 +86,11 @@ public class EntityLocoDieselGP7Red extends DieselTrain
 		return (1.14F);
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 20000;
+	}
 
 	
 }

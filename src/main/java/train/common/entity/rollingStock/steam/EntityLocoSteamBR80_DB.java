@@ -62,5 +62,9 @@ public class EntityLocoSteamBR80_DB extends SteamTrain {
 		return 1.1F;
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 7000;
+	}
 }

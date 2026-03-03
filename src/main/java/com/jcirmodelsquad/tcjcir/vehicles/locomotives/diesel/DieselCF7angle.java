@@ -86,7 +86,11 @@ public class DieselCF7angle extends DieselTrain {
         return "EMD CF7 Angle Cab";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 
 
 

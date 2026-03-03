@@ -86,7 +86,11 @@ public class EntityLocoDieselIC4_DSB_MG extends DieselTrain {
 		return (0.1f);
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 20000;
+	}
 
 	
 }

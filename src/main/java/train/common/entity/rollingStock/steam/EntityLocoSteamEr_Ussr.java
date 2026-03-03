@@ -15,7 +15,7 @@ public class EntityLocoSteamEr_Ussr extends SteamTrain {
 		return EnumSounds.locoSteamEr_USSR;
 	}
 	public EntityLocoSteamEr_Ussr(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamEr_USSR.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 
@@ -34,5 +34,9 @@ public class EntityLocoSteamEr_Ussr extends SteamTrain {
 		return 0.53F;
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 10000;
+	}
 }

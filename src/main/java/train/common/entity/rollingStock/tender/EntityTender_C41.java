@@ -11,7 +11,7 @@ public class EntityTender_C41 extends Tender
 {
 	public EntityTender_C41(World world)
 	{
-		super(world, FluidRegistry.WATER, 0, EnumHeritageTrainsLegacy.tender_C41.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 	}
 
 	@Override
@@ -29,5 +29,9 @@ public class EntityTender_C41 extends Tender
 		return 1.75F;
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 16000;
+	}
 }

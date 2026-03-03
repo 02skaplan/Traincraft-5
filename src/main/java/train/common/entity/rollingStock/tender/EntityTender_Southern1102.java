@@ -15,7 +15,7 @@ public class EntityTender_Southern1102 extends Tender
 {
 	public EntityTender_Southern1102(World world)
 	{
-		super(world, FluidRegistry.WATER, 0, EnumHeritageTrainsLegacy.tender_Southern1102.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		initOverlayTextures();
 		getOverlayTextureContainer().initOverlaySpecification(new OTSpecificationDynamic(
 				"Road Name",
@@ -37,5 +37,11 @@ public class EntityTender_Southern1102 extends Tender
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.5F;
+	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 16000;
 	}
 }

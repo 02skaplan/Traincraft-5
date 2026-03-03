@@ -18,12 +18,6 @@ public class EntityLocoDieselFOLM1 extends DieselTrain {
 	}
 	public EntityLocoDieselFOLM1(World world) {
 		super(world, EnumHeritageTrainsLegacy.locoDieselFOL_M1.getTankCapacity(), LiquidManager.dieselFilter());
-		initLoco();
-	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
 	}
 
 	@Override
@@ -44,29 +38,20 @@ public class EntityLocoDieselFOLM1 extends DieselTrain {
 	}
 
 
-
-	
-
-	@Override
-	public void onUpdate() {
-		checkInvent(locoInvent[0]);
-		super.onUpdate();
-	}
-
-	
-
 	@Override
 	public String getInventoryName() {
 		return "FOL M1";
 	}
 
-	
-
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (1F);
 	}
-	
 
+	@Override
+	public int getTankCapacity()
+	{
+		return 15000;
+	}
 	
 }

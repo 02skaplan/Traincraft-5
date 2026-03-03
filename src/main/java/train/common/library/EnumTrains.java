@@ -806,6 +806,7 @@ public enum EnumTrains implements ITrainRecord
 		return this.trainType;
 	}
 
+	@Deprecated
 	public int getMHP(){
 		return this.MHP;
 	}
@@ -838,6 +839,7 @@ public enum EnumTrains implements ITrainRecord
 		return this.brakeRate;
 	}
 
+	@Deprecated
 	public int getTankCapacity(){
 		return this.tankCapacity;
 	}

@@ -86,5 +86,9 @@ public class EntityLocoDieselDeltic extends DieselTrain {
 		return 1.5F;
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 6400;
+	}
 }

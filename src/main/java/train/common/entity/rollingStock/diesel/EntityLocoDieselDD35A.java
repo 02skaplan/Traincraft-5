@@ -84,5 +84,9 @@ public class EntityLocoDieselDD35A extends DieselTrain {
 		return 1.3F;
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 6850;
+	}
 }

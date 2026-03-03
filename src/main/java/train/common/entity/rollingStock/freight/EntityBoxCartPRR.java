@@ -21,10 +21,7 @@ public class EntityBoxCartPRR extends AbstractStandardFixedFreightCar
 		return (double) height * 0.0D - 0.30000001192092896D;
 	}
 
-	@Override
-	public String getInventoryName() {
-		return "Freight cart";
-	}
+	
 
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {

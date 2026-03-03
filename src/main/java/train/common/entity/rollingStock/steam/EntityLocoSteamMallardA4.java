@@ -51,5 +51,9 @@ public class EntityLocoSteamMallardA4 extends SteamTrain {
 		return (1F);
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 10000;
+	}
 }

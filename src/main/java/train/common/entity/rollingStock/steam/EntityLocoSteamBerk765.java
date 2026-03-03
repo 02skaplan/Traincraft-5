@@ -47,6 +47,16 @@ public class EntityLocoSteamBerk765 extends SteamTrain {
 		return 1.375F;
 	}
 
+	@Override
+	public String transportCountry()
+	{
+		return "US";
+	}
 
+	@Override
+	public int getTankCapacity()
+	{
+		return 10000;
+	}
 	
 }

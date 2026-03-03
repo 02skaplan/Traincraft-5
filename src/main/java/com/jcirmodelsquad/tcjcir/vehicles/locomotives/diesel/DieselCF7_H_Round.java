@@ -52,7 +52,11 @@ public class DieselCF7_H_Round extends DieselTrain {
         return "CF7 Roundcab (Heritage Model)";
     }
 
-    
+    @Override
+    public int getTankCapacity()
+    {
+        return 10000;
+    }
 
 
     

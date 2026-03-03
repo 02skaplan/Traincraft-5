@@ -42,6 +42,10 @@ public class EntityLocoSteamFowler extends SteamTrain {
 		return 0.5F;
 	}
 
-
+	@Override
+	public int getTankCapacity()
+	{
+		return 10000;
+	}
 	
 }

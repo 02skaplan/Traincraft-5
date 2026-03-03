@@ -68,5 +68,9 @@ public class EntityLocoSteamCoranationClass extends SteamTrain {
 		return (0.9F);
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 10000;
+	}
 }

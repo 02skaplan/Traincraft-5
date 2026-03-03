@@ -61,7 +61,11 @@ public class EntityLocoDieselChME3 extends DieselTrain
 		return (1.5F);
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 5000;
+	}
 
 	
 }

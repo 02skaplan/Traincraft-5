@@ -40,5 +40,9 @@ public class EntityLocoSteamClimax extends SteamTrain {
 		return 1.5F;
 	}
 
-	
+	@Override
+	public int getTankCapacity()
+	{
+		return 4000;
+	}
 }

@@ -85,7 +85,11 @@ public class EntityLocoDieselEMDF7 extends DieselTrain {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (1F);
 	}
-	
 
+	@Override
+	public int getTankCapacity()
+	{
+		return 12000;
+	}
 	
 }

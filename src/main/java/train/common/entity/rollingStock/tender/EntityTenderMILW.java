@@ -10,7 +10,7 @@ import train.common.library.EnumHeritageTrainsLegacy;
 public class EntityTenderMILW extends Tender
 {
 	public EntityTenderMILW(World world) {
-		super(world, FluidRegistry.WATER, 0, EnumHeritageTrainsLegacy.tenderGS4.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 
@@ -21,5 +21,11 @@ public class EntityTenderMILW extends Tender
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.9F;
+	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 16000;
 	}
 }

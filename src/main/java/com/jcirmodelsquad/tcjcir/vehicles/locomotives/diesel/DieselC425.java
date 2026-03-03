@@ -52,7 +52,11 @@ public class DieselC425 extends DieselTrain {
         return "ALCo C425";
     }
 
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 18000;
+    }
 
 
 

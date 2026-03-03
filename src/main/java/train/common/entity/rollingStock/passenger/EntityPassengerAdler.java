@@ -14,11 +14,12 @@ import net.minecraft.world.World;
 import train.client.render.models.ModelPassengerAdler;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
+import train.common.api.AbstractPassengerCar;
 import train.common.api.EntityRollingStock;
 import train.common.api.IPassenger;
 import train.common.library.Info;
 
-public class EntityPassengerAdler extends EntityRollingStock implements IPassenger {
+public class EntityPassengerAdler extends AbstractPassengerCar {
 	public EntityPassengerAdler(World world) {
 		super(world);
 	}
@@ -26,44 +27,6 @@ public class EntityPassengerAdler extends EntityRollingStock implements IPasseng
 	@Override
 	public void updateRiderPosition() {
 		riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() + 0.2, posZ);
-	}
-
-	public void setDead() {
-		super.setDead();
-		isDead = true;
-	}
-
-	@Override
-	public boolean interactFirst(EntityPlayer entityplayer) {
-		playerEntity = entityplayer;
-		if ((super.interactFirst(entityplayer))) {
-			return false;
-		}
-		if (!worldObj.isRemote) {
-			ItemStack itemstack = entityplayer.inventory.getCurrentItem();
-			if(lockThisCart(itemstack, entityplayer))return true;
-			if (riddenByEntity != null && (riddenByEntity instanceof EntityPlayer) && riddenByEntity != entityplayer) {
-				return true;
-			}
-			if (!worldObj.isRemote) {
-				entityplayer.mountEntity(this);
-			}
-		}
-		return true;
-	}
-	@Override
-	public boolean canBeRidden() {
-		return true;
-	}
-
-	@Override
-	public boolean isStorageCart() {
-		return false;
-	}
-
-	@Override
-	public boolean isPoweredCart() {
-		return false;
 	}
 
 	@Override
