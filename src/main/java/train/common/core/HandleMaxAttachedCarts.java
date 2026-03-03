@@ -55,11 +55,11 @@ public class HandleMaxAttachedCarts {
 
 		double power = 0;
 		if ((cart1).trainHandler != null && (cart1).trainHandler.getTrains().size() != 0 && ( cart1).trainHandler.getTrains().size()>1){
-			power = (cart1).getPower();
+			power = (cart1).transportMetricHorsePower();
 			for (int i = 0; i < ( cart1).trainHandler.getTrains().size(); i++) {
 				EntityRollingStock stock = (cart1).trainHandler.getTrains().get(i);
 				if(stock instanceof Locomotive && stock.uniqueID != (cart1).uniqueID){
-					power += ((Locomotive)stock).getPower();
+					power += ((Locomotive)stock).transportMetricHorsePower();
 				}
 			}
 			//power = ((Locomotive) cart1).getPower();//((EntityRollingStock) cart1).trains.getTrainPower();

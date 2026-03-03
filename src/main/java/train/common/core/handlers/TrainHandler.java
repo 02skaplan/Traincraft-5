@@ -25,7 +25,7 @@ public class TrainHandler {
 			}
 		}
 		if (rolling instanceof Locomotive) {
-			trainPower += ((Locomotive) rolling).getPower();
+			trainPower += ((Locomotive) rolling).transportMetricHorsePower();
 		}
 		train.add(rolling);
 		(rolling).trainHandler = this;
