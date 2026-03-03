@@ -6,7 +6,6 @@ import train.common.api.AbstractStandardTankerCar;
 import train.common.library.EnumTrains;
 
 public class DOT11120600 extends AbstractStandardTankerCar {
-    public int freightInventorySize;
 
     public DOT11120600(World world) {
         super(world, EnumTrains.DOT11120600.getTankCapacity());
@@ -25,6 +24,12 @@ public class DOT11120600 extends AbstractStandardTankerCar {
     @Override
     public String getInventoryName() {
         return "20,600 Gallon Tank car";
+    }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 78000;
     }
 
     @Override

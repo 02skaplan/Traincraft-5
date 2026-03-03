@@ -44,4 +44,10 @@ public class HotTubTender extends Tender  {
     {
         return "US";
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 41000;
+    }
 }

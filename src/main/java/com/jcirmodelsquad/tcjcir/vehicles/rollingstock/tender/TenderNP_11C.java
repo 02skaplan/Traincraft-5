@@ -30,4 +30,9 @@ public class TenderNP_11C extends Tender  {
 		return 1.3F;
 	}
 
+	@Override
+	public int getTankCapacity()
+	{
+		return 26000;
+	}
 }

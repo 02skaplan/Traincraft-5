@@ -9,7 +9,6 @@ import train.common.entity.CargoSpecification;
 import train.common.library.EnumTrains;
 
 public class DUPX39200 extends AbstractStandardTankerCar {
-    public int freightInventorySize;
 
     public DUPX39200(World world) {
         super(world, EnumTrains.DUPX39200.getTankCapacity());
@@ -49,6 +48,12 @@ public class DUPX39200 extends AbstractStandardTankerCar {
     @Override
     public String getInventoryName() {
         return "NATX 30,600 Gallon Tank car";
+    }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 148000;
     }
 
     @Override

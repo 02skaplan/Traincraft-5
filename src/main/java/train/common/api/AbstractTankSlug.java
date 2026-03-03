@@ -28,11 +28,11 @@ public abstract class AbstractTankSlug extends LiquidTank implements IFluidHandl
 
     public AbstractTankSlug(World world, ITrainRecord trainRecord)
     {
-        super(world, trainRecord.getTankCapacity());
+        super(world, 0);
         if (world != null)
         {
             initFreightWater();
-            this.theTank = LiquidManager.getInstance().new FilteredTank(trainRecord.getTankCapacity(), LiquidManager.dieselFilter());
+            this.theTank = LiquidManager.getInstance().new FilteredTank(getTankCapacity(), LiquidManager.dieselFilter());
             dataWatcher.addObject(28, lightingDetailsJSON());
         }
     }

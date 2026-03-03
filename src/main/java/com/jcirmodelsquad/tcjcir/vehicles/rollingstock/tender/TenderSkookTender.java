@@ -35,4 +35,10 @@ public class TenderSkookTender extends Tender  {
         return 1.5F;
     }
 
+    @Override
+    public int getTankCapacity()
+    {
+        return 15000;
+    }
+
 }

@@ -29,4 +29,10 @@ public class TenderOnion extends Tender  {
 	{
 		return "Moon";
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 12000;
+	}
 }

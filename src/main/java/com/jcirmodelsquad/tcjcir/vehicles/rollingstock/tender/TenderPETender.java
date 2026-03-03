@@ -34,4 +34,10 @@ public class TenderPETender extends Tender  {
 	{
 		return "US";
 	}
+
+	@Override
+	public int getTankCapacity()
+	{
+		return 20000;
+	}
 }

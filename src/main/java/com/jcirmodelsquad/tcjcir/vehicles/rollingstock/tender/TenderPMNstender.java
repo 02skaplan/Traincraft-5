@@ -38,4 +38,10 @@ public class TenderPMNstender extends Tender  {
     {
         return "US";
     }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 83000;
+    }
 }

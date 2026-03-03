@@ -21,8 +21,9 @@ public class EntityTenderNS3700 extends Tender{
 	}
 
 	@Override
-	public boolean canBeRidden() {
-		return false;
+	public int getTankCapacity()
+	{
+		return 16000;
 	}
 
 	@Override
