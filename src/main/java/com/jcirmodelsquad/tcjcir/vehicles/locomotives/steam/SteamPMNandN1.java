@@ -17,7 +17,7 @@ public class SteamPMNandN1 extends SteamTrain {
 		return EnumSounds.SteamPMNandN1;
 	}
 	public SteamPMNandN1(World world) {
-		super(world, EnumTrains.PMNandN1.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 		InsertTexture(0, "Pere Marquette N Class");
 		InsertTexture(1, "C&O N Class");

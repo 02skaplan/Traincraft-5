@@ -16,7 +16,7 @@ public class EntityLocoSteamSnowPlow extends AbstractStandardSteamPoweredRotaryS
 	}
 
 	public EntityLocoSteamSnowPlow(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamSnowPlow.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

@@ -16,7 +16,7 @@ public class EntityLocoSteamAlice0_4_0 extends SteamTrain {
 	}
 
 	public EntityLocoSteamAlice0_4_0(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamAlice.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

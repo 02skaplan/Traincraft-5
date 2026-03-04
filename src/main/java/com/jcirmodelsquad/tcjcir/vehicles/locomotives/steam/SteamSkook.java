@@ -17,7 +17,7 @@ public class SteamSkook extends SteamTrain {
         return EnumSounds.SteamSkook;
     }
     public SteamSkook(World world) {
-        super(world, EnumTrains.Skook.getTankCapacity(), LiquidManager.WATER_FILTER);
+        super(world, LiquidManager.WATER_FILTER);
         
     }
 

@@ -15,7 +15,7 @@ public class EntityLocoSteamMogulBlue extends SteamTrain {
 		return EnumSounds.locoSteamMogulBlue;
 	}
 	public EntityLocoSteamMogulBlue(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamMogul.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

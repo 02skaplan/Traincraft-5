@@ -16,7 +16,7 @@ public class EntityLocoSteamMallardA4 extends SteamTrain {
 	}
 
 	public EntityLocoSteamMallardA4(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamA4.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

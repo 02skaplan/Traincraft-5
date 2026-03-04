@@ -15,7 +15,7 @@ public class EntityLocoSteamCoranationClass extends SteamTrain {
 		return EnumSounds.locoSteamCoranationClass;
 	}
 	public EntityLocoSteamCoranationClass(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamCoranationClass.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

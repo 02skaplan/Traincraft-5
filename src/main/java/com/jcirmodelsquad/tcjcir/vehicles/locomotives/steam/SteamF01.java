@@ -16,7 +16,7 @@ public class SteamF01 extends SteamTrain {
 		return EnumSounds.SteamF01;
 	}
 	public SteamF01(World world) {
-		super(world, EnumTrains.F01.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 		InsertTexture(0, "CDC&S 4");
 	}

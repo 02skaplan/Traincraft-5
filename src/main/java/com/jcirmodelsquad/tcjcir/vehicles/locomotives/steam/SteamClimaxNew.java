@@ -16,7 +16,7 @@ public class SteamClimaxNew extends SteamTrain {
 		return EnumSounds.SteamClimaxNew;
 	}
 	public SteamClimaxNew(World world) {
-		super(world, EnumTrains.Climax2.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

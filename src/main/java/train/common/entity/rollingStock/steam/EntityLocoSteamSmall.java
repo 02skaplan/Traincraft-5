@@ -16,7 +16,7 @@ public class EntityLocoSteamSmall extends SteamTrain {
 	}
 
 	public EntityLocoSteamSmall(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamSmall.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 	@Override

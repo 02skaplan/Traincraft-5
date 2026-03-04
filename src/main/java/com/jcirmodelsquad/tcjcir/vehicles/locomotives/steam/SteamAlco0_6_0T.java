@@ -17,7 +17,7 @@ public class SteamAlco0_6_0T extends SteamTrain {
 		return EnumSounds.SteamAlco0_6_0T;
 	}
 	public SteamAlco0_6_0T(World world) {
-		super(world, EnumTrains.Alco0_6_0T.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 		InsertTexture(0, "Generic");
 		InsertTexture(1, "CDCS", LockoutGroup.CDCS);

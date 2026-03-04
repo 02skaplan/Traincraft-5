@@ -16,7 +16,7 @@ public class EntityLocoSteamPannier extends SteamTrain {
 	}
 
 	public EntityLocoSteamPannier(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamPannier.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

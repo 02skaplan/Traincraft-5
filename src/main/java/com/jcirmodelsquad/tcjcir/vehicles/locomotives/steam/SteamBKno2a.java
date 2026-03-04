@@ -15,7 +15,7 @@ public class SteamBKno2a extends SteamTrain {
 		return EnumSounds.SteamBKno2a;
 	}
 	public SteamBKno2a(World world) {
-		super(world, EnumTrains.BKno2a.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

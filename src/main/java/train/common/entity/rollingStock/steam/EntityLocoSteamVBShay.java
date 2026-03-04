@@ -17,7 +17,7 @@ public class EntityLocoSteamVBShay extends SteamTrain {
 	}
 
 	public EntityLocoSteamVBShay(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamAlice.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

@@ -17,7 +17,7 @@ public class SteamClimaxB extends SteamTrain {
 		return EnumSounds.SteamClimaxB;
 	}
 	public SteamClimaxB(World world) {
-		super(world, EnumTrains.ClimaxB.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 		InsertTexture(0, "Hillcrest Lumber Co #9");
 		InsertTexture(1, "Washaska Resources #6", LockoutGroup.BIDA);

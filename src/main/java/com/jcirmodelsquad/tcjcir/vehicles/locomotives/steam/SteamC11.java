@@ -15,7 +15,7 @@ public class SteamC11 extends SteamTrain {
 		return EnumSounds.SteamC11;
 	}
 	public SteamC11(World world) {
-		super(world, EnumTrains.C11.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

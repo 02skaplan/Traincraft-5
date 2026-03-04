@@ -15,7 +15,7 @@ public class EntityLocoSteamClimax extends SteamTrain {
 		return EnumSounds.locoSteamClimax;
 	}
 	public EntityLocoSteamClimax(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamShay.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

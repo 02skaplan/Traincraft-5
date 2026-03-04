@@ -15,7 +15,7 @@ public class EntityLocoSteamCherepanov extends SteamTrain {
 		return EnumSounds.locoSteamCherepanov;
 	}
 	public EntityLocoSteamCherepanov(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamCherepanov.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

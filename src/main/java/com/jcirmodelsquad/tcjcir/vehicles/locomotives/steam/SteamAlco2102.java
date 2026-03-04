@@ -17,7 +17,7 @@ public class SteamAlco2102 extends SteamTrain {
 		return EnumSounds.Steam2102;
 	}
 	public SteamAlco2102(World world) {
-		super(world, EnumTrains.Alco2102.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 		InsertTexture(0, "Blandsville Forest Products, Inc");
 		InsertTexture(1, "Sugar Pine Lumber");

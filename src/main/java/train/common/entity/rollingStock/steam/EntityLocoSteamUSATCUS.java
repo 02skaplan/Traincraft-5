@@ -15,7 +15,7 @@ public class EntityLocoSteamUSATCUS extends SteamTrain {
 		return EnumSounds.locoSteamSATCUS;
 	}
 	public EntityLocoSteamUSATCUS(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamUSATCUS.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

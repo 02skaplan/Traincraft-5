@@ -16,7 +16,7 @@ public class EntityLocoSteamShay extends SteamTrain {
 		return EnumSounds.locoSteamShay;
 	}
 	public EntityLocoSteamShay(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamShay.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 	@Override

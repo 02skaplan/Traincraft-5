@@ -14,7 +14,7 @@ public class EntityLocoSteamHeavy extends SteamTrain {
 		return EnumSounds.locoHeavySteamHeavy;
 	}
 	public EntityLocoSteamHeavy(World world) {
-		super(world, 5000/*change value here to EnumTrains..getTankCapacity()*/, LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

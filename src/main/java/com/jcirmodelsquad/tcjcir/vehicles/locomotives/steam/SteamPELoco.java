@@ -16,7 +16,7 @@ public class SteamPELoco extends SteamTrain {
 	}
 
 	public SteamPELoco(World world) {
-		super(world, EnumTrains.PELoco.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

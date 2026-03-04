@@ -17,7 +17,7 @@ public class EntityLocoSteamNS3700Class extends SteamTrain {
 		return EnumSounds.locoSteamNS3700Class;
 	}
 	public EntityLocoSteamNS3700Class(World world) {
-		super(world, EnumTrains.locoSteamNS3700Class.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 
 		InsertTexture(0, "NS 3737");
 	}

@@ -18,7 +18,7 @@ public class SteamOnion extends SteamTrain {
 		return EnumSounds.SteamOnion;
 	}
 	public SteamOnion(World world) {
-		super(world, EnumTrains.Onion.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 		//InsertTexture(4, "MISSINGNO BUTTSECKS RAILROAD NUMBER 1");
 	}

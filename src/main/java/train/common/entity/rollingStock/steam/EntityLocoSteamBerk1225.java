@@ -21,7 +21,7 @@ public class EntityLocoSteamBerk1225 extends SteamTrain {
 	}
 
 	public EntityLocoSteamBerk1225(World world) {
-		super(world, EnumHeritageTrainsLegacy.locosteamBerk1225.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		initOverlayTextures();
 		getOverlayTextureContainer().initOverlaySpecification(new OTSpecificationDynamic(
 				"Road Name",

@@ -17,7 +17,7 @@ public class SteamBrank extends SteamTrain {
 		return EnumSounds.SteamBrank;
 	}
 	public SteamBrank(World world) {
-		super(world, EnumTrains.Brank.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 		InsertTexture(0, "pregnant man railroad company", LockoutGroup.CDCS);
 	}

@@ -17,7 +17,7 @@ public class EntityLocoSteamHallClass extends SteamTrain {
 	}
 
 	public EntityLocoSteamHallClass(World world) {
-		super(world, EnumHeritageTrainsLegacy.locosteamHallClass.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

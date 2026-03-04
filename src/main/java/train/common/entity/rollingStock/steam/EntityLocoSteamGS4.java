@@ -15,7 +15,7 @@ public class EntityLocoSteamGS4 extends SteamTrain {
 		return EnumSounds.locoSteamGS4;
 	}
 	public EntityLocoSteamGS4(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamGS4.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

@@ -15,7 +15,7 @@ public class EntityLocoSteamU57 extends SteamTrain {
 	}
 
 	public EntityLocoSteamU57(World world) {
-		super(world, 5000/*Change here to EnumTrains..getTankCapacity()*/, LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

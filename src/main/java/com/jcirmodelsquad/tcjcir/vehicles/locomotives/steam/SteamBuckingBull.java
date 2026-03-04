@@ -16,7 +16,7 @@ public class SteamBuckingBull extends SteamTrain {
         return EnumSounds.SteamWCPBuckingBull;
     }
     public SteamBuckingBull(World world) {
-        super(world, EnumTrains.WCPBuckingBull.getTankCapacity(), LiquidManager.WATER_FILTER);
+        super(world, LiquidManager.WATER_FILTER);
         
     }
 

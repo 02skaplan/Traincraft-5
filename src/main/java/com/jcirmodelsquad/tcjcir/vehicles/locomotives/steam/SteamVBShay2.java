@@ -17,7 +17,7 @@ public class SteamVBShay2 extends SteamTrain {
 	}
 
 	public SteamVBShay2(World world) {
-		super(world, EnumTrains.VBShay.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

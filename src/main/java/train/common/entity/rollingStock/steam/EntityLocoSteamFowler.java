@@ -17,7 +17,7 @@ public class EntityLocoSteamFowler extends SteamTrain {
 	}
 
 	public EntityLocoSteamFowler(World world) {
-		super(world, EnumHeritageTrainsLegacy.locosteamKingClass.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

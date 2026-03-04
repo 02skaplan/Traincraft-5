@@ -16,7 +16,7 @@ public class SteamMacky extends SteamTrain {
         return EnumSounds.SteamWCPMacky;
     }
     public SteamMacky(World world) {
-        super(world, EnumTrains.WCPMacky.getTankCapacity(), LiquidManager.WATER_FILTER);
+        super(world, LiquidManager.WATER_FILTER);
         
     }
 

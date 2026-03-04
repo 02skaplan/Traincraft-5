@@ -17,7 +17,7 @@ public class SteamMK60 extends SteamTrain {
 		return EnumSounds.SteamMK60;
 	}
 	public SteamMK60(World world) {
-		super(world, EnumTrains.MK60.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 		InsertTexture(0, "Blank");
 		InsertTexture(1, "Spoof Texture");

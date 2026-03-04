@@ -18,7 +18,7 @@ public class SteamP01a extends SteamTrain {
 	}
 
 	public SteamP01a(World world) {
-		super(world, EnumTrains.P01a.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 		InsertTexture(0, "WRX 10", LockoutGroup.BIDA);
 		InsertTexture(1, "WRX 12", LockoutGroup.BIDA);

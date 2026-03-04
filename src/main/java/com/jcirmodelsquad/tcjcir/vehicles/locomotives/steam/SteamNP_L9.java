@@ -16,7 +16,7 @@ public class SteamNP_L9 extends SteamTrain {
 		return EnumSounds.SteamNP_L9;
 	}
 	public SteamNP_L9(World world) {
-		super(world, EnumTrains.NP_L9.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

@@ -19,7 +19,7 @@ public class EntityLocoSteamAlcoSC4 extends SteamTrain {
 		return EnumSounds.locoSteamAlcoSC4;
 	}
 	public EntityLocoSteamAlcoSC4(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoSteamC41.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		initOverlayTextures();
 		getOverlayTextureContainer().initOverlaySpecification(new OTSpecificationDynamic(
 				"Engine Number",

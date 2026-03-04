@@ -17,7 +17,7 @@ public class SteamHCS_c57 extends SteamTrain {
 		return EnumSounds.SteamHCS_c57;
 	}
 	public SteamHCS_c57(World world) {
-		super(world, EnumTrains.HCS_c57.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 
 		InsertTexture(0, "SP C9 2799");
 		InsertTexture(1, "SP C9 2759");

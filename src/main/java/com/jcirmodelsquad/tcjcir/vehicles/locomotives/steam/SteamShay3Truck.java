@@ -16,7 +16,7 @@ public class SteamShay3Truck extends SteamTrain {
 		return EnumSounds.Steam3Truck;
 	}
 	public SteamShay3Truck(World world) {
-		super(world, EnumTrains.Shay3Truck.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 	}
 

@@ -17,7 +17,7 @@ public class SteamLima2_8_0 extends SteamTrain {
 		return EnumSounds.SteamLima2_8_0;
 	}
 	public SteamLima2_8_0(World world) {
-		super(world, EnumTrains.Lima2_8_0.getTankCapacity(), LiquidManager.WATER_FILTER);
+		super(world, LiquidManager.WATER_FILTER);
 		
 		InsertTexture(0, "Generic");
 		InsertTexture(1, "CDCS 20", LockoutGroup.CDCS);
