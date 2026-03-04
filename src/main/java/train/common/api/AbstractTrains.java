@@ -393,6 +393,7 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 		buffer.writeBoolean(locked);
 	}
 
+	public float getPlayerScale(){ 	return 0.65f;}
 
 	public abstract boolean isLocomotive();
 
