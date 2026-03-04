@@ -52,12 +52,6 @@ public class EntityLocoSteam4_4_0 extends SteamTrain {
 	}
 
 	@Override
-	public float getPlayerEyeHeight()
-	{
-		return 500;
-	}
-
-	@Override
 	public int getTankCapacity()
 	{
 		return 5000;
