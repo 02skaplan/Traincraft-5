@@ -8,7 +8,7 @@ import train.common.library.EnumTrains;
 public class DOT11111000 extends AbstractStandardTankerCar {
 
     public DOT11111000(World world) {
-        super(world, EnumTrains.DOT11111000.getTankCapacity());
+        super(world);
     }
 
     @Override

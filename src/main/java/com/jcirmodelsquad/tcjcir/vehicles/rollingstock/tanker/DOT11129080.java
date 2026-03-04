@@ -11,7 +11,7 @@ import train.common.library.EnumTrains;
 public class DOT11129080 extends AbstractStandardTankerCar {
 
     public DOT11129080(World world) {
-        super(world, EnumTrains.DOT11129080.getTankCapacity());
+        super(world);
         setCargoManager(new CargoManager(new CargoSpecification[][] {
                 { new CargoSpecification(Modelhazmat_plac_29080.class, "loads/hazmat_plac_flammable_number",
                         "Hazmat Placard - Flammable (Bluk)", 0, 3.0, 0)},

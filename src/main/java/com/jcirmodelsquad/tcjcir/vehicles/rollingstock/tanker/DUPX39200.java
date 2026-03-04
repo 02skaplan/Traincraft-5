@@ -11,7 +11,7 @@ import train.common.library.EnumTrains;
 public class DUPX39200 extends AbstractStandardTankerCar {
 
     public DUPX39200(World world) {
-        super(world, EnumTrains.DUPX39200.getTankCapacity());
+        super(world);
 
         setCargoManager(new CargoManager(new CargoSpecification[][] {
                 { new CargoSpecification(Modelhazmat_plac_DUPX39200.class, "loads/hazmat_plac_corrosive_number",

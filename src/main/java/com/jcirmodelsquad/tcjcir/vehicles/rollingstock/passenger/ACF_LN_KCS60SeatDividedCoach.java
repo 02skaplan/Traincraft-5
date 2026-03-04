@@ -2,7 +2,6 @@ package com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger;
 
 import net.minecraft.world.World;
 import train.common.api.AbstractPassengerCar;
-import train.common.enums.LockoutGroup;
 
 public class ACF_LN_KCS60SeatDividedCoach extends AbstractPassengerCar
 {

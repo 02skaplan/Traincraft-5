@@ -1,7 +1,6 @@
 package com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight;
 
 import net.minecraft.entity.item.EntityMinecart;
-
 import net.minecraft.world.World;
 import train.common.api.AbstractStandardFreightCar;
 import train.common.entity.CargoManager;

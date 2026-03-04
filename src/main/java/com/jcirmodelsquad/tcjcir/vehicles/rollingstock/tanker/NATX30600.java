@@ -11,7 +11,7 @@ import train.common.library.EnumTrains;
 public class NATX30600 extends AbstractStandardTankerCar
 {
     public NATX30600(World world) {
-        super(world, EnumTrains.NATX30600.getTankCapacity());
+        super(world);
         
         setCargoManager(new CargoManager(new CargoSpecification[][] {
                 { new CargoSpecification(Modelhazmat_plac_natx30600.class, "loads/hazmat_plac_flammable_number",

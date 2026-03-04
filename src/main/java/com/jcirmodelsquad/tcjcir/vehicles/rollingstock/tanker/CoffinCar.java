@@ -9,7 +9,7 @@ public class CoffinCar extends AbstractStandardTankerCar {
 
 
     public CoffinCar(World world) {
-        super(world, EnumTrains.CoffinCar.getTankCapacity());
+        super(world);
     }
 
     @Override

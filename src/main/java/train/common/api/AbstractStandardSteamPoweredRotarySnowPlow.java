@@ -14,14 +14,9 @@ import java.util.Random;
 
 public abstract class AbstractStandardSteamPoweredRotarySnowPlow extends SteamTrain
 {
-    public AbstractStandardSteamPoweredRotarySnowPlow(World world, int capacity)
+    public AbstractStandardSteamPoweredRotarySnowPlow(World world, FluidStack filter)
     {
-        super(world, capacity);
-    }
-
-    public AbstractStandardSteamPoweredRotarySnowPlow(World world, int capacity, FluidStack filter)
-    {
-        super(world, capacity, filter);
+        super(world, filter);
     }
 
     private static final double[][]	blockpos	= { { 4, 0, 1 }, { 4, 0, -1 }, { 4, 0, 0 }};

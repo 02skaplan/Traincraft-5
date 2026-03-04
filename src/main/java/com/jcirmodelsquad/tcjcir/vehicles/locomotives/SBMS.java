@@ -10,7 +10,7 @@ public class SBMS extends AbstractTankSlug
 {
     public SBMS(World world)
     {
-        super(world, EnumTrains.SBMS);
+        super(world);
         InsertTexture(0, "FNCC", LockoutGroup.FNCC);
         InsertTexture(1, "WP");
         InsertTexture(2, "Blandsville & Blasic i mean Blankerston");

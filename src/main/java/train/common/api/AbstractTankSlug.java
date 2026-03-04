@@ -26,7 +26,7 @@ public abstract class AbstractTankSlug extends LiquidTank implements IFluidHandl
     public byte ditchLightMode = 1;
 
 
-    public AbstractTankSlug(World world, ITrainRecord trainRecord)
+    public AbstractTankSlug(World world)
     {
         super(world, 0);
         if (world != null)

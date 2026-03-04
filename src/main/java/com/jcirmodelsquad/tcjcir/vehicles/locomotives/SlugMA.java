@@ -9,7 +9,7 @@ import train.common.library.EnumTrains;
 public class SlugMA extends AbstractTankSlug
 {
 	public SlugMA(World world) {
-		super(world, EnumTrains.SlugMA);
+		super(world);
 		InsertTexture(0, "ANE SMA-1", LockoutGroup.ANE);
 		InsertTexture(1, "ANE SMA-2", LockoutGroup.ANE);
 		InsertTexture(2, "Magnolia", LockoutGroup.MAG);

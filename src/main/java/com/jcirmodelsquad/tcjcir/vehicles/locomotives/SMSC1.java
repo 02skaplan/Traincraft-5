@@ -10,7 +10,7 @@ public class SMSC1 extends AbstractTankSlug
 {
     public SMSC1(World world)
     {
-        super(world, EnumTrains.SMSC1);
+        super(world);
         InsertTexture(0, "FNCC S99 (KIT-L)", LockoutGroup.FNCC);
     }
 
