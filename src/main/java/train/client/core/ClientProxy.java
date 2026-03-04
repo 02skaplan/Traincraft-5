@@ -466,7 +466,7 @@ public class ClientProxy extends CommonProxy
 						if(trains != null)
 						{
 							GL11.glPushMatrix();
-							float scale = 0.65f;
+							float scale = trains.getPlayerScale();
 							scale = player.height * scale / player.height;
 							GL11.glTranslated(x, (y + .35), z);
 							GL11.glScalef(scale, scale, scale);
