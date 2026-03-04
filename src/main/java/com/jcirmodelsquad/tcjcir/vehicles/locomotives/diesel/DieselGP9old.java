@@ -7,6 +7,7 @@ import train.common.api.LiquidManager;
 import train.common.library.EnumTrains;
 import train.common.library.sounds.SoundRecord;
 
+@Deprecated
 public class DieselGP9old extends DieselTrain {
     @Override
     public SoundRecord getSoundRecord()

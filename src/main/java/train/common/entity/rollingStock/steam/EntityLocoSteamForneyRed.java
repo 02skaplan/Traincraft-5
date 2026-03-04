@@ -33,6 +33,12 @@ public class EntityLocoSteamForneyRed extends AbstractSteamTankEngine {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 600;
+	}
+
+	@Override
 	public int getTankCapacity()
 	{
 		return 8000;

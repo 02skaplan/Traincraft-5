@@ -74,6 +74,12 @@ public class EntityLocoSteamC41 extends SteamTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 1484;
+	}
+
+	@Override
 	public int getTankCapacity()
 	{
 		return 4000;

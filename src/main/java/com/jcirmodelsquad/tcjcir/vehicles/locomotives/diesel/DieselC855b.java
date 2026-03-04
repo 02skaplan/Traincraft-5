@@ -75,7 +75,11 @@ public class DieselC855b extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.9F;
     }
 
-    
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 5500;
+    }
 
     @Override
     public String getInventoryName() {

@@ -32,6 +32,12 @@ public class SteamMK60 extends SteamTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 2765;
+	}
+
+	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -1.2, 0.25, -0.45); }
 
 	@Override

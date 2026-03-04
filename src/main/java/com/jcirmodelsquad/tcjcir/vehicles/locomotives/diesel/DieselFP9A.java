@@ -31,9 +31,13 @@ public class DieselFP9A extends DieselTrain {
 
     @Override
     public void updateRiderPosition() { TraincraftUtil.updateRider(this, 2.5, 0.19, -0.35); }
-    
 
-    
+
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 1750;
+    }
 
     
 

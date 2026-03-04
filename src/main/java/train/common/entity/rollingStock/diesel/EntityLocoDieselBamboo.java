@@ -19,13 +19,7 @@ public class EntityLocoDieselBamboo extends DieselTrain {
 	}
 
 	public EntityLocoDieselBamboo(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoDieselBamboo.getTankCapacity(), LiquidManager.dieselFilter());
-		initLoco();
-	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
+		super(world, LiquidManager.dieselFilter());
 	}
 
 	
@@ -34,18 +28,6 @@ public class EntityLocoDieselBamboo extends DieselTrain {
 	public void updateRiderPosition() {
 		TraincraftUtil.updateRider(this, 1.3, 0);
 	}
-
-
-
-	
-
-	@Override
-	public void onUpdate() {
-		checkInvent(locoInvent[0]);
-		super.onUpdate();
-	}
-
-	
 
 	@Override
 	public String getInventoryName() {
@@ -57,6 +39,12 @@ public class EntityLocoDieselBamboo extends DieselTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (0.3F);
+	}
+
+	@Override
+	public float transportMetricHorsePower()
+	{
+		return 30;
 	}
 
 	@Override

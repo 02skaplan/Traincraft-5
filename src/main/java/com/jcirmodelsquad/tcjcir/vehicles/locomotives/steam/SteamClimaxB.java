@@ -26,6 +26,12 @@ public class SteamClimaxB extends SteamTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 838;
+	}
+
+	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, 0.3, 0.0, -0.4); }
 
 	@Override

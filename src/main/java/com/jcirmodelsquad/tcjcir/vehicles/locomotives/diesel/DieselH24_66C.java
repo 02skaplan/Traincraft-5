@@ -22,6 +22,12 @@ public class DieselH24_66C extends DieselTrain {
         InsertTexture(2, "Canadian Pacific (Twin Steam Generators)");
     }
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 2400;
+    }
+
 
     
 

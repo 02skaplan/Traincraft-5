@@ -64,15 +64,14 @@ public class DieselBoxcab23Ton extends DieselTrain {
         }
     }
 
-
-
-
-    
-
-
-
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 0.7F;
+    }
+
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 150;
     }
 
     @Override

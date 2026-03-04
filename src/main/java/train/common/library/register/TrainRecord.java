@@ -195,7 +195,10 @@ public class TrainRecord implements ITrainRecord
     public TrainRecord setTrainType(String type) { this.trainType = type; return this; }
     public TrainRecord setTrainType(EnumTrainType type) { this.trainType = type.TrainType; return this; }
 
+    @Deprecated
     public int getMHP() { return this.MHP; }
+
+    @Deprecated
     public TrainRecord setMHP(int mhp) { this.MHP = mhp; return this; }
 
     public int getMaxSpeed() { return this.maxSpeed; }

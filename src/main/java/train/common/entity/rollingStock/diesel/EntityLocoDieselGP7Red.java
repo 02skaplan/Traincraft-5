@@ -61,19 +61,6 @@ public class EntityLocoDieselGP7Red extends DieselTrain
 		}
 	}
 
-
-
-	
-
-	@Override
-	public void onUpdate() {
-		super.onUpdate();
-		if (worldObj.isRemote) {
-			return;
-		}
-		checkInvent(locoInvent[0]);
-	}
-
 	
 	@Override
 	public String getInventoryName() {
@@ -84,6 +71,12 @@ public class EntityLocoDieselGP7Red extends DieselTrain
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (1.14F);
+	}
+
+	@Override
+	public float transportMetricHorsePower()
+	{
+		return 2464;
 	}
 
 	@Override

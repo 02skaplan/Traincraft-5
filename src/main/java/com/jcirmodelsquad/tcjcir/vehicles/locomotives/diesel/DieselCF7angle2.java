@@ -42,6 +42,12 @@ public class DieselCF7angle2 extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 1470;
+    }
+
+    @Override
     public String transportYear() {
         return "1969-1978";
     }

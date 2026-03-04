@@ -27,6 +27,12 @@ public class SteamPMNandN1 extends SteamTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 3000;
+	}
+
+	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.75, 0.15, -0.5); }
 
 	@Override

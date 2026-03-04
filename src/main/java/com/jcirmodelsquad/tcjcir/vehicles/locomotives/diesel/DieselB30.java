@@ -42,6 +42,12 @@ public class DieselB30 extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.315F; }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 3000;
+    }
+
+    @Override
     public String getInventoryName() { return "GE B30-7"; }
 
     @Override

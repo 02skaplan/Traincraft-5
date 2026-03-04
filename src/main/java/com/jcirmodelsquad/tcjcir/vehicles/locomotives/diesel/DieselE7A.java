@@ -75,6 +75,12 @@ public class DieselE7A extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 2000;
+    }
+
+    @Override
     public String transportYear() {
         return "1945-1949";
     }

@@ -26,6 +26,12 @@ public class DieselMP900 extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 950;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

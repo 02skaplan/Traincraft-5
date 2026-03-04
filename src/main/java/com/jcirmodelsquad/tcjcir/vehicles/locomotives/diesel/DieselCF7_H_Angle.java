@@ -10,6 +10,7 @@ import train.common.library.EnumTrains;
 import train.common.library.sounds.SoundRecord;
 
 
+@Deprecated
 public class DieselCF7_H_Angle extends DieselTrain {
     @Override
     public SoundRecord getSoundRecord()

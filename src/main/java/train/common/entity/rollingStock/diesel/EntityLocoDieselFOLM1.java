@@ -49,6 +49,12 @@ public class EntityLocoDieselFOLM1 extends DieselTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 5000;
+	}
+
+	@Override
 	public int getTankCapacity()
 	{
 		return 15000;

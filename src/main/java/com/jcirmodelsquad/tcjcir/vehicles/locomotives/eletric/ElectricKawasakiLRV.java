@@ -16,7 +16,11 @@ public class ElectricKawasakiLRV extends ElectricTrain {
 		super(world);
 	}
 
-	
+	@Override
+	public float transportMetricHorsePower()
+	{
+		return 200;
+	}
 
 	@Override
 	public void updateRiderPosition() {

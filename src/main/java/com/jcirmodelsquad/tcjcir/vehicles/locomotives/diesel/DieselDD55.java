@@ -46,6 +46,12 @@ public class DieselDD55 extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 2000;
+    }
+
+    @Override
     public String getInventoryName() {
         return "LASC DD55";
     }

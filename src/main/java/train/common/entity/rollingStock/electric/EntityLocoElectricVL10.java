@@ -64,10 +64,9 @@ public class EntityLocoElectricVL10 extends ElectricTrain {
 	}
 
 	@Override
-	public boolean canBeAdjusted(EntityMinecart cart) {
-
-		return canBeAdjusted;
-
+	public float transportMetricHorsePower()
+	{
+		return 6250;
 	}
 	
 }

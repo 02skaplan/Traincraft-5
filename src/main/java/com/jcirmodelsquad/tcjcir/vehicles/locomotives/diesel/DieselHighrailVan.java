@@ -19,6 +19,12 @@ public class DieselHighrailVan extends DieselTrain {
 
     }
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 90;
+    }
+
 
 
 

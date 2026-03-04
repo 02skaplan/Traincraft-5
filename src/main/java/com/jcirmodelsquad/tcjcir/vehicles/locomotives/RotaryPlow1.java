@@ -31,6 +31,12 @@ public class RotaryPlow1 extends AbstractRotarySnowPlow {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 1750;
+    }
+
+    @Override
     public void updateRiderPosition() { TraincraftUtil.updateRider(this, 1.9, 0.45, -0.25); }
 
     @Override

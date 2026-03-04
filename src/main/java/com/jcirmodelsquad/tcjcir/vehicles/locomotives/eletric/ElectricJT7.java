@@ -16,6 +16,11 @@ public class ElectricJT7 extends ElectricTrain {
         super(world);
     }
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 3900;
+    }
     
     @Override
     public void updateRiderPosition() {

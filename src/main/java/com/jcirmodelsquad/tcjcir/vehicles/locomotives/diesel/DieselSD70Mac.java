@@ -38,6 +38,12 @@ public class DieselSD70Mac extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 4000;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

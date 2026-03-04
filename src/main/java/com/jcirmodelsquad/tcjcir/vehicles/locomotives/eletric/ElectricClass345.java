@@ -6,6 +6,7 @@ import net.minecraft.world.World;
 import train.common.api.ElectricTrain;
 import train.common.library.sounds.SoundRecord;
 
+@Deprecated
 public class ElectricClass345 extends ElectricTrain {
     public TiltingHandler tiltingHandler = new TiltingHandler(7);
 

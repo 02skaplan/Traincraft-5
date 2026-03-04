@@ -32,6 +32,12 @@ public class DieselRS2 extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 1500;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

@@ -25,15 +25,16 @@ public class DieselGE25Ton extends DieselTrain {
 		InsertTexture(4, "oh brother heres another forgotten about bigj railroad");
 	}
 
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
-	}
-
 	@Override
 	public String transportCountry()
 	{
 		return "US";
+	}
+
+	@Override
+	public float transportMetricHorsePower()
+	{
+		return 150;
 	}
 
 	@Override

@@ -34,6 +34,12 @@ public class DieselGP7f extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 1800;
+    }
+
+    @Override
     public void updateRiderPosition() { TraincraftUtil.updateRider(this, 2.55, 0.1, -0.35); }
 
     @Override

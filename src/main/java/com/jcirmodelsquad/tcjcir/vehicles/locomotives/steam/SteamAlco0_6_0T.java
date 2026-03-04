@@ -25,6 +25,12 @@ public class SteamAlco0_6_0T extends SteamTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 360;
+	}
+
+	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.33, -0.23, -0.45); }
 
 	@Override

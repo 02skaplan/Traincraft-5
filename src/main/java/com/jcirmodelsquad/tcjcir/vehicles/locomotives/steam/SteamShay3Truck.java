@@ -21,6 +21,12 @@ public class SteamShay3Truck extends SteamTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 838;
+	}
+
+	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, +0.1, 0.0, -0.35); }
 
 	/*@Override

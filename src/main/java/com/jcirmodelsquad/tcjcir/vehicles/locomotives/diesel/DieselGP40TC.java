@@ -62,8 +62,12 @@ public class DieselGP40TC extends DieselTrain {
             riddenByEntity.setPosition(bogieX1, pitch, bogieZ1);
         }
     }
-    
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 3000;
+    }
     
 
     

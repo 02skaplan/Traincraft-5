@@ -20,8 +20,12 @@ public class DieselH24_66L extends DieselTrain {
         InsertTexture(0, "Wabash");
         InsertTexture(1, "Southern");
     }
-    
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 2400;
+    }
     
 
     @Override

@@ -55,6 +55,12 @@ public class SteamC11 extends SteamTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 1030;
+	}
+
+	@Override
 	public String getInventoryName() {
 		return "JNR C411";
 	}

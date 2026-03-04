@@ -27,6 +27,12 @@ public class DieselM630W extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 3000;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "CA";

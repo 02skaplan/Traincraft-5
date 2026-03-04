@@ -35,6 +35,12 @@ public class DieselB23_wrx extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.315F; }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 2250;
+    }
+
+    @Override
     public String getInventoryName() { return "CEE B23-7 (WRX special order)"; }
 
     @Override

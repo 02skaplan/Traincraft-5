@@ -27,6 +27,12 @@ public class DieselGP13 extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 2510;
+    }
+
+    @Override
     public void updateRiderPosition() {
         if(riddenByEntity==null){return;}
         double pitchRads = this.anglePitchClient * Math.PI / 180.0D;

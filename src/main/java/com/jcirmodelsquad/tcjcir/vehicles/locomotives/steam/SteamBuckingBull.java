@@ -57,12 +57,9 @@ public class SteamBuckingBull extends SteamTrain {
     }
 
     @Override
-    public void onUpdate() {
-        super.onUpdate();
-        if (worldObj.isRemote) {
-            return;
-        }
-        checkInvent(locoInvent[0], locoInvent[1], this);
+    public float transportMetricHorsePower()
+    {
+        return 2200;
     }
 
     @Override

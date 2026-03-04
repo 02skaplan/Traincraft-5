@@ -66,7 +66,11 @@ public class DieselF40PH extends DieselTrain {
         }
     }
 
-
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 3000;
+    }
 
 
     

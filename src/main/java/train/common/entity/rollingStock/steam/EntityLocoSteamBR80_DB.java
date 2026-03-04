@@ -63,6 +63,12 @@ public class EntityLocoSteamBR80_DB extends SteamTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 575;
+	}
+
+	@Override
 	public int getTankCapacity()
 	{
 		return 7000;

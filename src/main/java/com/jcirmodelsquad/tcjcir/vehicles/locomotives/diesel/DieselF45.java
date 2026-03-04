@@ -66,16 +66,15 @@ public class DieselF45 extends DieselTrain {
             riddenByEntity.setPosition(bogieX1, pitch, bogieZ1 +0.0);
         }
     }
-    
-
-
-
-
-
-
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 1.35F;
+    }
+
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 3600;
     }
 
     @Override

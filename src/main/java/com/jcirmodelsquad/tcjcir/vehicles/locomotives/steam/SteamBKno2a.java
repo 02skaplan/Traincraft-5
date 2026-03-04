@@ -20,6 +20,12 @@ public class SteamBKno2a extends SteamTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 1450;
+	}
+
+	@Override
 	public String transportCountry()
 	{
 		return "US";

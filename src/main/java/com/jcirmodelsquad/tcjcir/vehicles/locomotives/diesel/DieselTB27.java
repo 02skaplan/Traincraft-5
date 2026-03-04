@@ -27,6 +27,12 @@ public class DieselTB27 extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 2700;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

@@ -60,6 +60,12 @@ public class Diesel4ED172T extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 1725;
+    }
+
+    @Override
     public int getTankCapacity()
     {
         return 16000;

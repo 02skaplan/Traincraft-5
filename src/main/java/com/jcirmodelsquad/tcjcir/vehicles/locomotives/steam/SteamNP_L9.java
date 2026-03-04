@@ -24,6 +24,12 @@ public class SteamNP_L9 extends SteamTrain {
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.6, 0.1, -0.45); }
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 1200;
+	}
+
+	@Override
 	public String getInventoryName() {
 		return "NP L9 Class 0-6-0";
 	}

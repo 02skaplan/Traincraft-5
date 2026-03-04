@@ -61,16 +61,11 @@ public class DieselBeep extends DieselTrain {
         }
     }
 
-    
-
-    
-
-
-
-    
-
-
-
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 1500;
+    }
 
     @Override
     public String getInventoryName() {

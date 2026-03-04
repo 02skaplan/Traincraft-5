@@ -29,6 +29,12 @@ public class Diesel4ED172T_G extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.3F; }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 1800;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

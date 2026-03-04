@@ -35,6 +35,12 @@ public class DieselDH643 extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.5F; }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 4300;
+    }
+
+    @Override
     public String getInventoryName() {
         return "ALCo DH643";
     }

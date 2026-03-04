@@ -21,6 +21,12 @@ public class SteamClimaxNew extends SteamTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 680;
+	}
+
+	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, 0.0, 0.25, -0.35); }
 
 	@Override

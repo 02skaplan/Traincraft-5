@@ -27,6 +27,12 @@ public class ElectricPCC extends ElectricTrain {
 		);
 	}
 
+	@Override
+	public float transportMetricHorsePower()
+	{
+		return 220;
+	}
+
 
 
 	@Override

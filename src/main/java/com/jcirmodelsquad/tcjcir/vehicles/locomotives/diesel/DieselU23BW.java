@@ -22,6 +22,12 @@ public class DieselU23BW extends DieselTrain {
         InsertTexture(1, "CSXT (Yn2, Protolance)");
     }
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 2250;
+    }
+
 
     @Override
     public String transportCountry()

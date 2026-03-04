@@ -24,6 +24,12 @@ public class DieselVO1000 extends DieselTrain {
         InsertTexture(4, "Dee Dee Valley");
 
     }
+
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 1000;
+    }
     
 
     

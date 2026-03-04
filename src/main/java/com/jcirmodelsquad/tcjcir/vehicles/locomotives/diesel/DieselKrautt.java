@@ -23,6 +23,12 @@ public class DieselKrautt extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 3540;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "DE";

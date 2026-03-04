@@ -16,6 +16,11 @@ public class BigMeme extends ElectricTrain {
         super(world);
     }
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 1;
+    }
     
     @Override
     public void updateRiderPosition() {

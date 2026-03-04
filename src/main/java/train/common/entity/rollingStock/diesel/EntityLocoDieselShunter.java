@@ -18,29 +18,12 @@ public class EntityLocoDieselShunter extends DieselTrain {
 
 	public EntityLocoDieselShunter(World world) {
 		super(world, EnumHeritageTrainsLegacy.locoDieselShunter.getTankCapacity(), LiquidManager.dieselFilter());
-		initLoco();
 	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
-	}
-
 
 
 	@Override
 	public void updateRiderPosition() {
 		riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() + 0.4F, posZ);
-	}
-	
-	
-
-	
-
-	@Override
-	public void onUpdate() {
-		checkInvent(locoInvent[0]);
-		super.onUpdate();
 	}
 
 	
@@ -53,6 +36,12 @@ public class EntityLocoDieselShunter extends DieselTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (0.6F);
+	}
+
+	@Override
+	public float transportMetricHorsePower()
+	{
+		return 354;
 	}
 
 	@Override

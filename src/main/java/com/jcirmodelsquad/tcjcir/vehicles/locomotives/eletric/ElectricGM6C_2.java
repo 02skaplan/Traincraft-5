@@ -44,6 +44,12 @@ public class ElectricGM6C_2 extends ElectricTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 6000;
+    }
+
+    @Override
     public void updateRiderPosition() { TraincraftUtil.updateRider(this, 3.8, -0.10, -0.35); }
 
     @Override

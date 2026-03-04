@@ -67,6 +67,12 @@ public class EntityLocoElectricTramNY extends ElectricTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 2428;
+	}
+
+	@Override
 	public void onRenderInsertRecord()
 	{
 		Traincraft.traincraftRegistry.RegisterRollingStockModel(new TrainRenderRecord(Info.modID,

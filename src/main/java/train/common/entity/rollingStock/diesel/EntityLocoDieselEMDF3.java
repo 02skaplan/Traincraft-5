@@ -19,12 +19,6 @@ public class EntityLocoDieselEMDF3 extends DieselTrain {
 
 	public EntityLocoDieselEMDF3(World world) {
 		super(world, LiquidManager.dieselFilter());
-		initLoco();
-	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
 	}
 
 
@@ -63,18 +57,6 @@ public class EntityLocoDieselEMDF3 extends DieselTrain {
 		}
 	}
 
-
-
-	
-
-	@Override
-	public void onUpdate() {
-		checkInvent(locoInvent[0]);
-		super.onUpdate();
-	}
-
-	
-
 	@Override
 	public String getInventoryName() {
 		return "EMD F3";
@@ -85,6 +67,12 @@ public class EntityLocoDieselEMDF3 extends DieselTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (1F);
+	}
+
+	@Override
+	public float transportMetricHorsePower()
+	{
+		return 1500;
 	}
 
 	@Override

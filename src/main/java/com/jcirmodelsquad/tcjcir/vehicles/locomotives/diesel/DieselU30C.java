@@ -36,6 +36,12 @@ public class DieselU30C extends DieselTrain {
         InsertTexture(14, "Chessie System");
     }
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 3000;
+    }
+
 
     @Override
     public String transportCountry()

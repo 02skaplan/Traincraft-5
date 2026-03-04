@@ -75,8 +75,12 @@ public class DieselFA2 extends DieselTrain {
             riddenByEntity.setPosition(bogieX1, pitch, bogieZ1);
         }
     }
-    
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 1600;
+    }
     
 
 

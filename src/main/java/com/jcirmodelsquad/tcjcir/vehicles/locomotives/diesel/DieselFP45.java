@@ -29,7 +29,13 @@ public class DieselFP45 extends DieselTrain {
     {
         return "US";
     }
-    
+
+
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 3600;
+    }
 
     @Override
     public void updateRiderPosition() {

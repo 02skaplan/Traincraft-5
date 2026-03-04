@@ -28,7 +28,12 @@ public class DieselGP38H3 extends DieselTrain {
     {
         return "US";
     }
-    
+
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 2000;
+    }
 
     @Override
     public void updateRiderPosition() {

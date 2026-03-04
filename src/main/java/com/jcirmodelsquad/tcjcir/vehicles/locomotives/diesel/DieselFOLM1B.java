@@ -21,6 +21,12 @@ public class DieselFOLM1B extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 5000;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "CZ";

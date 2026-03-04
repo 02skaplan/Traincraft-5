@@ -23,6 +23,12 @@ public class DieselSW1600 extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 1600;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

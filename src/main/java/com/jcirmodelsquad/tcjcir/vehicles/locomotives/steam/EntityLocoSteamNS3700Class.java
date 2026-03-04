@@ -23,6 +23,12 @@ public class EntityLocoSteamNS3700Class extends SteamTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 1286;
+	}
+
+	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.3, 0.0, -0.45); }
 
 	@Override

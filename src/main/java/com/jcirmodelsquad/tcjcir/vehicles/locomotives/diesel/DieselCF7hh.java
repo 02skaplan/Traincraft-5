@@ -36,6 +36,12 @@ public class DieselCF7hh extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 1500;
+    }
+
+    @Override
     public String getInventoryName() {
         return "CEE CF7 (GL)";
     }

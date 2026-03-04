@@ -24,6 +24,12 @@ public class ElectricClass74 extends ElectricTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 2426;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "UK";

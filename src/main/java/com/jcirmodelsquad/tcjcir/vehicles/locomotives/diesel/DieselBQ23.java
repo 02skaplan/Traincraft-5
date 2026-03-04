@@ -43,6 +43,12 @@ public class DieselBQ23 extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 2250;
+    }
+
+    @Override
     public String transportYear() {
         return "1978-1979";
     }

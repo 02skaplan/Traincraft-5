@@ -27,6 +27,12 @@ public class DieselWorkdayHyrail extends DieselTrain {
         InsertTexture(6, "GCM", train.common.enums.LockoutGroup.GCM); 
     }
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 110;
+    }
+
 
     @Override
     public void updateRiderPosition() { TraincraftUtil.updateRider(this, 1.3, -0.4, 0.30); }

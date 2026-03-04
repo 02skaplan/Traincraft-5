@@ -30,6 +30,8 @@ public class PCH100H extends HydrogenTrain{
         inventorySize = 10;
         locoInvent = new ItemStack[inventorySize];
     }
+
+
     @Override
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
@@ -71,7 +73,12 @@ public class PCH100H extends HydrogenTrain{
             riddenByEntity.setPosition(posX +0, posY + getMountedYOffset() + riddenByEntity.getYOffset() + 0.5, posZ + 0.3);
         }
     }*/
-    
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 7000;
+    }
 
     @Override
     public void onUpdate() {
@@ -122,6 +129,12 @@ public class PCH100H extends HydrogenTrain{
             }
         }
         return true;
+    }
+
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 900;
     }
 
     @Override

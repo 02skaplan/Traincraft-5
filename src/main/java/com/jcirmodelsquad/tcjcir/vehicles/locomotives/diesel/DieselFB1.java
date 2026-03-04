@@ -32,7 +32,13 @@ public class DieselFB1 extends DieselTrain {
     {
         return "US";
     }
-    
+
+
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 1600;
+    }
 
     @Override
     public void updateRiderPosition() {

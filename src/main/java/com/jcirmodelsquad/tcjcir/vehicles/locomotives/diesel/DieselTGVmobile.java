@@ -19,6 +19,12 @@ public class DieselTGVmobile extends DieselTrain {
 
     }
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 200;
+    }
+
 
 
 

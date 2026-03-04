@@ -70,6 +70,12 @@ public class DieselDash840BB extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 4000;
+    }
+
+    @Override
     public String transportYear() {
         return "1988-1992";
     }

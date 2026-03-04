@@ -19,12 +19,6 @@ public class EntityLocoDieselDeltic extends DieselTrain {
 
 	public EntityLocoDieselDeltic(World world) {
 		super(world, EnumHeritageTrainsLegacy.locoDieselDeltic.getTankCapacity(), LiquidManager.dieselFilter());
-		initLoco();
-	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
 	}
 
 	
@@ -63,16 +57,6 @@ public class EntityLocoDieselDeltic extends DieselTrain {
 		}
 	}
 
-
-
-	
-	
-	@Override
-	public void onUpdate() {
-		checkInvent(locoInvent[0]);
-		super.onUpdate();
-	}
-
 	
 	@Override
 	public String getInventoryName() {
@@ -84,6 +68,12 @@ public class EntityLocoDieselDeltic extends DieselTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.5F;
+	}
+
+	@Override
+	public float transportMetricHorsePower()
+	{
+		return 1997;
 	}
 
 	@Override

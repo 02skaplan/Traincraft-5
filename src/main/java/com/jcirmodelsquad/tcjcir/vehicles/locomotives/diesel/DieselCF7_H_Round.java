@@ -9,7 +9,7 @@ import train.common.library.EnumSounds;
 import train.common.library.EnumTrains;
 import train.common.library.sounds.SoundRecord;
 
-
+@Deprecated
 public class DieselCF7_H_Round extends DieselTrain {
     @Override
     public SoundRecord getSoundRecord()

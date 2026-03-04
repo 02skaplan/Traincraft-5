@@ -38,6 +38,12 @@ public class EntityLocoDieselKof_DB extends DieselTrain {
 	}
 
 	@Override
+	public float transportMetricHorsePower()
+	{
+		return 750;
+	}
+
+	@Override
 	public int getTankCapacity()
 	{
 		return 5000;

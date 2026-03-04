@@ -35,6 +35,12 @@ public class DieselDash818BE extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.4F; }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 1850;
+    }
+
+    @Override
     public String getInventoryName() {
         return "GE B18-8E";
     }

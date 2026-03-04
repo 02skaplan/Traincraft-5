@@ -16,6 +16,11 @@ public class ElectricEP1A extends ElectricTrain {
         super(world);
     }
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 2500;
+    }
     
     @Override
     public void updateRiderPosition() {

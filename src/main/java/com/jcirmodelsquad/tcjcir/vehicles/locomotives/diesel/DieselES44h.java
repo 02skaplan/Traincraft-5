@@ -59,6 +59,12 @@ public class DieselES44h extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 4400;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

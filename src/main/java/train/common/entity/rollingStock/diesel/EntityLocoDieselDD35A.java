@@ -16,15 +16,8 @@ public class EntityLocoDieselDD35A extends DieselTrain {
 		return EnumSounds.locoDieselDD35A;
 	}
 	public EntityLocoDieselDD35A(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoDieselDD35A.getTankCapacity(), LiquidManager.dieselFilter());
-		initLoco();
+		super(world, LiquidManager.dieselFilter());
 	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
-	}
-
 
 
 	@Override
@@ -61,17 +54,6 @@ public class EntityLocoDieselDD35A extends DieselTrain {
 		}
 	}
 
-
-
-	
-	
-	@Override
-	public void onUpdate() {
-		checkInvent(locoInvent[0]);
-		super.onUpdate();
-	}
-
-	
 	@Override
 	public String getInventoryName() {
 		return "DD35A";
@@ -82,6 +64,12 @@ public class EntityLocoDieselDD35A extends DieselTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.3F;
+	}
+
+	@Override
+	public float transportMetricHorsePower()
+	{
+		return 5000;
 	}
 
 	@Override

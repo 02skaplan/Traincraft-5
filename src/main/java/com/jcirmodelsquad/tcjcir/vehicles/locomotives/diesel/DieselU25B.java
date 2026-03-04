@@ -35,6 +35,12 @@ public class DieselU25B extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 2500;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

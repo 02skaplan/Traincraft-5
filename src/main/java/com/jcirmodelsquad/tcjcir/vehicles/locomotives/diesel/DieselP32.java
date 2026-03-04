@@ -24,6 +24,12 @@ public class DieselP32 extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 3200;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

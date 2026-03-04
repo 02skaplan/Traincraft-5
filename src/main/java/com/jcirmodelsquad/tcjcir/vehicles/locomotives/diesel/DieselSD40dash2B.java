@@ -29,7 +29,11 @@ public class DieselSD40dash2B extends DieselTrain {
         return "US";
     }
 
-
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 3000;
+    }
     
 
     @Override

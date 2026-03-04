@@ -20,28 +20,12 @@ public class EntityLocoDieselSD40 extends DieselTrain
 
 	public EntityLocoDieselSD40(World world) {
 		super(world, EnumHeritageTrainsLegacy.locoDieselSD40.getTankCapacity(), LiquidManager.dieselFilter());
-		initLoco();
 	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
-	}
-
-
 
 	@Override
 	public void updateRiderPosition() {
 		TraincraftUtil.updateRider(this, 2.3, 0.3);
-	}@Override
-	public void onUpdate() {
-		super.onUpdate();
-		if (worldObj.isRemote) {
-			return;
-		}
-		checkInvent(locoInvent[0]);
 	}
-
 	
 
 	@Override
@@ -54,6 +38,12 @@ public class EntityLocoDieselSD40 extends DieselTrain
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (1.2F);
+	}
+
+	@Override
+	public float transportMetricHorsePower()
+	{
+		return 3041;
 	}
 
 	@Override

@@ -40,6 +40,12 @@ public class DieselSD70ACe extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 4300;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

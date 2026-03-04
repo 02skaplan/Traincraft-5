@@ -36,6 +36,12 @@ public class DieselDash940C extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.3F; }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 4000;
+    }
+
+    @Override
     public String transportYear() {
         return "1995";
     }

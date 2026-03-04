@@ -25,6 +25,12 @@ public class DieselMP15DCW9 extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 1500;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

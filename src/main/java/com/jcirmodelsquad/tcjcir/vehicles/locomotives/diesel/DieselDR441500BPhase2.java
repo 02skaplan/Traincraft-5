@@ -53,6 +53,11 @@ public class DieselDR441500BPhase2 extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.08F;
     }
 
+    @Override
+    public float transportMetricHorsePower()
+    {
+        return 1500;
+    }
 
 
     @Override

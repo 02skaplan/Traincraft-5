@@ -28,7 +28,7 @@ public class EntityLocoSteam4_4_0 extends SteamTrain {
 	public void updateRiderPosition() {
 		riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() + 0.45, posZ);// default
 	}
-@Override
+	@Override
 	public String getInventoryName() {
 		return "4-4-0 (US)";
 	}
@@ -44,6 +44,17 @@ public class EntityLocoSteam4_4_0 extends SteamTrain {
 	public String transportCountry()
 	{
 		return "US";
+	}
+
+	public float transportMetricHorsePower()
+	{
+		return 400;
+	}
+
+	@Override
+	public float getPlayerEyeHeight()
+	{
+		return 500;
 	}
 
 	@Override

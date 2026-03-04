@@ -27,6 +27,12 @@ public class DieselFAFDL extends DieselTrain {
     }
 
     @Override
+    public float transportMetricHorsePower()
+    {
+        return 1800;
+    }
+
+    @Override
     public String transportCountry()
     {
         return "US";

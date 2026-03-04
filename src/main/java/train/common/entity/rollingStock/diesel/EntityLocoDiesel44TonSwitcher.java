@@ -18,13 +18,7 @@ public class EntityLocoDiesel44TonSwitcher extends DieselTrain
 	}
 
 	public EntityLocoDiesel44TonSwitcher(World world) {
-		super(world, EnumHeritageTrainsLegacy.locoDiesel44TonSwitcher.getTankCapacity(), LiquidManager.dieselFilter());
-		initLoco();
-	}
-
-	public void initLoco() {
-		fuelTrain = 0;
-		locoInvent = new ItemStack[inventorySize];
+		super(world, LiquidManager.dieselFilter());
 	}
 
 
@@ -61,16 +55,7 @@ public class EntityLocoDiesel44TonSwitcher extends DieselTrain
 		if (pitchRads > -1.01 && pitchRads < 1.01) {
 			riddenByEntity.setPosition(bogieX1, pitch, bogieZ1);
 		}
-	}@Override
-	public void onUpdate() {
-		super.onUpdate();
-		if (worldObj.isRemote) {
-			return;
-		}
-		checkInvent(locoInvent[0]);
 	}
-
-	
 
 	@Override
 	public String getInventoryName() {
@@ -82,6 +67,12 @@ public class EntityLocoDiesel44TonSwitcher extends DieselTrain
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (1.0F);
+	}
+
+	@Override
+	public float transportMetricHorsePower()
+	{
+		return 400;
 	}
 
 	@Override
