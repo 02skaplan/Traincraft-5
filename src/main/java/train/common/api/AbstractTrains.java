@@ -10,7 +10,6 @@ import mods.railcraft.api.carts.IRoutableCart;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockAir;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityList;
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -33,6 +32,7 @@ import train.common.blocks.BlockTCRailGag;
 import train.common.core.handlers.ConfigHandler;
 import train.common.core.handlers.TrainHandler;
 import train.common.entity.CargoManager;
+import train.common.entity.EntitySeat;
 import train.common.entity.TrustedPlayer;
 import train.common.items.ItemChunkLoaderActivator;
 import train.common.items.ItemAbstractRollingStock;
@@ -394,6 +394,12 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 	}
 
 	public float getPlayerScale(){ 	return 0.65f;}
+
+	public float getPlayerModelOffset(boolean isSelf)
+	{
+		// 0.15 must match the base value of the other
+		return isSelf ? 0.15f : (0.15f * 2f) + 0.02f;
+	}
 
 	public abstract boolean isLocomotive();
 
