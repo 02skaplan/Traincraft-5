@@ -18,6 +18,8 @@ import tmt.Tessellator;
 import train.common.api.AbstractTrains;
 import train.common.library.Info;
 
+import static tmt.ModelConverter.GetColor;
+
 public class ModelGS4Passenger extends ModelBase
 {
 	int textureX = 512;
