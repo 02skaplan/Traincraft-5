@@ -2886,7 +2886,7 @@ public class ModelNYCPrewar56SeatCoach extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()== 28 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 29 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 30 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 31){ //add back in once Sue line skin is remade: ||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==0
+		if(GetColor(entity)== 28 || GetColor(entity) == 29 || GetColor(entity) == 30 || GetColor(entity) == 31){ //add back in once Sue line skin is remade: ||GetColor(entity)==0
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-N-11_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

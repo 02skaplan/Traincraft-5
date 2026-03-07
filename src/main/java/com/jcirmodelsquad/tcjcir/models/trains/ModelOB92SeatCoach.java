@@ -2328,10 +2328,10 @@ public class ModelOB92SeatCoach extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==10||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==0
-				||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==15||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==7
-				||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==8||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==3
-				||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==1){
+		if(GetColor(entity)==10||GetColor(entity)==0
+				||GetColor(entity)==15||GetColor(entity)==7
+				||GetColor(entity)==8||GetColor(entity)==3
+				||GetColor(entity)==1){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-E_truck_black_roller.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

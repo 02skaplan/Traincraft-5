@@ -1536,12 +1536,12 @@ public class ModelMILWPrewarBaggage extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==10
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==11
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==12
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==13
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==15
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==17){
+		if(GetColor(entity)==10
+				|| GetColor(entity)==11
+				|| GetColor(entity)==12
+				|| GetColor(entity)==13
+				|| GetColor(entity)==15
+				|| GetColor(entity)==17){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/MILW_1935_truck_silver_generator.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -1555,8 +1555,8 @@ public class ModelMILWPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(-2.31, -0.03, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==24
-		|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==25){
+		} else if(GetColor(entity)==24
+		|| GetColor(entity)==25){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/MILW_1936_truck_silver_generator.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -1570,7 +1570,7 @@ public class ModelMILWPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(-2.31, -0.03, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==30){
+		} else if(GetColor(entity)==30){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/MILW_1938_truck_silver_generator.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -1584,8 +1584,8 @@ public class ModelMILWPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(-2.31, -0.03, 0);
 			bogie2.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==8
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==9){
+		} else if(GetColor(entity)==8
+				|| GetColor(entity)==9){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/MILW_1935_truck_UP_grey_generator.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -1599,8 +1599,8 @@ public class ModelMILWPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(-2.31, -0.03, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==22
-		|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==23) {
+		} else if(GetColor(entity)==22
+		|| GetColor(entity)==23) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/MILW_1936_truck_UP_grey_generator.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -1614,7 +1614,7 @@ public class ModelMILWPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(-2.31, -0.03, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==29) {
+		} else if(GetColor(entity)==29) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/MILW_1938_truck_UP_grey_generator.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -1628,12 +1628,12 @@ public class ModelMILWPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(-2.31, -0.03, 0);
 			bogie2.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==4
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==5
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==6
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==7
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==14
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==16) {
+		} else if(GetColor(entity)==4
+				|| GetColor(entity)==5
+				|| GetColor(entity)==6
+				|| GetColor(entity)==7
+				|| GetColor(entity)==14
+				|| GetColor(entity)==16) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/MILW_1935_truck_black_generator.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -1647,9 +1647,9 @@ public class ModelMILWPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(-2.31, -0.03, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==19
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==20
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==21) {
+		} else if(GetColor(entity)==19
+				|| GetColor(entity)==20
+				|| GetColor(entity)==21) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/MILW_1936_truck_black_generator.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -1663,8 +1663,8 @@ public class ModelMILWPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(-2.31, -0.03, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==27
-				|| entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==28) {
+		} else if(GetColor(entity)==27
+				|| GetColor(entity)==28) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/MILW_1938_truck_black_generator.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -1678,7 +1678,7 @@ public class ModelMILWPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(-2.31, -0.03, 0);
 			bogie2.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==18) {
+		} else if(GetColor(entity)==18) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/MILW_1936_truck_brown_generator.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -1692,7 +1692,7 @@ public class ModelMILWPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(-2.31, -0.03, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==26) {
+		} else if(GetColor(entity)==26) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/MILW_1938_truck_brown_generator.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);

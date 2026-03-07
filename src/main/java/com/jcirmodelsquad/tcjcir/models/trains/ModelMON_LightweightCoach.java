@@ -1969,7 +1969,7 @@ public class ModelMON_LightweightCoach extends ModelConverter//Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==0 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==2 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==4){
+		if(GetColor(entity)==0 || GetColor(entity)==2 || GetColor(entity)==4){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/GSC_postwar_6_wheel_truck_friction_no_brake_cylinder.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

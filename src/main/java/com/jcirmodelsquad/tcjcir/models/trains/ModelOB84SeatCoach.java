@@ -2975,13 +2975,13 @@ public class ModelOB84SeatCoach extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==10||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==0
-				||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==15||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==3
-				||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==15||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==20
-				||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==21||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==22
-				||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==23||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==24
-				||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==25||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==26
-				||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==27){
+		if(GetColor(entity)==10||GetColor(entity)==0
+				||GetColor(entity)==15||GetColor(entity)==3
+				||GetColor(entity)==15||GetColor(entity)==20
+				||GetColor(entity)==21||GetColor(entity)==22
+				||GetColor(entity)==23||GetColor(entity)==24
+				||GetColor(entity)==25||GetColor(entity)==26
+				||GetColor(entity)==27){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-E_truck_black_roller.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

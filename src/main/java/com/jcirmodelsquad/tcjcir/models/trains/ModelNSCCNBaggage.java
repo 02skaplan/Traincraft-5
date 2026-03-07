@@ -1793,7 +1793,7 @@ public class ModelNSCCNBaggage extends ModelConverter//Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==2 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==11 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==12 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==0 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==10 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==14 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==1 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==4 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==6 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==18 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==19){
+		if(GetColor(entity)==2 || GetColor(entity)==11 || GetColor(entity)==12 || GetColor(entity)==0 || GetColor(entity)==10 || GetColor(entity)==14 || GetColor(entity)==1 || GetColor(entity)==4 || GetColor(entity)==6 || GetColor(entity)==18 || GetColor(entity)==19){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/CN_6_wheel_lightweight_truck_black.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
