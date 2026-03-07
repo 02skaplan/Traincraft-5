@@ -3059,7 +3059,7 @@ public class ModelPSCNWRPO60 extends ModelConverter//Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==3 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==10){
+		if(GetColor(entity)==3 || GetColor(entity)==10){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-N-11_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -3070,7 +3070,7 @@ public class ModelPSCNWRPO60 extends ModelConverter//Same as Filename
 			GL11.glTranslated(5.38, 0, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		}else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==1 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==14){
+		}else if(GetColor(entity)==1 || GetColor(entity)==14){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-N-11_truck_UP_grey.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

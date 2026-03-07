@@ -2610,7 +2610,7 @@ public class ModelPSSleeper565 extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==11){
+		if(GetColor(entity)==11){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-N-11_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -2621,7 +2621,7 @@ public class ModelPSSleeper565 extends ModelConverter //Same as Filename
 			GL11.glTranslated(5.5, 0, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 6) {
+		} else if (GetColor(entity) == 6) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-N-11_truck_NKP_blue.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

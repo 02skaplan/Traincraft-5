@@ -2576,7 +2576,7 @@ public class ModelPS58SeatCoach_Observation extends ModelConverter//Same as File
 				}
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==123465){
+		if(GetColor(entity)==123465){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-N-11_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

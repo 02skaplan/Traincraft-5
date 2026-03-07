@@ -2290,7 +2290,7 @@ public class ModelPS52SeatCoach extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()== 11 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 14){ //add back in once Sue line skin is remade: ||entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==0
+		if(GetColor(entity)== 11 || GetColor(entity) == 14){ //add back in once Sue line skin is remade: ||GetColor(entity)==0
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-N-11_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -2301,7 +2301,7 @@ public class ModelPS52SeatCoach extends ModelConverter //Same as Filename
 			GL11.glTranslated(5.5, 0, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 6 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 8) {
+		} else if (GetColor(entity) == 6 || GetColor(entity) == 8) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-N-11_truck_NKP_blue.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
