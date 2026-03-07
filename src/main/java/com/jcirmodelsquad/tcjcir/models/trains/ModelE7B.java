@@ -1452,9 +1452,9 @@ public class ModelE7B extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 11 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 7 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 8) {
+		if (GetColor(entity) == 11 || GetColor(entity) == 7 || GetColor(entity) == 8) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/NewBlombergA1ATruckSilverFriction.png"));
-		} else if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 27) {
+		} else if (GetColor(entity) == 27) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/NewBlombergA1ATruckJenksBlueFriction.png"));
 		} else {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/NewBlombergA1ATruckBlackFriction.png"));

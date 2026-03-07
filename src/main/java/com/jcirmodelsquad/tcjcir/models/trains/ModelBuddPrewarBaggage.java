@@ -1963,7 +1963,7 @@ public class ModelBuddPrewarBaggage extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==12453){
+		if(GetColor(entity)==12453){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-RC-11_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -1974,7 +1974,7 @@ public class ModelBuddPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(4.185, 0, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==8 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==7 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==15){
+		} else if(GetColor(entity)==8 || GetColor(entity)==7 || GetColor(entity)==15){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-RC-11_truck_silver_other.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -1985,7 +1985,7 @@ public class ModelBuddPrewarBaggage extends ModelConverter //Same as Filename
 			GL11.glTranslated(4.185, 0, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==12453){
+		} else if(GetColor(entity)==12453){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-D-11_truck_black.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

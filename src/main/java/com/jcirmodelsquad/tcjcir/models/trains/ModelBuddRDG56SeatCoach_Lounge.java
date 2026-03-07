@@ -2002,7 +2002,7 @@ public class ModelBuddRDG56SeatCoach_Lounge extends ModelConverter//Same as File
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==4 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==6 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==8 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==7){
+		if(GetColor(entity)==4 || GetColor(entity)==6 || GetColor(entity)==8 || GetColor(entity)==7){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-GT_truck_RDGBlue.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -2013,7 +2013,7 @@ public class ModelBuddRDG56SeatCoach_Lounge extends ModelConverter//Same as File
 			GL11.glTranslated(-5.14, 0, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==123456){
+		} else if(GetColor(entity)==123456){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-GT_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

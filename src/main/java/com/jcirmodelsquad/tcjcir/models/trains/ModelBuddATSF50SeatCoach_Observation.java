@@ -2869,7 +2869,7 @@ public class ModelBuddATSF50SeatCoach_Observation extends ModelConverter//Same a
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==5){
+		if(GetColor(entity)==5){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-R-C-11_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -2880,7 +2880,7 @@ public class ModelBuddATSF50SeatCoach_Observation extends ModelConverter//Same a
 			GL11.glTranslated(-5.14, 0, 0);
 			bogie2.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==123456){
+		} else if(GetColor(entity)==123456){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-TR_truck_black.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

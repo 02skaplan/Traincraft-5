@@ -1096,10 +1096,10 @@ public class ModelE8B extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 8 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 7) {
+		if (GetColor(entity) == 8 || GetColor(entity) == 7) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/NewBlombergA1ATruckSilver.png"));
 		}
-		else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 1){
+		else if(GetColor(entity) == 1){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/NewBlombergA1ATruckSilverFriction.png"));
 			}
 		else {

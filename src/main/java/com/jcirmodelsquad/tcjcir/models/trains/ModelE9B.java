@@ -1096,7 +1096,7 @@ public class ModelE9B extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if (entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() == 123456) {
+		if (GetColor(entity) == 123456) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/NewBlombergA1ATruckSilver.png"));
 		}
 		else {

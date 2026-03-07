@@ -2388,7 +2388,7 @@ public class ModelDRGWCoach1000Series extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==11 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() ==8){
+		if(GetColor(entity)==11 || GetColor(entity) ==8){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/P_S_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

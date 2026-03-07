@@ -2436,7 +2436,7 @@ public class ModelACF_LN_KCS60SeatDividedCoach extends ModelConverter//Same as F
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==3 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==4){
+		if(GetColor(entity)==3 || GetColor(entity)==4){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-CDO_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

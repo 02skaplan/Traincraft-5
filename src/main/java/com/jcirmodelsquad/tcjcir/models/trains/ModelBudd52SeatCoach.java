@@ -2880,7 +2880,7 @@ public class ModelBudd52SeatCoach extends ModelConverter//Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==14 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==1){
+		if(GetColor(entity)==14 || GetColor(entity)==1){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-TR_truck_silver_friction.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -2891,7 +2891,7 @@ public class ModelBudd52SeatCoach extends ModelConverter//Same as Filename
 			GL11.glTranslated(-5.14, 0, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==8 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==7 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==4){
+		} else if(GetColor(entity)==8 || GetColor(entity)==7 || GetColor(entity)==4){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-TRV-11_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -2902,7 +2902,7 @@ public class ModelBudd52SeatCoach extends ModelConverter//Same as Filename
 			GL11.glTranslated(5.14, 0, 0);
 			bogie2.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==11){
+		} else if(GetColor(entity)==11){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-RC-11_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -2913,7 +2913,7 @@ public class ModelBudd52SeatCoach extends ModelConverter//Same as Filename
 			GL11.glTranslated(-5.14, 0, 0);
 			bogie3.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==3 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==5){
+		} else if(GetColor(entity)==3 || GetColor(entity)==5){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-RC-11_truck_silver_other.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -2924,7 +2924,7 @@ public class ModelBudd52SeatCoach extends ModelConverter//Same as Filename
 			GL11.glTranslated(-5.14, 0, 0);
 			bogie3.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		}else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==15 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==6){
+		}else if(GetColor(entity)==15 || GetColor(entity)==6){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-TR_truck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -2935,7 +2935,7 @@ public class ModelBudd52SeatCoach extends ModelConverter//Same as Filename
 			GL11.glTranslated(5.14, 0, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==123456){
+		} else if(GetColor(entity)==123456){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-TR_truck_black.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

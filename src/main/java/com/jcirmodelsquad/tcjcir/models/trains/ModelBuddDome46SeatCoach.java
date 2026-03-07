@@ -2885,10 +2885,10 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==6||
-				entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==12||
-				entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==5||
-				entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==16){
+		if(GetColor(entity)==6||
+				GetColor(entity)==12||
+				GetColor(entity)==5||
+				GetColor(entity)==16){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-N-11_truck_black.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -2899,7 +2899,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 			GL11.glTranslated(5.5, 0, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-			if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==6){
+			if(GetColor(entity)==6){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Cyan.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -2911,7 +2911,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU3.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==12){
+			else if(GetColor(entity)==12){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_LightBlue.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -2923,7 +2923,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU3.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==5){
+			else if(GetColor(entity)==5){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Purple.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -2935,7 +2935,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU3.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==16){
+			else if(GetColor(entity)==16){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Skin16.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -2947,13 +2947,13 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU3.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-		} else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==2||
-				entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==10||
-				entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==14||
-				entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==4||
-				entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==0||
-				entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==13||
-				entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==17){
+		} else if(GetColor(entity)==2||
+				GetColor(entity)==10||
+				GetColor(entity)==14||
+				GetColor(entity)==4||
+				GetColor(entity)==0||
+				GetColor(entity)==13||
+				GetColor(entity)==17){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-CDO_truck_black.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -2964,7 +2964,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 			GL11.glTranslated(5.5, 0, 0);
 			bogie2.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-			if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==2){
+			if(GetColor(entity)==2){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Green.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -2976,7 +2976,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU3.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==10){
+			else if(GetColor(entity)==10){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Lime.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -2988,7 +2988,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU3.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==14){
+			else if(GetColor(entity)==14){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Orange.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3000,7 +3000,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU2.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==4){
+			else if(GetColor(entity)==4){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Blue.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3012,7 +3012,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU2.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==0){
+			else if(GetColor(entity)==0){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Black.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3024,7 +3024,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU2.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==13){
+			else if(GetColor(entity)==13){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Magenta.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3036,7 +3036,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU3.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==17){
+			else if(GetColor(entity)==17){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Skin17.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3048,7 +3048,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU3.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-		}else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==21){
+		}else if(GetColor(entity)==21){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-N-11_truck_ATpurple.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(0, 0, 1, 0);
@@ -3070,7 +3070,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 			GL11.glTranslated(0, 0, 0);
 			SeatsU4.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 			GL11.glPopMatrix();
-		}else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==123456){
+		}else if(GetColor(entity)==123456){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/41-N-11_truck_black.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
@@ -3092,7 +3092,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 			GL11.glTranslated(5.5, 0, 0);
 			bogie1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-			if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==8){
+			if(GetColor(entity)==8){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Grey.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3104,7 +3104,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU1.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==7){
+			else if(GetColor(entity)==7){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_LightGrey.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3116,7 +3116,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU1.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==15){
+			else if(GetColor(entity)==15){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_White.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3128,7 +3128,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU1.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==3){
+			else if(GetColor(entity)==3){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Brown.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3140,7 +3140,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU1.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==11){
+			else if(GetColor(entity)==11){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Yellow.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3152,7 +3152,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU1.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==1){
+			else if(GetColor(entity)==1){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Red.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3164,7 +3164,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU1.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==9){
+			else if(GetColor(entity)==9){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Pink.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3176,7 +3176,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU1.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==18){
+			else if(GetColor(entity)==18){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Skin18.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3188,7 +3188,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU1.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==19){
+			else if(GetColor(entity)==19){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Skin19.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);
@@ -3200,7 +3200,7 @@ public class ModelBuddDome46SeatCoach extends ModelConverter //Same as Filename
 				SeatsU1.render(entity, f, f1, f2, f3, f4, f5);//upper seats
 				GL11.glPopMatrix();
 			}
-			else if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==20){
+			else if(GetColor(entity)==20){
 				Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Budd_lightweight_Dome46SeatCoach_Skin20.png"));
 				GL11.glPushMatrix();
 				GL11.glRotatef(0, 0, 0, 0);

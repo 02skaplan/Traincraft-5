@@ -1929,7 +1929,7 @@ public class ModelDRGWRPO630Series extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==11){
+		if(GetColor(entity)==11){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/CW_topEqualized_passengerTruck_silver.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);

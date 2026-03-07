@@ -2206,7 +2206,7 @@ public class ModelDRGWRPO620Series extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
-		if(entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor()==13 || entity instanceof AbstractTrains && ((AbstractTrains) entity).getColor() ==5){
+		if(GetColor(entity)==13 || GetColor(entity) ==5){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/2410_truck_green.png"));
 			GL11.glPushMatrix();
 			GL11.glRotatef(180, 0, 1, 0);
