@@ -2231,7 +2231,7 @@ public class ModelPSSleeper565 extends ModelConverter //Same as Filename
 		bodyModel[610] = new ModelRendererTurbo(this, 95, 381, textureX, textureY); // Box 452
 		bodyModel[611] = new ModelRendererTurbo(this, 83, 391, textureX, textureY); // Box 38
 		bodyModel[612] = new ModelRendererTurbo(this, 89, 385, textureX, textureY); // Box 462
-		bodyModel[613] = new ModelRendererTurbo(this, 411, 180, textureX, textureY, "glow"); // Box 38 glow
+		bodyModel[613] = new ModelRendererTurbo(this, 411, 180, textureX, textureY, "lamp"); // Box 38 glow
 		bodyModel[614] = new ModelRendererTurbo(this, 338, 52, textureX, textureY); // Box 128
 
 		bodyModel[500].addShapeBox(0F, 0F, 0F, 1, 1, 3, 0F,0F, -0.8F, 0F, -0.5F, -0.8F, 0F, -0.5F, -0.2F, 0F, 0F, -0.2F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F); // Box 128
@@ -2598,7 +2598,7 @@ public class ModelPSSleeper565 extends ModelConverter //Same as Filename
 	{
 		for(int i = 0; i < 615; i++)
 		{
-			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("glow")) {
+			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);
 				Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);

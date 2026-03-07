@@ -109,7 +109,7 @@ public class ModelGP20 extends ModelConverter //Same as Filename
 		bodyModel[69] = new ModelRendererTurbo(this, 103, 97, textureX, textureY); // Box 351
 		bodyModel[70] = new ModelRendererTurbo(this, 92, 101, textureX, textureY); // Box 352
 		bodyModel[71] = new ModelRendererTurbo(this, 73, 97, textureX, textureY); // Box 353
-		bodyModel[72] = new ModelRendererTurbo(this, 91, 93, textureX, textureY, "glow"); // Box 117 numberboard front high
+		bodyModel[72] = new ModelRendererTurbo(this, 91, 93, textureX, textureY, "lamp"); // Box 117 numberboard front high
 		bodyModel[73] = new ModelRendererTurbo(this, 91, 93, textureX, textureY, "lamp"); // Box 118 numberboard front high
 		bodyModel[74] = new ModelRendererTurbo(this, 32, 120, textureX, textureY, "lamp"); // Box 215 headlight front 1
 		bodyModel[75] = new ModelRendererTurbo(this, 25, 120, textureX, textureY); // Box 216
