@@ -18,6 +18,7 @@ public interface ITrainRecord
 
     int getFuelConsumption();
 
+    @Deprecated // Will be removed later please override the getWaterConsumption() in the entity for the stock
     int getWaterConsumption();
 
     int getHeatingTime();

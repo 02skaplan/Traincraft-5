@@ -823,6 +823,7 @@ public enum EnumTrains implements ITrainRecord
 		return this.fuelConsumption;
 	}
 
+	@Deprecated // Will be removed later please override the getWaterConsumption() in the entity for the stock
 	public int getWaterConsumption(){
 		return this.waterConsumption;
 	}

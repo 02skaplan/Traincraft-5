@@ -393,6 +393,7 @@ public enum EnumHeritageTrainsLegacy implements ITrainRecord
         return this.trainType;
     }
 
+    @Deprecated // Will be replaced by the override method within the Entity Class
     public int getMHP(){
         return this.MHP;
     }

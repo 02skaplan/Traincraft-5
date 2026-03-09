@@ -210,7 +210,9 @@ public class TrainRecord implements ITrainRecord
     public int getFuelConsumption() { return this.fuelConsumption; }
     public TrainRecord setFuelConsumption(int consumption) { this.fuelConsumption = consumption; return this; }
 
+    @Deprecated // Will be removed later please override the getWaterConsumption() in the entity for the stock
     public int getWaterConsumption() { return this.waterConsumption; }
+    @Deprecated // Will be removed later please override the getWaterConsumption() in the entity for the stock
     public TrainRecord setWaterConsumption(int consumption) {this.waterConsumption = consumption; return this; }
 
     public int getHeatingTime() { return this.heatingTime; }
