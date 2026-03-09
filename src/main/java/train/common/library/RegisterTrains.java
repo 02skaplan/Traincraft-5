@@ -96,7 +96,7 @@ public class RegisterTrains
                                put(ItemIDs.minecartNYTram.item,
                                         new TrainRecord("Loco Electric Tram NY", EntityLocoElectricTramNY.class, ItemIDs.minecartNYTram.item, EnumTrainType.Passenger, 1,
                                                 new String[] {"Grey", "White"},
-                                                18).setMHP(2428).setMaxSpeed(160).setFuelConsumption(6).setHeatingTime(170).setAccelerationRate(0.7).setBrakeRate(0.965).setBogieLocoPosition(-3)
+                                                18).setMaxSpeed(160).setFuelConsumption(6).setHeatingTime(170).setAccelerationRate(0.7).setBrakeRate(0.965).setBogieLocoPosition(-3)
                                 );
 
                                put(ItemIDs.minecartPassengerTramNY.item,
@@ -310,7 +310,7 @@ public class RegisterTrains
                                put(ItemIDs.minecartLocoDD35B.item,
                                         new TrainRecord("DD35 B Unit", EntityBUnitDD35.class, ItemIDs.minecartLocoDD35B.item, "b-unit", 8,
                                                 new String[]{"Orange", "Black"},
-                                                18).setTankCapacity(12000)
+                                                18)
                                );
                                put(ItemIDs.minecartPropagandaUs.item,
                                         new TrainRecord("Propaganda USA", EntityPropagandaUS.class, ItemIDs.minecartPropagandaUs.item, "decorative", 0.1,
@@ -565,27 +565,27 @@ public class RegisterTrains
                             put(ItemIDs.minecartTankWagon_DB.item,
                                     new TrainRecord("Tank Wagon DB", EntityTankWagon_DB.class, ItemIDs.minecartTankWagon_DB.item, EnumTrainType.Tankcar, 6,
                                             new String[]{"Blue", "Green"},
-                                            18).setTankCapacity(50000));
+                                            18));
                             put(ItemIDs.minecartTankWagonThreeDome.item,
                                     new TrainRecord("Tank Wagon Three Dome", EntityTankWagonThreeDome.class, ItemIDs.minecartTankWagonThreeDome.item, EnumTrainType.Tankcar, 7.5,
                                             new String[]{"Green", "White"},
-                                            18).setTankCapacity(90000));
+                                            18));
                             put(ItemIDs.minecartTankWagonUS.item,
                                     new TrainRecord("Tank Wagon US", EntityTankWagonUS.class, ItemIDs.minecartTankWagonUS.item, EnumTrainType.Tankcar, 6,
                                             new String[]{"Black", "Grey", "Yellow", "White", "LightGrey", "Green", "Blue", "Lime", "Orange", "Cyan", "Pink", "Purple", "LightBlue", "Magenta","Red","Brown"},
-                                            18).setTankCapacity(70000));
+                                            18));
                             put(ItemIDs.minecartTankWagon2.item,
                                     new TrainRecord("Tank Wagon Grey", EntityTankWagon2.class, ItemIDs.minecartTankWagon2.item, EnumTrainType.Tankcar, 3,
                                             new String[]{"Blue", "White", "Orange", "Black"},
-                                            18).setTankCapacity(40000));
+                                            18));
                             put(ItemIDs.minecartWatertransp.item,
                                     new TrainRecord("Tank Lava", EntityTankLava.class, ItemIDs.minecartWatertransp.item, EnumTrainType.Tankcar, 5,
                                             new String[]{"Empty", "Full"},
-                                            18).setTankCapacity(30000));
+                                            18));
                             put(ItemIDs.minecartTankWagon.item,
                                     new TrainRecord("Tank Wagon Yellow", EntityTankWagon.class, ItemIDs.minecartTankWagon.item, EnumTrainType.Tankcar, 6,
                                             new String[]{"Black"},
-                                            18).setTankCapacity(40000));
+                                            18));
 
                         }}, Traincraft.instance
 
