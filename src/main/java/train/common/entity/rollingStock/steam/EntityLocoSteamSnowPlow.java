@@ -67,6 +67,12 @@ public class EntityLocoSteamSnowPlow extends AbstractStandardSteamPoweredRotaryS
 	}
 
 	@Override
+	public float transportTopSpeed()
+	{
+		return 20;
+	}
+
+	@Override
 	public float transportMetricHorsePower()
 	{
 		return 200;

@@ -43,6 +43,12 @@ public class EntityLocoSteamGLYN042T extends SteamTrain {
 	}
 
 	@Override
+	public float transportTopSpeed()
+	{
+		return 32;
+	}
+
+	@Override
 	public float transportMetricHorsePower()
 	{
 		return 600;

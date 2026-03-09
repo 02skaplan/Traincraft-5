@@ -43,6 +43,12 @@ public class EntityLocoSteamAlice0_4_0 extends SteamTrain {
 	}
 
 	@Override
+	public float transportTopSpeed()
+	{
+		return 32;
+	}
+
+	@Override
 	public float transportMetricHorsePower()
 	{
 		return 200;

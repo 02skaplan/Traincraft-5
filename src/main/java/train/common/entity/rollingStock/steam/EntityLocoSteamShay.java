@@ -35,6 +35,12 @@ public class EntityLocoSteamShay extends SteamTrain {
 	}
 
 	@Override
+	public float transportTopSpeed()
+	{
+		return 50;
+	}
+
+	@Override
 	public float transportMetricHorsePower()
 	{
 		return 250;
