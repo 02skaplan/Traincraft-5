@@ -315,6 +315,11 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 		prevPosX = x;
 		prevPosY = y;
 		prevPosZ = z;
+
+		if (getCargoManager() != null && getCargoManager().GetDefaultOverride() != -1)
+		{
+			getCargoManager().setSelectedCargo(getCargoManager().GetDefaultOverride());
+		}
 	}
 
 	private void GetRenderSpec()
