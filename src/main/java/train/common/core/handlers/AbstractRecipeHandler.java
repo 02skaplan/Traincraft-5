@@ -1,6 +1,7 @@
 package train.common.core.handlers;
 
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -8,6 +9,7 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import train.common.inventory.TrainCraftingManager;
+import train.common.library.ItemIDs;
 import train.common.recipes.ITCRecipe.ShapedTrainRecipes;
 
 import java.util.*;
@@ -17,6 +19,7 @@ import java.util.*;
  */
 public abstract class AbstractRecipeHandler
 {
+
     public final ItemStack BLACK_DYE      = new ItemStack(Items.dye, 1, 0);
     public final ItemStack RED_DYE        = new ItemStack(Items.dye, 1, 1);
     public final ItemStack GREEN_DYE      = new ItemStack(Items.dye, 1, 2);
@@ -33,6 +36,8 @@ public abstract class AbstractRecipeHandler
     public final ItemStack MAGENTA_DYE    = new ItemStack(Items.dye, 1, 13);
     public final ItemStack ORANGE_DYE     = new ItemStack(Items.dye, 1, 14);
     public final ItemStack WHITE_DYE      = new ItemStack(Items.dye, 1, 15);
+
+
 
     public ArrayList<ItemStack> ingotIron	= OreDictionary.getOres("ingotIron");
     public ArrayList<ItemStack> plankWood = OreDictionary.getOres("plankWood");
@@ -55,6 +60,78 @@ public abstract class AbstractRecipeHandler
     public ArrayList<ItemStack> dyePink = OreDictionary.getOres("dyePink");
     public ArrayList<ItemStack> dyeCyan = OreDictionary.getOres("dyeCyan");
 
+
+    public final String itemSteel = "ingotSteel";
+    public final String ironingot = "ingotIron";
+    public final String anyPlanks = "plankWood";
+
+    public final String DustCoal = "dustCoal";
+
+    public final String anyLogs = "logWood";
+    public final Item IronIngotItem = Items.iron_ingot;
+    public final Item SteelIngotItem = ItemIDs.steel.item;
+    public final Item WaterBucketItem = Items.water_bucket;
+
+    public final Item CoalItem = Items.coal;
+    public final ItemStack CoalItem(int amount)
+    {
+        return new ItemStack(CoalItem, amount);
+    }
+
+    public final ItemStack SteelIngot(int amount)
+    {
+        return new ItemStack(ItemIDs.steel.item, amount);
+    }
+
+    public final String ironCopper = "ingotCopper";
+
+    public final String circuitBasic = "circuitBasic";
+    public final String wireCopper = "wireCopper";
+
+    final ItemStack anyPlankType =  new ItemStack(Blocks.planks, 1, OreDictionary.WILDCARD_VALUE);
+    final ItemStack anyLogType =  new ItemStack(Blocks.log, 1, OreDictionary.WILDCARD_VALUE);
+
+    public final ItemStack TCItemStack(ItemIDs itemIDs, int amount)
+    {
+        return new ItemStack(itemIDs.item, amount);
+    }
+
+
+    public final ItemStack TCItemStack(Item item, int amount)
+    {
+        return new ItemStack(item, amount);
+    }
+
+    public final ItemStack TCItemStack(Item item, int amount, int meta)
+    {
+        return new ItemStack(item, amount, meta);
+    }
+
+
+    public final ItemStack TCItemStack(Item item)
+    {
+        return new ItemStack(item, 1);
+    }
+
+    public final ItemStack TCItemStack(Block block, int amount)
+    {
+        return new ItemStack(block, amount);
+    }
+
+    public ItemStack getAnyPlankType(int amount)
+    {
+        ItemStack copy = anyPlankType.copy();
+        copy.stackSize = Math.min(amount, 64);;
+        return copy;
+    }
+
+    public ItemStack getAnyLogType(int amount)
+    {
+        ItemStack copy = anyLogType.copy();
+        copy.stackSize = Math.min(amount, 64);;
+        return copy;
+    }
+
     public List<ItemStack> coal = new ArrayList<ItemStack>()
     {
         {
@@ -71,7 +148,8 @@ public abstract class AbstractRecipeHandler
 
     public static ArrayList<ItemStack> waterContainers(){
         ArrayList<ItemStack> containers = new ArrayList<ItemStack>();
-        for (FluidContainerRegistry.FluidContainerData data : FluidContainerRegistry.getRegisteredFluidContainerData()){
+        for (FluidContainerRegistry.FluidContainerData data : FluidContainerRegistry.getRegisteredFluidContainerData())
+        {
             if(data.fluid.fluid == FluidRegistry.WATER){
                 containers.add(data.filledContainer);
             }
@@ -84,6 +162,7 @@ public abstract class AbstractRecipeHandler
      * @param output
      * @param args
      */
+    @Deprecated // Do not need to use anymore as variants is handled during the recipe comparsion
     public final void addRecipeWithOreDic(ItemStack output, Object... args) {
 
         String pattern = "";
