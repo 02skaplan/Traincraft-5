@@ -249,7 +249,7 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 	public AbstractTrains(World world) {
 		super(world);
 		color = -1;
-		trainSpec = Traincraft.traincraftRegistry.getTrainRecord(this.getClass());
+		trainSpec = Traincraft.instance.traincraftRegistry.getTrainRecord(this.getClass());
 		acceptedColors = new ArrayList<Integer>();
 		this.setMinecartName(trainSpec.name());
 		if (trainSpec.getColors() != null)
@@ -326,7 +326,7 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 	{
 		if (worldObj.isRemote)
 		{
-			renderSpec = Traincraft.traincraftRegistry.getTrainRenderRecord(this.getClass(), this);
+			renderSpec = Traincraft.instance.traincraftRegistry.getTrainRenderRecord(this.getClass(), this);
 			subTrainRenderRecordSpec = renderSpec.getSubTrainRenderRecord(((short) this.getColor()));
 		}
 	}
@@ -1146,6 +1146,15 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 		}
 		return renderSpec;
 	}
+
+
+	public float[] getRenderScale(){return getRenderSpec().getScale();}
+
+	@SideOnly(Side.CLIENT)
+	public float[] modelOffsets(){return getRenderSpec().getTrans();}
+
+	@SideOnly(Side.CLIENT)
+	public float[] modelRotations(){return getRenderSpec().getRotate();}
 
 	public SubTrainRenderRecord getSubTrainRenderRecordSpec()
 	{

@@ -239,23 +239,22 @@ public class RenderRollingStock extends Render {
 			GL11.glRotatef(angle, 1.0F, 0.0F, 0.0F);
 		}
 
-		ITrainRenderRecord renders = cart.getRenderSpec();
-		if (renders.getTrans() != null)
+		if (cart.modelOffsets() != null)
 		{
-			GL11.glTranslatef(renders.getTrans()[0], renders.getTrans()[1], renders.getTrans()[2]);
+			GL11.glTranslatef(cart.modelOffsets()[0], cart.modelOffsets()[1], cart.modelOffsets()[2]);
 		}
 
-		if (renders.getRotate() != null)
+		if (cart.modelRotations() != null)
 		{
-			GL11.glRotatef(renders.getRotate()[0], 1.0F, 0.0F, 0.0F);
-			GL11.glRotatef(renders.getRotate()[1], 0.0F, 1.0F, 0.0F);
-			GL11.glRotatef(renders.getRotate()[2], 0.0F, 0.0F, 1.0F);
+			GL11.glRotatef(cart.modelRotations()[0], 1.0F, 0.0F, 0.0F);
+			GL11.glRotatef(cart.modelRotations()[1], 0.0F, 1.0F, 0.0F);
+			GL11.glRotatef(cart.modelRotations()[2], 0.0F, 0.0F, 1.0F);
 		}
 
 
-		if (renders.getScale() != null)
+		if (cart.getRenderScale() != null)
 		{
-			GL11.glScalef(renders.getScale()[0], renders.getScale()[1], renders.getScale()[2]);
+			GL11.glScalef(cart.getRenderScale()[0], cart.getRenderScale()[1], cart.getRenderScale()[2]);
 		}
 
 		if (!cart.acceptsOverlayTextures() || !cart.getOverlayTextureContainer().hasActiveOverlays())
@@ -384,6 +383,7 @@ public class RenderRollingStock extends Render {
 			break;
 		}
 
+		ITrainRenderRecord renders = cart.getRenderSpec();
 		if (renders.hasSmoke())
 		{
 			SubTrainRenderRecord subTrainRender = cart.getSubTrainRenderRecordSpec();
