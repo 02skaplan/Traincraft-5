@@ -60,14 +60,14 @@ public class TrainRecord implements ITrainRecord
                        String[] colors, int guiRenderScale, int cargoCapacity)
     {
         this(internalName, entityClass, item, enumTrainType, mass, colors, guiRenderScale);
-        this.cargoCapacity = cargoCapacity;
+        this.cargoCapacity = (byte) Math.min(128, cargoCapacity);
     }
 
     public TrainRecord(String internalName, Class entityClass, Item item, String trainType, double mass,
                        String[] colors, int guiRenderScale, int cargoCapacity)
     {
         this(internalName, entityClass, item, trainType, mass, colors, guiRenderScale);
-        this.cargoCapacity = cargoCapacity;
+        this.cargoCapacity = (byte) Math.min(128, cargoCapacity);
     }
 
     /**
@@ -170,6 +170,8 @@ public class TrainRecord implements ITrainRecord
      */
     public TrainRecord(String internalName) { this.internalName = internalName; }
 
+    public TrainRecord(String internalName, Class entityClass, Item item) { this.internalName = internalName; this.entityClass = entityClass; this.item = item; }
+
     private final String internalName;
     private Class entityClass;
     private Item item;
@@ -187,7 +189,7 @@ public class TrainRecord implements ITrainRecord
     private int guiRenderScale;
     private double bogieLocoPosition;
     private String[] additionalTooltip;
-    private int cargoCapacity;
+    private byte cargoCapacity;
 
     public String getInternalName() { return this.internalName; }
 
@@ -253,14 +255,14 @@ public class TrainRecord implements ITrainRecord
 
     public int getCargoCapacity() { return cargoCapacity; }
 
-    @Deprecated
     /*
         USE setCargoCapacity(InventorySize inventorySize)
      */
     public TrainRecord setCargoCapacity(int capacity)
     {
-        this.cargoCapacity = capacity; return this;
+        this.cargoCapacity = (byte) Math.min(128, capacity); return this;
     }
+
     public TrainRecord setCargoCapacity(InventorySize inventorySize)
     {
         switch (inventorySize)

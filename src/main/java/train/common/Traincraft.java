@@ -186,7 +186,7 @@ public static final SimpleNetworkWrapper gsfsrChannel = NetworkRegistry.INSTANCE
 		trainCompositeSuit = proxy.addArmor("CompositeSuit");
 		TCBlocks.init();
 		TCItems.init();
-		EntityHandler.init();
+		new EntityHandler();
 
 
 		proxy.registerTileEntities();

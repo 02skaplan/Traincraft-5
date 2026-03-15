@@ -112,11 +112,6 @@ public class TraincraftRegistry
             trainRecords.put(trains.getItem(), trains);
         }
 
-        for (EnumHeritageTrainsLegacy trains : EnumHeritageTrainsLegacy.values())
-        {
-            trainRecords.put(trains.getItem(), trains);
-        }
-
         return trainRecords;
     }
 
@@ -138,13 +133,6 @@ public class TraincraftRegistry
             return trainRecordsByItem.get(item);
         }
 
-        for (EnumHeritageTrainsLegacy trains : EnumHeritageTrainsLegacy.values())
-        {
-            if(trains!=null && trains.getItem()!=null && trains.getItem() == item){
-                return trains;
-            }
-        }
-
         return null;
     }
 
@@ -159,14 +147,6 @@ public class TraincraftRegistry
         }
 
         for (ITrainRecord trains : trainRecords) {
-            if (trains.getEntityClass().equals(entityClass))
-            {
-                return trains;
-            }
-        }
-
-        for (EnumHeritageTrainsLegacy trains : EnumHeritageTrainsLegacy.values())
-        {
             if (trains.getEntityClass().equals(entityClass))
             {
                 return trains;
