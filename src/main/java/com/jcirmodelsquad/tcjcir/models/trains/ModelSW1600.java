@@ -1367,8 +1367,7 @@ public class ModelSW1600 extends ModelConverter //Same as Filename
 			GL11.glTranslated(2.13, 0, 0);
 			theTrucks1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if (GetColor(entity) == 5448
-				||GetColor(entity) == 6) {
+		} else if (GetColor(entity) == 16 ||GetColor(entity) == 6) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/flexicoil2_Silver.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslated(-1.05, 0.33, 0);
