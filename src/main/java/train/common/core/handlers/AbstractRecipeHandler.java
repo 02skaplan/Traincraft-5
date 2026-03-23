@@ -1,12 +1,16 @@
 package train.common.core.handlers;
 
+import cpw.mods.fml.common.Loader;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
+import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.oredict.OreDictionary;
 import train.common.inventory.TrainCraftingManager;
 import train.common.library.ItemIDs;
@@ -84,7 +88,7 @@ public abstract class AbstractRecipeHandler
     }
 
     public final String ironCopper = "ingotCopper";
-
+    public final String ingotGold = "ingotGold";
     public final String circuitBasic = "circuitBasic";
     public final String wireCopper = "wireCopper";
 
@@ -142,7 +146,6 @@ public abstract class AbstractRecipeHandler
 
     public ArrayList<ItemStack> ingotRainbontrium = OreDictionary.getOres("ingotRainbontrium");
 
-
     public ArrayList<ItemStack> redstone = OreDictionary.getOres("dustRedstone");
     public ArrayList<ItemStack> waterbucket = waterContainers();
 
@@ -155,6 +158,49 @@ public abstract class AbstractRecipeHandler
             }
         }
         return containers;
+    }
+
+    public ArrayList<ItemStack> concretes = getConcretes();
+
+    private ArrayList<ItemStack> getConcretes()
+    {
+        ArrayList<ItemStack> concretes = new ArrayList<ItemStack>();
+        if (Loader.isModLoaded("Railcraft"))
+        {
+            Item railcraftItem = GameRegistry.findItem("Railcraft", "cube");
+            concretes.add(new ItemStack(railcraftItem, 1, 1));
+        }
+
+
+        concretes.addAll(OreDictionary.getOres("concrete"));
+
+        return concretes;
+    }
+
+    public List<ItemStack> CREOSOTE_CONTAINERS = getCREOSOTE_CONTAINERS();
+
+    private List<ItemStack> getCREOSOTE_CONTAINERS()
+    {
+        Fluid creosote = FluidRegistry.getFluid("creosote");
+
+        List<ItemStack> CREOSOTE_CONTAINERS = new ArrayList<>();
+
+        CREOSOTE_CONTAINERS.clear();
+
+        for (Object obj : Item.itemRegistry) {
+            Item item = (Item) obj;
+            ItemStack stack = new ItemStack(item, 1);
+            FluidStack fluid = FluidContainerRegistry.getFluidForFilledItem(stack);
+            if (fluid != null && fluid.getFluid() == creosote)
+            {
+                if (Item.itemRegistry.getNameForObject(item).toLowerCase().contains("bucket") == false)
+                {
+                    CREOSOTE_CONTAINERS.add(stack.copy());
+                }
+            }
+        }
+
+        return CREOSOTE_CONTAINERS;
     }
 
     /**
