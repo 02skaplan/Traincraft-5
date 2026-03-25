@@ -2504,26 +2504,6 @@ public enum RenderEnum implements ITrainRenderRecord, ISubTrainRenderRecord
 		return multiTexture;
 	}
 
-	public boolean hasSmoke() {
-		return smokeType.length() > 0;
-	}
-
-	public String getSmokeType() {
-		return smokeType;
-	}
-
-	public ArrayList<double[]> getSmokeFX() {
-		return smokeFX;
-	}
-
-	public boolean hasExplosion() {
-		return explosionType.length() > 0;
-	}
-
-	public ArrayList<double[]> getExplosionFX() {
-		return explosionFX;
-	}
-
 	public float[] getTrans() {
 		return trans;
 	}

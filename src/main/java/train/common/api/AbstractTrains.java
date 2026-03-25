@@ -1156,6 +1156,10 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 	@SideOnly(Side.CLIENT)
 	public float[] modelRotations(){return getRenderSpec().getRotate();}
 
+	public boolean hasSmoke() {return getSubTrainRenderRecordSpec() != null && getSubTrainRenderRecordSpec().hasSmoke();}
+
+	public boolean hasExplosion() {return getSubTrainRenderRecordSpec() != null && getSubTrainRenderRecordSpec().hasExplosions();}
+
 	public SubTrainRenderRecord getSubTrainRenderRecordSpec()
 	{
 		if (subTrainRenderRecordSpec == null)

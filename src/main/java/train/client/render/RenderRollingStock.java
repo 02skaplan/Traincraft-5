@@ -383,8 +383,7 @@ public class RenderRollingStock extends Render {
 			break;
 		}
 
-		ITrainRenderRecord renders = cart.getRenderSpec();
-		if (renders.hasSmoke())
+		if (cart.hasSmoke())
 		{
 			SubTrainRenderRecord subTrainRender = cart.getSubTrainRenderRecordSpec();
 			ArrayList<double[]> smokePosition = subTrainRender.getSmokeFX();
@@ -396,7 +395,7 @@ public class RenderRollingStock extends Render {
 				renderSmokeFX(cart, (yaw), pitch, subTrainRender.getSmokeType(), smokePosition, subTrainRender.getSmokeIterations(), time);
 			}
 		}
-		if (renders.hasExplosion())
+		if (cart.hasExplosion())
 		{
 			SubTrainRenderRecord subTrainRender = cart.getSubTrainRenderRecordSpec();
 			if (cart.bogieLoco != null) {// || cart.bogieUtility[0]!=null){
