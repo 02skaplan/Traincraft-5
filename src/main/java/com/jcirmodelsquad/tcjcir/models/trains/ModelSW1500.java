@@ -1870,10 +1870,8 @@ public class ModelSW1500 extends ModelConverter //Same as Filename
 	{
 		ModelRenderHelper.renderModelWithRollingStockLightControls(bodyModel, entity, f5);
 
-		if (GetColor(entity) == 12 || GetColor(entity) == 4
-			|| GetColor(entity) == 7 || GetColor(entity) == 184
-			|| GetColor(entity) == 535 || GetColor(entity) == 16
-			|| GetColor(entity) == 4 || GetColor(entity) == 1) {
+		if (GetColor(entity) == 12 || GetColor(entity) == 4 || GetColor(entity) == 7 || GetColor(entity) == 184 || GetColor(entity) == 535
+			|| GetColor(entity) == 16 || GetColor(entity) == 4 || GetColor(entity) == 1) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/flexicoil2_Black.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslated(-1.05, 0.33, 0);
@@ -1882,8 +1880,8 @@ public class ModelSW1500 extends ModelConverter //Same as Filename
 			GL11.glTranslated(2.13, 0, 0);
 			theTrucks1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if (GetColor(entity) == 6
-				||GetColor(entity) == 18) {
+		} else if (GetColor(entity) == 6 ||GetColor(entity) == 18||GetColor(entity) == 33||GetColor(entity) == 34||GetColor(entity) == 35
+				||GetColor(entity) == 36) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/flexicoil2_Silver.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslated(-1.05, 0.33, 0);
@@ -1892,12 +1890,8 @@ public class ModelSW1500 extends ModelConverter //Same as Filename
 			GL11.glTranslated(2.13, 0, 0);
 			theTrucks1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
-		} else if (GetColor(entity) == 17
-				||GetColor(entity) == 20
-				||GetColor(entity) == 21
-				||GetColor(entity) == 22
-				||GetColor(entity) == 23
-				||GetColor(entity) == 10){
+		} else if (GetColor(entity) == 17 ||GetColor(entity) == 20 ||GetColor(entity) == 21 ||GetColor(entity) == 22 ||GetColor(entity) == 23
+				||GetColor(entity) == 10||GetColor(entity) == 37||GetColor(entity) == 38){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/flexicoil2_Black2.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslated(-1.05, 0.33, 0);

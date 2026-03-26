@@ -1811,8 +1811,7 @@ public class ModelSW1 extends ModelConverter //Same as Filename
 			theTrucks2.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
 
-		} else if (GetColor(entity) == 18
-				|| GetColor(entity) == 19 || GetColor(entity) == 6) {
+		} else if (GetColor(entity) == 18 || GetColor(entity) == 19 || GetColor(entity) == 6 || GetColor(entity) == 1) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/newBogies/TypeA_new_Black_fric.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslated(-1.0F ,-0.035F,0F);
