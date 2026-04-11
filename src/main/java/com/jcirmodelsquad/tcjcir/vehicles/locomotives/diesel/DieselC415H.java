@@ -20,7 +20,7 @@ public class DieselC415H extends DieselTrain {
         
         InsertTexture(0, "Port of Tillamook Bay 701 (BRJ 701 Early)");
         InsertTexture(1, "Port of Tillamook Bay 702 (BRJ 702 Early)");
-        InsertTexture(2, "Latrans Range Railroad", LockoutGroup.LRR);
+        InsertTexture(2, "Latrans Range Railroad (Bida Fictional)"/*, LockoutGroup.LRR*/);
         InsertTexture(3, "Southern Pacific");
         InsertTexture(4, "Southern Pacific (Red Deckplate)");
         InsertTexture(5, "Morristown, Tenneva & Southern", LockoutGroup.MTS);

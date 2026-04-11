@@ -25,7 +25,7 @@ public class DieselGP9 extends DieselTrain {
         InsertTexture(2, "Southern Pacific (Black Widow)");
         InsertTexture(3, "Western Pacific");
         InsertTexture(4, "Western Pacific");
-        InsertTexture(5, "Avanste Northeastern (Late)", LockoutGroup.ANE);
+        InsertTexture(5, "Avanste Northeastern (Late) (Bida Fictional)"/*, LockoutGroup.ANE*/);
         InsertTexture(6, "Morristown Tenneva & Southern", LockoutGroup.MTS);
         InsertTexture(7, "Lisha & Watson (High Hood)", LockoutGroup.LW);
         InsertTexture(8, "Lisha & Watson (Chop Nose)", LockoutGroup.LW);
@@ -51,8 +51,8 @@ public class DieselGP9 extends DieselTrain {
         InsertTexture(28, "Union Pacific");
         InsertTexture(29, "Consolidated Rail Corporation");
         InsertTexture(30, "Western Pacific");
-        InsertTexture(31, "ADT (Ex UP)", LockoutGroup.ADT);
-        InsertTexture(32, "ADT", LockoutGroup.ADT);
+        InsertTexture(31, "ADT (Ex UP)"/*, LockoutGroup.ADT*/);
+        InsertTexture(32, "ADT"/*, LockoutGroup.ADT*/);
         InsertTexture(33, "Northern Pacific");
         InsertTexture(34, "BN 1742");
         InsertTexture(35, "BN 1755");
@@ -67,7 +67,7 @@ public class DieselGP9 extends DieselTrain {
         InsertTexture(44, "DLMR (MOW)", LockoutGroup.DLMR);
         InsertTexture(45, "MMID (High Nose)");
         InsertTexture(46, "MMID (Chop Nose)");
-        InsertTexture(47, "SGPR 25 (Patch)", LockoutGroup.SGPR);
+        InsertTexture(47, "SGPR 25 (Patch) (Bida Fictional)"/*, LockoutGroup.SGPR*/);
         InsertTexture(48, "WM (As Delivered)");
         InsertTexture(49, "WM (Chop Nose)");
         InsertTexture(50, "WM (Chop Nose Circus Scheme)");

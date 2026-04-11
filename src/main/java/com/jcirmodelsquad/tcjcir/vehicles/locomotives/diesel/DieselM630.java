@@ -24,7 +24,7 @@ public class DieselM630 extends DieselTrain {
         InsertTexture(1, "Blandsville & Blankerston");
         InsertTexture(2, "FNCC (KIT-L)", LockoutGroup.FNCC);
         InsertTexture(3, "Great Lakes & Northern Territories");
-        InsertTexture(4, "Latrans Range Railroad", LockoutGroup.LRR);
+        InsertTexture(4, "Latrans Range Railroad (Bida Fictional)"/*, LockoutGroup.LRR*/);
 
     }
 

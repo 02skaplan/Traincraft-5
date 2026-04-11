@@ -36,7 +36,7 @@ public class DieselGP35 extends DieselTrain {
         InsertTexture(14, "DRGW (Big logo)");
         InsertTexture(15, "New York Central");
         InsertTexture(16, "New York Central");
-        InsertTexture(17, "Avanste Northeastern", LockoutGroup.ANE);
+        InsertTexture(17, "Avanste Northeastern"/*, LockoutGroup.ANE*/);
         InsertTexture(18, "AMEX 2019", LockoutGroup.BIDA);
         InsertTexture(19, "Great Lakes & North Territories");
         InsertTexture(20, "Ann Arbor (OLS)");
@@ -57,7 +57,7 @@ public class DieselGP35 extends DieselTrain {
         InsertTexture(35, "Chessie System");
         InsertTexture(36, "WM (Speed Lettering)");
         InsertTexture(37, "WM (Circus)");
-        InsertTexture(38, "PDEV", LockoutGroup.PDEV);
+        InsertTexture(38, "PDEV (Bida Fictional)"/*, LockoutGroup.PDEV*/);
     }
 
     @Override

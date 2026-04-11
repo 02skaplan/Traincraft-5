@@ -22,7 +22,7 @@ public class DieselS12 extends DieselTrain {
         
         InsertTexture(0, "Amador Central Railroad");
         InsertTexture(1, "Blandsville & Blankerston");
-        InsertTexture(2, "Latrans Range Railroad", LockoutGroup.LRR);
+        InsertTexture(2, "Latrans Range Railroad (Bida Fictional)"/*, LockoutGroup.LRR*/);
         InsertTexture(3, "hamburger helper railroad", LockoutGroup.DLMR);
         InsertTexture(4, "DDVR 30 & 31");
         InsertTexture(5, "FMSR", LockoutGroup.FMSR);
@@ -42,23 +42,13 @@ public class DieselS12 extends DieselTrain {
     {
         return "US";
     }
-    
 
     @Override
     public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.3, 0.2, -0.37); }
 
-
-
-
-
-
-
-
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 1.15F;
     }
-
-
 
     @Override
     public String getInventoryName() {

@@ -22,7 +22,7 @@ public class DieselC424 extends DieselTrain {
         InsertTexture(1, "Morristown & Erie");
         InsertTexture(2, "Western New York & Pennsylvania");
         InsertTexture(3, "Washaska & Old Fox RR");
-        InsertTexture(4, "Latrans Range RR", LockoutGroup.LRR);
+        InsertTexture(4, "Latrans Range RR (Bida Fictional)"/*, LockoutGroup.LRR*/);
         InsertTexture(5, "NdeM");
         InsertTexture(6, "NdeM");
         InsertTexture(7, "Blandsville & Blankerston");

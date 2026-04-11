@@ -21,7 +21,7 @@ public class DieselTB27 extends DieselTrain {
 
         InsertTexture(0, "Demonstrator");
         InsertTexture(1, "Blandsville & Blankerston");
-        InsertTexture(2, "Avanste Northeastern", LockoutGroup.ANE);
+        InsertTexture(2, "Avanste Northeastern (Bida Fictional)"/*, LockoutGroup.ANE*/);
         InsertTexture(3, "SPR", LockoutGroup.SPR);
 
     }

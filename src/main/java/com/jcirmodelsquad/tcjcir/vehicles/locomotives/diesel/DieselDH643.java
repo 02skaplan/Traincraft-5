@@ -19,7 +19,7 @@ public class DieselDH643 extends DieselTrain {
     public DieselDH643(World world) {
         super(world, LiquidManager.dieselFilter());
 
-        InsertTexture(0, "Latrans Range Railroad", LockoutGroup.LRR);
+        InsertTexture(0, "Latrans Range Railroad (Bida Fictional)"/*, LockoutGroup.LRR*/);
     }
 
     @Override

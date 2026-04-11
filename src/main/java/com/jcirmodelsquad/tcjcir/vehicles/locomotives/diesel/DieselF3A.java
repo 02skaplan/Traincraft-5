@@ -22,7 +22,7 @@ public class DieselF3A extends DieselTrain {
         InsertTexture(0, "Phase 2 Early");
         InsertTexture(1, "FMSR", LockoutGroup.FMSR);
         InsertTexture(2, "FNCC (Ex FMSR)", LockoutGroup.FNCC);
-        InsertTexture(3, "DES", LockoutGroup.DES);
+        InsertTexture(3, "DES (Bida Fictional)"/*, LockoutGroup.DES*/);
         InsertTexture(4, "CDC&S", LockoutGroup.CDCS);
         InsertTexture(5, "OC&G 25A, 26B", LockoutGroup.CUBED);
         InsertTexture(6, "BAR 49");

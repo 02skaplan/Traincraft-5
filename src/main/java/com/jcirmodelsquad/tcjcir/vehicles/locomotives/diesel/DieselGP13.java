@@ -17,7 +17,7 @@ public class DieselGP13 extends DieselTrain {
     }
     public DieselGP13(World world) {
         super(world, LiquidManager.dieselFilter());
-        InsertTexture(9, "Avanste Northeastern (Late)", LockoutGroup.ANE);
+        InsertTexture(9, "Avanste Northeastern (Late) (Bida Fictional)"/*, LockoutGroup.ANE*/);
     }
 
     @Override

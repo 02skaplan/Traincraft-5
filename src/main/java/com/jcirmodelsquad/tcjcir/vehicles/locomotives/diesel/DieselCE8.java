@@ -21,7 +21,7 @@ public class DieselCE8 extends DieselTrain {
         super(world, LiquidManager.dieselFilter());
 
         InsertTexture(0, "FNCC 99 (KIT-L)", LockoutGroup.FNCC);
-        InsertTexture(1, "Peninsula Development & Improvement Company", LockoutGroup.PDEV);
+        InsertTexture(1, "Peninsula Development & Improvement Company (Bida Fictional)"/*, LockoutGroup.PDEV*/);
         InsertTexture(2, "Blandsville & Blankerston");
         InsertTexture(3, "");
         InsertTexture(4, "");

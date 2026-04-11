@@ -21,7 +21,7 @@ public class DieselSF30B extends DieselTrain {
 
         InsertTexture(0, "Blandsville & Blankerston");
         InsertTexture(1, "MKM Leasing");
-        InsertTexture(2, "CNRC 1000 & 1001 (Ex MKM)", LockoutGroup.CNRC);
+        InsertTexture(2, "CNRC 1000 & 1001 (Ex MKM) (Bida Fictional)"/*, LockoutGroup.CNRC*/);
         InsertTexture(3, "ATSF 7200 (Early)");
         InsertTexture(4, "ATSF 6149 (Mid)");
         InsertTexture(5, "ATSF 6419 (Late)");

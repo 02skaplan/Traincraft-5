@@ -10,8 +10,8 @@ public class SlugMA extends AbstractTankSlug
 {
 	public SlugMA(World world) {
 		super(world);
-		InsertTexture(0, "ANE SMA-1", LockoutGroup.ANE);
-		InsertTexture(1, "ANE SMA-2", LockoutGroup.ANE);
+		InsertTexture(0, "ANE SMA-1 (Bida Fictional)"/*, LockoutGroup.ANE*/);
+		InsertTexture(1, "ANE SMA-2 (Bida Fictional)"/*, LockoutGroup.ANE*/);
 		InsertTexture(2, "Magnolia", LockoutGroup.MAG);
 		InsertTexture(3, "CSXT");
 		InsertTexture(4, "ATSF");

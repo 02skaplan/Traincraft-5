@@ -31,7 +31,7 @@ public class DieselDash839C extends DieselTrain {
         InsertTexture(9, "Nautilus", LockoutGroup.CUBED);
         InsertTexture(10, "Ann Arbor (but awesomer)");
         InsertTexture(11, "CEEX 101", LockoutGroup.BIDA);
-        InsertTexture(12, "CNRC (Ex EARR)", LockoutGroup.CNRC);
+        InsertTexture(12, "CNRC (Ex EARR) (Bida Fictional)"/*, LockoutGroup.CNRC*/);
     }
 
     @Override

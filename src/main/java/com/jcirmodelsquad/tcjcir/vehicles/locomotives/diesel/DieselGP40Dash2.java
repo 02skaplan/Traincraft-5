@@ -32,8 +32,8 @@ public class DieselGP40Dash2 extends DieselTrain {
         InsertTexture(2, "Western Pacific");
         InsertTexture(3, "Western Pacific");
         InsertTexture(4, "Morristown Tenneva & Southern", LockoutGroup.MTS);
-        InsertTexture(5, "Avanste Northeastern", LockoutGroup.ANE);
-        InsertTexture(6, "Avanste Northeastern (Snow Service)", LockoutGroup.ANE);
+        InsertTexture(5, "Avanste Northeastern (Bida Fictional)"/*, LockoutGroup.ANE*/);
+        InsertTexture(6, "Avanste Northeastern (Snow Service) (Bida Fictional)"/*, LockoutGroup.ANE*/);
         InsertTexture(7, "Amtrak (PH III)");
         InsertTexture(8, "Norfolk Southern");
         InsertTexture(9, "Athearn RTR GP40 (Avanste Northeastern)");

@@ -25,8 +25,8 @@ public class DieselSD40dash2 extends DieselTrain {
         //when the
         InsertTexture(0, "LLPX");
         InsertTexture(1, "Burlington Northern");
-        InsertTexture(2, "Avanste Northeastern (Yard Service)", LockoutGroup.ANE);
-        InsertTexture(3, "Avanste Northeastern (Road Service)", LockoutGroup.ANE);
+        InsertTexture(2, "Avanste Northeastern (Yard Service) (Bida Fictional)"/*, LockoutGroup.ANE*/);
+        InsertTexture(3, "Avanste Northeastern (Road Service) (Bida Fictional)"/*, LockoutGroup.ANE*/);
         InsertTexture(4, "Union Pacific");
         InsertTexture(5, "BNSF");
         InsertTexture(6, "BNSF");

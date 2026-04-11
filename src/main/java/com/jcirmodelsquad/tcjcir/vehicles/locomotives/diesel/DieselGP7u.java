@@ -22,8 +22,8 @@ public class DieselGP7u extends DieselTrain {
         InsertTexture(0, "ATSF (Kodachrome)");
         InsertTexture(1, "ATSF (Freightbonnet)");
         InsertTexture(2, "Blandsville & Blankerston");
-        InsertTexture(3, "Avanste Northeastern (Radio Equipped)", LockoutGroup.ANE);
-        InsertTexture(4, "Avanste Northeastern (Yard)", LockoutGroup.ANE);
+        InsertTexture(3, "Avanste Northeastern (Radio Equipped) (Bida Fictional)"/*, LockoutGroup.ANE*/);
+        InsertTexture(4, "Avanste Northeastern (Yard) (Bida Fictional)"/*, LockoutGroup.ANE*/);
         InsertTexture(5, "Fox Union Rail Resources (FURRX)");
         InsertTexture(6, "OC&G 15", LockoutGroup.CUBED);
         InsertTexture(7, "FNCC 210-213 (GP9(U) group e)", LockoutGroup.FNCC);

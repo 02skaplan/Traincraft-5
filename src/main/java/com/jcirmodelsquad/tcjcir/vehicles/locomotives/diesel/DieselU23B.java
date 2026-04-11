@@ -26,7 +26,7 @@ public class DieselU23B extends DieselTrain {
         InsertTexture(1, "Fox Union Rail Resources (FURRX)");
         InsertTexture(2, "Conrail");
         InsertTexture(3, "Blandsville & Blankerston");
-        InsertTexture(4, "Deep Rock Railroad", LockoutGroup.BIDA);
+        InsertTexture(4, "Deep Rock Railroad (Bida Fictional)"/*, LockoutGroup.BIDA*/);
         InsertTexture(5, "Deep Rock Railroad (C&PV Patch)", LockoutGroup.CPV);
         InsertTexture(6, "Carbondale & Pine Valley", LockoutGroup.CPV);
         InsertTexture(7, "ATSF (Pinstripe)");
@@ -43,13 +43,13 @@ public class DieselU23B extends DieselTrain {
         InsertTexture(18, "Morristown Tenneva & Southern", LockoutGroup.MTS);
         InsertTexture(19, "Milwaukee Road");
         InsertTexture(20, "Nomansi & Eastern Pacific", LockoutGroup.CUBED);
-        InsertTexture(21, "ADT", LockoutGroup.ADT);
-        InsertTexture(22, "ADT (Ex UP)", LockoutGroup.ADT);
+        InsertTexture(21, "ADT"/*, LockoutGroup.ADT*/);
+        InsertTexture(22, "ADT (Ex UP)"/*, LockoutGroup.ADT*/);
         InsertTexture(23, "Suffern Hoboken Interstate Transfer 211");
-        InsertTexture(24, "Detroit Export System", LockoutGroup.DES);
+        InsertTexture(24, "Detroit Export System (Bida Fictional)"/*, LockoutGroup.DES*/);
         InsertTexture(25, "Magnolia Properties", LockoutGroup.MAG);
         InsertTexture(26, "AGW", LockoutGroup.AGW);
-        InsertTexture(27, "CNRC 5001 & 5002", LockoutGroup.CNRC);
+        InsertTexture(27, "CNRC 5001 & 5002 (Bida Fictional)"/*, LockoutGroup.CNRC*/);
         InsertTexture(28, "CSXT (Bluedown)");
         InsertTexture(29, "CSXT (Stealth)");
         InsertTexture(30, "CSXT (YN1)");

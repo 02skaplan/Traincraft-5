@@ -15,16 +15,16 @@ public enum LockoutGroup implements ILockoutGroup
     //begin the bida spam of reporting marks
     FNCC("d46213e9-ea09-40e7-9ec9-595903d98e17"), //fox, north coast & cascades
     FMSR("d46213e9-ea09-40e7-9ec9-595903d98e17"), //fox, marble & seaboard ry
-    DES("d46213e9-ea09-40e7-9ec9-595903d98e17"), //detroit export system
-    ANE("d46213e9-ea09-40e7-9ec9-595903d98e17"), //avanste northeastern
+    //DES("d46213e9-ea09-40e7-9ec9-595903d98e17"), //detroit export system
+    //ANE("d46213e9-ea09-40e7-9ec9-595903d98e17"), //avanste northeastern
     CPV("d46213e9-ea09-40e7-9ec9-595903d98e17"), //carbondale & pine valley
-    CNRC("d46213e9-ea09-40e7-9ec9-595903d98e17"), //cedar northern
+    //CNRC("d46213e9-ea09-40e7-9ec9-595903d98e17"), //cedar northern
     SNCT("d46213e9-ea09-40e7-9ec9-595903d98e17"), //seattle & north coast ry (protolance textures only)
     BIDA("d46213e9-ea09-40e7-9ec9-595903d98e17"), //misc mark for various bida railroads i dont think are important enough to have their own groups
-    LRR("d46213e9-ea09-40e7-9ec9-595903d98e17"), //latrans range
-    PDEV("d46213e9-ea09-40e7-9ec9-595903d98e17"), //Peninsula Development & Improvement Company Railroad
-    SGPR(),//sargosa
-    ADT(),//divs ADT
+    //LRR("d46213e9-ea09-40e7-9ec9-595903d98e17"), //latrans range
+    //PDEV("d46213e9-ea09-40e7-9ec9-595903d98e17"), //Peninsula Development & Improvement Company Railroad
+    //SGPR(),//sargosa
+    //ADT(),//divs ADT
 
     //Cubed
     MAG("47959692-7c74-4734-8a43-7fc59bc9c8e8"), //Magnolia Acres MFG

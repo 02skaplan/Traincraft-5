@@ -31,7 +31,7 @@ public class DieselDash944CW extends DieselTrain {
         InsertTexture(6, "Southern Pacific (UP Patch)");
         InsertTexture(7, "Chicago Northwestern");
         InsertTexture(8, "Morristown Tenneva & Southern", LockoutGroup.MTS);
-        InsertTexture(9, "Avanste Northeastern", LockoutGroup.ANE);
+        InsertTexture(9, "Avanste Northeastern (Bida Fictional)"/*, LockoutGroup.ANE*/);
         InsertTexture(10, "Galesburg Clinton & Midland", train.common.enums.LockoutGroup.GCM); 
         InsertTexture(11, "CSLX (EX CSWR)");
         InsertTexture(12, "ATSF");

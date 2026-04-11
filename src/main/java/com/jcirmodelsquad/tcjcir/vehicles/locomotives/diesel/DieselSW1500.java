@@ -43,7 +43,7 @@ public class DieselSW1500 extends DieselTrain {
         InsertTexture(21, "Grassland Laboratories");
         InsertTexture(22, "FURRX");
         InsertTexture(23, "FURRX");
-        InsertTexture(24, "ADT", LockoutGroup.ADT);
+        InsertTexture(24, "ADT"/*, LockoutGroup.ADT*/);
         InsertTexture(25, "CSXT (Yn2)");
         InsertTexture(26, "CSXT (Yn1)");
         InsertTexture(27, "CSXT (Stealth)");

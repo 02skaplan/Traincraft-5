@@ -25,7 +25,7 @@ public class DieselSD50 extends DieselTrain {
         InsertTexture(3, "CR (First Order)");
         InsertTexture(4, "NS (Ex CR)");
         InsertTexture(5, "DRGW");
-        InsertTexture(6, "ANE (1st & 2nd Orders)", LockoutGroup.ANE);
+        InsertTexture(6, "ANE (1st & 2nd Orders) (Bida Fictional)"/*, LockoutGroup.ANE*/);
         InsertTexture(7, "Blandsville & Blanklands Terminal Railroad Association");
         InsertTexture(8, "HBRY");
         InsertTexture(9, "FNCC KIT-L", LockoutGroup.FNCC);

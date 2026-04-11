@@ -19,11 +19,11 @@ public class DieselGP7 extends DieselTrain {
     public DieselGP7(World world) {
         super(world, LiquidManager.dieselFilter());
 
-        InsertTexture(0, "Avanste Northeastern (Late)", LockoutGroup.ANE);
+        InsertTexture(0, "Avanste Northeastern (Late) (Bida Fictional)"/*, LockoutGroup.ANE*/);
         InsertTexture(1, "Burlington Northern (Ex CBQ)");
         InsertTexture(2, "Butte, Anaconda & Pacific (Early)");
         InsertTexture(3, "Chicago Northwestern");
-        InsertTexture(4, "Avanste Northeastern (As Delivered)", LockoutGroup.ANE);
+        InsertTexture(4, "Avanste Northeastern (As Delivered) (Bida Fictional)"/*, LockoutGroup.ANE*/);
         InsertTexture(5, "Fox Union Resources (FURRX)");
         InsertTexture(6, "Bangor & Aroostook (Early)");
         InsertTexture(7, "Bangor & Aroostook (Late)");

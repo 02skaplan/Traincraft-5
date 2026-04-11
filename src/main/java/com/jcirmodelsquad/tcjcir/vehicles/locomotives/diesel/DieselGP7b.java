@@ -20,7 +20,7 @@ public class DieselGP7b extends DieselTrain {
 
         InsertTexture(0, "ATSF");
         InsertTexture(1, "Blandsville & Blankerston");
-        InsertTexture(2, "Avanste Northeastern", LockoutGroup.ANE);
+        InsertTexture(2, "Avanste Northeastern (Bida Fictional)"/*, LockoutGroup.ANE*/);
     }
 
     @Override

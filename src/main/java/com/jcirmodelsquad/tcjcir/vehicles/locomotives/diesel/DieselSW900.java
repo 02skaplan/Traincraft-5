@@ -22,7 +22,7 @@ public class DieselSW900 extends DieselTrain {
         
         InsertTexture(0, "Electric Fuels Corporation");
         InsertTexture(1, "Conrail Shared Assets");
-        InsertTexture(2, "Avanste Northeastern", LockoutGroup.ANE);
+        InsertTexture(2, "Avanste Northeastern (Bida Fictional)"/*, LockoutGroup.ANE*/);
         InsertTexture(3, "Blandsville & Blankerston");
         InsertTexture(4, "Deadwood & La Mesa", LockoutGroup.DLMR);
         InsertTexture(5, "New York Central");
@@ -32,7 +32,7 @@ public class DieselSW900 extends DieselTrain {
         InsertTexture(9, "Falcon Area Rapid Transit MOW");
         InsertTexture(10, "Sacramento Northern (Ex FNCC)");
         InsertTexture(11, "SP Tigerstripe");
-        InsertTexture(12, "Peninsula Development & Improvement Company", LockoutGroup.PDEV);
+        InsertTexture(12, "Peninsula Development & Improvement Company (Bida Fictional)"/*, LockoutGroup.PDEV*/);
     }
 
     @Override

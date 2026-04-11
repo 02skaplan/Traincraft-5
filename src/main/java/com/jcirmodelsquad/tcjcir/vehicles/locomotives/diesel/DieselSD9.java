@@ -30,11 +30,11 @@ public class DieselSD9 extends DieselTrain {
         InsertTexture(6, "OC&G", LockoutGroup.CUBED);
         InsertTexture(7, "DRGW");
         InsertTexture(8, "DRGW (5305, Low Hood)");
-        InsertTexture(9, "ADT", LockoutGroup.ADT);
+        InsertTexture(9, "ADT"/*, LockoutGroup.ADT*/);
         InsertTexture(10, "WFR (actually they both cring)");
         InsertTexture(11, "DLMR", LockoutGroup.DLMR);
         InsertTexture(12, "WV");
-        InsertTexture(13, "CNRC 6100 - 6102", LockoutGroup.CNRC);
+        InsertTexture(13, "CNRC 6100 - 6102 (Bida Fictional)"/*, LockoutGroup.CNRC*/);
     }
 
     @Override

@@ -18,9 +18,9 @@ public class DieselB30 extends DieselTrain {
     public DieselB30(World world) {
         super(world, LiquidManager.dieselFilter());
         
-        InsertTexture(0, "CNCR 5550", LockoutGroup.CNRC);
-        InsertTexture(1, "CNCR 5552", LockoutGroup.CNRC);
-        InsertTexture(2, "CNCR 5553-5555", LockoutGroup.CNRC);
+        InsertTexture(0, "CNCR 5550 (Bida Fictional)"/*, LockoutGroup.CNRC*/);
+        InsertTexture(1, "CNCR 5552 (Bida Fictional)"/*, LockoutGroup.CNRC*/);
+        InsertTexture(2, "CNCR 5553-5555 (Bida Fictional)"/*, LockoutGroup.CNRC*/);
         InsertTexture(3, "CSXT (Yn2)");
         InsertTexture(4, "CSXT (Yn1)");
         InsertTexture(5, "CSXT (Stealth)");

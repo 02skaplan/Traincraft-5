@@ -20,7 +20,7 @@ public class DieselDash940C extends DieselTrain {
     public DieselDash940C(World world) {
         super(world, LiquidManager.dieselFilter());
 
-        InsertTexture(0, "Avanste Northeastern", LockoutGroup.ANE);
+        InsertTexture(0, "Avanste Northeastern (Bida Fictional)"/*, LockoutGroup.ANE*/);
     }
 
     @Override

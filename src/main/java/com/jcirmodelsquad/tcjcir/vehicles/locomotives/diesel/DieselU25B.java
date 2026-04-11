@@ -31,7 +31,7 @@ public class DieselU25B extends DieselTrain {
         InsertTexture(10, "New York Central (Early 60s)");
         InsertTexture(11, "New York Central (Very Late 60s)");
         InsertTexture(12, "Galesburg Clinton & Midland", train.common.enums.LockoutGroup.GCM); 
-        InsertTexture(13, "Detroit Export System", LockoutGroup.DES);
+        InsertTexture(13, "Detroit Export System (Bida Fictional)"/*, LockoutGroup.DES*/);
     }
 
     @Override
