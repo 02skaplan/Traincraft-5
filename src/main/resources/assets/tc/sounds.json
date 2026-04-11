@@ -227,7 +227,9 @@
   "wabco_e2_3": {"category": "master", "sounds": [{"name": "wabco_e2_3", "stream":  true}]},
   "wabco_e2_dual_1": {"category": "master", "sounds": [{"name": "wabco_e2_dual_1", "stream":  true}]},
   "wabco3bell": {"category": "master", "sounds": [{"name": "wabco3bell", "stream":  true}]},
-
+  "wabco_a2_2": {"category": "master", "sounds": [{"name": "wabco_a2_2", "stream":  true}]},
+  "wabco_aa1_1": {"category": "master", "sounds": [{"name": "wabco_aa1_1", "stream":  true}]},
+  "wabco3_e2b_1": {"category": "master", "sounds": [{"name": "wabco_e2b_1", "stream":  true}]},
 
 
   "alco_5chime_1": {"category": "master", "sounds": [{"name": "alco_5chime_1", "stream":  true}]},
