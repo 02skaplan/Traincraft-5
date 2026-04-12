@@ -33,7 +33,7 @@ configFile.withReader {
 }
 
 
-version = "3.1.7.9"
+version = "3.1.7.91"
 group= "src.train" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Fox-Traincraft"
 
