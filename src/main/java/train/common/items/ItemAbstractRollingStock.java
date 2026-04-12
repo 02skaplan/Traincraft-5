@@ -292,7 +292,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
             EnumTracks enumTracks = EnumTracks.GetTrackByLabel(tile.getType());
             if (enumTracks == null)
             {
-                par2EntityPlayer.addChatMessage(new ChatComponentText("An error occurred please try replacing the track"));
+                sendLocalChatMessage(par2EntityPlayer,"An error occurred please try replacing the track");
                 return false;
             }
 
@@ -303,7 +303,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
             }
             else
             {
-                par2EntityPlayer.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                sendLocalChatMessage(par2EntityPlayer,"Place me on a straight piece of track!");
                 return false;
             }
         } else if (TraincraftUtil.isRailBlockAt(par3World, par4, par5, par6) && (meta < 2 || meta > 5)) {
@@ -393,7 +393,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
             {
                 if (isPlacementWithSkinValid == false)
                 {
-                    player.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Lockout:" + EnumChatFormatting.GRAY + " Unable to place, no public domain skins available."));
+                    sendLocalChatMessage(player,EnumChatFormatting.RED + "Lockout:" + EnumChatFormatting.GRAY + " Unable to place, no public domain skins available.");
                     rollingStock.setDead();
                     return rollingStock;
                 }
@@ -405,7 +405,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                     || (rollingStock instanceof Tender && !ConfigHandler.ENABLE_TENDER))
                 {
                     if (player != null)
-                        player.addChatMessage(new ChatComponentText("This type of train has been deactivated by the OP"));
+                        sendLocalChatMessage(player,"This type of train has been deactivated by the OP");
                     rollingStock.setDead();
                     return rollingStock;
                 }
@@ -445,7 +445,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             rollingStock.rotationYaw = -135;
                         }
                         else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -459,7 +459,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             rollingStock.serverRealRotation = 45;
                         } else {
                             if (player != null) {
-                                player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                                sendLocalChatMessage(player,"Place me on a straight piece of track!");
                                 rollingStock.setDead();
                                 return rollingStock;
                             }
@@ -486,7 +486,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                         } else if (meta == 1 || meta == 3) {
                             rollingStock.rotationYaw = 0; // LEFT
                         } else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -500,7 +500,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                         } else if ((meta == 6 || meta == 4) && (world.getBlock(i - 1, j, k + 1) == BlockIDs.tcRail.block || world.getBlock(i - 1, j, k + 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 1, j, k + 1))) && (world.getBlock(i - 2, j, k + 2) == BlockIDs.tcRail.block || world.getBlock(i - 2, j, k + 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 2, j, k + 2)))) {
                             rollingStock.serverRealRotation = 135; //RIGHT
                         } else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -526,7 +526,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
 
                         }
                         else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -543,7 +543,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                         }
 
                         else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -568,7 +568,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             rollingStock.rotationYaw = 0; // LEFT
                         }
                         else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -584,7 +584,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             rollingStock.serverRealRotation = 180; //RIGHT
                         }
                         else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -610,7 +610,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                         }
 
                         else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -627,7 +627,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                         else if ((meta == 6 || meta == 4) && (world.getBlock(i - 1, j, k + 1) == BlockIDs.tcRail.block || world.getBlock(i - 1, j, k + 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 1, j, k + 1))) && (world.getBlock(i - 2, j, k + 2) == BlockIDs.tcRail.block || world.getBlock(i - 2, j, k + 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 2, j, k + 2)))) {
                             rollingStock.serverRealRotation = -45;
                         }else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -652,7 +652,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             rollingStock.rotationYaw = 178.5f; // LEFT
                         }
                         else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -667,7 +667,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                         else if ((meta == 0 || meta == 2) && (world.getBlock(i, j, k - 1) == BlockIDs.tcRail.block || world.getBlock(i, j, k - 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i, j, k - 1))) && (world.getBlock(i, j, k - 2) == BlockIDs.tcRail.block || world.getBlock(i, j, k - 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i, j, k - 2)))) {
                             rollingStock.serverRealRotation = -90; // RIGHT
                         }else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -691,7 +691,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                         else if (meta == 5 || meta == 7) {
                             rollingStock.rotationYaw = -135; // LEFT
                         }else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -705,7 +705,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                         else if ((meta == 6 || meta == 4) && (world.getBlock(i + 1, j, k - 1) == BlockIDs.tcRail.block || world.getBlock(i + 1, j, k - 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i + 1, j, k - 1))) && (world.getBlock(i + 2, j, k - 2) == BlockIDs.tcRail.block || world.getBlock(i + 2, j, k - 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i + 2, j, k - 2)))) {
                             rollingStock.serverRealRotation = -45; //RIGHT
                         }else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player,"Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -730,7 +730,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             rollingStock.rotationYaw = -90; // LEFT
                         }
                         else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player, "Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -745,7 +745,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                         else if ((meta == 0 || meta == 2) && (world.getBlock(i, j, k + 1) == BlockIDs.tcRail.block || world.getBlock(i, j, k + 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i, j, k + 1))) && (world.getBlock(i, j, k + 2) == BlockIDs.tcRail.block || world.getBlock(i, j, k + 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i, j, k + 2)))) {
                             rollingStock.serverRealRotation = 90; // RIGHT
                         }else {
-                            player.addChatMessage(new ChatComponentText("Place me on a straight piece of track!"));
+                            sendLocalChatMessage(player, "Place me on a straight piece of track!");
                             rollingStock.setDead();
                             return rollingStock;
                         }
@@ -797,7 +797,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                 {
                     if (player != null)
                     {
-                        player.addChatMessage(new ChatComponentText("To paint, use the " + StatCollector.translateToLocal("item.tc:paintbrushThing.name")));
+                        sendLocalChatMessage(player,"To paint, use the " + StatCollector.translateToLocal("item.tc:paintbrushThing.name"));
                     }
                 }
                 world.spawnEntityInWorld(rollingStock);
@@ -857,6 +857,10 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
 
     }
 
+    private void sendLocalChatMessage(EntityPlayer player, String msg)
+    {
+        player.addChatMessage(new ChatComponentText(msg));
+    }
 
     @Override
     public boolean canBePlacedByNonPlayer(ItemStack cart) {
