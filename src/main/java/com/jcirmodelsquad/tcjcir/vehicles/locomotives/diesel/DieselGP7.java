@@ -78,6 +78,8 @@ public class DieselGP7 extends DieselTrain {
         InsertTexture(56, "Seaboard System (Chop Nose)");
         InsertTexture(57, "Chessie System");
         InsertTexture(58, "FMSR", LockoutGroup.FMSR);
+        InsertTexture(59, "C&O (Early)");
+        InsertTexture(60, "C&O 5704 (Early)");
     }
 
     @Override

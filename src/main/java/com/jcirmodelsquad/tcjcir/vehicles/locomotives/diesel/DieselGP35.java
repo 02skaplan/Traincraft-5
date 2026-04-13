@@ -58,6 +58,8 @@ public class DieselGP35 extends DieselTrain {
         InsertTexture(36, "WM (Speed Lettering)");
         InsertTexture(37, "WM (Circus)");
         InsertTexture(38, "PDEV (Bida Fictional)"/*, LockoutGroup.PDEV*/);
+        InsertTexture(39, "C&O");
+        InsertTexture(40, "C&O (Blue Dip)");
     }
 
     @Override

@@ -38,6 +38,9 @@ public class DieselSD40 extends DieselTrain {
         InsertTexture(13, "Chessie System");
         InsertTexture(14, "WM (Speed Lettering)");
         InsertTexture(15, "WM (Circus)");
+        InsertTexture(16, "C&O");
+        InsertTexture(17, "C&O (Blue Dip)");
+
         initOverlayTextures();
         getOverlayTextureContainer().initOverlaySpecification(new OTSpecificationDynamic(
                 "Engine Number",

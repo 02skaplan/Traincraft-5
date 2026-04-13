@@ -2640,7 +2640,7 @@ public class ModelGP9newer extends ModelConverter //Same as Filename
 			theA.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();*/
 
-		} else if (GetColor(entity) == 32 ||GetColor(entity) == 11){
+		} else if (GetColor(entity) == 3221 ||GetColor(entity) == 11){
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/blombergB_2_Silver.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslated(-1.37, -0.0, 0);//front & rear

@@ -9,13 +9,12 @@ import train.common.library.EnumSounds;
 import train.common.library.EnumTrains;
 import train.common.library.sounds.SoundRecord;
 
-
 public class DieselSW9 extends DieselTrain {
     @Override
-    public SoundRecord getSoundRecord()
-    {
+    public SoundRecord getSoundRecord() {
         return EnumSounds.DieselSW9;
     }
+
     public DieselSW9(World world) {
         super(world, LiquidManager.dieselFilter());
 
@@ -26,33 +25,27 @@ public class DieselSW9 extends DieselTrain {
         InsertTexture(4, "Apalachicola Northern");
         InsertTexture(5, "Blandsville & Blankerston");
         InsertTexture(6, "Southern");
+        InsertTexture(7, "C&O");
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
+    public float transportMetricHorsePower() {
         return 1200;
     }
 
     @Override
-    public String transportCountry()
-    {
+    public String transportCountry() {
         return "US";
     }
 
+    @Override
+    public void updateRiderPosition() {
+        TraincraftUtil.updateRider(this, -0.08, 0.2, -0.35);
+    }
 
     @Override
-    public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.08, 0.2, -0.35); }
-    
-
-
-
-    
-
-    
-
-    @Override
-    public float getOptimalDistance(EntityMinecart cart) { return 1.1F;
+    public float getOptimalDistance(EntityMinecart cart) {
+        return 1.1F;
     }
 
     @Override
@@ -66,12 +59,8 @@ public class DieselSW9 extends DieselTrain {
     }
 
     @Override
-    public int getTankCapacity()
-    {
+    public int getTankCapacity() {
         return 8000;
     }
-
-    
-    
 
 }
