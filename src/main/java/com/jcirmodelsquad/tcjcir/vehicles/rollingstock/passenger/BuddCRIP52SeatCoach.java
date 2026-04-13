@@ -22,7 +22,7 @@ public class BuddCRIP52SeatCoach extends AbstractPassengerCar
 	@Override
 	public float getOptimalLinkingDistance()
 	{
-		return 3.97F;
+		return 3.73F;
 	}
 
 	@Override
