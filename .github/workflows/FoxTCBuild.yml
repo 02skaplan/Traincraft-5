@@ -6,6 +6,11 @@ on:
       - foxtc-020-tracktastic
   pull_request:
 
+# 🔐 REQUIRED for GitHub Packages uploads
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build:
     runs-on: ubuntu-24.04
@@ -15,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
 
       # ----------------------------
-      # Java (ForgeGradle 1.7.10 requires Java 8)
+      # Java 8 (required for 1.7.10 ForgeGradle)
       # ----------------------------
       - name: Setup Java 8
         uses: actions/setup-java@v4
@@ -48,24 +53,23 @@ jobs:
         run: chmod +x gradlew
 
       # ----------------------------
-      # Build
+      # Build mod
       # ----------------------------
       - name: Gradle Build
         run: ./gradlew build
 
       # ----------------------------
-      # Publish to Maven (THIS is the correct task for FG1.2)
+      # Publish to GitHub Packages (IMPORTANT)
       # ----------------------------
       - name: Upload to Maven (uploadArchives)
         if: github.event_name == 'push'
         run: ./gradlew uploadArchives
         env:
-          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
-          MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
-          MAVEN_URL: ${{ secrets.MAVEN_URL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
 
       # ----------------------------
-      # Extract version
+      # Extract version from Gradle
       # ----------------------------
       - name: Extract project version
         id: version
