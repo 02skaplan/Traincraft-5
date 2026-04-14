@@ -14,20 +14,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Setup Java
+      # ----------------------------
+      # Java (ForgeGradle 1.7.10 requires Java 8)
+      # ----------------------------
       - name: Setup Java 8
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 8
 
-      # Setup Gradle
+      # ----------------------------
+      # Gradle setup
+      # ----------------------------
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
           validate-wrappers: false
 
+      # ----------------------------
       # Cache Gradle
+      # ----------------------------
       - name: Cache Gradle
         uses: actions/cache@v3
         with:
@@ -41,11 +47,25 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
+      # ----------------------------
+      # Build
+      # ----------------------------
       - name: Gradle Build
         run: ./gradlew build
 
       # ----------------------------
-      # Extract Gradle version
+      # Publish to Maven (THIS is the correct task for FG1.2)
+      # ----------------------------
+      - name: Upload to Maven (uploadArchives)
+        if: github.event_name == 'push'
+        run: ./gradlew uploadArchives
+        env:
+          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+          MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
+          MAVEN_URL: ${{ secrets.MAVEN_URL }}
+
+      # ----------------------------
+      # Extract version
       # ----------------------------
       - name: Extract project version
         id: version
@@ -54,7 +74,7 @@ jobs:
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       # ----------------------------
-      # Check if release already exists
+      # Check if release exists
       # ----------------------------
       - name: Check if release already exists
         id: check_release
@@ -62,23 +82,12 @@ jobs:
           git fetch --tags
           if git tag | grep -q "v${{ steps.version.outputs.version }}"; then
             echo "exists=true" >> $GITHUB_OUTPUT
-            echo "Release v${{ steps.version.outputs.version }} already exists — skipping publish"
           else
             echo "exists=false" >> $GITHUB_OUTPUT
-            echo "No existing release — will publish"
           fi
 
       # ----------------------------
-      # Publish to Maven (GitHub Packages)
-      # ----------------------------
-      - name: Publish to Maven (GitHub Packages)
-        if: github.event_name == 'push'
-        run: ./gradlew publish
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # ----------------------------
-      # Create GitHub Pre-Release
+      # GitHub Pre-Release
       # ----------------------------
       - name: Create GitHub Pre-Release
         if: steps.check_release.outputs.exists == 'false'

@@ -153,13 +153,22 @@ uploadArchives {
 	}
 }
 
-publishing {
+uploadArchives {
     repositories {
-        maven {
-            url = uri("https://maven.pkg.github.com/bidahochi/Traincraft-5")
-            credentials {
-                username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
+        mavenDeployer {
+            uniqueVersion = false
+
+            repository(url: "https://maven.pkg.github.com/bidahochi/Traincraft-5") {
+                authentication(
+                        userName: System.getenv("GITHUB_ACTOR"),
+                        password: System.getenv("GITHUB_TOKEN")
+                )
+            }
+
+            pom.project {
+                groupId = project.group
+                artifactId = archivesBaseName
+                version = project.version
             }
         }
     }
