@@ -133,8 +133,6 @@ artifacts {
 uploadArchives {
     repositories {
         mavenDeployer {
-            uniqueVersion = false
-
             repository(url: "https://maven.pkg.github.com/bidahochi/Traincraft-5") {
                 authentication(
                         userName: System.getenv("GITHUB_ACTOR"),
@@ -143,9 +141,16 @@ uploadArchives {
             }
 
             pom.project {
-                groupId = project.group
-                artifactId = archivesBaseName
+                groupId = "com.bidahochi.traincraft"
+                artifactId = "fox-traincraft"
                 version = project.version
+
+                name = "Fox Traincraft"
+                packaging = "jar"
+
+                scm {
+                    url = "https://github.com/bidahochi/Traincraft-5"
+                }
             }
         }
     }
