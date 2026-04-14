@@ -69,6 +69,15 @@ jobs:
           fi
 
       # ----------------------------
+      # Publish to Maven (GitHub Packages)
+      # ----------------------------
+      - name: Publish to Maven (GitHub Packages)
+        if: github.event_name == 'push'
+        run: ./gradlew publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ----------------------------
       # Create GitHub Pre-Release
       # ----------------------------
       - name: Create GitHub Pre-Release
@@ -84,7 +93,7 @@ jobs:
             Branch: `foxtc-020-tracktastic`
             Version: `${{ steps.version.outputs.version }}`
             Commit: `${{ github.sha }}`
-            
+
             ⚠ **Note:** If this is a pre-release. It is intended for testing and **does not guarantee stability or completeness**.
           files: |
             build/libs/Fox-Traincraft-${{ steps.version.outputs.version }}*.jar

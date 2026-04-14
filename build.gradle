@@ -152,3 +152,15 @@ uploadArchives {
 		}
 	}
 }
+
+publishing {
+    repositories {
+        maven {
+            url = uri("https://maven.pkg.github.com/bidahochi/Traincraft-5")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+}
