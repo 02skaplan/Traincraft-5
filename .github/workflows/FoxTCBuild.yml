@@ -77,7 +77,9 @@ jobs:
           GROUP_PATH="com/bidahochi/traincraft"
           ARTIFACT="fox-traincraft"
 
-          URL="https://maven.pkg.github.com/${{ github.repository }}/$GROUP_PATH/$ARTIFACT/$VERSION/$ARTIFACT-$VERSION.pom"
+          REPO="Traincraft-5"
+
+          URL="https://maven.pkg.github.com/bidahochi/${REPO}/$GROUP_PATH/$ARTIFACT/$VERSION/$ARTIFACT-$VERSION.pom"
 
           echo "Checking $URL"
 
