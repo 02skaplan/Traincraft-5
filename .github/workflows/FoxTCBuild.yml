@@ -76,7 +76,6 @@ jobs:
           VERSION="${{ steps.version.outputs.version }}"
           GROUP_PATH="com/bidahochi/traincraft"
           ARTIFACT="fox-traincraft"
-
           REPO="Traincraft-5"
 
           URL="https://maven.pkg.github.com/bidahochi/${REPO}/$GROUP_PATH/$ARTIFACT/$VERSION/$ARTIFACT-$VERSION.pom"
@@ -85,11 +84,12 @@ jobs:
 
           STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
             -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/octet-stream" \
             $URL)
 
           echo "HTTP status: $STATUS"
 
-          if [ "$STATUS" = "200" ]; then
+          if [ "$STATUS" != "404" ]; then
             echo "exists=true" >> $GITHUB_OUTPUT
           else
             echo "exists=false" >> $GITHUB_OUTPUT
