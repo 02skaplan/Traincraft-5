@@ -1493,6 +1493,15 @@ public class ModelSW10 extends ModelConverter //Same as Filename
 			GL11.glTranslated(2.0, 0, 0);
 			theTrucks1.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
+		} else if (GetColor(entity) == 9) {
+			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/flexicoil2_Grey.png"));
+			GL11.glPushMatrix();
+			GL11.glTranslated(-1.0, 0.33, 0);
+			theTrucks1.render(entity, f, f1, f2, f3, f4, f5);
+
+			GL11.glTranslated(2.0, 0, 0);
+			theTrucks1.render(entity, f, f1, f2, f3, f4, f5);
+			GL11.glPopMatrix();
 		} else if (GetColor(entity) == 6 || GetColor(entity) == 16) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/flexicoil2_Silver.png"));
 			GL11.glPushMatrix();

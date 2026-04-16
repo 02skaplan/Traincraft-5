@@ -50,7 +50,7 @@ public class DieselF3A extends DieselTrain {
         InsertTexture(28, "WM (Circus)");
         InsertTexture(29, "WM (Fireball)");
         InsertTexture(30, "SP Black Widow");
-        InsertTexture(31, "KTR (scrap heap)"/*, LockoutGroup.BIDA*/);
+        InsertTexture(31, "KTR (scrap heap, formerly FNCC 625A)"/*, LockoutGroup.BIDA*/);
     }
 
     @Override

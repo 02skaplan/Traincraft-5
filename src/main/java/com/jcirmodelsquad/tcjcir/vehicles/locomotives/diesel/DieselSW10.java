@@ -21,12 +21,13 @@ public class DieselSW10 extends DieselTrain {
 
         InsertTexture(0, "UP");
         InsertTexture(1, "Blandsville & Blankerston");
-        InsertTexture(2, "North Fox (KIT-L)", LockoutGroup.FNCC);
-        InsertTexture(3, "North Fox (DAR80)", LockoutGroup.FNCC);
+        InsertTexture(2, "FNCC (KIT-L)", LockoutGroup.FNCC);
+        InsertTexture(3, "FNCC (DAR80)", LockoutGroup.FNCC);
         InsertTexture(4, "TIR 1248 & 1253");
         InsertTexture(5, "TIR 1269");
         InsertTexture(6, "Glonch Rayroa");
         InsertTexture(7, "Anning my Arbor so good rn");
+        InsertTexture(8, "KTR (ex FNCC 282)");
 
     }
 

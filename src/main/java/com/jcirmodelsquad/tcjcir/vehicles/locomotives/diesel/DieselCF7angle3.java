@@ -41,7 +41,7 @@ public class DieselCF7angle3 extends DieselTrain {
         InsertTexture(19, "GLNT");
         InsertTexture(20, "CNRC 4100 (Ex FNCC 41) (Bida Fictional)"/*, LockoutGroup.CNRC*/);
         InsertTexture(21, "CNRC 4101-4102 (Ex ATSF) (Bida Fictional)"/*, LockoutGroup.CNRC*/);
-        InsertTexture(22, "");
+        InsertTexture(22, "KTR (Ex ATSF 2581)");
         InsertTexture(23, "");
         InsertTexture(24, "");
         InsertTexture(25, "");

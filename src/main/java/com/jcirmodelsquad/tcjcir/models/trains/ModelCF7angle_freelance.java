@@ -2092,6 +2092,17 @@ public class ModelCF7angle_freelance extends ModelConverter //Same as Filename
 			GL11.glTranslated(1.28, -0.025, 0);
 			theB.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
+		} else if (GetColor(entity) == 11) {
+			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/blombergB_2_sv_406.png"));
+			GL11.glPushMatrix();
+			GL11.glTranslated(-1.3, -0.02, 0);
+			theBlomb.render(entity, f, f1, f2, f3, f4, f5);
+			GL11.glPopMatrix();
+
+			GL11.glPushMatrix();
+			GL11.glTranslated(1.3, -0.02, 0);
+			theBlomb.render(entity, f, f1, f2, f3, f4, f5);
+			GL11.glPopMatrix();
 		} else {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/blombergB_2_Blac_SINGLESHOE.png"));
 			GL11.glPushMatrix();
