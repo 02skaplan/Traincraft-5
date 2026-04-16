@@ -59,23 +59,58 @@ jobs:
         run: ./gradlew build
 
       # ----------------------------
-      # Publish to GitHub Packages (IMPORTANT)
+      # Extract version from Gradle
+      # ----------------------------
+      - name: Extract project version
+        id: version
+        run: |
+          VERSION=$(./gradlew -q properties | awk -F': ' '/^version:/ {print $2; exit}')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      # ----------------------------
+      # Check if package version exists (GitHub Packages)
+      # ----------------------------
+      - name: Check if package version exists
+        id: check_pkg
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          GROUP_PATH="com/bidahochi/traincraft"
+          ARTIFACT="fox-traincraft"
+
+          URL="https://maven.pkg.github.com/${{ github.repository }}/$GROUP_PATH/$ARTIFACT/$VERSION/$ARTIFACT-$VERSION.pom"
+
+          echo "Checking $URL"
+
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            $URL)
+
+          echo "HTTP status: $STATUS"
+
+          if [ "$STATUS" = "200" ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ----------------------------
+      # Publish to GitHub Packages (SKIPS if exists)
       # ----------------------------
       - name: Upload to Maven (uploadArchives)
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' && steps.check_pkg.outputs.exists == 'false'
         run: ./gradlew uploadArchives
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_ACTOR: ${{ github.actor }}
 
       # ----------------------------
-      # Extract version from Gradle
+      # log when skipped
       # ----------------------------
-      - name: Extract project version
-        id: version
-        run: |
-          VERSION=$(./gradlew -q properties | grep "^version:" | awk '{print $2}')
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+      - name: Skip publish notice
+        if: steps.check_pkg.outputs.exists == 'true'
+        run: echo "Package version already exists — skipping publish."
 
       # ----------------------------
       # Check if release exists
