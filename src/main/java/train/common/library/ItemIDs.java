@@ -869,6 +869,8 @@ public enum ItemIDs {
 	minecartLNCoach2551Series("ItemRollingStock", "LNCoach2551Series", PASSENGER, 3),
 
 	minecartMON_lightweightCoach("ItemRollingStock", "MON_lightweightCoach", PASSENGER, 3),
+	minecartMON_lightweightDeluxeCoach("ItemRollingStock", "MON_lightweightDeluxeCoach", PASSENGER, 3),
+	minecartMON_lightweightRPO30("ItemRollingStock", "MON_lightweightRPO30", PASSENGER, 3),
 
 	minecartAmfleet("ItemRollingStock", "Amfleet", PASSENGER, 3),
 	minecartAmfleet2("ItemRollingStock", "Amfleet2", PASSENGER, 3),

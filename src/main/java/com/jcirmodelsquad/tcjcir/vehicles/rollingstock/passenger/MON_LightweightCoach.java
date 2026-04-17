@@ -16,7 +16,10 @@ public class MON_LightweightCoach extends AbstractPassengerCar
 		InsertTexture(6, "MON (25, freight scheme)");
 		InsertTexture(7, "MON (26, freight scheme)");
 		InsertTexture(8, "MON (high density coach 43, simplified passenger scheme)");
-		InsertTexture(9, "MON (high density coach 43-44, freight scheme)");
+		InsertTexture(9, "MON (high density coach 43, freight scheme, early)");
+		InsertTexture(10, "MON (high density coach 43, freight scheme, late)");
+		InsertTexture(11, "MON (high density coach 44)");
+		InsertTexture(12, "MON (high density coach 45)");
 	}
 
 	@Override

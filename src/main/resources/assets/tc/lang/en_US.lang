@@ -1505,7 +1505,9 @@ item.tc:minecartMILW1935Dorm_56SeatCoach.name=Milwaukee Road 1935 Dormitory-56 S
 item.tc:minecartACF_LN_KCS60SeatDividedCoach.name=American Car & Foundry L&N and KCS 60 Seat Divided Coach
 item.tc:minecartLNCoach2551Series.name=L&N 2551 Series Coach
 
-item.tc:minecartMON_lightweightCoach.name=Monon 21 Series Lightweight Coach
+item.tc:minecartMON_lightweightCoach.name=Monon 21 Series Coach
+item.tc:minecartMON_lightweightDeluxeCoach.name=Monon 27 Series Deluxe Coach
+item.tc:minecartMON_lightweightRPO30.name=Monon RPO (30' mail section)
 
 item.tc:minecartAmfleet.name=Amfleet 1 Coach
 item.tc:minecartAmfleet2.name=Amfleet 2 Coach

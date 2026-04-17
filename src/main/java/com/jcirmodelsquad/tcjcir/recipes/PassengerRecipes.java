@@ -129,7 +129,8 @@ public class PassengerRecipes extends AbstractRecipeHandler {
         cm.addRecipe(3, SteelIngot(4), TCItemStack(ItemIDs.fourWheelLightweightTruck, 2), TCItemStack(ItemIDs.steelframe, 1), null, null, TCItemStack(ItemIDs.steelcab, 1), new ItemStack(Blocks.chest, 2), null, new ItemStack(ItemIDs.passengerFluting.item, 6), GRAY_DYE, new ItemStack(ItemIDs.minecartBuddPrewarBaggage.item, 1), 1);
         cm.addRecipe(3, SteelIngot(2), TCItemStack(ItemIDs.fourWheelLightweightTruck, 2), TCItemStack(ItemIDs.steelframe, 2), SteelIngot(2), null, TCItemStack(ItemIDs.steelcab, 1), null, new ItemStack(ItemIDs.seats.item, 5), null, GRAY_DYE, new ItemStack(ItemIDs.minecartNYCPrewar56SeatCoach.item, 1), 1);
         cm.addRecipe(3, SteelIngot(3), TCItemStack(ItemIDs.sixWheelLightweightTruck, 2), TCItemStack(ItemIDs.steelframe, 2), SteelIngot(2), null, TCItemStack(ItemIDs.steelcab, 1), null, new ItemStack(ItemIDs.seats.item, 4), null, GRAY_DYE, new ItemStack(ItemIDs.minecartMON_lightweightCoach.item, 1), 1);
-
+        cm.addRecipe(3, SteelIngot(3), TCItemStack(ItemIDs.sixWheelLightweightTruck, 2), TCItemStack(ItemIDs.steelframe, 2), SteelIngot(2), null, TCItemStack(ItemIDs.steelcab, 1), null, new ItemStack(ItemIDs.seats.item, 4), null, GRAY_DYE, new ItemStack(ItemIDs.minecartMON_lightweightDeluxeCoach.item, 1), 1);
+        cm.addRecipe(3, SteelIngot(4), TCItemStack(ItemIDs.sixWheelLightweightTruck, 2), TCItemStack(ItemIDs.steelframe, 2), SteelIngot(2), null, TCItemStack(ItemIDs.steelcab, 1), new ItemStack(Blocks.chest, 4), null, null, GRAY_DYE, new ItemStack(ItemIDs.minecartMON_lightweightRPO30.item, 1), 1);
 
     }
 
