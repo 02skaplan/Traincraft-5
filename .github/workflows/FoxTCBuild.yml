@@ -8,7 +8,7 @@ on:
 
 # 🔐 REQUIRED for GitHub Packages uploads
 permissions:
-  contents: read
+  contents: write
   packages: write
 
 jobs:
