@@ -171,7 +171,7 @@ public enum EnumTrains implements ITrainRecord
 	Beep("Beep", DieselBeep.class, ItemIDs.minecartBeep.item, EnumTrainType.Diesel, 1500, 105, 0, 25, 0, 200, 0.89, 0.8, 9000, null, 10, -2.2),
 
 	//GE//
-	GE44Ton("GE 44-ton", DieselGE44Ton.class, ItemIDs.minecart44Ton.item, EnumTrainType.Diesel, 360, 56, 0, 10, 0, 200, 0.7, 0.75, 7000, TraincraftUtil.getBytesFromColors(new String[]{"Yellow", "Pink", "LightGrey", "Skin16", "Black", "Skin17", "Skin18", "Magenta", "Purple", "Skin19", "Red", "Skin20", "Skin21", "Skin22"}), 18, -2.0),
+	GE44Ton("GE 44-ton", DieselGE44Ton.class, ItemIDs.minecart44Ton.item, EnumTrainType.Diesel, 360, 56, 0, 10, 0, 200, 0.7, 0.75, 7000, TraincraftUtil.getBytesFromColors(new String[]{"Yellow", "Pink", "LightGrey", "Skin16", "Black", "Skin17", "Skin18", "Magenta", "Purple", "Skin19", "Red", "Skin20", "Skin21", "Skin22", "Brown", "Skin23"}), 18, -2.0),
 	Boxcab23Ton("23 Ton Boxcab", DieselBoxcab23Ton.class, ItemIDs.minecartBoxcab23Ton.item, EnumTrainType.Diesel, 150, 40, 0, 10, 0, 200, 0.6, 0.6, 4000,  TraincraftUtil.getBytesFromColors(new String[] {"Blue", "White", "Black", "Green"}), 16, -1.5),
 	//note on the boxcab: check the RenderEnum for more info related to its hitboxes
 	GE25Ton("GE 25-ton", DieselGE25Ton.class, ItemIDs.minecart25Ton.item, EnumTrainType.Diesel, 150, 50, 0, 10, 0, 200, 0.65, 0.7, 4000, TraincraftUtil.getBytesFromColors(new String[]{"Brown", "Pink", "Cyan", "Orange", "Green"}), 20, -1),

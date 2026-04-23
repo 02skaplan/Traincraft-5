@@ -29,12 +29,11 @@ public class ModelGE44Ton extends ModelConverter //Same as Filename
 
 	public ModelGE44Ton() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[226];
+		bodyModel = new ModelRendererTurbo[247];
 
 		initbodyModel_1();
 
 		translateAll(0F, 0F, 0F);
-
 
 		flipAll();
 	}
@@ -267,6 +266,27 @@ public class ModelGE44Ton extends ModelConverter //Same as Filename
 		bodyModel[223] = new ModelRendererTurbo(this, 171, 106, textureX, textureY); // Box 607
 		bodyModel[224] = new ModelRendererTurbo(this, 84, 68, textureX, textureY, "cull"); // Box 230 cull
 		bodyModel[225] = new ModelRendererTurbo(this, 73, 68, textureX, textureY, "cull"); // Box 231 cull
+		bodyModel[226] = new ModelRendererTurbo(this, 65, -11, textureX, textureY); // Box 226 aa
+		bodyModel[227] = new ModelRendererTurbo(this, 65, -11, textureX, textureY); // Box 227 aab
+		bodyModel[228] = new ModelRendererTurbo(this, 183, 101, textureX, textureY); // Box 228 radiator better
+		bodyModel[229] = new ModelRendererTurbo(this, 183, 101, textureX, textureY); // Box 229 radiator better
+		bodyModel[230] = new ModelRendererTurbo(this, 33, 68, textureX, textureY, "cull"); // Box 230 cull
+		bodyModel[231] = new ModelRendererTurbo(this, 26, 65, textureX, textureY); // Box 231
+		bodyModel[232] = new ModelRendererTurbo(this, 33, 62, textureX, textureY, "cull"); // Box 232 cull
+		bodyModel[233] = new ModelRendererTurbo(this, 26, 65, textureX, textureY); // Box 233
+		bodyModel[234] = new ModelRendererTurbo(this, 26, 65, textureX, textureY); // Box 234
+		bodyModel[235] = new ModelRendererTurbo(this, 26, 65, textureX, textureY); // Box 235
+		bodyModel[236] = new ModelRendererTurbo(this, 26, 65, textureX, textureY); // Box 236
+		bodyModel[237] = new ModelRendererTurbo(this, 26, 65, textureX, textureY); // Box 237
+		bodyModel[238] = new ModelRendererTurbo(this, 26, 65, textureX, textureY); // Box 238
+		bodyModel[239] = new ModelRendererTurbo(this, 26, 65, textureX, textureY); // Box 239
+		bodyModel[240] = new ModelRendererTurbo(this, 4, 35, textureX, textureY); // Box 332
+		bodyModel[241] = new ModelRendererTurbo(this, 6, 29, textureX, textureY); // Box 331
+		bodyModel[242] = new ModelRendererTurbo(this, 1, 29, textureX, textureY); // Box 330
+		bodyModel[243] = new ModelRendererTurbo(this, 2, 38, textureX, textureY); // Box 329
+		bodyModel[244] = new ModelRendererTurbo(this, 2, 26, textureX, textureY); // Box 328
+		bodyModel[245] = new ModelRendererTurbo(this, 1, 32, textureX, textureY); // Box 327
+		bodyModel[246] = new ModelRendererTurbo(this, 10, 21, textureX, textureY); // Box 104 WSHR antenna
 
 		bodyModel[0].addBox(0F, 0F, 0F, 3, 2, 3, 0F); // Box 48
 		bodyModel[0].setRotationPoint(-28F, 3F, -1.5F);
@@ -951,6 +971,70 @@ public class ModelGE44Ton extends ModelConverter //Same as Filename
 		bodyModel[225].addBox(0F, 0F, 0F, 4, 5, 1, 0F); // Box 231 cull
 		bodyModel[225].setRotationPoint(17F, 3F, 10F);
 		bodyModel[225].rotateAngleY = -3.14159265F;
+
+		bodyModel[226].addBox(0F, 0F, 0F, 0, 6, 20, 0F); // Box 226 aa
+		bodyModel[226].setRotationPoint(-24.95F, 3F, -10F);
+
+		bodyModel[227].addBox(0F, 0F, 0F, 0, 6, 20, 0F); // Box 227 aab
+		bodyModel[227].setRotationPoint(24.95F, 3F, 10F);
+		bodyModel[227].rotateAngleY = -3.14159265F;
+
+		bodyModel[228].addShapeBox(0F, 0F, 0F, 1, 20, 7, 0F,-1.2F, 0F, 0.1F, 1F, 0F, 0.1F, 1F, 0F, 0.1F, -1.2F, 0F, 0.1F, -0.35F, -10F, 0.1F, 0.05F, -10F, 0.1F, 0.05F, -10F, 0.1F, -0.35F, -10F, 0.1F); // Box 228 radiator better
+		bodyModel[228].setRotationPoint(-25.55F, -8.5F, -3.5F);
+
+		bodyModel[229].addShapeBox(0F, 0F, 0F, 1, 20, 7, 0F,1F, 0F, 0.1F, -1.2F, 0F, 0.1F, -1.2F, 0F, 0.1F, 1F, 0F, 0.1F, 0.05F, -10F, 0.1F, -0.35F, -10F, 0.1F, -0.35F, -10F, 0.1F, 0.05F, -10F, 0.1F); // Box 229 radiator better
+		bodyModel[229].setRotationPoint(24.55F, -8.5F, -3.5F);
+
+		bodyModel[230].addShapeBox(0F, 0F, 0F, 14, 4, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 1F, 0F, 0F, 1F, 0F); // Box 230 cull
+		bodyModel[230].setRotationPoint(-7F, 3F, -10F);
+
+		bodyModel[231].addShapeBox(0F, 0F, 0F, 3, 2, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F); // Box 231
+		bodyModel[231].setRotationPoint(-10F, 3F, -10F);
+
+		bodyModel[232].addShapeBox(0F, 0F, 0F, 14, 4, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 1F, 0F, 0F, 1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 232 cull
+		bodyModel[232].setRotationPoint(-7F, 3F, 9F);
+
+		bodyModel[233].addShapeBox(0F, 0F, 0F, 3, 2, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F); // Box 233
+		bodyModel[233].setRotationPoint(-10F, 3F, 10F);
+
+		bodyModel[234].addShapeBox(0F, 0F, 0F, 3, 2, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F); // Box 234
+		bodyModel[234].setRotationPoint(7F, 3F, 10F);
+
+		bodyModel[235].addShapeBox(0F, 0F, 0F, 3, 2, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F); // Box 235
+		bodyModel[235].setRotationPoint(7F, 3F, -10F);
+
+		bodyModel[236].addShapeBox(0F, 0F, 0F, 1, 2, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F); // Box 236
+		bodyModel[236].setRotationPoint(6F, 5F, 10F);
+
+		bodyModel[237].addShapeBox(0F, 0F, 0F, 1, 2, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F); // Box 237
+		bodyModel[237].setRotationPoint(6F, 5F, -10F);
+
+		bodyModel[238].addShapeBox(0F, 0F, 0F, 1, 2, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F); // Box 238
+		bodyModel[238].setRotationPoint(-7F, 5F, -10F);
+
+		bodyModel[239].addShapeBox(0F, 0F, 0F, 1, 2, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F); // Box 239
+		bodyModel[239].setRotationPoint(-7F, 5F, 10F);
+
+		bodyModel[240].addBox(0F, 0F, 0F, 2, 1, 1, 0F); // Box 332
+		bodyModel[240].setRotationPoint(-6F, -20.4F, -4F);
+
+		bodyModel[241].addBox(0F, 0F, 0F, 2, 1, 1, 0F); // Box 331
+		bodyModel[241].setRotationPoint(-6F, -20.4F, -2.75F);
+
+		bodyModel[242].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 330
+		bodyModel[242].setRotationPoint(-5F, -18.4F, -3.5F);
+
+		bodyModel[243].addBox(0F, 0F, 0F, 3, 1, 1, 0F); // Box 329
+		bodyModel[243].setRotationPoint(-7F, -19.15F, -4.5F);
+
+		bodyModel[244].addBox(0F, 0F, 0F, 3, 1, 1, 0F); // Box 328
+		bodyModel[244].setRotationPoint(-6.5F, -19.15F, -2.5F);
+
+		bodyModel[245].addBox(0F, 0F, 0F, 4, 1, 1, 0F); // Box 327
+		bodyModel[245].setRotationPoint(-7.5F, -19.4F, -3.5F);
+
+		bodyModel[246].addShapeBox(0F, 0F, 0F, 1, 4, 0, 0F,-0.75F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.75F, 0F, 0F, -0.75F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.75F, 0F, 0F); // Box 104 WSHR antenna
+		bodyModel[246].setRotationPoint(2F, -21.5F, 0F);
 	}
 	ModelGETonnerTruck theTrucks = new ModelGETonnerTruck();
 
@@ -959,8 +1043,10 @@ public class ModelGE44Ton extends ModelConverter //Same as Filename
 	{
 		ModelRenderHelper.renderModelWithRollingStockLightControls(bodyModel, entity, f5);
 
-		if(GetColor(entity)==13 || GetColor(entity)==5){
+		if(GetColor(entity)==13 || GetColor(entity)==5 || GetColor(entity)==3) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/tonnertruck_black_roller.png"));
+		}else if(GetColor(entity)==23){
+			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/TRUCKCRASHEJECTIONCHALLENGE.png"));
 		} else {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/tonnertruck_black_friction.png"));
 		}

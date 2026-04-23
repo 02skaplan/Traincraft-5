@@ -34,6 +34,8 @@ public class DieselGE44Ton extends DieselTrain {
 		InsertTexture(11, "D(eez)N(uts)", LockoutGroup.DLMR);
 		InsertTexture(12, "WM (Fireball Early)");
 		InsertTexture(13, "WM (Fireball Late)");
+		InsertTexture(14, "Wickersham Railroad Industries", LockoutGroup.BIDA);
+		InsertTexture(15, "WICK (extra poo version)", LockoutGroup.BIDA);
 	}
 
 	@Override
