@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import train.common.Traincraft;
 import train.common.items.ItemWrench;
 import train.common.library.BlockIDs;
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumTracks;
 import train.common.library.Info;
 import train.common.tile.TileTCRail;
 

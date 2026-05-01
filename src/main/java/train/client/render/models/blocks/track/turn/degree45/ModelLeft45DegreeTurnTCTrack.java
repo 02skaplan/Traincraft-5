@@ -6,7 +6,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.AdvancedModelLoader;
 import org.lwjgl.opengl.GL11;
 import train.common.items.RailVariants;
-import train.common.library.EnumCoreTrack;
+import train.common.library.track.EnumCoreTrack;
 import train.common.library.Info;
 import train.common.tile.TileTCRail;
 

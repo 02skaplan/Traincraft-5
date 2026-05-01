@@ -19,10 +19,8 @@ import train.client.render.models.blocks.track.turn.degree45.ModelRight45DegreeT
 import train.client.render.models.blocks.track.turn.degree90.ModelLeftTurnTCTrack;
 import train.client.render.models.blocks.track.turn.degree90.ModelRightTurnTCTrack;
 import train.common.items.BallastTypes;
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumTracks;
 import train.common.tile.TileTCRail;
-
-import static train.common.library.EnumCoreTrack.CORE_10x2_CROSSOVER_SWITCH_R;
 
 public class RenderTCRail extends TileEntitySpecialRenderer {
 

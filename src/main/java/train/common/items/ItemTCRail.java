@@ -17,6 +17,8 @@ import org.lwjgl.util.vector.Matrix2f;
 import org.lwjgl.util.vector.Vector2f;
 import train.common.enums.TCTrackDirection;
 import train.common.library.*;
+import train.common.library.track.EnumCoreTrack;
+import train.common.library.track.EnumTracks;
 import train.common.tile.TileTCRail;
 import train.common.tile.TileTCRailGag;
 import static train.common.core.handlers.ConfigHandler.ENGINEERGAMING;
@@ -24,8 +26,7 @@ import static train.common.core.handlers.ConfigHandler.ENGINEERGAMING;
 import javax.annotation.Nullable;
 import java.util.List;
 
-import static train.common.library.EnumCoreTrack.CORE_5X11_45DEGREE_TURN_R;
-import static train.common.library.EnumTracks.*;
+import static train.common.library.track.EnumTracks.*;
 
 public class ItemTCRail extends ItemPart {
 	private EnumTracks type;

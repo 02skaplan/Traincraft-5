@@ -10,10 +10,10 @@ package train.common.items;
 import cpw.mods.fml.common.registry.GameRegistry;
 import train.common.Traincraft;
 import train.common.adminbook.ItemAdminBook;
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumTracks;
 import train.common.library.Info;
 import train.common.library.ItemIDs;
-import train.common.library.TrackItemIDs;
+import train.common.library.track.TrackItemIDs;
 
 public class TCItems {
 

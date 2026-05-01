@@ -20,10 +20,10 @@ import train.common.items.ItemTCRail;
 import train.common.items.RailVariants;
 import train.common.items.TCRailTypes;
 import train.common.library.BlockIDs;
-import train.common.library.EnumCoreTrack;
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumCoreTrack;
+import train.common.library.track.EnumTracks;
 
-import static train.common.library.EnumCoreTrack.*;
+import static train.common.library.track.EnumCoreTrack.*;
 
 
 public class CustomRenderHandler

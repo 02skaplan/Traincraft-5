@@ -47,7 +47,7 @@ import train.common.entity.rollingStock.EntityJukeBoxCart;
 import train.common.entity.zeppelin.EntityZeppelinOneBalloon;
 import train.common.entity.zeppelin.EntityZeppelinTwoBalloons;
 import train.common.library.BlockIDs;
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumTracks;
 import train.common.library.GuiIDs;
 import train.common.library.Info;
 import train.common.mtc.render.RenderMTCBlock;

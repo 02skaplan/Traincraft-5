@@ -1,4 +1,4 @@
-package train.common.library;
+package train.common.library.track;
 
 /**
  * CORE TRACK PIECE WITH DISTINCT MODEL AND PATHING TO USE AND SPECIFIC TRACK PIECE

@@ -13,7 +13,7 @@ import org.lwjgl.opengl.GL11;
 import tmt.ModelBase;
 import train.client.render.CustomModelRenderer;
 import train.client.render.RenderTCRail;
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumTracks;
 import train.common.library.Info;
 
 public class ModelStopper extends ModelBase

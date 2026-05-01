@@ -1,6 +1,6 @@
 package train.client.render;
 
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumTracks;
 
 public class RenderEmbeddedStopper extends RenderStopper
 {

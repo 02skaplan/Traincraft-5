@@ -2,23 +2,15 @@ package train.common.core.network.ITCPacket;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufInputStream;
-import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import train.common.blocks.BlockTCRail;
 import train.common.items.BallastTypes;
 import train.common.items.ItemTCRail;
-import train.common.items.TCRailTypes;
-import train.common.library.EnumCoreTrack;
-import train.common.library.EnumTracks;
-import train.common.library.TrackItemIDs;
-import train.common.tile.TileTCRail;
+import train.common.library.track.EnumCoreTrack;
+import train.common.library.track.EnumTracks;
 
 import java.io.IOException;
 import java.util.*;
-
-import static train.common.library.EnumCoreTrack.CORE_MEDIUM_STRAIGHT;
 
 public class PacketScrollingItemBlockSelect implements ITCPacket
 {

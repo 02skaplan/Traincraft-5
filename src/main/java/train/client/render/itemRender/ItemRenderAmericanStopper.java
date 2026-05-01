@@ -12,7 +12,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
 import org.lwjgl.opengl.GL11;
 import train.client.render.models.blocks.ModelAmericanStopper;
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumTracks;
 import train.common.library.Info;
 
 public class ItemRenderAmericanStopper implements IItemRenderer {

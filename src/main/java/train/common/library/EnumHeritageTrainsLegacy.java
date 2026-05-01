@@ -1,6 +1,6 @@
 package train.common.library;
 
-
+@Deprecated
 public enum EnumHeritageTrainsLegacy // implements ITrainRecord
 {
     /**

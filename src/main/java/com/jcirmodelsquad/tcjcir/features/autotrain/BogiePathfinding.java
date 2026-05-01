@@ -1,7 +1,6 @@
 package com.jcirmodelsquad.tcjcir.features.autotrain;
 
 import com.jcirmodelsquad.tcjcir.features.eti.jcirmonitor.Position;
-import com.mojang.authlib.GameProfile;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -21,20 +20,17 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeChunkManager;
 import train.common.Traincraft;
-import train.common.api.EntityBogie;
-import train.common.api.EntityRollingStock;
 import train.common.api.pathfinding.PathFindingHelper;
 import train.common.blocks.BlockTCRail;
 import train.common.blocks.BlockTCRailGag;
 import train.common.items.ItemTCRail;
 import train.common.items.TCRailTypes;
 import train.common.library.BlockIDs;
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumTracks;
 import train.common.tile.TileTCRail;
 import train.common.tile.TileTCRailGag;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class BogiePathfinding  extends EntityMinecart implements IMinecart{

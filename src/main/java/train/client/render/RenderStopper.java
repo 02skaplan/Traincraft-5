@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import org.lwjgl.opengl.GL11;
 import train.client.render.models.blocks.ModelStopper;
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumTracks;
 import train.common.tile.BaseStopperTileEntity;
 
 public class RenderStopper extends TileEntitySpecialRenderer {

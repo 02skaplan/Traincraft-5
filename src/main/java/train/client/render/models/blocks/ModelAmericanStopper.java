@@ -12,7 +12,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.IModelCustom;
 import org.lwjgl.opengl.GL11;
 import train.client.render.RenderTCRail;
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumTracks;
 import train.common.library.Info;
 
 public class ModelAmericanStopper

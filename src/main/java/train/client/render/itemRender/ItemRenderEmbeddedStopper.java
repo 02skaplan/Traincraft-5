@@ -2,7 +2,7 @@ package train.client.render.itemRender;
 
 import net.minecraft.item.ItemStack;
 import org.lwjgl.opengl.GL11;
-import train.common.library.EnumTracks;
+import train.common.library.track.EnumTracks;
 
 public class ItemRenderEmbeddedStopper extends ItemRenderStopper
 {

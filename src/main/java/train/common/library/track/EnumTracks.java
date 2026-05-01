@@ -1,4 +1,4 @@
-package train.common.library;
+package train.common.library.track;
 
 import net.minecraft.entity.player.EntityPlayer;
 import train.common.items.BallastTypes;
@@ -11,7 +11,7 @@ import java.util.HashMap;
 import static train.common.items.BallastTypes.*;
 import static train.common.items.RailVariants.*;
 import static train.common.items.TCRailTypes.RailTypes.*;
-import static train.common.library.EnumCoreTrack.*;
+import static train.common.library.track.EnumCoreTrack.*;
 
 public enum EnumTracks
 {

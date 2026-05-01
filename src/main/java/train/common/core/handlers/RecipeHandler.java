@@ -13,10 +13,6 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fluids.Fluid;
-import net.minecraftforge.fluids.FluidContainerRegistry;
-import net.minecraftforge.fluids.FluidRegistry;
-import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import train.common.Traincraft;
@@ -24,13 +20,15 @@ import train.common.inventory.TrainCraftingManager;
 import train.common.items.BallastTypes;
 import train.common.items.RailVariants;
 import train.common.library.*;
+import train.common.library.track.EnumCoreTrack;
+import train.common.library.track.EnumTracks;
+import train.common.library.track.TrackItemIDs;
 import train.common.recipes.ITCRecipe.RecipesArmorDyes;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
-import static train.common.library.EnumCoreTrack.*;
+import static train.common.library.track.EnumCoreTrack.*;
 
 public class RecipeHandler extends AbstractRecipeHandler
 {

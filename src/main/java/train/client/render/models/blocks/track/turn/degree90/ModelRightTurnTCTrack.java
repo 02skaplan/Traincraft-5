@@ -5,7 +5,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 import org.lwjgl.opengl.GL11;
 import train.common.items.RailVariants;
-import train.common.library.EnumCoreTrack;
+import train.common.library.track.EnumCoreTrack;
 import train.common.tile.TileTCRail;
 
 @SideOnly(Side.CLIENT)
