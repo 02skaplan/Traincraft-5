@@ -53,6 +53,12 @@ jobs:
         run: chmod +x gradlew
 
       # ----------------------------
+      # Run unit tests (explicit)
+      # ----------------------------
+      - name: Run Unit Tests
+        run: ./gradlew test --stacktrace
+
+      # ----------------------------
       # Build mod
       # ----------------------------
       - name: Gradle Build
