@@ -21,7 +21,10 @@ import net.minecraftforge.common.ForgeChunkManager;
 import net.minecraftforge.common.MinecraftForge;
 import train.client.gui.GuiSpeedTransmitter;
 import train.common.Traincraft;
-import train.common.api.*;
+import train.common.api.EntityRollingStock;
+import train.common.api.Freight;
+import train.common.api.LiquidTank;
+import train.common.api.Tender;
 import train.common.containers.*;
 import train.common.core.handlers.*;
 import train.common.core.util.MP3Player;
@@ -38,15 +41,17 @@ import train.common.mtc.block.BlockTransmitterStopPoint;
 import train.common.mtc.tile.*;
 import train.common.tile.*;
 import train.common.tile.tileStopper.TileAmericanStopper;
+import train.common.tile.tileStopper.TileGenericStopper;
 import train.common.tile.tileStopper.concrete_type1.TileConcreteType1_AmericanStopper;
 import train.common.tile.tileStopper.concrete_type1.TileConcreteType1_Generic_Stopper;
 import train.common.tile.tileStopper.concrete_type2.TileConcreteType2_AmericanStopper;
 import train.common.tile.tileStopper.concrete_type2.TileConcreteType2_Generic_Stopper;
 import train.common.tile.tileStopper.sleeperless.TileEmbeddedAmericanStopper;
 import train.common.tile.tileStopper.sleeperless.TileEmbeddedGenericStopper;
-import train.common.tile.tileStopper.TileGenericStopper;
 import train.common.tile.tileStopper.wood_type1.TileWoodType1_AmericanStopper;
 import train.common.tile.tileStopper.wood_type1.TileWoodType1_Generic_Stopper;
+import train.common.tile.tileStopper.wood_type2.TileWoodType2_AmericanStopper;
+import train.common.tile.tileStopper.wood_type2.TileWoodType2_Generic_Stopper;
 import train.common.tile.tileSwitch.*;
 
 import java.lang.reflect.InvocationTargetException;
@@ -106,6 +111,8 @@ public class CommonProxy implements IGuiHandler {
 		GameRegistry.registerTileEntity(TileConcreteType2_AmericanStopper.class, "TileConcreteType2_AmericanStopper");
 		GameRegistry.registerTileEntity(TileWoodType1_Generic_Stopper.class, "TileWoodType1_Stopper");
 		GameRegistry.registerTileEntity(TileWoodType1_AmericanStopper.class, "TileWoodType1_AmericanStopper");
+		GameRegistry.registerTileEntity(TileWoodType2_Generic_Stopper.class, "TileWoodType2_Stopper");
+		GameRegistry.registerTileEntity(TileWoodType2_AmericanStopper.class, "TileWoodType2_AmericanStopper");
 
 
 

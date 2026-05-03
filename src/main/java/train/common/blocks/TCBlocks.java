@@ -71,6 +71,11 @@ public class TCBlocks {
 		BlockIDs.wood_type1_americanstopper.block = new treated_wood_type1_americanstopper()
 				.setHardness(1.7F).setStepSound(Block.soundTypeMetal);
 
+		BlockIDs.wood_type2_stopper.block = new wood_type2_stopper()
+				.setHardness(1.7F).setStepSound(Block.soundTypeWood);
+		BlockIDs.wood_type2_americanstopper.block = new wood_type2_americanstopper()
+				.setHardness(1.7F).setStepSound(Block.soundTypeMetal);
+
 
 
 		BlockIDs.openFurnaceIdle.block = new BlockOpenHearthFurnace(false).setHardness(3.5F).setStepSound(Block.soundTypeStone);

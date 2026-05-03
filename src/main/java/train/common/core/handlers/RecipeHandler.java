@@ -210,6 +210,8 @@ public class RecipeHandler extends AbstractRecipeHandler
 		GameRegistry.addRecipe(new ItemStack(BlockIDs.wood_type1_stopper.block, 1), "PPP", "I I", " T ", 'P', Blocks.planks, 'I', Items.iron_ingot, 'T', TrackItemIDs.tcRail_WOOD_TYPE1_SmallStraight.item);
 		GameRegistry.addRecipe(new ItemStack(BlockIDs.wood_type1_americanstopper.block, 1), "III", "I I", " T ", 'I', Items.iron_ingot, 'T', TrackItemIDs.tcRail_WOOD_TYPE1_SmallStraight.item);
 
+		GameRegistry.addRecipe(new ItemStack(BlockIDs.wood_type2_stopper.block, 1), "PPP", "I I", " T ", 'P', Blocks.planks, 'I', Items.iron_ingot, 'T', TrackItemIDs.tcRail_WOOD_TYPE2_SmallStraight.item);
+		GameRegistry.addRecipe(new ItemStack(BlockIDs.wood_type2_americanstopper.block, 1), "III", "I I", " T ", 'I', Items.iron_ingot, 'T', TrackItemIDs.tcRail_WOOD_TYPE2_SmallStraight.item);
 
 		//paintbrush
 		GameRegistry.addRecipe(new ItemStack(ItemIDs.paintbrushThing.item,1),"GB ","RIS"," ST", Character.valueOf('G'), new ItemStack(Items.dye,1,2), Character.valueOf('B'), new ItemStack(Items.dye,1,4), Character.valueOf('R'), new ItemStack(Items.dye,1,1), Character.valueOf('I'), new ItemStack(Items.iron_ingot), Character.valueOf('S'), new ItemStack(Items.string), Character.valueOf('T'), new ItemStack(Items.stick));

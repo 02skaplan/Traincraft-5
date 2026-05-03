@@ -28,19 +28,22 @@ import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.MinecraftForge;
 import org.apache.logging.log4j.Level;
 import org.lwjgl.opengl.GL11;
-import train.client.core.handlers.*;
+import train.client.core.handlers.ClientTickHandler;
+import train.client.core.handlers.CustomRenderHandler;
+import train.client.core.handlers.RecipeBookHandler;
+import train.client.core.handlers.TCKeyHandler;
 import train.client.core.helpers.JLayerHook;
 import train.client.gui.*;
 import train.client.render.*;
 import train.client.render.itemRender.*;
-import train.common.api.AbstractTrains;
-import train.common.core.handlers.ConfigHandler;
 import train.common.Traincraft;
 import train.common.adminbook.GUIAdminBook;
+import train.common.api.AbstractTrains;
 import train.common.api.EntityBogie;
 import train.common.api.EntityRollingStock;
 import train.common.core.CommonProxy;
 import train.common.core.Traincraft_EventSounds;
+import train.common.core.handlers.ConfigHandler;
 import train.common.entity.digger.EntityRotativeDigger;
 import train.common.entity.digger.EntityRotativeWheel;
 import train.common.entity.rollingStock.EntityJukeBoxCart;
@@ -57,14 +60,16 @@ import train.common.overlaytexture.OTSpecificationFixed;
 import train.common.tile.*;
 import train.common.tile.tileStopper.TileAmericanStopper;
 import train.common.tile.tileStopper.TileGenericStopper;
+import train.common.tile.tileStopper.concrete_type1.TileConcreteType1_AmericanStopper;
 import train.common.tile.tileStopper.concrete_type1.TileConcreteType1_Generic_Stopper;
+import train.common.tile.tileStopper.concrete_type2.TileConcreteType2_AmericanStopper;
 import train.common.tile.tileStopper.concrete_type2.TileConcreteType2_Generic_Stopper;
 import train.common.tile.tileStopper.sleeperless.TileEmbeddedAmericanStopper;
 import train.common.tile.tileStopper.sleeperless.TileEmbeddedGenericStopper;
-import train.common.tile.tileStopper.concrete_type1.TileConcreteType1_AmericanStopper;
-import train.common.tile.tileStopper.concrete_type2.TileConcreteType2_AmericanStopper;
 import train.common.tile.tileStopper.wood_type1.TileWoodType1_AmericanStopper;
 import train.common.tile.tileStopper.wood_type1.TileWoodType1_Generic_Stopper;
+import train.common.tile.tileStopper.wood_type2.TileWoodType2_AmericanStopper;
+import train.common.tile.tileStopper.wood_type2.TileWoodType2_Generic_Stopper;
 import train.common.tile.tileSwitch.*;
 
 import java.lang.reflect.InvocationTargetException;
@@ -184,6 +189,12 @@ public class ClientProxy extends CommonProxy
 
 		ClientRegistry.bindTileEntitySpecialRenderer(TileWoodType1_AmericanStopper.class, new RenderAmericanStopper(EnumTracks.WOOD_TYPE1_SMALL_STRAIGHT));
 		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.wood_type1_americanstopper.block), new BaseItemRenderAmericanStopper(EnumTracks.WOOD_TYPE1_SMALL_STRAIGHT));
+
+		ClientRegistry.bindTileEntitySpecialRenderer(TileWoodType2_Generic_Stopper.class, new RenderStopper(EnumTracks.WOOD_TYPE2_SMALL_STRAIGHT));
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.wood_type2_stopper.block), new ItemRenderStopper(EnumTracks.WOOD_TYPE2_SMALL_STRAIGHT));
+
+		ClientRegistry.bindTileEntitySpecialRenderer(TileWoodType2_AmericanStopper.class, new RenderAmericanStopper(EnumTracks.WOOD_TYPE2_SMALL_STRAIGHT));
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.wood_type2_americanstopper.block), new BaseItemRenderAmericanStopper(EnumTracks.WOOD_TYPE2_SMALL_STRAIGHT));
 
 
 		//ClientRegistry.bindTileEntitySpecialRenderer(TileBook.class, new RenderTCBook());

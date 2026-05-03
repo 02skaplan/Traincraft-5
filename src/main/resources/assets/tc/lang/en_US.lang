@@ -30,11 +30,15 @@ tile.tc:embeddedamericanstopper.name=Sleeperless Hayes Train Buffer
 
 tile.tc:concrete_type1_stopper.name=Grey Concrete Train Buffer
 tile.tc:concrete_type2_stopper.name=Weathered Concrete Train Buffer
-tile.tc:wood_type1_stopper.name=Treated Wood Train Buffer
 
 tile.tc:concrete_type1_americanstopper.name=Grey Concrete Train Buffer
 tile.tc:concrete_type2_americanstopper.name=Weathered Concrete Hayes Train Buffer
+
+tile.tc:wood_type1_stopper.name=Treated Wood Train Buffer
 tile.tc:wood_type1_americanstopper.name=Treated Wood Hayes Train Buffer
+
+tile.tc:wood_type2_stopper.name=Spruce Wood Train Buffer
+tile.tc:wood_type2_americanstopper.name=Spruce Wood Hayes Train Buffer
 
 tile.tc:trainWorkbench.name=Train Workbench
 tile.tc:distilActive.name=Distill (active)
