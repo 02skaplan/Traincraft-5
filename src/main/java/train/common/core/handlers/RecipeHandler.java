@@ -22,6 +22,7 @@ import train.common.items.RailVariants;
 import train.common.library.*;
 import train.common.library.track.EnumCoreTrack;
 import train.common.library.track.EnumTracks;
+import train.common.library.track.ITrackDefinition;
 import train.common.library.track.TrackItemIDs;
 import train.common.recipes.ITCRecipe.RecipesArmorDyes;
 
@@ -261,7 +262,7 @@ public class RecipeHandler extends AbstractRecipeHandler
 	{
 		for (RailVariants railVariant : RailVariants.values())
 		{
-			HashMap<EnumCoreTrack, HashMap<String, EnumTracks>> tracks = EnumTracks.GetTracksByGroup(railVariant);
+			HashMap<EnumCoreTrack, HashMap<String, ITrackDefinition>> tracks = EnumTracks.GetTracksByGroup(railVariant);
 			TrackItemIDs straight1X = tracks.get(EnumCoreTrack.CORE_SMALL_STRAIGHT).get("").getItem();
 			TrackItemIDs straight3X = tracks.get(EnumCoreTrack.CORE_MEDIUM_STRAIGHT).get("").getItem();
 			TrackItemIDs straight6X = tracks.get(EnumCoreTrack.CORE_LONG_STRAIGHT).get("").getItem();

@@ -84,6 +84,9 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+    // Unit testing (added)
+    testCompile 'junit:junit:4.13.2'
 }
 
 processResources
@@ -153,5 +156,13 @@ uploadArchives {
                 }
             }
         }
+    }
+}
+
+test {
+    useJUnit()
+
+    testLogging {
+        events "passed", "skipped", "failed"
     }
 }

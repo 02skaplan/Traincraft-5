@@ -16,10 +16,11 @@ import train.common.blocks.BlockTCRailGag;
 import train.common.items.ItemTCRail;
 import train.common.items.TCRailTypes;
 import train.common.library.BlockIDs;
-import train.common.library.track.EnumTracks;
+import train.common.library.track.EnumCoreTrack;
 import train.common.tile.TileTCRail;
 import train.common.tile.TileTCRailGag;
 
+import java.util.HashSet;
 import java.util.List;
 
 import static train.common.core.util.TraincraftUtil.isRailBlockAt;
@@ -319,14 +320,21 @@ public class PathFindingHelper
         return new Vec3f((float) nextX, (float) nextY, (float) nextZ);
     }
 
+    public static final HashSet<EnumCoreTrack> TurnTracksSwitchCheck = new HashSet<EnumCoreTrack>()
+    {
+        {
+            add(EnumCoreTrack.CORE_3X_TURN_R);
+            add(EnumCoreTrack.CORE_3X_TURN_L);
+            add(EnumCoreTrack.CORE_5X_TURN_R);
+            add(EnumCoreTrack.CORE_5X_TURN_L);
+        }
+    };
+
     public boolean shouldIgnoreSwitch(EntityMinecart entityMinecart, TileTCRail tile, int i, int j, int k, int meta) {
 
 
         if (tile != null
-                && (tile.getType().equals(EnumTracks.MEDIUM_RIGHT_TURN.getLabel())
-                || tile.getType().equals(EnumTracks.MEDIUM_LEFT_TURN.getLabel())
-                || tile.getType().equals(EnumTracks.LARGE_LEFT_TURN.getLabel())
-                || tile.getType().equals(EnumTracks.LARGE_RIGHT_TURN.getLabel()))
+                && (TurnTracksSwitchCheck.contains(tile.getCoreType()))
                 && tile.canTypeBeModifiedBySwitch) {
             if (meta == 2) {
                 if (entityMinecart.motionZ > 0 && Math.abs(entityMinecart.motionX) < 0.01) {

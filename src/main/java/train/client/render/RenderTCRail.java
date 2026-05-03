@@ -19,7 +19,7 @@ import train.client.render.models.blocks.track.turn.degree45.ModelRight45DegreeT
 import train.client.render.models.blocks.track.turn.degree90.ModelLeftTurnTCTrack;
 import train.client.render.models.blocks.track.turn.degree90.ModelRightTurnTCTrack;
 import train.common.items.BallastTypes;
-import train.common.library.track.EnumTracks;
+import train.common.library.track.ITrackDefinition;
 import train.common.tile.TileTCRail;
 
 public class RenderTCRail extends TileEntitySpecialRenderer {
@@ -67,30 +67,28 @@ public class RenderTCRail extends TileEntitySpecialRenderer {
 			
 			if (railTile.hasModel && railTile.getTrackType() != null)
 			{
-				EnumTracks track = railTile.getTrackType();
+				ITrackDefinition track = railTile.getTrackType();
 				switch (track.getCoreTrack())
 				{
 					case CORE_SMALL_STRAIGHT:
-						switch (track)
+						switch (track.getItem())
 						{
-							case SMALL_ROAD_CROSSING:{
-								modelRoadCrossing.render("crossing", railTile, x, y, z);
-								break;
-							}
-							case SMALL_ROAD_CROSSING_1:{
-								modelRoadCrossing.render("crossing1", railTile, x, y, z);
-								break;
-							}
-							case SMALL_ROAD_CROSSING_2:{
-								modelRoadCrossing.render("crossing2", railTile, x, y, z);
-								break;
-							}
-							case SMALL_ROAD_CROSSING_DYNAMIC:{
+							case tcRailSmallRoadCrossingDynamic:
 								modelRoadCrossing.renderDynamic(railTile, x, y, z);
 								break;
-							}
+							case tcRailSmallRoadCrossing2:
+								modelRoadCrossing.render("crossing2", railTile, x, y, z);
+								break;
+							case tcRailSmallRoadCrossing1:
+								modelRoadCrossing.render("crossing1", railTile, x, y, z);
+								break;
+							case tcRailSmallRoadCrossing:
+								modelRoadCrossing.render("crossing", railTile, x, y, z);
+								break;
 							default:
+							{
 								modelSmallStraight.render("straight", railTile, x, y, z);
+							}
 							break;
 						}
 					break;
@@ -369,40 +367,38 @@ public class RenderTCRail extends TileEntitySpecialRenderer {
 						break;
 					default:
 					{
-						switch (track)
-						{
-							//case EMBEDDED_LARGE_CURVED_SLOPE_DYNAMIC:
-							//case EMBEDDED_LARGE_RIGHT_CURVED_SLOPE_DYNAMIC: {
-							//	modelRightCurvedSlope.render("embedded_large", railTile, x, y, z);
-							//	break;
-							//}
-							//case EMBEDDED_LARGE_LEFT_CURVED_SLOPE_DYNAMIC: {
-							//	modelLeftCurvedSlope.render("embedded_large", railTile, x, y, z);
-							//	break;
-							//}
-							//case EMBEDDED_VERY_LARGE_CURVED_SLOPE_DYNAMIC:
-							//case EMBEDDED_VERY_LARGE_RIGHT_CURVED_SLOPE_DYNAMIC: {
-							//	modelRightCurvedSlope.render("embedded_verylarge", railTile, x, y, z);
-							//	break;
-							//}
-							//case EMBEDDED_VERY_LARGE_LEFT_CURVED_SLOPE_DYNAMIC: {
-							//	modelLeftCurvedSlope.render("embedded_verylarge", railTile, x, y, z);
-							//	break;
-							//}
-							//case EMBEDDED_SUPER_LARGE_CURVED_SLOPE_DYNAMIC:
-							//case EMBEDDED_SUPER_LARGE_RIGHT_CURVED_SLOPE_DYNAMIC: {
-							//	modelRightCurvedSlope.render("embedded_superlarge", railTile, x, y, z);
-							//	break;
-							//}
-							//case EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC: {
-							//	modelLeftCurvedSlope.render("embedded_superlarge", railTile, x, y, z);
-							//	break;
-							//}
-						}
+						//switch (track)
+						//{
+						//	//case EMBEDDED_LARGE_CURVED_SLOPE_DYNAMIC:
+						//	//case EMBEDDED_LARGE_RIGHT_CURVED_SLOPE_DYNAMIC: {
+						//	//	modelRightCurvedSlope.render("embedded_large", railTile, x, y, z);
+						//	//	break;
+						//	//}
+						//	//case EMBEDDED_LARGE_LEFT_CURVED_SLOPE_DYNAMIC: {
+						//	//	modelLeftCurvedSlope.render("embedded_large", railTile, x, y, z);
+						//	//	break;
+						//	//}
+						//	//case EMBEDDED_VERY_LARGE_CURVED_SLOPE_DYNAMIC:
+						//	//case EMBEDDED_VERY_LARGE_RIGHT_CURVED_SLOPE_DYNAMIC: {
+						//	//	modelRightCurvedSlope.render("embedded_verylarge", railTile, x, y, z);
+						//	//	break;
+						//	//}
+						//	//case EMBEDDED_VERY_LARGE_LEFT_CURVED_SLOPE_DYNAMIC: {
+						//	//	modelLeftCurvedSlope.render("embedded_verylarge", railTile, x, y, z);
+						//	//	break;
+						//	//}
+						//	//case EMBEDDED_SUPER_LARGE_CURVED_SLOPE_DYNAMIC:
+						//	//case EMBEDDED_SUPER_LARGE_RIGHT_CURVED_SLOPE_DYNAMIC: {
+						//	//	modelRightCurvedSlope.render("embedded_superlarge", railTile, x, y, z);
+						//	//	break;
+						//	//}
+						//	//case EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC: {
+						//	//	modelLeftCurvedSlope.render("embedded_superlarge", railTile, x, y, z);
+						//	//	break;
+						//	//}
+						//}
 					}
 				}
-
-
 			}
 		}
 	}

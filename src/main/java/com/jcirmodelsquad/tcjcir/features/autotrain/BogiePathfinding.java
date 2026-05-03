@@ -26,7 +26,6 @@ import train.common.blocks.BlockTCRailGag;
 import train.common.items.ItemTCRail;
 import train.common.items.TCRailTypes;
 import train.common.library.BlockIDs;
-import train.common.library.track.EnumTracks;
 import train.common.tile.TileTCRail;
 import train.common.tile.TileTCRailGag;
 
@@ -545,7 +544,7 @@ public class BogiePathfinding  extends EntityMinecart implements IMinecart{
                     tileRail = (TileTCRail) tileEntity;
                 }
 
-            if (tileRail != null && ItemTCRail.isTCSwitch(tileRail)  && doSummon)  {
+            if (tileRail != null && TCRailTypes.isSwitchTrack(tileRail)  && doSummon)  {
 
                 //copypasta ft
                 BogiePathfinding testBogie = new BogiePathfinding(worldObj, tileRail.linkedX , tileRail.linkedY, tileRail.linkedZ, 44455, 0, 4, at2Handler);
@@ -562,7 +561,7 @@ public class BogiePathfinding  extends EntityMinecart implements IMinecart{
                 }
 
                 doSummon = false;
-            } else if (tileRail != null && !ItemTCRail.isTCSwitch(tileRail)) {
+            } else if (tileRail != null && !TCRailTypes.isSwitchTrack(tileRail)) {
                 doSummon = true;
             }
 
@@ -588,11 +587,12 @@ public class BogiePathfinding  extends EntityMinecart implements IMinecart{
                 ForgeChunkManager.releaseTicket(chunkTicket);
                 this.setDead();
             }*/
-            if (tileRail != null && ItemTCRail.isTCSwitch(tileRail) && summonedByTheGodsIMeanFromAnotherPathfinderBogie) {
-              //  tileRail.setSwitchState(true, true);
-
-
-            }
+            //// DOES NOT DO ANYTHING
+            ////if (tileRail != null && ItemTCRail.isTCSwitch(tileRail) && summonedByTheGodsIMeanFromAnotherPathfinderBogie) {
+            ////  //  tileRail.setSwitchState(true, true);
+////
+////
+            ////}
          /*   if (waitingToPassSwitch) {
                 waitingToPassSwitch = false;
                 BogiePathfinding testBogie = new BogiePathfinding(worldObj, posX , posY, posZ - 2, 44455, 0, 4);
@@ -780,10 +780,7 @@ public class BogiePathfinding  extends EntityMinecart implements IMinecart{
     }
     private boolean shouldIgnoreSwitch(TileTCRail tile, int i, int j, int k, int meta) {
         if (tile != null
-                && (tile.getType().equals(EnumTracks.MEDIUM_RIGHT_TURN.getLabel())
-                || tile.getType().equals(EnumTracks.MEDIUM_LEFT_TURN.getLabel())
-                || tile.getType().equals(EnumTracks.LARGE_LEFT_TURN.getLabel())
-                || tile.getType().equals(EnumTracks.LARGE_RIGHT_TURN.getLabel()))
+                && (PathFindingHelper.TurnTracksSwitchCheck.contains(tile.getCoreType()))
                 && tile.canTypeBeModifiedBySwitch) {
             if (meta == 2) {
                 if (motionZ > 0 && Math.abs(motionX) < 0.01) {

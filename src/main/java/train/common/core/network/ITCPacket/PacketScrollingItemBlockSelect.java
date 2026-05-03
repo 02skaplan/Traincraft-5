@@ -8,6 +8,7 @@ import train.common.items.BallastTypes;
 import train.common.items.ItemTCRail;
 import train.common.library.track.EnumCoreTrack;
 import train.common.library.track.EnumTracks;
+import train.common.library.track.ITrackDefinition;
 
 import java.io.IOException;
 import java.util.*;
@@ -93,11 +94,11 @@ public class PacketScrollingItemBlockSelect implements ITCPacket
                 return;
             }
 
-            HashMap<EnumCoreTrack, HashMap<String, EnumTracks>> tracks = EnumTracks.GetTracksByGroup(itemTCRail.getTrackType().getVariant());
+            HashMap<EnumCoreTrack, HashMap<String, ITrackDefinition>> tracks = EnumTracks.GetTracksByGroup(itemTCRail.getTrackType().getVariant());
 
             EnumCoreTrack coreTrack = shift(itemTCRail.getTrackType().getCoreTrack(), incIncrease);
 
-            EnumTracks newTrack = tracks.get(coreTrack).get("") == null ? tracks.get(coreTrack).get(BallastTypes.DYNAMIC.name()) : tracks.get(coreTrack).get("") ;
+            ITrackDefinition newTrack = tracks.get(coreTrack).get("") == null ? tracks.get(coreTrack).get(BallastTypes.DYNAMIC.name()) : tracks.get(coreTrack).get("") ;
 
             if (newTrack != null)
             {

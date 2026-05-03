@@ -26,6 +26,7 @@ import train.common.entity.rollingStock.EntityTracksBuilder;
 import train.common.library.*;
 import train.common.library.register.ITrainRecord;
 import train.common.library.track.EnumTracks;
+import train.common.library.track.ITrackDefinition;
 import train.common.tile.TileTCRail;
 import train.common.tile.TileTCRailGag;
 import train.common.utils.devutils.DebugUtil;
@@ -289,7 +290,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
         }
         if (tile != null)
         {
-            EnumTracks enumTracks = EnumTracks.GetTrackByLabel(tile.getType());
+            ITrackDefinition enumTracks = EnumTracks.GetTrackByLabel(tile.getType());
             if (enumTracks == null)
             {
                 sendLocalChatMessage(par2EntityPlayer,"An error occurred please try replacing the track");
