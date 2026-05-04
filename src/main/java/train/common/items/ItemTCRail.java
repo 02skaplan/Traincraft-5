@@ -2214,10 +2214,14 @@ public class ItemTCRail extends ItemPart {
 					tcRail.slopeLength = gagEnd + 1;
 					tcRail.setOwnerUUID(handleTrackOwner(player));
 
-					Block block = world.getBlock(x, y, z);
-					int blockID = Block.getIdFromBlock(block);
-					tcRail.setBallastMaterial(blockID);
-					tcRail.ballastMetadata = world.getBlockMetadata(x, y, z);
+					if (BallastTypes.DYNAMIC.equals(tempType.getBallastType()))
+					{
+						player.addChatMessage(new ChatComponentText("Right click the first tile to change slope ballast material."));
+						Block block = world.getBlock(x, y, z);
+						int blockID = Block.getIdFromBlock(block);
+						tcRail.setBallastMaterial(blockID);
+						tcRail.ballastMetadata = world.getBlockMetadata(x, y, z);
+					}
 
 					for (int i2 = 1; i2 <= gagEnd; i2++)
 					{
@@ -2299,13 +2303,13 @@ public class ItemTCRail extends ItemPart {
 		tcRail.slopeAngle = slopeAngle;
 		tcRail.slopeLength = gagEnd + 1;
 		tcRail.setOwnerUUID(handleTrackOwner(player));
-
 		if ((this.type.getBallastType()) == BallastTypes.DYNAMIC)
 		{
 			Block block = world.getBlock(x, y, z);
 			int blockID = Block.getIdFromBlock(block);
 			tcRail.setBallastMaterial(blockID);
 			tcRail.ballastMetadata = world.getBlockMetadata(x, y, z);
+			player.addChatMessage(new ChatComponentText("Right click the first tile to change slope ballast material."));
 		}
 		else
 		{
