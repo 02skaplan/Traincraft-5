@@ -386,6 +386,8 @@ public class ItemTCRail extends ItemPart {
 					--itemstack.stackSize;
 				}
 
+
+
 				if (ENGINEERGAMING) {
 					world.playSoundEffect(x, y, z,
 							"tc:track",
@@ -2210,6 +2212,7 @@ public class ItemTCRail extends ItemPart {
 					tcRail.slopeHeight = 1;
 					tcRail.slopeAngle = slopeAngle;
 					tcRail.slopeLength = gagEnd + 1;
+					tcRail.setOwnerUUID(handleTrackOwner(player));
 
 					Block block = world.getBlock(x, y, z);
 					int blockID = Block.getIdFromBlock(block);
@@ -2263,6 +2266,11 @@ public class ItemTCRail extends ItemPart {
 
 	}
 
+	private String handleTrackOwner(EntityPlayer entityPlayer)
+	{
+		return entityPlayer != null ? entityPlayer.getUniqueID().toString() : "Villager Joe";
+	}
+
 	private boolean handleDiagonalSlopes(World world, EntityPlayer player, int facing, ITrackDefinition type, int gagEnd, double slopeAngle, int x, int y, int z, ItemStack itemstack) {
 		Item idDropped = this.type.getItem().item;
 		int[][] usedSpace = EnumTracks.getUsedSpaceFromType(type, player);
@@ -2290,6 +2298,7 @@ public class ItemTCRail extends ItemPart {
 		tcRail.slopeHeight = 1;
 		tcRail.slopeAngle = slopeAngle;
 		tcRail.slopeLength = gagEnd + 1;
+		tcRail.setOwnerUUID(handleTrackOwner(player));
 
 		if ((this.type.getBallastType()) == BallastTypes.DYNAMIC)
 		{

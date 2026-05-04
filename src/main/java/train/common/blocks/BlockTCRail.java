@@ -7,6 +7,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
@@ -15,9 +16,10 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import train.common.Traincraft;
 import train.common.items.ItemWrench;
+import train.common.items.TCRailTypes;
 import train.common.library.BlockIDs;
-import train.common.library.track.EnumTracks;
 import train.common.library.Info;
+import train.common.library.track.EnumTracks;
 import train.common.tile.TileTCRail;
 
 import java.util.Random;
@@ -148,7 +150,8 @@ public class BlockTCRail extends Block {
 		TileEntity te = world.getTileEntity(i, j, k);
 		int l = world.getBlockMetadata(i, j, k);
 
-		if (!world.isRemote && te != null && (te instanceof TileTCRail)) {
+		if (!world.isRemote && te != null && (te instanceof TileTCRail))
+		{
 			if (player != null && player.inventory != null && player.inventory.getCurrentItem() != null && (player.inventory.getCurrentItem().getItem() instanceof ItemWrench) && ((TileTCRail) te).getType() != null && ((TileTCRail) te).getType().equals(EnumTracks.SMALL_STRAIGHT.getLabel())) {
 				l++;
 				if (l > 3)
@@ -157,6 +160,21 @@ public class BlockTCRail extends Block {
 				((TileTCRail) te).hasRotated = true;
 				return true;
 			}
+
+			if (TCRailTypes.isSlopeTrack((TileTCRail) te) || TCRailTypes.isCurvedSlopeTrack((TileTCRail) te))
+			{
+				if (player.getUniqueID().toString().equals(((TileTCRail) te).getOwnerUUID()) && player != null
+						&& player.inventory != null
+						&& player.inventory.getCurrentItem() != null
+						&& player.inventory.getCurrentItem().getItem() instanceof ItemBlock)
+				{
+					Block block = Block.getBlockFromItem(player.inventory.getCurrentItem().getItem());
+					int blockID = Block.getIdFromBlock(block);
+					((TileTCRail) te).setBallastMaterial(blockID);
+					((TileTCRail) te).ballastMetadata = player.inventory.getCurrentItem().getItemDamage();
+				}
+			}
+
 			//((TileTCRail)te).printInfo();
 		}
 		return false;

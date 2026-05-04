@@ -230,8 +230,22 @@ public class TileTCRail extends TileEntity {
 		return bb;
 	}
 
+	private String ownerUUID = "Villager Joe";
+
+	public String getOwnerUUID()
+	{
+		return ownerUUID;
+	}
+
+	public void setOwnerUUID(String ownerUUID)
+	{
+		this.ownerUUID = ownerUUID;
+	}
+
 	@Override
-	public void readFromNBT(NBTTagCompound nbt) {
+	public void readFromNBT(NBTTagCompound nbt)
+	{
+		ownerUUID = nbt.hasKey("ownerUUID") ? nbt.getString("ownerUUID") : "Villager Joe";
 		facingMeta = nbt.getByte("Orientation");
 		r = nbt.getDouble("r");
 		cx = nbt.getDouble("cx");
@@ -310,7 +324,9 @@ public class TileTCRail extends TileEntity {
 	}
 
 	@Override
-	public void writeToNBT(NBTTagCompound nbt) {
+	public void writeToNBT(NBTTagCompound nbt)
+	{
+		nbt.setString("ownerUUID", ownerUUID);
 		nbt.setByte("Orientation", (byte) facingMeta);
 		nbt.setDouble("r", r);
 		nbt.setDouble("cx", cx);
