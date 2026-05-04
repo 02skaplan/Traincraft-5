@@ -127,11 +127,12 @@ public class ItemTCRail extends ItemPart {
 
 		if(player !=null && (!player.canPlayerEdit(x, y - 1, z, 0, player.getCurrentEquippedItem()) ||
 				!player.canPlayerEdit(x, y, z, 0, player.getCurrentEquippedItem()))
-		){
+		)
+		{
 			return false;
 		}
 
-		return canBeReplaced(world, x, y, z) && (World.doesBlockHaveSolidTopSurface(world ,x, y - 1, z) || l1 == BlockIDs.bridgePillar.block);
+		return canBeReplaced(world, x, y, z) && (World.doesBlockHaveSolidTopSurface(world ,x, y - 1, z) || l1 == BlockIDs.bridgePillar.block || l1.getUnlocalizedName().contains("invisiblock"));
 	}
 
 	private boolean canBeReplaced(World world, int x, int y, int z){
