@@ -19,11 +19,11 @@ public abstract class HydrogenTrain extends Locomotive implements IFluidHandler 
 
 
     public HydrogenTrain(World world, int capacity, int maxB) {
-        this(capacity, world);
+        this(world);
         maxBattery = maxB;
     }
 
-    private HydrogenTrain(int capacity, World world) {
+    public HydrogenTrain(World world) {
         super(world);
         this.maxTank = getTankCapacity();
         numCargoSlots = 3;

@@ -3,7 +3,7 @@ package com.jcirmodelsquad.tcjcir.vehicles.rollingstock.tanker;
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.world.World;
 import train.common.api.AbstractStandardTankerCar;
-import train.common.library.EnumTrains;
+
 
 public class CoffinCar extends AbstractStandardTankerCar {
 

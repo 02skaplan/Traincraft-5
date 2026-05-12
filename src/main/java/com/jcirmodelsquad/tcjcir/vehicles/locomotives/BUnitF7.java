@@ -13,7 +13,6 @@ import train.common.Traincraft;
 import train.common.api.LiquidManager;
 import train.common.api.LiquidTank;
 import train.common.enums.LockoutGroup;
-import train.common.library.EnumTrains;
 import train.common.library.GuiIDs;
 
 public class BUnitF7 extends LiquidTank implements IFluidHandler {
@@ -23,11 +22,11 @@ public class BUnitF7 extends LiquidTank implements IFluidHandler {
 	private LiquidManager.StandardTank theTank;
 
 	public BUnitF7(World world) {
-		super(world, EnumTrains.F7B.getTankCapacity());
+		super(world, 0);
 		initFreightWater();
 		InsertTexture(0, "CPV", LockoutGroup.CPV);
 
-		this.theTank = LiquidManager.getInstance().new FilteredTank(EnumTrains.F7B.getTankCapacity(), LiquidManager.dieselFilter());
+		this.theTank = LiquidManager.getInstance().new FilteredTank(getTankCapacity(), LiquidManager.dieselFilter());
 	}
 
 
@@ -57,16 +56,17 @@ public class BUnitF7 extends LiquidTank implements IFluidHandler {
 
 		if (getAmount() > 0) {
 			// setColor(getColorFromString("Full"));
-			setDefaultMass(-EnumTrains.F7B.getMass()*2);
+			setDefaultMass(-trainSpec.getMass()*2);
 			if ((motionX>0.01 || motionZ>0.01) && ticksExisted % 40 == 0) {
 				drain(ForgeDirection.UNKNOWN, 8,true);
 			}
 			
 		} else if (getAmount() <= 0) {
 			// setColor(getColorFromString("Empty"));
-			setDefaultMass(EnumTrains.F7B.getMass());
+			setDefaultMass(trainSpec.getMass());
 		}
 	}
+
 
 	public int getDiesel() {
 		return (this.dataWatcher.getWatchableObjectInt(18));

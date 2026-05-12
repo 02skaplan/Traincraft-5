@@ -27,7 +27,7 @@ public class EntityBUnitEMDF3 extends LiquidTank implements IFluidHandler, INoFu
 	{
 		super(world, 0);
 		initFreightWater();
-		this.theTank = LiquidManager.getInstance().new FilteredTank(0, LiquidManager.dieselFilter());
+		this.theTank = LiquidManager.getInstance().new FilteredTank(getTankCapacity(), LiquidManager.dieselFilter());
 	}
 
 	

@@ -12,7 +12,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.*;
 import train.common.api.LiquidManager;
 import train.common.api.LiquidTank;
-import train.common.library.EnumTrains;
+
 
 public class DieselEnergyGenerator extends LiquidTank implements IFluidHandler {
     private int update = 8;
@@ -45,7 +45,7 @@ public class DieselEnergyGenerator extends LiquidTank implements IFluidHandler {
 
         if (getAmount() > 0) {
             // setColor(getColorFromString("Full"));
-            setDefaultMass(-EnumTrains.SMSC1.getMass());
+            setDefaultMass(-trainSpec.getMass());
             if (MathHelper.floor_double(Math.abs(posX + posZ)) != lastPos && ticksExisted % 40 == 0) {
                 drain(ForgeDirection.UNKNOWN, 12, true);
                 lastPos = MathHelper.floor_double(Math.abs(posX + posZ));
@@ -53,7 +53,7 @@ public class DieselEnergyGenerator extends LiquidTank implements IFluidHandler {
 
         } else if (getAmount() <= 0) {
             // setColor(getColorFromString("Empty"));
-            setDefaultMass(EnumTrains.SMSC1.getMass());
+            setDefaultMass(trainSpec.getMass());
         }
     }
 

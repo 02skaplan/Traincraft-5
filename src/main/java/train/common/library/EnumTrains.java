@@ -1,48 +1,28 @@
 package train.common.library;
 
-import com.jcirmodelsquad.tcjcir.vehicles.locomotives.*;
-import com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.*;
-import com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.*;
-import com.jcirmodelsquad.tcjcir.vehicles.locomotives.foxdrives.DieselWorkdayHyrail;
-import com.jcirmodelsquad.tcjcir.vehicles.locomotives.steam.*;
-import com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.*;
-import com.jcirmodelsquad.tcjcir.vehicles.rollingstock.misc.ExperimentalGeometryCar;
-import com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.*;
-import com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.baggagecar.*;
-import com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.combinecar.*;
-import com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.controlcar.*;
-import com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.rpo.*;
-import com.jcirmodelsquad.tcjcir.vehicles.rollingstock.tanker.*;
-import com.jcirmodelsquad.tcjcir.vehicles.rollingstock.tender.*;
-import com.jcirmodelsquad.tcjcir.vehicles.rollingstock.workcart.*;
-import net.minecraft.item.Item;
-import train.common.core.util.TraincraftUtil;
-import train.common.library.register.ITrainRecord;
-
-public enum EnumTrains implements ITrainRecord
+@Deprecated // Replaced with #RegisterBAPTrains
+public enum EnumTrains
 {
 	/** Heritage*/
-	//CF7_H_Angle("CF7_H_Angle", DieselCF7_H_Angle.class, ItemIDs.minecartCF7_H_Angle.item, EnumTrainType.Diesel, 1500, 116, 0, 50,0,200,0.74,0.96,18000, TraincraftUtil.getBytesFromColors(new String[] {"Yellow", "Pink", "White", "Purple"}), 16, -2, (new String[] {"Heritage"})),
-	//CF7_H_Round("CF7_H_Round", DieselCF7_H_Round.class, ItemIDs.minecartCF7_H_Round.item, EnumTrainType.Diesel, 1500, 116, 0, 50,0,200,0.74,0.96,18000, TraincraftUtil.getBytesFromColors(new String[] {"Yellow"}), 16, -2, (new String[] {"Heritage"})),
 
 
 	/** Fox-TC*/
 
 	//stEAmeeee//
-	Climax2("2TruckClimax", SteamClimaxNew.class, ItemIDs.minecartClimaxNew.item, EnumTrainType.Steam, 680,35,0,50,160,120,0.7,0.8,8000, null,15,-1.0),
-	VBShay("2TruckVerticalBoilerShay", SteamVBShay2.class, ItemIDs.minecartVBShay2.item, EnumTrainType.Steam, 630,35,0,50,160,120,0.7,0.8,6000, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Grey"}),15,-1.3),
-	Skook("Skookum", SteamSkook.class, ItemIDs.minecartSkook.item, EnumTrainType.Steam, 1470, 75, 0, 75, 75, 190, 0.8, 0.91, 2000, null, 10, -2.4),
-	SkookTender("Skookum Tender", TenderSkookTender.class, ItemIDs.minecartSkookTender.item,EnumTrainType.Tender,0,0,2,0,0,0,0,0,15000,null,18,0),
-	Shay3Truck("3 Truck Shay", SteamShay3Truck.class, ItemIDs.minecartShay3Truck.item, EnumTrainType.Steam, 838, 35, 0, 75, 75, 190, 0.8, 0.9, 4000, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Grey", "White"}), 15, -1.8),
-	Shay3TruckTender("3 Truck Shay Tender", TenderShay3Truck.class, ItemIDs.minecartShay3TruckTender.item,EnumTrainType.Tender,0,0,2,0,0,0,0,0,10000, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Grey", "White"}),22,0),
-	ClimaxB("ClimaxB", SteamClimaxB.class, ItemIDs.minecartClimaxB.item, EnumTrainType.Steam, 838, 35, 0, 80, 80, 190, 0.8, 0.9, 9000, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Grey", "LightGrey", "Cyan"}), 15, -1.8),
+	//Climax2("2TruckClimax", SteamClimaxNew.class, ItemIDs.minecartClimaxNew.item, EnumTrainType.Steam, 680,35,0,50,160,120,0.7,0.8,8000, null,15,-1.0),
+	//VBShay("2TruckVerticalBoilerShay", SteamVBShay2.class, ItemIDs.minecartVBShay2.item, EnumTrainType.Steam, 630,35,0,50,160,120,0.7,0.8,6000, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Grey"}),15,-1.3),
+	//Skook("Skookum", SteamSkook.class, ItemIDs.minecartSkook.item, EnumTrainType.Steam, 1470, 75, 0, 75, 75, 190, 0.8, 0.91, 2000, null, 10, -2.4),
+	//SkookTender("Skookum Tender", TenderSkookTender.class, ItemIDs.minecartSkookTender.item,EnumTrainType.Tender,0,0,2,0,0,0,0,0,15000,null,18,0),
+	//Shay3Truck("3 Truck Shay", SteamShay3Truck.class, ItemIDs.minecartShay3Truck.item, EnumTrainType.Steam, 838, 35, 0, 75, 75, 190, 0.8, 0.9, 4000, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Grey", "White"}), 15, -1.8),
+	//Shay3TruckTender("3 Truck Shay Tender", TenderShay3Truck.class, ItemIDs.minecartShay3TruckTender.item,EnumTrainType.Tender,0,0,2,0,0,0,0,0,10000, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Grey", "White"}),22,0),
+	//ClimaxB("ClimaxB", SteamClimaxB.class, ItemIDs.minecartClimaxB.item, EnumTrainType.Steam, 838, 35, 0, 80, 80, 190, 0.8, 0.9, 9000, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Grey", "LightGrey", "Cyan"}), 15, -1.8),
 
-	F01("F01", SteamF01.class, ItemIDs.minecartF01.item, EnumTrainType.Steam, 450,65,0,50,160,120,0.7,0.8,9000, TraincraftUtil.getBytesFromColors(new String[] {"Grey"}),16,-1.7),
-	P01a("P01a", SteamP01a.class, ItemIDs.minecartP01a.item, EnumTrainType.Steam, 1475, 85, 0, 75, 75, 190, 0.85, 0.8, 4000, TraincraftUtil.getBytesFromColors(new String[] {"Grey", "LightGrey", "Green"}), 18, -1.8),
-	VanderbackTender("VanderbackTender", TenderVanderback.class, ItemIDs.minecartVanderbackTender.item,EnumTrainType.Tender,0,0,2,0,0,0,0,0,29000, TraincraftUtil.getBytesFromColors(new String[] {"Grey"}),18,0),
-	SquanderbackTender("SquanderbackTender", TenderSquanderback.class, ItemIDs.minecartSquanderbackTender.item,EnumTrainType.Tender,0,0,2.1,0,0,0,0,0,34000, TraincraftUtil.getBytesFromColors(new String[] {"LightGrey", "Grey", "Green"}),18,0,(new String[] {" this started life a shitpost but i liked it too much"})),
+	//F01("F01", SteamF01.class, ItemIDs.minecartF01.item, EnumTrainType.Steam, 450,65,0,50,160,120,0.7,0.8,9000, TraincraftUtil.getBytesFromColors(new String[] {"Grey"}),16,-1.7),
+	//P01a("P01a", SteamP01a.class, ItemIDs.minecartP01a.item, EnumTrainType.Steam, 1475, 85, 0, 75, 75, 190, 0.85, 0.8, 4000, TraincraftUtil.getBytesFromColors(new String[] {"Grey", "LightGrey", "Green"}), 18, -1.8),
+	//VanderbackTender("VanderbackTender", TenderVanderback.class, ItemIDs.minecartVanderbackTender.item,EnumTrainType.Tender,0,0,2,0,0,0,0,0,29000, TraincraftUtil.getBytesFromColors(new String[] {"Grey"}),18,0),
+	//SquanderbackTender("SquanderbackTender", TenderSquanderback.class, ItemIDs.minecartSquanderbackTender.item,EnumTrainType.Tender,0,0,2.1,0,0,0,0,0,34000, TraincraftUtil.getBytesFromColors(new String[] {"LightGrey", "Grey", "Green"}),18,0,(new String[] {" this started life a shitpost but i liked it too much"})),
 
-	BKno2a("BKno2a", SteamBKno2a.class, ItemIDs.minecartBKno2a.item, EnumTrainType.Steam, 1450,80,0,50,160,120,0.7,0.8,15000, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Orange"}),18,-1.3,(new String[] {"Place facing forward"})),
+	/*BKno2a("BKno2a", SteamBKno2a.class, ItemIDs.minecartBKno2a.item, EnumTrainType.Steam, 1450,80,0,50,160,120,0.7,0.8,15000, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Orange"}),18,-1.3,(new String[] {"Place facing forward"})),
 	BKno2b("BKno2b", SteamBKno2b.class, ItemIDs.minecartBKno2b.item, EnumTrainType.Steam, 1450,80,0,50,160,120,0.7,0.8,15000, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Orange"}),15,-1.2,(new String[] {"Place facing backward"})),
 	WCPBuckingBull("WCPBuckingBull", SteamBuckingBull.class, ItemIDs.minecartWCPBuckingBull.item, EnumTrainType.Steam, 2200, 70, 0, 25, 70, 170, 0.78, 0.9, 2000, null, 10, -2.4),
 	WCPBaler("WCPBaler", TenderBaler.class, ItemIDs.minecartWCPBaler.item,EnumTrainType.Tender,0,0,3,0,0,0,0,0,15000, null,18,0),
@@ -577,58 +557,62 @@ public enum EnumTrains implements ITrainRecord
 	WPShops600Series("WPShops600Series",WPShops600Series.class, ItemIDs.minecartWPShops600Series.item, EnumTrainType.Caboose, 2, TraincraftUtil.getBytesFromColors(new String[] {"Red", "Brown", "Yellow", "Green"}), 16, 0, null),
 	CDCScaboose("CDCScaboose", CDCScaboose.class, ItemIDs.minecartCDCScaboose.item, EnumTrainType.Caboose, 2, TraincraftUtil.getBytesFromColors(new String[] {"Red", "Pink", "Orange", "Brown", "Grey", "Green"}), 16, 0, null),
 
+
+
+	 */
 	//interurbans and streetcars
-	W_A11("SEC W-A11", ElectricW_A11.class,  ItemIDs.minecartW_A11.item, EnumTrainType.Electric, 200, 80, 0, 10, 0, 170, 0.7, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green"}), 10, -2.5, null),
-	W_A55("SEC W-A55", ElectricW_A55.class,  ItemIDs.minecartW_A55.item, EnumTrainType.Electric, 200, 80, 0, 10, 0, 170, 0.7, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black"}), 10, -2.55, null),
-	W_A55_Combine("SEC W-A55 Combine", ElectricW_A55_Combine.class,  ItemIDs.minecartW_A55_Combine.item, EnumTrainType.Electric, 200, 80, 0, 10, 0, 170, 0.7, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black"}), 10, -2.55, null),
+	////W_A11("SEC W-A11", ElectricW_A11.class,  ItemIDs.minecartW_A11.item, EnumTrainType.Electric, 200, 80, 0, 10, 0, 170, 0.7, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green"}), 10, -2.5, null),
+	////W_A55("SEC W-A55", ElectricW_A55.class,  ItemIDs.minecartW_A55.item, EnumTrainType.Electric, 200, 80, 0, 10, 0, 170, 0.7, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black"}), 10, -2.55, null),
+	////W_A55_Combine("SEC W-A55 Combine", ElectricW_A55_Combine.class,  ItemIDs.minecartW_A55_Combine.item, EnumTrainType.Electric, 200, 80, 0, 10, 0, 170, 0.7, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black"}), 10, -2.55, null),
 
 
 	//meme
-	BigMeme("BigMeme", BigMeme.class, ItemIDs.minecartBigMeme.item, "awesome", 1, 200, 0, 50, 0, 0, 0.9, 0.9, 8000, TraincraftUtil.getBytesFromColors(new String[] {"LightGrey", "Grey"}),16 , -1.1),
-	BombCart("Payload", com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.funny.BombCart.class, ItemIDs.minecartBombCart.item, "misc", 1.5, TraincraftUtil.getBytesFromColors(new String[]{"LightBlue", "Red", "Black", "Blue", "Cyan", "Green", "Grey", "Brown", "LightGrey", "Lime", "Magenta", "Orange", "Pink", "Purple", "Yellow", "White"}), 18, 0, (new String[] {"Who is not pushing ze Cart!?"})),
-	Thanos("Thanos", Thanos.class, ItemIDs.minecartThanos.item, EnumTrainType.Electric, 696969, 6210000, 0, 69, 0, 1, 6, 30, 0, null, 18, -1, (new String[] {"You don't want to mess with the Universe's Best"})),
-	TGVmobile("TGVmobile", DieselTGVmobile.class, ItemIDs.minecartTGVMobile.item, EnumTrainType.Diesel, 200, 350, 0, 10, 0, 140, 0.9, 0.9, 1000,null,18, 2.7),
-	HHgregg("HHgregg", DieselHHgregg.class, ItemIDs.minecartHHgregg.item, "awesome", 9932, 299, 0, 42, 0, 48, 0.9, 0.9, 7000, null, 10, -2, (new String[] {"hhhgregg, Panasonic Blu-ray nintey-nine dollars, thirty-two inch LCD TV two-nintey nine, LG fourty-two inch HD TV only four eighty-nine, everything on sale during chirstmas in"})),
+	////BigMeme("BigMeme", BigMeme.class, ItemIDs.minecartBigMeme.item, "awesome", 1, 200, 0, 50, 0, 0, 0.9, 0.9, 8000, TraincraftUtil.getBytesFromColors(new String[] {"LightGrey", "Grey"}),16 , -1.1),
+	////BombCart("Payload", com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.funny.BombCart.class, ItemIDs.minecartBombCart.item, "misc", 1.5, TraincraftUtil.getBytesFromColors(new String[]{"LightBlue", "Red", "Black", "Blue", "Cyan", "Green", "Grey", "Brown", "LightGrey", "Lime", "Magenta", "Orange", "Pink", "Purple", "Yellow", "White"}), 18, 0, (new String[] {"Who is not pushing ze Cart!?"})),
+	////Thanos("Thanos", Thanos.class, ItemIDs.minecartThanos.item, EnumTrainType.Electric, 696969, 6210000, 0, 69, 0, 1, 6, 30, 0, null, 18, -1, (new String[] {"You don't want to mess with the Universe's Best"})),
+	////TGVmobile("TGVmobile", DieselTGVmobile.class, ItemIDs.minecartTGVMobile.item, EnumTrainType.Diesel, 200, 350, 0, 10, 0, 140, 0.9, 0.9, 1000,null,18, 2.7),
+	////HHgregg("HHgregg", DieselHHgregg.class, ItemIDs.minecartHHgregg.item, "awesome", 9932, 299, 0, 42, 0, 48, 0.9, 0.9, 7000, null, 10, -2, (new String[] {"hhhgregg, Panasonic Blu-ray nintey-nine dollars, thirty-two inch LCD TV two-nintey nine, LG fourty-two inch HD TV only four eighty-nine, everything on sale during chirstmas in"})),
 
 	//dont speak americano
 	//Class345("Class 345", ElectricClass345.class, ItemIDs.minecartClass345engine.item, EnumTrainType.Electric, 1500, 290, 0,6, 0, 100, 2, 1.5, 1000, null, 18, -3),
 	//Class345Coach("Class345", Class345Coach.class, ItemIDs.minecartClass345car.item, EnumTrainType.Passenger, 0, 0, 1.5,0 , 0, 0, 0,0,0,null,0,0),
 	//LUengine("London Underground Engine", ElectricLUengine.class, ItemIDs.minecartLUengine.item, EnumTrainType.Electric, 600, 100, 0, 10, 0, 100, 0.7, 0.8, 1000, null, 18, -2),
 	//LUpassenger("London Underground Passenger Car", LUpassenger.class, ItemIDs.minecartLUcar.item, EnumTrainType.Passenger, 0.3, null, 0, 0, null),
-	Class74("Class74",ElectricClass74.class, ItemIDs.minecartClass74.item, EnumTrainType.Electric, 2426, 140, 0, 50, 0, 10, 0.6, 0.7, 13, TraincraftUtil.getBytesFromColors(new String[] {"Blue", "Purple", "Red", "Skin16", "Skin17"}), 10, -2, (new String[] {"Not BAP, but gets to be included"})),
-	TwoBil("TwoBil",ElectricTwoBil.class, ItemIDs.minecartTwoBil.item, EnumTrainType.Electric, 428, 121, 0, 7, 0, 0, 0.5, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Brown", "Blue", "Purple", "Cyan", "LightGrey"}), 11, -3.15, (new String[] {"Not BAP, but gets to be included"})),
-	TwoBilTail("TwoBilTail", PassengerTwoBilTail.class, ItemIDs.minecartTwoBilTail.item, EnumTrainType.Passenger, 0, 0, 1, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Brown", "Blue", "Purple", "Cyan", "LightGrey"}), 11, 0, (new String[] {"Not BAP, but gets to be included"})),
-	FourCor("FourCor",ElectricFourCor.class, ItemIDs.minecartFourCor.item, EnumTrainType.Electric, 900, 121, 0, 7, 0, 0, 0.5, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Brown", "Blue", "Purple", "Cyan", "LightGrey", "Grey"}), 11, -3.6, (new String[] {"Not BAP, but gets to be included"})),
-	FourCorTrailerComposite("FourCorTrailerComposite", PassengerFourCorTrailerComposite.class, ItemIDs.minecartFourCorTrailerComposite.item, EnumTrainType.Passenger, 0, 0, 1.6, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Purple", "LightGrey", "Grey"}), 11, 0, (new String[] {"Not BAP, but gets to be included"})),
-	FourCorTrailerSecond("FourCorTrailerSecond", PassengerFourCorTrailerSecond.class, ItemIDs.minecartFourCorTrailerSecond.item, EnumTrainType.Passenger, 0, 0, 1.6, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Purple", "LightGrey", "Grey"}), 11, 0, (new String[] {"Not BAP, but gets to be included"})),
-	FourBuf("FourBuf", PassengerFourBuf.class, ItemIDs.minecartFourBuf.item, EnumTrainType.Passenger, 0, 0, 1.7, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Purple", "LightGrey", "Grey"}), 11, 0, (new String[] {"Not BAP, but gets to be included"})),
-	FourCorTail("FourCorTail", PassengerFourCorTail.class, ItemIDs.minecartFourCorTail.item, EnumTrainType.Passenger, 0, 0, 1.8, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Brown", "Blue", "Purple", "Cyan", "LightGrey", "Grey"}), 11, 0, (new String[] {"Not BAP, but gets to be included"})),
-	tenderNS3700("Tender NS 3700", EntityTenderNS3700.class, ItemIDs.minecartTenderNS3700.item,EnumTrainType.Tender,0,0,4.3,0,0,0,0,0,16000,null,18,0, (new String[] {"Not BAP, but gets to be included"})),
-	locoSteamNS3700Class("Loco Steam NS 3700 Class", EntityLocoSteamNS3700Class.class, ItemIDs.minecartLocoNS3700Class.item,EnumTrainType.Steam, 1286, 110, 0, 80, 100, 200, 0.35, 0.975, 4000, null, 10, -2.6, (new String[] {"Not BAP, but gets to be included"})),
-
-	KawasakiLRV("KawasakiLRV", ElectricKawasakiLRV.class,  ItemIDs.minecartKawasakiLRV.item, EnumTrainType.Electric, 200, 80, 0, 10, 0, 170, 0.7, 0.9, 0, null, 10, -3, (new String[] {"Not BAP, but gets to be included"})),
-	CQ310PO("CQ310PO", ElectricCQ310PO.class,  ItemIDs.minecartCQ310PO.item, EnumTrainType.Electric, 350, 100, 0, 10, 0, 170, 0.7, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Grey", "Black", "Skin16"}), 10, -3, (new String[] {"Not BAP, but gets to be included"})),
-	CQ310PA("CQ310PA", CQ310PA.class, ItemIDs.minecartCQ310PA.item, EnumTrainType.Passenger, 0, 0, 1, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Grey", "Black", "Skin16"}), 18, 0, (new String[] {"Not BAP, but gets to be included"})),
-	PCC("PCC", ElectricPCC.class,  ItemIDs.minecartPCC.item, EnumTrainType.Electric, 220, 80, 0, 10, 0, 170, 0.7, 0.875, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "White"}), 10, -3, (new String[] {"Not BAP, but gets to be included"})),
+	////Class74("Class74",ElectricClass74.class, ItemIDs.minecartClass74.item, EnumTrainType.Electric, 2426, 140, 0, 50, 0, 10, 0.6, 0.7, 13, TraincraftUtil.getBytesFromColors(new String[] {"Blue", "Purple", "Red", "Skin16", "Skin17"}), 10, -2, (new String[] {"Not BAP, but gets to be included"})),
+	////TwoBil("TwoBil",ElectricTwoBil.class, ItemIDs.minecartTwoBil.item, EnumTrainType.Electric, 428, 121, 0, 7, 0, 0, 0.5, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Brown", "Blue", "Purple", "Cyan", "LightGrey"}), 11, -3.15, (new String[] {"Not BAP, but gets to be included"})),
+	////TwoBilTail("TwoBilTail", PassengerTwoBilTail.class, ItemIDs.minecartTwoBilTail.item, EnumTrainType.Passenger, 0, 0, 1, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Brown", "Blue", "Purple", "Cyan", "LightGrey"}), 11, 0, (new String[] {"Not BAP, but gets to be included"})),
+	////FourCor("FourCor",ElectricFourCor.class, ItemIDs.minecartFourCor.item, EnumTrainType.Electric, 900, 121, 0, 7, 0, 0, 0.5, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Brown", "Blue", "Purple", "Cyan", "LightGrey", "Grey"}), 11, -3.6, (new String[] {"Not BAP, but gets to be included"})),
+	////FourCorTrailerComposite("FourCorTrailerComposite", PassengerFourCorTrailerComposite.class, ItemIDs.minecartFourCorTrailerComposite.item, EnumTrainType.Passenger, 0, 0, 1.6, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Purple", "LightGrey", "Grey"}), 11, 0, (new String[] {"Not BAP, but gets to be included"})),
+	////FourCorTrailerSecond("FourCorTrailerSecond", PassengerFourCorTrailerSecond.class, ItemIDs.minecartFourCorTrailerSecond.item, EnumTrainType.Passenger, 0, 0, 1.6, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Purple", "LightGrey", "Grey"}), 11, 0, (new String[] {"Not BAP, but gets to be included"})),
+	////FourBuf("FourBuf", PassengerFourBuf.class, ItemIDs.minecartFourBuf.item, EnumTrainType.Passenger, 0, 0, 1.7, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Purple", "LightGrey", "Grey"}), 11, 0, (new String[] {"Not BAP, but gets to be included"})),
+	////FourCorTail("FourCorTail", PassengerFourCorTail.class, ItemIDs.minecartFourCorTail.item, EnumTrainType.Passenger, 0, 0, 1.8, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "Red", "Green", "Brown", "Blue", "Purple", "Cyan", "LightGrey", "Grey"}), 11, 0, (new String[] {"Not BAP, but gets to be included"})),
+	////tenderNS3700("Tender NS 3700", EntityTenderNS3700.class, ItemIDs.minecartTenderNS3700.item,EnumTrainType.Tender,0,0,4.3,0,0,0,0,0,16000,null,18,0, (new String[] {"Not BAP, but gets to be included"})),
+	////locoSteamNS3700Class("Loco Steam NS 3700 Class", EntityLocoSteamNS3700Class.class, ItemIDs.minecartLocoNS3700Class.item,EnumTrainType.Steam, 1286, 110, 0, 80, 100, 200, 0.35, 0.975, 4000, null, 10, -2.6, (new String[] {"Not BAP, but gets to be included"})),
+////
+	////KawasakiLRV("KawasakiLRV", ElectricKawasakiLRV.class,  ItemIDs.minecartKawasakiLRV.item, EnumTrainType.Electric, 200, 80, 0, 10, 0, 170, 0.7, 0.9, 0, null, 10, -3, (new String[] {"Not BAP, but gets to be included"})),
+	////CQ310PO("CQ310PO", ElectricCQ310PO.class,  ItemIDs.minecartCQ310PO.item, EnumTrainType.Electric, 350, 100, 0, 10, 0, 170, 0.7, 0.9, 0, TraincraftUtil.getBytesFromColors(new String[] {"Grey", "Black", "Skin16"}), 10, -3, (new String[] {"Not BAP, but gets to be included"})),
+	////CQ310PA("CQ310PA", CQ310PA.class, ItemIDs.minecartCQ310PA.item, EnumTrainType.Passenger, 0, 0, 1, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Grey", "Black", "Skin16"}), 18, 0, (new String[] {"Not BAP, but gets to be included"})),
+	////PCC("PCC", ElectricPCC.class,  ItemIDs.minecartPCC.item, EnumTrainType.Electric, 220, 80, 0, 10, 0, 170, 0.7, 0.875, 0, TraincraftUtil.getBytesFromColors(new String[] {"Black", "White"}), 10, -3, (new String[] {"Not BAP, but gets to be included"})),
 
 	//old and extras
-	geometryCar("NXTrack Geometry Car", ExperimentalGeometryCar.class, ItemIDs.minecartGeometryCar.item, "geometry car", 0, 0, 2, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Grey", "LightGrey"}), 18, 0, (new String[] {"Checks the railroad for things up to standard"})),
-	HighrailTruck("Highrail Truck", DieselHighrailTruck.class, ItemIDs.minecartHighrailTruck.item, EnumTrainType.Diesel, 90, 80, 0, 10, 0, 140, 0.7, 0.8, 1000,TraincraftUtil.getBytesFromColors(new String[] {"Yellow", "White", "LightGrey"}),18, 2.7),
-	FRED("FRED", com.jcirmodelsquad.tcjcir.vehicles.rollingstock.misc.FRED.class, ItemIDs.minecartFRED.item, "misc", 0.2, null, 0, 1, (new String[] {"the least used item in the mod"})),
+	////geometryCar("NXTrack Geometry Car", ExperimentalGeometryCar.class, ItemIDs.minecartGeometryCar.item, "geometry car", 0, 0, 2, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[] {"Grey", "LightGrey"}), 18, 0, (new String[] {"Checks the railroad for things up to standard"})),
+	////HighrailTruck("Highrail Truck", DieselHighrailTruck.class, ItemIDs.minecartHighrailTruck.item, EnumTrainType.Diesel, 90, 80, 0, 10, 0, 140, 0.7, 0.8, 1000,TraincraftUtil.getBytesFromColors(new String[] {"Yellow", "White", "LightGrey"}),18, 2.7),
+	////FRED("FRED", com.jcirmodelsquad.tcjcir.vehicles.rollingstock.misc.FRED.class, ItemIDs.minecartFRED.item, "misc", 0.2, null, 0, 1, (new String[] {"the least used item in the mod"})),
 	//testControlCar("Test Control Car", TestControlCar.class, ItemIDs.testControlCar.item, EnumTrainType.Passenger, 0, 0, 2, 0, 0, 0, 0, 0, 0, TraincraftUtil.getBytesFromColors(new String[]{"White", "LightGrey"}), 18, 0),
 	//Hustler("Hustler", DieselHustler.class, ItemIDs.minecartHustler.item, EnumTrainType.Diesel, 150, 30, 0, 50, 0, 170, 0.6, 0.7, 9000,  TraincraftUtil.getBytesFromColors(new String[] {"Yellow", "Black", "Blue", "Brown"}), 10, -2),
-	BoulderWagon("BoulderWagon", BoulderWagon.class, ItemIDs.minecartBoulderWagon.item, "freight", 5, TraincraftUtil.getBytesFromColors(new String[]{"Grey","skin16"}), 0, 9, null),
+	////BoulderWagon("BoulderWagon", BoulderWagon.class, ItemIDs.minecartBoulderWagon.item, "freight", 5, TraincraftUtil.getBytesFromColors(new String[]{"Grey","skin16"}), 0, 9, null),
 	//LogcarNP("LogcarNP",LogcarNP.class, ItemIDs.minecartLogcarNP.item,"freight",2, TraincraftUtil.getBytesFromColors(new String[]{"Brown","Black"}), 0, 18, null),
 	//CF7R("CF7R", DieselCF7R.class, ItemIDs.minecartCF7R.item, EnumTrainType.Diesel, 2350, 105, 0, 5, 0, 185, 0.8, 0.9, 7000, TraincraftUtil.getBytesFromColors(new String[] {"Blue", "Yellow", "Black"}), 10, -3, TraincraftUtil.getBytesFromColors(new String[] {"CF7 Rebuild Rebuilt"})),
-	HighrailVan("Highrail Van", DieselHighrailVan.class, ItemIDs.minecartHighrailVan.item, EnumTrainType.Diesel, 90, 80, 0, 10, 0, 140, 0.7, 0.8, 1000,TraincraftUtil.getBytesFromColors(new String[] {"Yellow", "White", "Grey", "Orange", "Green"}),18, 2.7),
+	////HighrailVan("Highrail Van", DieselHighrailVan.class, ItemIDs.minecartHighrailVan.item, EnumTrainType.Diesel, 90, 80, 0, 10, 0, 140, 0.7, 0.8, 1000,TraincraftUtil.getBytesFromColors(new String[] {"Yellow", "White", "Grey", "Orange", "Green"}),18, 2.7),
 
 
-	WorkdayHyrail("WorkdayHyrail", DieselWorkdayHyrail.class, ItemIDs.minecartWorkdayHyrail.item, EnumTrainType.Diesel, 110, 115, 0, 2, 0, 10, 0.95, 0.8, 2000,TraincraftUtil.getBytesFromColors(new String[] {"LightGrey", "Grey", "Cyan", "Yellow", "Skin17", "Orange", "Skin18"}),20, -2.0),
+	////WorkdayHyrail("WorkdayHyrail", DieselWorkdayHyrail.class, ItemIDs.minecartWorkdayHyrail.item, EnumTrainType.Diesel, 110, 115, 0, 2, 0, 10, 0.95, 0.8, 2000,TraincraftUtil.getBytesFromColors(new String[] {"LightGrey", "Grey", "Cyan", "Yellow", "Skin17", "Orange", "Skin18"}),20, -2.0),
 
 	;
 
 //String trainType,int MHP,int maxSpeed, double mass, int fuelConsumption, int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, String[] colors,
 
+	/*
 	private String internalName;
 	private Class entityClass;
 	private Item item;
@@ -668,29 +652,29 @@ public enum EnumTrains implements ITrainRecord
 	 * @param colors: an array with all possible colors. Index 0 is used as default color when train is first spawned. leave null if no color available
 	 * @param guiRenderScale: scale at which the entity will be rendered inside the GUI (crafting GUI)
 	 */
-	private EnumTrains(String internalName,Class entityClass, Item item, String trainType,int MHP,int maxSpeed, double mass, int fuelConsumption, int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPosition){
-		this.internalName = internalName;
-		this.entityClass = entityClass;
-		this.item = item;
-		this.trainType=trainType;
-		this.MHP=MHP;
-		this.maxSpeed=maxSpeed;
-		this.mass=mass;
-		this.fuelConsumption=fuelConsumption;
-		this.waterConsumption=waterConsumption;
-		this.heatingTime=heatingTime;
-		this.accelerationRate=accelerationRate;
-		this.brakeRate=brakeRate;
-		this.tankCapacity=tankCapacity;
-		this.colors=colors;
-		this.guiRenderScale = guiRenderScale;
-		this.bogieLocoPosition = bogieLocoPosition;
-	}
+	////private EnumTrains(String internalName,Class entityClass, Item item, String trainType,int MHP,int maxSpeed, double mass, int fuelConsumption, int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPosition){
+	////	this.internalName = internalName;
+	////	this.entityClass = entityClass;
+	////	this.item = item;
+	////	this.trainType=trainType;
+	////	this.MHP=MHP;
+	////	this.maxSpeed=maxSpeed;
+	////	this.mass=mass;
+	////	this.fuelConsumption=fuelConsumption;
+	////	this.waterConsumption=waterConsumption;
+	////	this.heatingTime=heatingTime;
+	////	this.accelerationRate=accelerationRate;
+	////	this.brakeRate=brakeRate;
+	////	this.tankCapacity=tankCapacity;
+	////	this.colors=colors;
+	////	this.guiRenderScale = guiRenderScale;
+	////	this.bogieLocoPosition = bogieLocoPosition;
+	////}
 
-	private EnumTrains(String internalName,Class entityClass, Item item, EnumTrainType trainType,int MHP,int maxSpeed, double mass, int fuelConsumption, int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPosition)
-	{
-		this(  internalName, entityClass,  item,  trainType.TrainType, MHP, maxSpeed,  mass,  fuelConsumption,  waterConsumption,  heatingTime,  accelerationRate,  brakeRate,  tankCapacity,  colors,  guiRenderScale,  bogieLocoPosition);
-	}
+	//private EnumTrains(String internalName,Class entityClass, Item item, EnumTrainType trainType,int MHP,int maxSpeed, double mass, int fuelConsumption, int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPosition)
+	//{
+	//	this(  internalName, entityClass,  item,  trainType.TrainType, MHP, maxSpeed,  mass,  fuelConsumption,  waterConsumption,  heatingTime,  accelerationRate,  brakeRate,  tankCapacity,  colors,  guiRenderScale,  bogieLocoPosition);
+	//}
 
 	/**
 	 * Constructor for additionnal tooltips on the item
@@ -712,163 +696,108 @@ public enum EnumTrains implements ITrainRecord
 	 * @param bogieLocoPositions
 	 * @param additionnalTooltip
 	 */
-	private EnumTrains(String internalName,Class entityClass, Item item, String trainType,int MHP,int maxSpeed, double mass, int fuelConsumption,int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPositions, String[] additionnalTooltip){
-		this.internalName = internalName;
-		this.entityClass = entityClass;
-		this.item = item;
-		this.trainType=trainType;
-		this.MHP=MHP;
-		this.maxSpeed=maxSpeed;
-		this.mass=mass;
-		this.fuelConsumption=fuelConsumption;
-		this.waterConsumption=waterConsumption;
-		this.heatingTime=heatingTime;
-		this.accelerationRate=accelerationRate;
-		this.brakeRate=brakeRate;
-		this.tankCapacity=tankCapacity;
-		this.colors=colors;
-		this.guiRenderScale = guiRenderScale;
-		this.bogieLocoPosition = bogieLocoPositions;
-		this.additionnalTooltip=additionnalTooltip;
-	}
+	//private EnumTrains(String internalName,Class entityClass, Item item, String trainType,int MHP,int maxSpeed, double mass, int fuelConsumption,int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPositions, String[] additionnalTooltip){
+	//	this.internalName = internalName;
+	//	this.entityClass = entityClass;
+	//	this.item = item;
+	//	this.trainType=trainType;
+	//	this.MHP=MHP;
+	//	this.maxSpeed=maxSpeed;
+	//	this.mass=mass;
+	//	this.fuelConsumption=fuelConsumption;
+	//	this.waterConsumption=waterConsumption;
+	//	this.heatingTime=heatingTime;
+	//	this.accelerationRate=accelerationRate;
+	//	this.brakeRate=brakeRate;
+	//	this.tankCapacity=tankCapacity;
+	//	this.colors=colors;
+	//	this.guiRenderScale = guiRenderScale;
+	//	this.bogieLocoPosition = bogieLocoPositions;
+	//	this.additionnalTooltip=additionnalTooltip;
+	//}
 
-	private EnumTrains(String internalName,Class entityClass, Item item, EnumTrainType trainType,int MHP,int maxSpeed, double mass, int fuelConsumption,int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPositions, int cargoCapacity, String[] additionnalTooltip)
-	{
-		this(internalName, entityClass, item, trainType.TrainType,MHP, maxSpeed,  mass,  fuelConsumption, waterConsumption,  heatingTime,  accelerationRate,  brakeRate,  tankCapacity, colors,  guiRenderScale,  bogieLocoPositions,  cargoCapacity,  additionnalTooltip);
-	}
+	//private EnumTrains(String internalName,Class entityClass, Item item, EnumTrainType trainType,int MHP,int maxSpeed, double mass, int fuelConsumption,int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPositions, int cargoCapacity, String[] additionnalTooltip)
+	//{
+	//	this(internalName, entityClass, item, trainType.TrainType,MHP, maxSpeed,  mass,  fuelConsumption, waterConsumption,  heatingTime,  accelerationRate,  brakeRate,  tankCapacity, colors,  guiRenderScale,  bogieLocoPositions,  cargoCapacity,  additionnalTooltip);
+	//}
 
-	private EnumTrains(String internalName,Class entityClass, Item item, String trainType,int MHP,int maxSpeed, double mass, int fuelConsumption,int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPositions, int cargoCapacity, String[] additionnalTooltip){
-		this.internalName = internalName;
-		this.entityClass = entityClass;
-		this.item = item;
-		this.trainType=trainType;
-		this.MHP=MHP;
-		this.maxSpeed=maxSpeed;
-		this.mass=mass;
-		this.fuelConsumption=fuelConsumption;
-		this.waterConsumption=waterConsumption;
-		this.heatingTime=heatingTime;
-		this.accelerationRate=accelerationRate;
-		this.brakeRate=brakeRate;
-		this.tankCapacity=tankCapacity;
-		this.colors=colors;
-		this.guiRenderScale = guiRenderScale;
-		this.bogieLocoPosition = bogieLocoPositions;
-		this.additionnalTooltip = additionnalTooltip;
-		this.cargoCapacity = cargoCapacity;
-	}
+	//private EnumTrains(String internalName,Class entityClass, Item item, String trainType,int MHP,int maxSpeed, double mass, int fuelConsumption,int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPositions, int cargoCapacity, String[] additionnalTooltip){
+	//	this.internalName = internalName;
+	//	this.entityClass = entityClass;
+	//	this.item = item;
+	//	this.trainType=trainType;
+	//	this.MHP=MHP;
+	//	this.maxSpeed=maxSpeed;
+	//	this.mass=mass;
+	//	this.fuelConsumption=fuelConsumption;
+	//	this.waterConsumption=waterConsumption;
+	//	this.heatingTime=heatingTime;
+	//	this.accelerationRate=accelerationRate;
+	//	this.brakeRate=brakeRate;
+	//	this.tankCapacity=tankCapacity;
+	//	this.colors=colors;
+	//	this.guiRenderScale = guiRenderScale;
+	//	this.bogieLocoPosition = bogieLocoPositions;
+	//	this.additionnalTooltip = additionnalTooltip;
+	//	this.cargoCapacity = cargoCapacity;
+	//}
 
-	private EnumTrains(String internalName,Class entityClass, Item item, EnumTrainType trainType,int MHP,int maxSpeed, double mass, int fuelConsumption,int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPositions, String[] additionnalTooltip)
-	{
-		this( internalName, entityClass, item, trainType.TrainType, MHP, maxSpeed,  mass,  fuelConsumption, waterConsumption,  heatingTime,  accelerationRate,  brakeRate,  tankCapacity,  colors,  guiRenderScale,  bogieLocoPositions,  additionnalTooltip);
-	}
-
-
-	/**
-	 * Constructor for freight carts
-	 * @param internalName
-	 * @param entityClass
-	 * @param item
-	 * @param trainType
-	 * @param mass
-	 * @param colors
-	 * @param guiRenderScale
-	 * //@param bogieLocoPositions
-	 * //@param bogieUtilityPositions
-	 * @param cargoCapacity
-	 * @param additionnalTooltip
-	 */
-	private EnumTrains(String internalName,Class entityClass, Item item, String trainType, double mass, int[] colors, int guiRenderScale, int cargoCapacity, String[] additionnalTooltip)
-	{
-		this.internalName = internalName;
-		this.entityClass = entityClass;
-		this.item = item;
-		this.trainType=trainType;
-		this.mass=mass;
-		this.colors=colors;
-		this.guiRenderScale = guiRenderScale;
-		this.additionnalTooltip=additionnalTooltip;
-		this.cargoCapacity = cargoCapacity;
-	}
-
-	private EnumTrains(String internalName,Class entityClass, Item item, EnumTrainType trainType, double mass, int[] colors, int guiRenderScale, int cargoCapacity, String[] additionnalTooltip)
-	{
-		this(internalName, entityClass, item, trainType.TrainType, mass, colors, guiRenderScale, cargoCapacity, additionnalTooltip);
-	}
-
-	public String getInternalName(){
-		return this.internalName;
-	}
-
-	public Item getItem(){
-		return this.item;
-	}
-
-	public String getTrainType(){
-		return this.trainType;
-	}
-
-	@Deprecated
-	public int getMHP(){
-		return this.MHP;
-	}
-
-	public int getMaxSpeed(){
-		return this.maxSpeed;
-	}
-
-	public double getMass(){
-		return this.mass;
-	}
-
-	public int getFuelConsumption(){
-		return this.fuelConsumption;
-	}
-
-	@Deprecated // Will be removed later please override the getWaterConsumption() in the entity for the stock
-	public int getWaterConsumption(){
-		return this.waterConsumption;
-	}
-
-	public int getHeatingTime(){
-		return this.heatingTime;
-	}
-
-	public double getAccelerationRate(){
-		return this.accelerationRate;
-	}
-
-	public double getBrakeRate(){
-		return this.brakeRate;
-	}
-
-	@Deprecated
-	public int getTankCapacity(){
-		return this.tankCapacity;
-	}
-
-	public int[] getColors(){
-		return this.colors;
-	}
-
-	public double getBogieLocoPosition(){
-		return this.bogieLocoPosition;
-	}
+	//private EnumTrains(String internalName,Class entityClass, Item item, EnumTrainType trainType,int MHP,int maxSpeed, double mass, int fuelConsumption,int waterConsumption, int heatingTime, double accelerationRate, double brakeRate, int tankCapacity, int[] colors, int guiRenderScale, double bogieLocoPositions, String[] additionnalTooltip)
+	//{
+	//	this( internalName, entityClass, item, trainType.TrainType, MHP, maxSpeed,  mass,  fuelConsumption, waterConsumption,  heatingTime,  accelerationRate,  brakeRate,  tankCapacity,  colors,  guiRenderScale,  bogieLocoPositions,  additionnalTooltip);
+	//}
 
 
-	public Class getEntityClass() {
-		return this.entityClass;
-	}
-
-	public int getGuiRenderScale(){
-		return this.guiRenderScale;
-	}
-
-	public String[] getAdditionalTooltip(){
-		return this.additionnalTooltip;
-	}
-
-	public int getCargoCapacity(){
-		return cargoCapacity;
-	}
+	///**
+	// * Constructor for freight carts
+	// * @param internalName
+	// * @param entityClass
+	// * @param item
+	// * @param trainType
+	// * @param mass
+	// * @param colors
+	// * @param guiRenderScale
+	// * //@param bogieLocoPositions
+	// * //@param bogieUtilityPositions
+	// * @param cargoCapacity
+	// * @param additionnalTooltip
+	// */
+	//private EnumTrains(String internalName,Class entityClass, Item item, String trainType, double mass, int[] colors, int guiRenderScale, int cargoCapacity, String[] additionnalTooltip)
+	//{
+	//	this.internalName = internalName;
+	//	this.entityClass = entityClass;
+	//	this.item = item;
+	//	this.trainType=trainType;
+	//	this.mass=mass;
+	//	this.colors=colors;
+	//	this.guiRenderScale = guiRenderScale;
+	//	this.additionnalTooltip=additionnalTooltip;
+	//	this.cargoCapacity = cargoCapacity;
+	//}
+//
+	//private EnumTrains(String internalName,Class entityClass, Item item, EnumTrainType trainType, double mass, int[] colors, int guiRenderScale, int cargoCapacity, String[] additionnalTooltip)
+	//{
+	//	this(internalName, entityClass, item, trainType.TrainType, mass, colors, guiRenderScale, cargoCapacity, additionnalTooltip);
+	//}
+//
+	//public Item getItem(){
+	//	return this.item;
+	//}
+//
+	//public String getTrainType(){
+	//	return this.trainType;
+	//}
+//
+	//@Deprecated
+	//public int getMHP(){
+	//	return this.MHP;
+	//}
+//
+	//public int getMaxSpeed(){
+	//	return this.maxSpeed;
+	//}
+//
+	//public double getMass(){
+	//	return this.mass;
+	//}
 }

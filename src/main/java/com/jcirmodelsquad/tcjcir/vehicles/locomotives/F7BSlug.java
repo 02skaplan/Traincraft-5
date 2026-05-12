@@ -13,7 +13,6 @@ import train.common.Traincraft;
 import train.common.api.INoFuelTransferEntity;
 import train.common.api.LiquidManager;
 import train.common.api.LiquidTank;
-import train.common.library.EnumTrains;
 import train.common.library.GuiIDs;
 
 public class F7BSlug extends LiquidTank implements IFluidHandler, INoFuelTransferEntity
@@ -24,9 +23,9 @@ public class F7BSlug extends LiquidTank implements IFluidHandler, INoFuelTransfe
 	private LiquidManager.StandardTank theTank;
 
 	public F7BSlug(World world) {
-		super(world, EnumTrains.F7BSlug.getTankCapacity());
+		super(world, 0);
 		initFreightWater();
-		this.theTank = LiquidManager.getInstance().new FilteredTank(EnumTrains.F7BSlug.getTankCapacity(), LiquidManager.dieselFilter());
+		this.theTank = LiquidManager.getInstance().new FilteredTank(getTankCapacity(), LiquidManager.dieselFilter());
 	}
 
 
@@ -56,14 +55,14 @@ public class F7BSlug extends LiquidTank implements IFluidHandler, INoFuelTransfe
 
 		if (getAmount() > 0) {
 			// setColor(getColorFromString("Full"));
-			setDefaultMass(-EnumTrains.F7BSlug.getMass()*2);
+			setDefaultMass(-trainSpec.getMass()*2);
 			if ((motionX>0.01 || motionZ>0.01) && ticksExisted % 40 == 0) {
 				drain(ForgeDirection.UNKNOWN, 8,true);
 			}
 			
 		} else if (getAmount() <= 0) {
 			// setColor(getColorFromString("Empty"));
-			setDefaultMass(EnumTrains.F7BSlug.getMass());
+			setDefaultMass(trainSpec.getMass());
 		}
 	}
 

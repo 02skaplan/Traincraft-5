@@ -7,6 +7,7 @@
 
 package train.common.core.handlers;
 
+import com.jcirmodelsquad.tcjcir.RegisterBAPTrains;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import train.common.Traincraft;
 import train.common.api.EntityBogie;
@@ -14,7 +15,7 @@ import train.common.core.EntityIds;
 import train.common.entity.digger.EntityRotativeDigger;
 import train.common.entity.zeppelin.EntityZeppelinOneBalloon;
 import train.common.entity.zeppelin.EntityZeppelinTwoBalloons;
-import train.common.library.*;
+import train.common.library.RegisterTrains;
 
 public class EntityHandler
 {
@@ -28,10 +29,12 @@ public class EntityHandler
 		// Don't forget to add a record to insert the render record
 		new RegisterTrains();
 
-		for(EnumTrains trains : EnumTrains.values())
-		{
-			int id = Traincraft.traincraftRegistry.incrementTrainID();
-			EntityRegistry.registerModEntity(trains.getEntityClass(), trains.getInternalName(), id, Traincraft.instance, 512, 1, true);
-		}
+		new RegisterBAPTrains();
+
+		//for(EnumTrains trains : EnumTrains.values())
+		//{
+		//	int id = Traincraft.traincraftRegistry.incrementTrainID();
+		//	EntityRegistry.registerModEntity(trains.getEntityClass(), trains.getInternalName(), id, Traincraft.instance, 512, 1, true);
+		//}
 	}
 }

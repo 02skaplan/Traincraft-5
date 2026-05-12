@@ -5,7 +5,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import train.common.api.AbstractControlCar;
-import train.common.library.EnumTrains;
 import train.common.library.sounds.SoundRecord;
 
 public class S1BL extends AbstractControlCar
@@ -36,7 +35,7 @@ public class S1BL extends AbstractControlCar
     public void onUpdate() {
         super.onUpdate();
         if ((motionX>0.1 || motionZ>0.1) && ticksExisted % 40 == 0) {
-            setDefaultMass(-EnumTrains.SMSC1.getMass() * 1.75);//this should be S1BL
+            setDefaultMass(-trainSpec.getMass() * 1.75);//this should be S1BL
         }
     }
 

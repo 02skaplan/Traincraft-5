@@ -6,7 +6,7 @@ import net.minecraft.world.World;
 import train.common.api.AbstractStandardTankerCar;
 import train.common.entity.CargoManager;
 import train.common.entity.CargoSpecification;
-import train.common.library.EnumTrains;
+
 
 public class DUPX39200 extends AbstractStandardTankerCar {
 

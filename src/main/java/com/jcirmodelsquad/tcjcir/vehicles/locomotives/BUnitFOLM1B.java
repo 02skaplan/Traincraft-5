@@ -12,9 +12,9 @@ import net.minecraftforge.fluids.*;
 import train.common.Traincraft;
 import train.common.api.LiquidManager;
 import train.common.api.LiquidTank;
-import train.common.library.EnumTrains;
 import train.common.library.GuiIDs;
 
+@Deprecated
 public class BUnitFOLM1B extends LiquidTank implements IFluidHandler {
 	public int freightInventorySize;
 
@@ -22,9 +22,9 @@ public class BUnitFOLM1B extends LiquidTank implements IFluidHandler {
 	private LiquidManager.StandardTank theTank;
 
 	public BUnitFOLM1B(World world) {
-		super(world, EnumTrains.FOLM1B.getTankCapacity());
+		super(world, 0);
 		initFreightWater();
-		this.theTank = LiquidManager.getInstance().new FilteredTank(EnumTrains.FOLM1B.getTankCapacity(), LiquidManager.dieselFilter());
+		this.theTank = LiquidManager.getInstance().new FilteredTank(getTankCapacity(), LiquidManager.dieselFilter());
 	}
 
 	
@@ -54,14 +54,14 @@ public class BUnitFOLM1B extends LiquidTank implements IFluidHandler {
 
 		if (getAmount() > 0) {
 			// setColor(getColorFromString("Full"));
-			setDefaultMass(-EnumTrains.FOLM1B.getMass()*2);
+			setDefaultMass(-trainSpec.getMass()*2);
 			if ((motionX>0.01 || motionZ>0.01) && ticksExisted % 40 == 0) {
 				drain(ForgeDirection.UNKNOWN, 8,true);
 			}
 			
 		} else if (getAmount() <= 0) {
 			// setColor(getColorFromString("Empty"));
-			setDefaultMass(EnumTrains.FOLM1B.getMass());
+			setDefaultMass(trainSpec.getMass());
 		}
 	}
 

@@ -5,15 +5,13 @@ import net.minecraft.item.Item;
 import net.minecraft.world.World;
 import org.apache.logging.log4j.Level;
 import train.client.render.RenderEnum;
+import train.client.render.register.ITrainRenderRecord;
 import train.common.Traincraft;
 import train.common.api.AbstractTrains;
 import train.common.library.register.ITrainRecord;
-import train.client.render.register.ITrainRenderRecord;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class TraincraftRegistry
@@ -105,10 +103,6 @@ public class TraincraftRegistry
 
         HashMap<Item, ITrainRecord> trainRecords = new HashMap<>(trainRecordsByItem);
 
-        for (EnumTrains trains : EnumTrains.values()) {
-            trainRecords.put(trains.getItem(), trains);
-        }
-
         return trainRecords;
     }
 
@@ -117,12 +111,6 @@ public class TraincraftRegistry
         if(item== null)
         {
             return null;
-        }
-
-        for (EnumTrains trains : EnumTrains.values()) {
-            if(trains!=null && trains.getItem()!=null && trains.getItem() == item){
-                return trains;
-            }
         }
 
         if (trainRecordsByItem.containsKey(item))
@@ -136,12 +124,6 @@ public class TraincraftRegistry
 
     public ITrainRecord getTrainRecord(Class<?> entityClass)
     {
-        for (EnumTrains trains : EnumTrains.values()) {
-            if (trains.getEntityClass().equals(entityClass))
-            {
-                return trains;
-            }
-        }
 
         for (ITrainRecord trains : trainRecordsByItem.values()) {
             if (trains.getEntityClass().equals(entityClass))

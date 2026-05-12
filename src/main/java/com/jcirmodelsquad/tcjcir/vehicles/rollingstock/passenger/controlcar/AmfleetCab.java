@@ -6,7 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import train.common.api.AbstractControlCar;
 import train.common.library.EnumSounds;
-import train.common.library.EnumTrains;
+
 import train.common.library.sounds.SoundRecord;
 
 public class AmfleetCab extends AbstractControlCar
@@ -27,14 +27,6 @@ public class AmfleetCab extends AbstractControlCar
         InsertTexture(6, "JCTransit");
         InsertTexture(7, "CCRL (Chatham and Crator River Lines)");
         InsertTexture(8, "CRL (Crator River Lines)");
-    }
-
-    
-
-    @Override
-    public String getInventoryName()
-    {
-        return EnumTrains.amfleetcab.getInternalName();
     }
 
     @Override
