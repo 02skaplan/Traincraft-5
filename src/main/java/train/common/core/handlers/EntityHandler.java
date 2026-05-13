@@ -29,7 +29,9 @@ public class EntityHandler
 		// Don't forget to add a record to insert the render record
 		new RegisterTrains();
 
-		new RegisterBAPTrains();
+		Traincraft.traincraftRegistry
+				.RegisterRollingStockEntities(new RegisterBAPTrains().getRegister()
+						, Traincraft.instance);
 
 		//for(EnumTrains trains : EnumTrains.values())
 		//{

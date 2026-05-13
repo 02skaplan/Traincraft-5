@@ -1,12 +1,8 @@
 package train.common.library.register;
 
 import net.minecraft.item.Item;
-import train.common.core.util.TraincraftUtil;
 import train.common.enums.InventorySize;
 import train.common.library.EnumTrainType;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class TrainRecord implements ITrainRecord
 {
@@ -28,7 +24,7 @@ public class TrainRecord implements ITrainRecord
         this.item = item;
         this.trainType = enumTrainType.TrainType;
         this.mass = mass;
-        this.colors = TraincraftUtil.getBytesFromColors(colors);
+        this.colors = getBytesFromColors(colors);
         this.guiRenderScale = guiRenderScale;
     }
 
@@ -40,7 +36,7 @@ public class TrainRecord implements ITrainRecord
         this.item = item;
         this.trainType = trainType;
         this.mass = mass;
-        this.colors = TraincraftUtil.getBytesFromColors(colors);
+        this.colors = getBytesFromColors(colors);
         this.guiRenderScale = guiRenderScale;
     }
 
@@ -232,7 +228,7 @@ public class TrainRecord implements ITrainRecord
     public TrainRecord setTankCapacity(int capacity) { this.tankCapacity = capacity; return this; }
 
     public int[] getColors() { return this.colors; }
-    public TrainRecord setColors(String[] colors) { this.colors = TraincraftUtil.getBytesFromColors(colors); return this; }
+    public TrainRecord setColors(String[] colors) { this.colors = getBytesFromColors(colors); return this; }
 
     public double getBogieLocoPosition() { return this.bogieLocoPosition; }
     public TrainRecord setBogieLocoPosition(double offset) { this.bogieLocoPosition = offset; return this; }
@@ -295,4 +291,68 @@ public class TrainRecord implements ITrainRecord
 
     @Override
     public String name() { return this.entityClass.getName(); }
+
+    private static int[] getBytesFromColors(String[] c){
+        int[] ret = new int[c.length];
+        for(int i=0; i<c.length;i++){
+            ret[i]=getByteFromColor(c[i]);
+        }
+        return ret;
+    }
+
+    public static int getByteFromColor(String color)
+    {
+        switch (color)
+        {
+            case "Black":
+                return 0;
+            case "Red":
+                return 1;
+            case "Green":
+                return 2;
+            case "Brown":
+                return 3;
+            case "Blue":
+                return 4;
+            case "Purple":
+                return 5;
+            case "Cyan":
+                return 6;
+            case "LightGrey":
+                return 7;
+            case "Grey":
+                return 8;
+            case "Magenta":
+                return 13;
+            case "Lime":
+                return 10;
+            case "Yellow":
+                return 11;
+            case "LightBlue":
+                return 12;
+            case "Pink":
+                return 9;
+            case "Orange":
+                return 14;
+            case "White":
+                return 15;
+            default:
+            {
+                if (color.startsWith("Skin"))
+                {
+                    return Integer.parseInt(color.substring(4));
+                }
+            }
+        }
+
+        if (color.equals("Empty"))
+        {
+            return 100;
+        }
+        if (color.equals("Full"))
+        {
+            return 101;
+        }
+        return 0;
+    }
 }

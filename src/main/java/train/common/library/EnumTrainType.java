@@ -62,6 +62,18 @@ public enum EnumTrainType
         }
         return Other.TrainTypeCode;
     }
+
+    public static EnumTrainType GetTrainType(String text)
+    {
+        for (EnumTrainType trainType : EnumTrainType.values())
+        {
+            if (trainType.TrainType.equalsIgnoreCase(text))
+            {
+                return trainType;
+            }
+        }
+        return Other;
+    }
 }
 
 
