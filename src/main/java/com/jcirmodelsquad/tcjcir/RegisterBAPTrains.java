@@ -33,6 +33,8 @@ public class RegisterBAPTrains
     {
         return new LinkedHashMap<Item, ITrainRecord>()
         {{
+            //BAP Steam//
+
             // Climax2
             put(ItemIDs.minecartClimaxNew.item,
                     new TrainRecord("2TruckClimax", SteamClimaxNew.class, ItemIDs.minecartClimaxNew.item)
@@ -609,6 +611,8 @@ public class RegisterBAPTrains
                             .setColors(new String[] {"Black", "Green", "Yellow", "Red"})
                             .setGuiRenderScale(18)
             );
+
+            //EMD//
 
             // F3A
             put(ItemIDs.minecartF3A.item,
@@ -2073,6 +2077,8 @@ public class RegisterBAPTrains
                             .setBogieLocoPosition(-2.2)
             );
 
+            //GE//
+
             // GE44Ton
             put(ItemIDs.minecart44Ton.item,
                     new TrainRecord("GE 44-ton", DieselGE44Ton.class, ItemIDs.minecart44Ton.item)
@@ -2957,6 +2963,8 @@ public class RegisterBAPTrains
                             .setBogieLocoPosition(-3.5)
             );
 
+            //CEE (Pre GE Involvement)//
+
             // CEE4ED172T
             put(ItemIDs.minecart4ED172T.item,
                     new TrainRecord("4ED172T", Diesel4ED172T.class, ItemIDs.minecart4ED172T.item)
@@ -3024,6 +3032,8 @@ public class RegisterBAPTrains
                             .setGuiRenderScale(14)
                             .setBogieLocoPosition(-2.85)
             );
+
+            //ALCO-MLW//
 
             // AlcoPA1
             put(ItemIDs.minecartAlcoPA1.item,
@@ -3603,6 +3613,8 @@ public class RegisterBAPTrains
                             .setBogieLocoPosition(-3.45)
             );
 
+            //BLH-BLW//
+
             // VO1000
             put(ItemIDs.minecartVO1000.item,
                     new TrainRecord("VO1000", DieselVO1000.class, ItemIDs.minecartVO1000.item)
@@ -3756,6 +3768,8 @@ public class RegisterBAPTrains
                             .setBogieLocoPosition(-2.675)
             );
 
+            //FM//
+
             // H1044
             put(ItemIDs.minecartH1044.item,
                     new TrainRecord("H1044", DieselH1044.class, ItemIDs.minecartH1044.item)
@@ -3840,6 +3854,8 @@ public class RegisterBAPTrains
                             .setGuiRenderScale(12)
                             .setBogieLocoPosition(-3.75)
             );
+
+            //MISC//
 
             // NRE3gs21b
             put(ItemIDs.minecartNRE3gs21b.item,
@@ -3945,6 +3961,8 @@ public class RegisterBAPTrains
                             .setBogieLocoPosition(-2.8)
             );
 
+            //SLUGS & EXTRAS//
+
             // SlugMA
             put(ItemIDs.minecartSlugMA.item,
                     new TrainRecord("SlugMA", SlugMA.class, ItemIDs.minecartSlugMA.item)
@@ -4017,6 +4035,8 @@ public class RegisterBAPTrains
                             .setGuiRenderScale(14)
                             .setBogieLocoPosition(-1.95)
             );
+
+            //ELECTRICS//
 
             // EF1
             put(ItemIDs.minecartEF1.item,
@@ -4133,6 +4153,8 @@ public class RegisterBAPTrains
                             .setGuiRenderScale(14)
                             .setBogieLocoPosition(-3.1)
             );
+
+            //Freight - Hoppers//
 
             // RoundHopper
             put(ItemIDs.minecartRoundHopper.item,
@@ -4266,6 +4288,8 @@ public class RegisterBAPTrains
                             .setAdditionalTooltip(new String[] {"Cargo: Any."})
             );
 
+            //Freight - Centerbeams & Flats//
+
             // Freight60centerbeam
             put(ItemIDs.minecart60centerbeam.item,
                     new TrainRecord("60centerbeam", Freight60centerbeam.class, ItemIDs.minecart60centerbeam.item)
@@ -4382,6 +4406,8 @@ public class RegisterBAPTrains
                             .setCargoCapacity(18)
                             .setAdditionalTooltip(new String[] {"Cargo: whatever flatcars carry i guess"})
             );
+
+            //Freight - Boxcars//
 
             // PS140
             put(ItemIDs.minecartPS140.item,
@@ -4658,6 +4684,8 @@ public class RegisterBAPTrains
                             .setAdditionalTooltip(new String[] {"Cargo: Cold Things you Dumbass."})
             );
 
+            //Freight - Gondola//
+
             // VersaLongi
             put(ItemIDs.minecartVersaLongi.item,
                     new TrainRecord("VersaLongi", VersaLongi.class, ItemIDs.minecartVersaLongi.item)
@@ -4794,6 +4822,8 @@ public class RegisterBAPTrains
                             .setAdditionalTooltip(new String[] {"Cargo: Any."})
             );
 
+            //Freight - Tanks//
+
             // DOT11111000
             put(ItemIDs.minecart11000DOT111.item,
                     new TrainRecord("DOT11000", DOT11111000.class, ItemIDs.minecart11000DOT111.item)
@@ -4873,6 +4903,8 @@ public class RegisterBAPTrains
                             .setColors(new String[] {"Black"})
                             .setGuiRenderScale(14)
             );
+
+            //Freight - Various//
 
             // SkeletonCar
             put(ItemIDs.minecartSkeletonLogCar.item,
@@ -4969,6 +5001,8 @@ public class RegisterBAPTrains
                             .setAdditionalTooltip(new String[] {"Cargo: Steel Coils & Likewise"})
             );
 
+            //Passenger - PCH//
+
             // pch120commute
             put(ItemIDs.minecartPCH120Commute.item,
                     new TrainRecord("PCH-120 Commute", PCH120Commute.class, ItemIDs.minecartPCH120Commute.item)
@@ -5063,6 +5097,8 @@ public class RegisterBAPTrains
                             .setColors(new String[]{"White", "Grey","Lime"})
                             .setGuiRenderScale(10)
             );
+
+            //Passenger - Dominiks collection//
 
             // PSRPO
             put(ItemIDs.minecartPSRPO.item,
@@ -6041,6 +6077,8 @@ public class RegisterBAPTrains
                             .setGuiRenderScale(10)
             );
 
+            //Passenger - Amfleets//
+
             // amfleet
             put(ItemIDs.minecartAmfleet.item,
                     new TrainRecord("Amfleet", Amfleet.class, ItemIDs.minecartAmfleet.item)
@@ -6086,6 +6124,8 @@ public class RegisterBAPTrains
                             .setGuiRenderScale(14)
             );
 
+            //Passenger - Polar Express//
+
             // PEcoach
             put(ItemIDs.minecartPEcooch.item,
                     new TrainRecord("PEcoach", PEcoach.class, ItemIDs.minecartPEcooch.item)
@@ -6103,6 +6143,8 @@ public class RegisterBAPTrains
                             .setColors(new String[]{"Blue", "Cyan"})
                             .setGuiRenderScale(10)
             );
+
+            //Caboose//
 
             // WVcaboose
             put(ItemIDs.minecartWVcaboose.item,
@@ -6185,6 +6227,8 @@ public class RegisterBAPTrains
                             .setGuiRenderScale(16)
             );
 
+            //Interurban & Street//
+
             // W_A11
             put(ItemIDs.minecartW_A11.item,
                     new TrainRecord("SEC W-A11", ElectricW_A11.class, ItemIDs.minecartW_A11.item)
@@ -6232,6 +6276,8 @@ public class RegisterBAPTrains
                             .setGuiRenderScale(10)
                             .setBogieLocoPosition(-2.55)
             );
+
+            //Funny shit
 
             // BigMeme
             put(ItemIDs.minecartBigMeme.item,
@@ -6310,6 +6356,8 @@ public class RegisterBAPTrains
                             .setBogieLocoPosition(-2)
                             .setAdditionalTooltip(new String[] {"hhhgregg, Panasonic Blu-ray nintey-nine dollars, thirty-two inch LCD TV two-nintey nine, LG fourty-two inch HD TV only four eighty-nine, everything on sale during chirstmas in"})
             );
+
+            //Across the pond//
 
             // Class74
             put(ItemIDs.minecartClass74.item,
@@ -6512,23 +6560,6 @@ public class RegisterBAPTrains
                             .setAdditionalTooltip(new String[] {"Checks the railroad for things up to standard"})
             );
 
-            // HighrailTruck
-            put(ItemIDs.minecartHighrailTruck.item,
-                    new TrainRecord("Highrail Truck", DieselHighrailTruck.class, ItemIDs.minecartHighrailTruck.item)
-                            .setTrainType(EnumTrainType.Diesel)
-                            .setMHP(90)
-                            .setMaxSpeed(80)
-                            .setMass(0)
-                            .setFuelConsumption(10)
-                            .setHeatingTime(140)
-                            .setAccelerationRate(0.7)
-                            .setBrakeRate(0.8)
-                            .setTankCapacity(1000)
-                            .setColors(new String[] {"Yellow", "White", "LightGrey"})
-                            .setGuiRenderScale(18)
-                            .setBogieLocoPosition(2.7)
-            );
-
             // FRED
             put(ItemIDs.minecartFRED.item,
                     new TrainRecord("FRED", com.jcirmodelsquad.tcjcir.vehicles.rollingstock.misc.FRED.class, ItemIDs.minecartFRED.item)
@@ -6550,6 +6581,8 @@ public class RegisterBAPTrains
                             .setCargoCapacity(9)
             );
 
+            //Vehicles//
+
             // HighrailVan
             put(ItemIDs.minecartHighrailVan.item,
                     new TrainRecord("Highrail Van", DieselHighrailVan.class, ItemIDs.minecartHighrailVan.item)
@@ -6563,6 +6596,23 @@ public class RegisterBAPTrains
                             .setBrakeRate(0.8)
                             .setTankCapacity(1000)
                             .setColors(new String[] {"Yellow", "White", "Grey", "Orange", "Green"})
+                            .setGuiRenderScale(18)
+                            .setBogieLocoPosition(2.7)
+            );
+
+            // HighrailTruck
+            put(ItemIDs.minecartHighrailTruck.item,
+                    new TrainRecord("Highrail Truck", DieselHighrailTruck.class, ItemIDs.minecartHighrailTruck.item)
+                            .setTrainType(EnumTrainType.Diesel)
+                            .setMHP(90)
+                            .setMaxSpeed(80)
+                            .setMass(0)
+                            .setFuelConsumption(10)
+                            .setHeatingTime(140)
+                            .setAccelerationRate(0.7)
+                            .setBrakeRate(0.8)
+                            .setTankCapacity(1000)
+                            .setColors(new String[] {"Yellow", "White", "LightGrey"})
                             .setGuiRenderScale(18)
                             .setBogieLocoPosition(2.7)
             );
