@@ -37,6 +37,8 @@ public class FNCC2375Hopper extends AbstractStandardFreightCar
 		InsertTexture(14, "AA (Ferry in the Fog)");
 		InsertTexture(15, "SPB");
 		InsertTexture(16, "GLNT");
+		InsertTexture(17, "AGW");
+		InsertTexture(18, "AGW 2");
 	}
 
 	@Override

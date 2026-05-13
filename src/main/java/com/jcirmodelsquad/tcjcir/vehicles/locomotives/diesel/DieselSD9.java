@@ -35,6 +35,8 @@ public class DieselSD9 extends DieselTrain {
         InsertTexture(11, "DLMR", LockoutGroup.DLMR);
         InsertTexture(12, "WV");
         InsertTexture(13, "CNRC 6100 - 6102 (Bida Fictional)"/*, LockoutGroup.CNRC*/);
+        InsertTexture(14, "DMIR (Early)");
+        InsertTexture(15, "DMIR (Arrow)");
     }
 
     @Override

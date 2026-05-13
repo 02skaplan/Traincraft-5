@@ -1456,7 +1456,7 @@ public class RegisterBAPTrains
                             .setAccelerationRate(0.75)
                             .setBrakeRate(0.85)
                             .setTankCapacity(12000)
-                            .setColors(new String[] {"Red", "Black", "Orange", "Skin17", "Cyan", "LightGrey", "Skin18", "Yellow", "Magenta", "Skin19", "Skin20", "Pink", "Skin21", "Skin22"})
+                            .setColors(new String[] {"Red", "Black", "Orange", "Skin17", "Cyan", "LightGrey", "Skin18", "Yellow", "Magenta", "Skin19", "Skin20", "Pink", "Skin21", "Skin22", "Purple", "Skin23"})
                             .setGuiRenderScale(14)
                             .setBogieLocoPosition(-3.05)
             );
@@ -4183,7 +4183,7 @@ public class RegisterBAPTrains
                     new TrainRecord("FNCC2375Hopper", FNCC2375Hopper.class, ItemIDs.minecartFNCC2375Hopper.item)
                             .setTrainType(EnumTrainType.CoveredHopper)
                             .setMass(2.5)
-                            .setColors(new String[]{"Cyan", "Green", "Black", "LightGrey", "Blue", "Skin16", "Skin17", "Purple", "Magenta", "Pink", "Yellow", "Red", "Skin18", "Skin19", "Skin20", "Skin21", "Skin22"})
+                            .setColors(new String[]{"Cyan", "Green", "Black", "LightGrey", "Blue", "Skin16", "Skin17", "Purple", "Magenta", "Pink", "Yellow", "Red", "Skin18", "Skin19", "Skin20", "Skin21", "Skin22", "Skin23", "Skin24"})
                             .setGuiRenderScale(15)
                             .setCargoCapacity(27)
                             .setAdditionalTooltip(new String[] {"Cargo: Any."})
@@ -6579,7 +6579,7 @@ public class RegisterBAPTrains
                             .setAccelerationRate(0.95)
                             .setBrakeRate(0.8)
                             .setTankCapacity(2000)
-                            .setColors(new String[] {"LightGrey", "Grey", "Cyan", "Yellow", "Skin17", "Orange", "Skin18"})
+                            .setColors(new String[] {"LightGrey", "Grey", "Cyan", "Yellow", "Skin17", "Orange", "Skin18", "Red"})
                             .setGuiRenderScale(20)
                             .setBogieLocoPosition(-2.0)
             );
