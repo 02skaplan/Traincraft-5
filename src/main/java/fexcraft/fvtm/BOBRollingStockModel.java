@@ -58,7 +58,14 @@ public class BOBRollingStockModel extends FVTMFormatBase {
         if (info == null) {
             info = details.get(0);
         }
-        if (info == null) { return; }
+        if (((AbstractTrains) entity).getCargoManager() != null)
+        {
+            ((AbstractTrains) entity).getCargoManager().renderCargo((AbstractTrains) entity, f, f1, f2, f3, f4, f5);
+        }
+        if (info == null)
+        {
+            return;
+        }
         for (int i = 0; i < info.models.size(); i++) {
             GL11.glPushMatrix();
             if (info.textures.size() > i && info.textures.get(i) != null) {

@@ -1,6 +1,9 @@
 package train.common.entity;
 
+import tmt.ModelBase;
 import tmt.ModelConverter;
+import train.common.entity.cargoManagerProvider.CargoModelClassProvider;
+import train.common.entity.cargoManagerProvider.ICargoModelProvider;
 import train.common.library.Info;
 
 import java.util.LinkedList;
@@ -10,8 +13,9 @@ import java.util.LinkedList;
  * <p>Stores information about an individual custom load's model, texture, offset, rotation, and scale.</p>
  * <p>Models may have more than one CargoSpecification, stored in the cargoSpecificationList of its entity's CargoManager.</p>
  */
-public class CargoSpecification {
-    public final Class<? extends ModelConverter> cargoModelClass;
+public class CargoSpecification
+{
+    private final ICargoModelProvider modelProvider;
     public final String resourceDomain;
     public final String textureFile;
     public final String textureName;
@@ -147,7 +151,7 @@ public class CargoSpecification {
 
     @Deprecated
     public CargoSpecification(Class<? extends ModelConverter> cargoModelClass, String textureFile, String textureName, double offsetX, double offsetY, double offsetZ) {
-        this.cargoModelClass = cargoModelClass;
+        this.modelProvider = new CargoModelClassProvider(cargoModelClass);
         this.textureFile = textureFile;
         this.textureName = textureName;
         this.renderParameters = new RenderParameters();
@@ -157,7 +161,7 @@ public class CargoSpecification {
 
     @Deprecated
     public CargoSpecification(Class<? extends ModelConverter> cargoModelClass, String textureFile, String textureName, double offsetX, double offsetY, double offsetZ, double scaleX, double scaleY, double scaleZ) {
-        this.cargoModelClass = cargoModelClass;
+        this.modelProvider = new CargoModelClassProvider(cargoModelClass);
         this.textureFile = textureFile;
         this.textureName = textureName;
         this.renderParameters = new RenderParameters();
@@ -168,11 +172,12 @@ public class CargoSpecification {
 
 
     public CargoSpecification(Class<? extends ModelConverter> cargoModelClass, String textureFile, String textureName, RenderParameters renderParameters) {
-        this.cargoModelClass = cargoModelClass;
+        this.modelProvider = new CargoModelClassProvider(cargoModelClass);
         this.textureFile = textureFile;
         this.textureName = textureName;
         this.renderParameters = renderParameters;
         resourceDomain = Info.resourceLocation;
+
     }
 
     /**
@@ -184,10 +189,47 @@ public class CargoSpecification {
      * @param renderParameters
      */
     public CargoSpecification(Class<? extends ModelConverter> cargoModelClass, String resourceDomain, String textureFile, String textureName, RenderParameters renderParameters) {
-        this.cargoModelClass = cargoModelClass;
+        this.modelProvider = new CargoModelClassProvider(cargoModelClass);
         this.resourceDomain = resourceDomain;
         this.textureFile = textureFile;
         this.textureName = textureName;
         this.renderParameters = renderParameters;
+    }
+
+    public CargoSpecification(
+            ICargoModelProvider modelProvider,
+            String textureFile,
+            String textureName,
+            RenderParameters renderParameters
+    ) {
+        this(
+                modelProvider,
+                Info.resourceLocation,
+                textureFile,
+                textureName,
+                renderParameters
+        );
+    }
+
+    public CargoSpecification(
+            ICargoModelProvider modelProvider,
+            String resourceDomain,
+            String textureFile,
+            String textureName,
+            RenderParameters renderParameters
+    ) {
+        this.resourceDomain = resourceDomain;
+        this.textureFile = textureFile;
+        this.textureName = textureName;
+        this.renderParameters = renderParameters;
+        this.modelProvider = modelProvider;
+    }
+
+    public ModelBase getModel() {
+        if (modelProvider == null) {
+            return null;
+        }
+
+        return modelProvider.getModel();
     }
 }
