@@ -234,9 +234,9 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         JsonObject gui = new JsonObject();
         gui.addProperty("cartsPulled", currentNumCartsPulled);
         gui.addProperty("massPulled", currentMassPulled);
-        gui.addProperty("slowDown", currentSpeedSlowDown);
-        gui.addProperty("accelSlowDown", currentAccelSlowDown);
-        gui.addProperty("brakeSlowDown", currentBrakeSlowDown);
+        gui.addProperty("slowDown", (double)Math.round(currentSpeedSlowDown*1000)/1000);
+        gui.addProperty("accelSlowDown", (double)Math.round(currentAccelSlowDown*1000)/1000);
+        gui.addProperty("brakeSlowDown", (double)Math.round(currentBrakeSlowDown*1000)/1000);
         gui.addProperty("fuelUseChange", currentFuelConsumptionChange);
         return gui.toString();
     }
