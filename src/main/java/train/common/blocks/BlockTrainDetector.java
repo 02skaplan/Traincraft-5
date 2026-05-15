@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -16,6 +17,9 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import train.common.Traincraft;
+import train.common.entity.TrustedPlayer;
+import train.common.items.ItemPadlock;
+import train.common.library.GuiIDs;
 import train.common.library.Info;
 import train.common.library.ItemIDs;
 import train.common.tile.TileHelper;
@@ -65,37 +69,47 @@ public class BlockTrainDetector extends BlockContainer {
 		if (te instanceof TileTrainDetector) {
 			TileTrainDetector detectorTile = ((TileTrainDetector) te);
 			ItemStack handItem = player.getHeldItem();
-			if (handItem == null || handItem.getItem() != ItemIDs.composite_wrench.item)
+			if (handItem == null || (handItem.getItem() != ItemIDs.composite_wrench.item && handItem.getItem() != ItemIDs.padlock.item))
 				return false; //don't know if this is the correct return
-			if (player.isSneaking()) { // Clear paired tracks.
-				for (TileTCRail linkedRail : detectorTile.getPairedTrack()) {
-					linkedRail.getPairedDetectors().remove(detectorTile);
+			if (handItem.getItem() == ItemIDs.padlock.item && player.isSneaking()) {
+				// If player is trying to access the lock menu using the padlock…
+				if (world.isRemote && (player.isSneaking()) && (player.inventory.getCurrentItem() != null) && (player.inventory.getCurrentItem().getItem() instanceof ItemPadlock)
+						&& ((player.getDisplayName().equalsIgnoreCase(detectorTile.getOwner())) || (player.canCommandSenderUseCommand(2, "")))) {
+					player.openGui(Traincraft.instance, GuiIDs.LOCK_MENU_LOCKABLES, world, detectorTile.xCoord, detectorTile.yCoord, detectorTile.zCoord);
 				}
-				detectorTile.getPairedTrack().clear();
-				// All entities that have stored this detector will refresh after the next tick.
-				// Entities stored in the detector will likewise be cleared after the next tick.
-				if (!world.isRemote)
-					player.addChatComponentMessage(new ChatComponentText("Cleared all paired tracks from detector."));
-			} else {
-				// Start or end pairing.
-				NBTTagCompound playerMetadata = player.getEntityData();
-				if (!playerMetadata.hasKey("TC_Train_Detector_Pairing")) {
-					// Start Pairing
+			} else if ((TrustedPlayer.isPlayerTrusted(player.getDisplayName(), detectorTile.getTrustedList()) || detectorTile.getOwner().equalsIgnoreCase(player.getDisplayName()))) {
+				// If player is trusted to modify the detector…
+				if (handItem.getItem() == ItemIDs.composite_wrench.item && player.isSneaking()) {
+					// Clearing paired tracks.
+					for (TileTCRail linkedRail : detectorTile.getPairedTrack()) {
+						linkedRail.getPairedDetectors().remove(detectorTile);
+					}
+					detectorTile.getPairedTrack().clear();
+					// All entities that have stored this detector will refresh after the next tick.
+					// Entities stored in the detector will likewise be cleared after the next tick.
 					if (!world.isRemote)
-						player.addChatComponentMessage(new ChatComponentText("Starting track pairing."));
-					playerMetadata.setInteger("TC_Train_Detector_Pairing", 0);
-					playerMetadata.setInteger("TC_Train_Detector_BlockX", blockX);
-					playerMetadata.setInteger("TC_Train_Detector_BlockY", blockY);
-					playerMetadata.setInteger("TC_Train_Detector_BlockZ", blockZ);
-				} else {
-					// End Pairing
-					int numPairedTracks = playerMetadata.getInteger("TC_Train_Detector_Pairing");
-					if (!world.isRemote)
-						player.addChatComponentMessage(new ChatComponentText("Ending track pairing. A total of " + numPairedTracks + " have been paired."));
-					playerMetadata.removeTag("TC_Train_Detector_Pairing");
-					playerMetadata.removeTag("TC_Train_Detector_BlockX");
-					playerMetadata.removeTag("TC_Train_Detector_BlockY");
-					playerMetadata.removeTag("TC_Train_Detector_BlockZ");
+						player.addChatComponentMessage(new ChatComponentText("Cleared all paired tracks from detector."));
+				} else if (handItem.getItem() == ItemIDs.composite_wrench.item) {
+					// Start or end pairing.
+					NBTTagCompound playerMetadata = player.getEntityData();
+					if (!playerMetadata.hasKey("TC_Train_Detector_Pairing")) {
+						// Start Pairing
+						if (!world.isRemote)
+							player.addChatComponentMessage(new ChatComponentText("Starting track pairing."));
+						playerMetadata.setInteger("TC_Train_Detector_Pairing", 0);
+						playerMetadata.setInteger("TC_Train_Detector_BlockX", blockX);
+						playerMetadata.setInteger("TC_Train_Detector_BlockY", blockY);
+						playerMetadata.setInteger("TC_Train_Detector_BlockZ", blockZ);
+					} else {
+						// End Pairing
+						int numPairedTracks = playerMetadata.getInteger("TC_Train_Detector_Pairing");
+						if (!world.isRemote)
+							player.addChatComponentMessage(new ChatComponentText("Ending track pairing. A total of " + numPairedTracks + " have been paired."));
+						playerMetadata.removeTag("TC_Train_Detector_Pairing");
+						playerMetadata.removeTag("TC_Train_Detector_BlockX");
+						playerMetadata.removeTag("TC_Train_Detector_BlockY");
+						playerMetadata.removeTag("TC_Train_Detector_BlockZ");
+					}
 				}
 			}
 		}
@@ -120,15 +134,15 @@ public class BlockTrainDetector extends BlockContainer {
 		world.markBlockForUpdate(i, j, k);
 	}
 
-//	@Override
-//	public void onBlockPlacedBy(World world, int i, int j, int k, EntityLivingBase entityliving, ItemStack stack) {
-//		TileTrainDetector detector = (TileTrainDetector) world.getTileEntity(i, j, k);
-//		if (detector != null) {
-//			int dir = MathHelper.floor_double((double) ((entityliving.rotationYaw * 4F) / 360F) + 0.5D) & 3;
-//			detector.setFacing(ForgeDirection.getOrientation(dir == 0 ? 2 : dir == 1 ? 5 : dir == 2 ? 3 : 4));
-//			world.markBlockForUpdate(i, j, k);
-//		}
-//	}
+	@Override
+	public void onBlockPlacedBy(World world, int i, int j, int k, EntityLivingBase entityliving, ItemStack stack) {
+		super.onBlockPlacedBy(world, i, j, k, entityliving, stack);
+		TileTrainDetector detector = (TileTrainDetector) world.getTileEntity(i, j, k);
+		if (detector != null) {
+			detector.setOwner(entityliving.getCommandSenderName());
+			world.markBlockForUpdate(i, j, k);
+		}
+	}
 
 	@Override
 	public TileEntity createNewTileEntity(World world, int meta) {

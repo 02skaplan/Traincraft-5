@@ -10,15 +10,13 @@ package train.common.tile;
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
-import net.minecraft.network.Packet;
-import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.Constants;
 import net.minecraftforge.common.util.ForgeDirection;
 
 import java.util.LinkedList;
 
-public class TileTrainDetector extends TileEntity {
+public class TileTrainDetector extends TileLockable {
 
 	private ForgeDirection facing;
 	private final LinkedList<TileTCRail> pairedTrack;
@@ -26,7 +24,7 @@ public class TileTrainDetector extends TileEntity {
 	private final LinkedList<EntityMinecart> activeEntities;
 	boolean state = false;
 	private boolean needsInit = false;
-	private int[][] linkedDetectorCoordinates;
+	private int[][] linkedTrackCoordinates;
 
 	public TileTrainDetector() {
 		pairedTrack = new LinkedList<>();
@@ -60,23 +58,20 @@ public class TileTrainDetector extends TileEntity {
 	public void readFromNBT(NBTTagCompound nbtTag) {
 		super.readFromNBT(nbtTag);
 		facing = ForgeDirection.getOrientation(nbtTag.getByte("Orientation"));
+
+		// Read paired tracks from NBT.
 		NBTTagList tagList = nbtTag.getTagList("PairedTracks", Constants.NBT.TAG_COMPOUND);
-		linkedDetectorCoordinates = new int[tagList.tagCount()][3];
+		linkedTrackCoordinates = new int[tagList.tagCount()][3];
 		for (int i = 0; i < tagList.tagCount(); i++) {
 			NBTTagCompound tagCompound = tagList.getCompoundTagAt(i);
 			int[] coordinateArray = tagCompound.getIntArray("Coordinates");
-            System.arraycopy(coordinateArray, 0, linkedDetectorCoordinates[i], 0, 3);
-//			TileEntity te = worldObj.getTileEntity(coordinateArray[0], coordinateArray[1], coordinateArray[2]);
-//			if (te instanceof TileTCRail) {
-//				pairedTrack.add(((TileTCRail) te));
-//			}
+            System.arraycopy(coordinateArray, 0, linkedTrackCoordinates[i], 0, 3);
 		}
 		needsInit = true;
 	}
 
 	@Override
 	public void writeToNBT(NBTTagCompound nbtTag) {
-
 		super.writeToNBT(nbtTag);
 
 		if (facing != null) {
@@ -86,6 +81,7 @@ public class TileTrainDetector extends TileEntity {
 			nbtTag.setByte("Orientation", (byte) ForgeDirection.NORTH.ordinal());
 		}
 
+		// Write paired tracks to NBT.
 		NBTTagList tagList = new NBTTagList();
 		NBTTagCompound tagCompound;
 		for (TileTCRail pairedTrack : pairedTrack) {
@@ -99,18 +95,9 @@ public class TileTrainDetector extends TileEntity {
 	public ForgeDirection getFacing() {
 		return (facing != null ? this.facing : ForgeDirection.NORTH);
 	}
-
 	public void setFacing(ForgeDirection face) {
 		this.facing = face;
 	}
-
-	@Override
-	public Packet getDescriptionPacket() {
-		NBTTagCompound nbt = new NBTTagCompound();
-		this.writeToNBT(nbt);
-		return new S35PacketUpdateTileEntity(this.xCoord, this.yCoord, this.zCoord, 1, nbt);
-	}
-
     public LinkedList<TileTCRail> getPairedTrack() {
         return pairedTrack;
     }
@@ -132,7 +119,7 @@ public class TileTrainDetector extends TileEntity {
 	 * to live references to the track tiles themselves.</p>
 	 */
 	private void updateLinkedRails() {
-		for (int[] coordinateArray : linkedDetectorCoordinates) {
+		for (int[] coordinateArray : linkedTrackCoordinates) {
 			TileEntity te = worldObj.getTileEntity(coordinateArray[0], coordinateArray[1], coordinateArray[2]);
 			if (te instanceof TileTCRail) {
 				pairedTrack.add(((TileTCRail) te));
