@@ -16,6 +16,26 @@ import net.minecraftforge.common.util.ForgeDirection;
 
 import java.util.LinkedList;
 
+/**
+ * @author 02skaplan
+ * @author broscolotos
+ * <h1>Train Detector Tile Class</h1>
+ * <p>Contains all code to run train detector functions on both server and client side.</p><br></br>
+ * <h2>Server/Client Differences</h2>
+ * <p>Both the client and the server are similarly informed; all fields should be accessible and live on both
+ * client and server side</p><br></br>
+ * <h2>Tile Functions</h2>
+ * <p>The tile stores coordinates of all paired track in a two-dimensional array stored in NBT. However, we cannot update the refernces
+ * to the rail tiles as soon as the NBT is loaded if the world has not yet loaded. We use the {@code needsInit} flag, which
+ * is run on the first tick of the tile, to update the refernces to the paired track in {@code pairedTrack} as soon as the world
+ * is loaded by running {@code updatePairedRails()}.</p><br></br>
+ * <h2>What is Done Elsewhere?</h2>
+ * <ul>
+ * 	<li>Pairing code is run on both client and server and is handled in {@link train.common.blocks.BlockTrainDetector}.</li>
+ * 	<li>Entities add and remove themselves from detectors in the {@code handleTrainDetector()} method of {@link train.common.api.EntityRollingStock}.</li>
+ * </ul>
+ */
+
 public class TileTrainDetector extends TileLockable {
 
 	private ForgeDirection facing;

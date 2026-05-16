@@ -26,6 +26,19 @@ import train.common.tile.TileHelper;
 import train.common.tile.TileTCRail;
 import train.common.tile.TileTrainDetector;
 
+/**
+ * @author 02skaplan
+ * @author broscolotos
+ * <h1>Train Detector Block Class</h1>
+ * <p>Manages the Train Detector block. Primarily handles user interaction (pairing/resetting using composite wrench and
+ * right-clicking to access padlock menu) and manages its associated {@link train.common.tile.TileTrainDetector}.
+ * Most other code pertaining to the Train Detector is found in {@link train.common.blocks.BlockTrainDetector} and
+ * the {@code handleTrainDetector()} method of {@link train.common.api.EntityRollingStock}.</p><br></br>
+ * <h2>Server/Client Differences</h2>
+ * <p>Both the client and the server are similarly informed. Pairing is done on both client and server side to avoid
+ * the need for a packet. The only syncing occurs when NBT is loaded and that utilizes the
+ * default tile entity packet, {@link net.minecraft.network.play.server.S35PacketUpdateTileEntity}.</p><br></br>
+ */
 public class BlockTrainDetector extends BlockContainer {
 
 	private IIcon textureTop;
@@ -76,8 +89,10 @@ public class BlockTrainDetector extends BlockContainer {
 				if (world.isRemote && (player.isSneaking()) && (player.inventory.getCurrentItem() != null) && (player.inventory.getCurrentItem().getItem() instanceof ItemPadlock)
 						&& ((player.getDisplayName().equalsIgnoreCase(detectorTile.getOwner())) || (player.canCommandSenderUseCommand(2, "")))) {
 					player.openGui(Traincraft.instance, GuiIDs.LOCK_MENU_LOCKABLES, world, detectorTile.xCoord, detectorTile.yCoord, detectorTile.zCoord);
+				} else {
+					return false;
 				}
-			} else if ((TrustedPlayer.isPlayerTrusted(player.getDisplayName(), detectorTile.getTrustedList()) || detectorTile.getOwner().equalsIgnoreCase(player.getDisplayName()))) {
+			} else if (!detectorTile.isLocked() || (TrustedPlayer.isPlayerTrusted(player.getDisplayName(), detectorTile.getTrustedList()) || detectorTile.getOwner().equalsIgnoreCase(player.getDisplayName()))) {
 				// If player is trusted to modify the detector…
 				if (handItem.getItem() == ItemIDs.composite_wrench.item && player.isSneaking()) {
 					// Clearing paired tracks.
@@ -111,6 +126,8 @@ public class BlockTrainDetector extends BlockContainer {
 						playerMetadata.removeTag("TC_Train_Detector_BlockZ");
 					}
 				}
+			} else {
+				return false;
 			}
 		}
 		return true;
