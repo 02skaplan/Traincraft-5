@@ -457,7 +457,7 @@ public class RecipeHandler extends AbstractRecipeHandler
 				/* Composite Material*/
 				TrainCraftingManager.instance.addRecipe(new ItemStack(ItemIDs.reinforcedPlastic.item, 16),  "LPL", "PLP", "GPG", Character.valueOf('G'), Blocks.glass_pane, Character.valueOf('P'), ItemIDs.graphite.item, Character.valueOf('L'), plastic);
 
-				TrainCraftingManager.instance.addRecipe(new ItemStack(ItemIDs.copperWireFine.item, 6),  "XXX", "XPX", "XXX", Character.valueOf('X'), ironCopper , Character.valueOf('P'), plastic );
+				TrainCraftingManager.instance.addRecipe(new ItemStack(ItemIDs.copperWireFine.item, 6),  "XXX", "XPX", "XXX", Character.valueOf('X'), ingotCopper, Character.valueOf('P'), plastic );
 			}
 		}
 		
@@ -611,7 +611,7 @@ public class RecipeHandler extends AbstractRecipeHandler
 
 
 		TrainCraftingManager.instance.addRecipe(new ItemStack(ItemIDs.interurbanTruck.item,1), "MCM", "SSS", "W W", 'W', new ItemStack(ItemIDs.bogie.item), 'S', itemSteel, 'M', new ItemStack(ItemIDs.electmotor.item), 'C', ItemIDs.ingotCopper.item); //interurban truck
-		TrainCraftingManager.instance.addRecipe(new ItemStack(ItemIDs.pantograph.item,2), " C ", "S S", " S ", 'S', itemSteel, 'C', ItemIDs.ingotCopper.item); //pantograph
+		TrainCraftingManager.instance.addRecipe(new ItemStack(ItemIDs.pantograph.item,2), " C ", "S S", " S ", 'S', itemSteel, 'C', ingotCopper); //pantograph
 
 		/* freight car and caboose parts */
 
@@ -662,7 +662,7 @@ public class RecipeHandler extends AbstractRecipeHandler
 
 
 		TrainCraftingManager.instance.addRecipe(new ItemStack(ItemIDs.partAlternator.item, 2), "## ", "$$E", "## ", '$', wireCopper, 'E', circuitBasic, '#', ironingot);
-		TrainCraftingManager.instance.addRecipe(new ItemStack(ItemIDs.partTurboExhaust.item, 2), "S S", "S S", "SPS", 'S', ItemIDs.steel.item, 'P', ItemIDs.piston.item);
+		TrainCraftingManager.instance.addRecipe(new ItemStack(ItemIDs.partTurboExhaust.item, 2), "S S", "S S", "SPS", 'S', itemSteel, 'P', ItemIDs.piston.item);
 
 
 		TrainCraftingManager.instance.addRecipe(new ItemStack(TrackItemIDs.tcRailSmallStraight.item, 1),  "   ", " R ", "   ", Character.valueOf('R'), Item.getItemFromBlock(Blocks.rail));// small straight track

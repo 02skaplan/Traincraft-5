@@ -89,7 +89,7 @@ public abstract class AbstractRecipeHandler
         return new ItemStack(ItemIDs.steel.item, amount);
     }
 
-    public final String ironCopper = "ingotCopper";
+    public final String ingotCopper = "ingotCopper";
     public final String ingotGold = "ingotGold";
     public final String circuitBasic = "circuitBasic";
     public final String wireCopper = "wireCopper";
