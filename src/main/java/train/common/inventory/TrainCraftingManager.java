@@ -5,11 +5,10 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import net.minecraftforge.oredict.OreDictionary;
 import train.common.core.interfaces.ITCRecipe;
-import train.common.recipes.OpenHearthFurnaceRecipe;
 import train.common.recipes.ITCRecipe.ShapedTrainRecipes;
 import train.common.recipes.ITCRecipe.ShapelessTrainRecipe;
+import train.common.recipes.OpenHearthFurnaceRecipe;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -47,7 +46,8 @@ public class TrainCraftingManager {
 	private TrainCraftingManager() {}
 
 
-	public void addRecipe(ItemStack output, Object... recipe) {
+	public void addRecipe(ItemStack output, Object... recipe)
+	{
 		String var3 = "";
 		int idx = 0;
 		int var5 = 0;

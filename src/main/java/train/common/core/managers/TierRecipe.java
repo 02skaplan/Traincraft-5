@@ -7,11 +7,9 @@
 
 package train.common.core.managers;
 
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 import train.common.api.crafting.ITierRecipe;
-import train.common.core.util.TraincraftUtil;
+import train.common.recipes.TCOreDictionaryHandler;
 
 import java.util.Arrays;
 import java.util.List;
@@ -65,7 +63,7 @@ public class TierRecipe implements ITierRecipe {
 	public ItemStack hasComponents(ItemStack... items) {
 		for (int i = 0; i < stacks.length; i++)
 		{
-			if(areItemsIdentical(items[i], stacks[i]) == false && TraincraftUtil.itemStackMatches(items[i], stacks[i]) == false )
+			if(areItemsIdentical(items[i], stacks[i]) == false)
 			{
 				return null;
 			}
@@ -79,14 +77,10 @@ public class TierRecipe implements ITierRecipe {
 	public static boolean areItemsIdentical(ItemStack inSlot, ItemStack inRecipe) {
 		if (inRecipe == null || inSlot == null) {
 			return inRecipe == inSlot;
-		} else {
-			if (Item.getIdFromItem(inSlot.getItem()) != Item.getIdFromItem(inRecipe.getItem())) {
-				return false;
-			}
-			if (inRecipe.getItemDamage() == OreDictionary.WILDCARD_VALUE) {
-				return true;
-			}
-			return inSlot.getItemDamage() == inRecipe.getItemDamage();
+		}
+		else
+		{
+			return TCOreDictionaryHandler.itemStackMatches(inSlot, inRecipe);
 		}
 	}
 

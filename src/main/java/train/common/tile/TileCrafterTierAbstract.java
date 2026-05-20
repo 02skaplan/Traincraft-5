@@ -14,7 +14,6 @@ import net.minecraftforge.common.util.ForgeDirection;
 import train.common.core.interfaces.ITier;
 import train.common.core.managers.TierRecipe;
 import train.common.core.managers.TierRecipeManager;
-import train.common.core.util.TraincraftUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -364,7 +363,7 @@ public abstract class TileCrafterTierAbstract extends TileEntity implements IInv
         List<TierRecipe> recipeList = TierRecipeManager.getInstance().getTierRecipeList(this.Tier);
         for(TierRecipe recipe : recipeList){
             ItemStack stack2 = recipe.getInput().get(i);
-            if (stack2 != null && TierRecipe.areItemsIdentical(stack, stack2) || TraincraftUtil.itemStackMatches(stack, stack2)) {
+            if (stack2 != null && TierRecipe.areItemsIdentical(stack, stack2)) {
                 return true;
             }
         }

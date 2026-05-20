@@ -14,7 +14,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 import net.minecraftforge.oredict.OreDictionary;
 import train.common.core.interfaces.ITCRecipe;
-import train.common.core.util.TraincraftUtil;
+import train.common.recipes.TCOreDictionaryHandler;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -113,8 +113,12 @@ public class ShapedTrainRecipes implements ITCRecipe {
 				{
 					if (!OreDictionary.itemMatches((ItemStack)target, slot, false))
 					{
-						slots[i] = false;
-						continue;
+						if (TCOreDictionaryHandler.itemStackMatches((ItemStack)target, slot) == false)
+						{
+							slots[i] = false;
+							continue;
+						}
+
 					}
 				}
 				else if (target instanceof String)
