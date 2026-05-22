@@ -148,6 +148,65 @@ public class TrainRegisterTypeDataTest {
         }
     }
 
+    @Test
+    public void everyRegisterEntryHasUniqueInternalName() {
+        LinkedHashMap<String, String> seenByInternalName = new LinkedHashMap<String, String>();
+        StringBuilder duplicates = new StringBuilder();
+
+        for (Map.Entry<Item, ITrainRecord> entry : register.entrySet()) {
+            Item item = entry.getKey();
+            ITrainRecord record = entry.getValue();
+
+            assertNotNull("Register contains a null Item key.", item);
+            assertNotNull("Register contains a null ITrainRecord value for item " + item, record);
+
+            String internalName = internalName(record, item);
+            String owner = recordName(record, item) + " / item=" + item;
+
+            assertNotNull(owner + " has no internal name.", internalName);
+            assertFalse(owner + " has an empty internal name.", internalName.trim().isEmpty());
+
+            /*
+             * Trim before checking so accidental leading/trailing whitespace
+             * does not allow two names that are functionally the same.
+             */
+            internalName = internalName.trim();
+
+            if (seenByInternalName.containsKey(internalName)) {
+                duplicates
+                        .append("\nDuplicate internal name '")
+                        .append(internalName)
+                        .append("' used by both: ")
+                        .append(seenByInternalName.get(internalName))
+                        .append(" AND ")
+                        .append(owner);
+            } else {
+                seenByInternalName.put(internalName, owner);
+            }
+        }
+
+        if (duplicates.length() > 0) {
+            fail("Duplicate train internal names were found:" + duplicates.toString());
+        }
+    }
+
+    private static String internalName(ITrainRecord record, Item item) {
+        Object value = readOptional(record,
+                "getInternalName",
+                "internalName"
+        );
+
+        if (value != null) {
+            return String.valueOf(value);
+        }
+
+        fail("Could not read internal name from record "
+                + recordName(record, item)
+                + ". Expected getInternalName() or internalName field.");
+
+        return null;
+    }
+
     private static void assertCommonRecordData(String name, ITrainRecord record) {
         assertTrue(name + " must have mass >= 0.", number(record, "getMass", "mass") >= 0.0D);
 
