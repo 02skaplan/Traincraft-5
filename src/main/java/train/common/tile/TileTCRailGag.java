@@ -12,11 +12,10 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import train.common.blocks.BlockTCRail;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
-public class TileTCRailGag extends TileEntity {
+public class TileTCRailGag extends TileEntity implements ITileTCRail
+{
 
 	protected Random rand = new Random();
 	protected Side side;
@@ -25,6 +24,12 @@ public class TileTCRailGag extends TileEntity {
 	public int originY;
 	public int originZ;
 	public String type = "";
+
+	public String getType() {
+
+		return this.type;
+	}
+
 	public float bbHeight = 0.125f;
 
 	/**

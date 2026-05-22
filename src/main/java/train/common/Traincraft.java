@@ -55,7 +55,7 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.HashMap;
 
-@Mod(modid = Info.modID, name = Info.modName, version = Info.modVersion)
+@Mod(modid = Info.modID, name = Info.modName, version = Info.modVersion, dependencies = "after:Waila")
 public class Traincraft {
 
 	/* TrainCraft instance */
@@ -239,6 +239,16 @@ public static final SimpleNetworkWrapper gsfsrChannel = NetworkRegistry.INSTANCE
 		{
 			tcLog.info("ForgeMultipart detected. Registering Traincraft Blocks");
 			train.common.core.plugins.ForgeMultiPart.registerBlocks(BlockIDs.values());
+		}
+
+		if (Loader.isModLoaded("Waila"))
+		{
+			tcLog.info("Waila detected. Registering Traincraft Waila");
+			FMLInterModComms.sendMessage(
+					"Waila",
+					"register",
+					"train.common.core.plugins." + train.common.core.plugins.FoxTCWailaCompat.class.getSimpleName() +".callbackRegister"
+			);
 		}
 
 		//proxy.getCape();

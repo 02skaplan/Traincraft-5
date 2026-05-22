@@ -20,7 +20,7 @@ import train.common.library.track.EnumCoreTrack;
 import train.common.library.track.EnumTracks;
 import train.common.library.track.ITrackDefinition;
 
-public class TileTCRail extends TileEntity {
+public class TileTCRail extends TileEntity implements ITileTCRail {
 
 	public double r;
 	public double cx;

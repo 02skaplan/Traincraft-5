@@ -89,6 +89,17 @@ dependencies {
     testCompile 'junit:junit:4.13.2'
 }
 
+repositories {
+    maven {
+        name = "Mobius Repo"
+        url = "http://mobiusstrip.eu/maven"
+    }
+}
+
+dependencies {
+    compile "mcp.mobius.waila:Waila:1.5.10_1.7.10:dev"
+}
+
 processResources
 {
     // this will ensure that this task is redone when the versions change.
