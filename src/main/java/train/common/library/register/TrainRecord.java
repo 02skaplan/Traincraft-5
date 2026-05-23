@@ -181,6 +181,8 @@ public class TrainRecord implements ITrainRecord
     private double accelerationRate;
     private double brakeRate;
     private int tankCapacity;
+    private int secondaryTankCapacity;
+
     private int[] colors;
     private int guiRenderScale;
     private double bogieLocoPosition;
@@ -226,6 +228,10 @@ public class TrainRecord implements ITrainRecord
     public int getTankCapacity() { return this.tankCapacity; }
 
     public TrainRecord setTankCapacity(int capacity) { this.tankCapacity = capacity; return this; }
+
+    public int getSecondaryTankCapacity() { return this.secondaryTankCapacity; }
+
+    public TrainRecord setSecondaryCapacity(int capacity) { this.secondaryTankCapacity = capacity; return this; }
 
     public int[] getColors() { return this.colors; }
     public TrainRecord setColors(String[] colors) { this.colors = getBytesFromColors(colors); return this; }
