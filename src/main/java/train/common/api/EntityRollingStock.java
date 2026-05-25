@@ -438,6 +438,11 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart
 					DebugUtil.log(Level.INFO, "RollingStockRemovedEvent: " + ((EntityPlayer) damagesource.getEntity()).getDisplayName() + "| Destroyed " + getTrainName() + "| ReportMark:" + getTrainNote() + "| Owned By: " + getTransportOwner());
 				}
 
+				if (damagesource.getEntity() instanceof EntityPlayer)
+				{
+					((EntityPlayer) damagesource.getEntity()).addChatComponentMessage(new ChatComponentText(((EntityPlayer) damagesource.getEntity()).getDisplayName() + " Destroyed " + getTrainName() + (getTrainNote().isEmpty() ? "" : " (" + getTrainNote() + ")")  + " Owned By: " + getTransportOwner()));
+				}
+
 				this.setDead();
 				dropCartAsItem(((EntityPlayer)damagesource.getEntity()).capabilities.isCreativeMode);
 			}
