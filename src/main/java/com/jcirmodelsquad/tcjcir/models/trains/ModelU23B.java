@@ -1842,7 +1842,7 @@ public class ModelU23B extends ModelConverter //Same as Filename
 		ModelRenderHelper.renderModelWithRollingStockLightControls(bodyModel, entity, f5);
 
 		if (GetColor(entity) == 14||GetColor(entity) == 5
-				||GetColor(entity) == 16 ||GetColor(entity) == 34) {
+				||GetColor(entity) == 16 ||GetColor(entity) == 34 ||GetColor(entity) == 40) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/newBogies/fb2_new_black_a.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslated(-1.54, 0.0, 0);

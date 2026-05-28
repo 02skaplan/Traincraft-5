@@ -80,6 +80,8 @@ public class DieselGP7 extends DieselTrain {
         InsertTexture(58, "FMSR", LockoutGroup.FMSR);
         InsertTexture(59, "C&O (Early)");
         InsertTexture(60, "C&O 5704 (Early)");
+        InsertTexture(61, "Coyote & Fort Woods (Bida Fictional)");
+        InsertTexture(62, "");
     }
 
     @Override

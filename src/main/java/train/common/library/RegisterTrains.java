@@ -1136,7 +1136,7 @@ public class RegisterTrains
                                             .setMHP(1520)
                                             .setMaxSpeed(105)
                                             .setMass(0)
-                                            .setFuelConsumption(60)
+                                            .setFuelConsumption(50)
                                             .setHeatingTime(200)
                                             .setAccelerationRate(0.8)
                                             .setBrakeRate(0.97)

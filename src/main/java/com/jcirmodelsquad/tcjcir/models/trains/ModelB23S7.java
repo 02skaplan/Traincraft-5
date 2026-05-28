@@ -1515,7 +1515,7 @@ public class ModelB23S7 extends ModelConverter //Same as Filename
 	{
 		ModelRenderHelper.renderModelWithRollingStockLightControls(bodyModel, entity, f5);
 
-		if (GetColor(entity) == 1478) {
+		if (GetColor(entity) == 19) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/newBogies/fb2_new_black_a.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslated(-1.54, 0.0, 0);

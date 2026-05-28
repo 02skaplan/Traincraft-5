@@ -225,6 +225,7 @@ item.tc:minecartSD50	SD50	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.
 item.tc:minecartSD60	SD60	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselSD60	sd60_
 item.tc:minecartSD70ACe	SD70ACe	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselSD70ACe	sd70ace_
 item.tc:minecartSD70ACe_H	SD70ACe_H	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselSD70ACe_H	sd70ace_h_
+item.tc:minecartSD70M	SD70M	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselSD70M	sd70m_
 item.tc:minecartSD70Mac	SD70Mac	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselSD70Mac	sd70mac_
 item.tc:minecartSD9	SD9	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselSD9	sd9_
 item.tc:minecartSDL39	SDL39	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselSDL39	sdl39_

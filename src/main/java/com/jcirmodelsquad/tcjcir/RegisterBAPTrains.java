@@ -1016,7 +1016,7 @@ public class RegisterBAPTrains
                             .setAccelerationRate(0.80)
                             .setBrakeRate(0.85)
                             .setTankCapacity(18000)
-                            .setColors(new String[] {"White", "Green", "Black", "Skin26", "Skin19", "LightGrey", "Skin20", "Skin21", "Lime", "Purple", "Blue", "Skin25", "Skin16", "Skin17", "Skin18", "Skin59", "Grey", "Orange", "Pink", "Skin35", "Skin36", "Skin37", "Skin38", "Skin22", "Brown", "Skin23", "LightBlue", "Skin24", "Skin27", "Skin28", "Skin29", "Skin30", "Skin31", "Skin32", "Skin33", "Skin34", "Skin39", "Skin40", "Skin41", "Skin42", "Skin43", "Skin44", "Skin45", "Red", "Magenta", "Skin46", "Skin47", "Skin48", "Skin49", "Skin50", "Skin51", "Skin52", "Skin53", "Skin54", "Skin55", "Skin56", "Skin57", "Skin58", "Skin60", "Skin61", "Skin62"})
+                            .setColors(new String[] {"White", "Green", "Black", "Skin26", "Skin19", "LightGrey", "Skin20", "Skin21", "Lime", "Purple", "Blue", "Skin25", "Skin16", "Skin17", "Skin18", "Skin59", "Grey", "Orange", "Pink", "Skin35", "Skin36", "Skin37", "Skin38", "Skin22", "Brown", "Skin23", "LightBlue", "Skin24", "Skin27", "Skin28", "Skin29", "Skin30", "Skin31", "Skin32", "Skin33", "Skin34", "Skin39", "Skin40", "Skin41", "Skin42", "Skin43", "Skin44", "Skin45", "Red", "Magenta", "Skin46", "Skin47", "Skin48", "Skin49", "Skin50", "Skin51", "Skin52", "Skin53", "Skin54", "Skin55", "Skin56", "Skin57", "Skin58", "Skin60", "Skin61", "Skin62", "Skin63"})
                             .setGuiRenderScale(16)
                             .setBogieLocoPosition(-2.9)
             );
@@ -1787,6 +1787,23 @@ public class RegisterBAPTrains
                             .setBogieLocoPosition(-3.725)
             );
 
+            // SD70M
+            put(ItemIDs.minecartSD70M.item,
+                    new TrainRecord("SD70M", DieselSD70M.class, ItemIDs.minecartSD70M.item)
+                            .setTrainType(EnumTrainType.Diesel)
+                            .setMHP(4000)
+                            .setMaxSpeed(112)
+                            .setMass(0)
+                            .setFuelConsumption(40)
+                            .setHeatingTime(180)
+                            .setAccelerationRate(0.8)
+                            .setBrakeRate(0.87)
+                            .setTankCapacity(20000)
+                            .setColors(new String[] {"LightGrey"})
+                            .setGuiRenderScale(12)
+                            .setBogieLocoPosition(-4.0)
+            );
+
             // SD70Mac
             put(ItemIDs.minecartSD70Mac.item,
                     new TrainRecord("SD70Mac", DieselSD70Mac.class, ItemIDs.minecartSD70Mac.item)
@@ -2226,7 +2243,7 @@ public class RegisterBAPTrains
                             .setAccelerationRate(0.7)
                             .setBrakeRate(0.88)
                             .setTankCapacity(20000)
-                            .setColors(new String[] {"Yellow", "Grey", "LightBlue", "LightGrey", "Skin17", "Skin21", "Skin22", "Blue", "Skin25", "Magenta", "Black", "Pink", "Green", "Skin18", "Skin20", "Skin24", "Skin26", "Skin27", "Skin28", "Orange", "Skin19", "Skin29", "Skin30", "Red", "Skin31", "Skin32", "Skin33", "Skin34", "Skin35", "Skin36", "Skin37", "Skin23", "Skin38", "Skin39"})
+                            .setColors(new String[] {"Yellow", "Grey", "LightBlue", "LightGrey", "Skin17", "Skin21", "Skin22", "Blue", "Skin25", "Magenta", "Black", "Pink", "Green", "Skin18", "Skin20", "Skin24", "Skin26", "Skin27", "Skin28", "Orange", "Skin19", "Skin29", "Skin30", "Red", "Skin31", "Skin32", "Skin33", "Skin34", "Skin35", "Skin36", "Skin37", "Skin23", "Skin38", "Skin39", "Skin40", "Skin41"})
                             .setGuiRenderScale(14)
                             .setBogieLocoPosition(-3.1)
             );
@@ -2532,7 +2549,7 @@ public class RegisterBAPTrains
                             .setAccelerationRate(0.74)
                             .setBrakeRate(0.91)
                             .setTankCapacity(20000)
-                            .setColors(new String[] {"Red", "Grey", "Skin17", "LightGrey", "Cyan", "Green", "Skin18", "Blue"})
+                            .setColors(new String[] {"Red", "Grey", "Skin17", "LightGrey", "Cyan", "Green", "Skin18", "Blue", "Skin19"})
                             .setGuiRenderScale(14)
                             .setBogieLocoPosition(-3.1)
             );
@@ -2719,7 +2736,7 @@ public class RegisterBAPTrains
                             .setAccelerationRate(0.7)
                             .setBrakeRate(0.88)
                             .setTankCapacity(20000)
-                            .setColors(new String[] {"Red", "Grey", "Orange", "Skin16", "Skin17", "LightGrey", "Cyan", "Skin18", "Brown"})
+                            .setColors(new String[] {"Red", "Grey", "Orange", "Skin16", "Skin17", "LightGrey", "Cyan", "Skin18", "Brown", "Skin19"})
                             .setGuiRenderScale(12)
                             .setBogieLocoPosition(-3.6)
             );
@@ -2770,7 +2787,7 @@ public class RegisterBAPTrains
                             .setAccelerationRate(0.7)
                             .setBrakeRate(0.88)
                             .setTankCapacity(20000)
-                            .setColors(new String[] {"Red", "Orange", "LightGrey", "Skin16", "Pink"})
+                            .setColors(new String[] {"Red", "Orange", "LightGrey", "Skin16", "Pink", "Skin17"})
                             .setGuiRenderScale(12)
                             .setBogieLocoPosition(-3.6)
             );
