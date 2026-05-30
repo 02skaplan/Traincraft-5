@@ -28,6 +28,7 @@ public class DieselDash839B extends DieselTrain {
         InsertTexture(6, "North Fox (KIT-L)", LockoutGroup.FNCC);
         InsertTexture(7, "North Fox (KIT-80)", LockoutGroup.FNCC);
         InsertTexture(8, "CEEX 90s Lease Scheme");
+        InsertTexture(9, "Coyote & Fort Woods (Ex CEEX Leaser) (Bida Freelance)");
 
     }
 

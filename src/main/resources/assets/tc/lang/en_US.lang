@@ -1098,6 +1098,7 @@ item.tc:minecartF45.name=EMD F45
 item.tc:minecartFP45.name=EMD FP45
 item.tc:minecartSD50.name=EMD SD50
 item.tc:minecartSD60.name=EMD SD60
+item.tc:minecartSD70M.name=EMD SD70M
 item.tc:minecartSD70Mac.name=EMD SD70Mac
 item.tc:minecartSD70ACe.name=EMD SD70ACe
 item.tc:minecartSD70ACe_H.name=EMD SD70ACe (Heritable Units)

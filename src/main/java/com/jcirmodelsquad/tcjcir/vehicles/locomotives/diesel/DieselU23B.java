@@ -56,6 +56,10 @@ public class DieselU23B extends DieselTrain {
         InsertTexture(31, "CSXT (YN2)");
         InsertTexture(32, "Chessie System");
         InsertTexture(33, "Monon");
+        InsertTexture(34, "Coyote & Fort Woods (Ex UP) (Bida Fictional)");
+        InsertTexture(35, "Coyote & Fort Woods (Ex FURRX) (Bida Fictional)");
+        InsertTexture(36, "");
+
         initOverlayTextures();
         getOverlayTextureContainer().initOverlaySpecification(new OTSpecificationDynamic(
                 "Engine Number",

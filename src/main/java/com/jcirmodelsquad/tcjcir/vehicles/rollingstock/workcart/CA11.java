@@ -15,7 +15,7 @@ public class CA11 extends AbstractWorkCart
         InsertTexture(3, "Generic");
         InsertTexture(4, "GLC");
         InsertTexture(5, "GLNT");
-        InsertTexture(6, "CNCR C1-C5 (Bida Fictional)"/*, LockoutGroup.CNRC*/);
+        InsertTexture(6, "CNRC C1-C5 (Bida Fictional)"/*, LockoutGroup.CNRC*/);
         InsertTexture(7, "");
         InsertTexture(8, "");
         InsertTexture(9, "");

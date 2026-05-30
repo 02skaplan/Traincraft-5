@@ -27,7 +27,8 @@ public class DieselB23S7 extends DieselTrain {
         InsertTexture(5, "WP (Early)");
         InsertTexture(6, "WP (Late)");
         InsertTexture(7, "CSXT (Yn3)");
-
+        InsertTexture(8, "CFWD (Bida Fictional)");
+        InsertTexture(9, "");
     }
 
     @Override
