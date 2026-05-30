@@ -1708,7 +1708,7 @@ public class RegisterTrains
                                             .setTankCapacity(8000)
                                             .setColors(new String[] {"Black"})
                                             .setGuiRenderScale(15)
-                                            .setBogieLocoPosition(-3.5))
+                                            .setBogieLocoPosition(-3.5)
                             );
 
                             put(ItemIDs.minecartLocoSteamAlice.item,
