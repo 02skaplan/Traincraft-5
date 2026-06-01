@@ -27,7 +27,9 @@ public class EntityHandler
 		EntityRegistry.registerModEntity(EntityRotativeDigger.class, "rotative digger", EntityIds.ROTATIVE_DIGGER, Traincraft.instance, 512, 1, true);
 
 		// Don't forget to add a record to insert the render record
-		new RegisterTrains();
+		Traincraft.traincraftRegistry
+				.RegisterRollingStockEntities(new RegisterTrains().getRegister()
+						, Traincraft.instance);
 
 		Traincraft.traincraftRegistry
 				.RegisterRollingStockEntities(new RegisterBAPTrains().getRegister()

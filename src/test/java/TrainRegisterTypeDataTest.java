@@ -2,8 +2,10 @@ import com.jcirmodelsquad.tcjcir.RegisterBAPTrains;
 import net.minecraft.item.Item;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import train.common.api.AbstractPassengerCar;
 import train.common.library.EnumTrainType;
 import train.common.library.ItemIDs;
+import train.common.library.RegisterTrains;
 import train.common.library.register.ITrainRecord;
 
 import java.lang.reflect.Field;
@@ -78,7 +80,8 @@ public class TrainRegisterTypeDataTest {
             itemIDs.item = new Item().setUnlocalizedName(itemIDs.name());
         }
 
-        register = new RegisterBAPTrains().getRegister();
+        register = new RegisterTrains().getRegister();
+        register.putAll(new RegisterBAPTrains().getRegister());
 
         assertNotNull("Train register must not be null.", register);
         assertFalse("Train register must not be empty.", register.isEmpty());
@@ -86,7 +89,8 @@ public class TrainRegisterTypeDataTest {
 
     @Test
     public void everyRegisterEntryHasValidDataForItsTrainType() {
-        for (Map.Entry<Item, ITrainRecord> entry : register.entrySet()) {
+        for (Map.Entry<Item, ITrainRecord> entry : register.entrySet())
+        {
             Item item = entry.getKey();
             ITrainRecord record = entry.getValue();
 
@@ -118,31 +122,33 @@ public class TrainRegisterTypeDataTest {
                 assertNonLocomotiveDoesNotHavePowerData(name, record);
             }
 
-            if (type == EnumTrainType.Steam) {
+            if (type == EnumTrainType.Steam)
+            {
                 assertSteamData(name, record);
             }
-
-            if (type == EnumTrainType.Diesel || type == EnumTrainType.Hydrogen) {
+            else if (type == EnumTrainType.Diesel || type == EnumTrainType.Hydrogen)
+            {
                 assertFuelPoweredLocoData(name, record, type);
             }
-
-            if (type == EnumTrainType.Tender) {
+            else if (type == EnumTrainType.Tender)
+            {
                 assertTenderData(name, record);
             }
 
-            if (CARGO_FREIGHT_TYPES.contains(type)) {
+            boolean isPassenger = PASSENGER_TYPES.contains(type) || record.getEntityClass().getSuperclass() == AbstractPassengerCar.class;
+
+            if (isPassenger)
+            {
+                assertPassengerData(name, record, type);
+            }
+            else if (CARGO_FREIGHT_TYPES.contains(type)) {
                 assertCargoFreightData(name, record, type);
             }
 
-            if (TANK_FREIGHT_TYPES.contains(type)) {
+            else if (TANK_FREIGHT_TYPES.contains(type)) {
                 assertTankFreightData(name, record, type);
             }
-
-            if (PASSENGER_TYPES.contains(type)) {
-                assertPassengerData(name, record, type);
-            }
-
-            if (type == EnumTrainType.MOW || type == EnumTrainType.Special || type == EnumTrainType.Other) {
+            else if (type == EnumTrainType.MOW || type == EnumTrainType.Special || type == EnumTrainType.Other) {
                 assertLooseUtilityData(name, record, type);
             }
         }
@@ -239,6 +245,9 @@ public class TrainRegisterTypeDataTest {
 
         assertTrue(name + " [Steam] must have tank capacity > 0.",
                 number(record, "getTankCapacity", "tankCapacity") > 0.0D);
+
+        assertTrue(name + " [Steam] must have heat time > 0.",
+                record.getHeatingTime() > 0.0D);
     }
 
     private static void assertFuelPoweredLocoData(String name, ITrainRecord record, EnumTrainType type) {

@@ -38,10 +38,4 @@ public class EntityTankLava extends AbstractStandardTankerCar {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.85F;
 	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 30000;
-	}
 }
