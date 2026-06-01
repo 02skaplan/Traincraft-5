@@ -315,6 +315,11 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
         }
     }
 
+    public static boolean isEntityPlusBogie(AbstractTrains abstractTrains, ITrainRecord trainRecord)
+    {
+        return abstractTrains instanceof Locomotive || trainRecord.getBogieLocoPosition() != 0;
+    }
+
     public EntityMinecart placeCart(EntityPlayer player, ItemStack itemstack, World world, int i, int j, int k)
     {
         //System.out.println(train.getItem().getUnlocalizedName());
@@ -451,7 +456,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             return rollingStock;
                         }
                     }
-                    if (rollingStock instanceof Locomotive ) {
+                    if (isEntityPlusBogie(rollingStock, trainRecord)) {
                         if ((meta == 2 || meta == 0) && (world.getBlock(i, j, k + 1) == BlockIDs.tcRail.block || world.getBlock(i, j, k + 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i, j, k + 1))) && (world.getBlock(i, j, k + 2) == BlockIDs.tcRail.block || world.getBlock(i, j, k + 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i, j, k + 2)))) {
                             rollingStock.serverRealRotation = 90;
                         } else if ((meta == 6 || meta == 4) && (world.getBlock(i - 1, j, k + 1) == BlockIDs.tcRail.block || world.getBlock(i - 1, j, k + 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 1, j, k + 1))) && (world.getBlock(i - 2, j, k + 2) == BlockIDs.tcRail.block || world.getBlock(i - 2, j, k + 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 2, j, k + 2)))) {
@@ -492,7 +497,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             return rollingStock;
                         }
                     }
-                    if (rollingStock instanceof Locomotive  ) {
+                    if (isEntityPlusBogie(rollingStock, trainRecord)) {
                         if ((meta == 2 || meta == 0) && (world.getBlock(i, j, k + 1) == BlockIDs.tcRail.block || world.getBlock(i, j, k + 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i, j, k + 1))) && (world.getBlock(i, j, k + 2) == BlockIDs.tcRail.block || world.getBlock(i, j, k + 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i, j, k + 2)))) {
                             rollingStock.serverRealRotation = 90;
                         } else if ((meta == 1 || meta == 3) && (world.getBlock(i - 1, j, k) == BlockIDs.tcRail.block || world.getBlock(i - 1, j, k) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 1, j, k))) && (world.getBlock(i - 2, j, k) == BlockIDs.tcRail.block || world.getBlock(i - 2, j, k) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 2, j, k)))) {
@@ -532,7 +537,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             return rollingStock;
                         }
                     }
-                    if (rollingStock instanceof Locomotive ) {
+                    if (isEntityPlusBogie(rollingStock, trainRecord) ) {
                         if ((meta == 1 || meta == 3) && (world.getBlock(i - 1, j, k) == BlockIDs.tcRail.block || world.getBlock(i - 1, j, k) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 1, j, k))) && (world.getBlock(i - 2, j, k) == BlockIDs.tcRail.block || world.getBlock(i - 2, j, k) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 2, j, k)))) {
                             rollingStock.serverRealRotation = 180; //RIGHT
                         }
@@ -574,7 +579,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             return rollingStock;
                         }
                     }
-                    if (rollingStock instanceof Locomotive ) {
+                    if (isEntityPlusBogie(rollingStock, trainRecord) ) {
                         if ((meta == 5 || meta == 7) && (world.getBlock(i - 1, j, k - 1) == BlockIDs.tcRail.block || world.getBlock(i - 1, j, k - 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 1, j, k - 1))) && (world.getBlock(i - 2, j, k - 2) == BlockIDs.tcRail.block || world.getBlock(i - 2, j, k - 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 2, j, k - 2)))) {
                             rollingStock.serverRealRotation = -135; //RIGHT
                         }
@@ -618,7 +623,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
 
                     }
 
-                    if (rollingStock instanceof Locomotive ) {
+                    if (isEntityPlusBogie(rollingStock, trainRecord) ) {
                         if ((meta == 0 || meta == 2) && (world.getBlock(i, j, k - 1) == BlockIDs.tcRail.block || world.getBlock(i, j, k - 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i, j, k - 1))) && (world.getBlock(i, j, k - 2) == BlockIDs.tcRail.block || world.getBlock(i, j, k - 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i, j, k - 2)))) {
                             rollingStock.serverRealRotation = -90; // RIGHT
                         }
@@ -658,7 +663,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             return rollingStock;
                         }
                     }
-                    if (rollingStock instanceof Locomotive) {
+                    if (isEntityPlusBogie(rollingStock, trainRecord)) {
                         if ((meta == 6 || meta == 4) && (world.getBlock(i + 1, j, k - 1) == BlockIDs.tcRail.block || world.getBlock(i + 1, j, k - 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i + 1, j, k - 1))) && (world.getBlock(i + 2, j, k - 2) == BlockIDs.tcRail.block || world.getBlock(i + 2, j, k - 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i + 2, j, k - 2)))) {
                             rollingStock.serverRealRotation = -45; //RIGHT
                         }
@@ -697,7 +702,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             return rollingStock;
                         }
                     }
-                    if (rollingStock instanceof Locomotive ) {
+                    if (isEntityPlusBogie(rollingStock, trainRecord) ) {
                         if ((meta == 1 || meta == 3) && (world.getBlock(i + 1, j, k) == BlockIDs.tcRail.block || world.getBlock(i + 1, j, k) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i + 1, j, k))) && (world.getBlock(i + 2, j, k) == BlockIDs.tcRail.block || world.getBlock(i + 2, j, k) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i + 2, j, k)))) {
                             rollingStock.serverRealRotation = 0; //RIGHT
                         } else if ((meta == 5 || meta == 7) && (world.getBlock(i - 1, j, k - 1) == BlockIDs.tcRail.block || world.getBlock(i - 1, j, k - 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 1, j, k - 1))) && (world.getBlock(i - 2, j, k - 2) == BlockIDs.tcRail.block || world.getBlock(i - 2, j, k - 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i - 2, j, k - 2)))) {
@@ -736,7 +741,7 @@ public abstract class ItemAbstractRollingStock extends ItemMinecart implements I
                             return rollingStock;
                         }
                     }
-                    if (rollingStock instanceof Locomotive) {
+                    if (isEntityPlusBogie(rollingStock, trainRecord)) {
                         if ((meta == 5 || meta == 7) && (world.getBlock(i + 1, j, k + 1) == BlockIDs.tcRail.block || world.getBlock(i + 1, j, k + 1) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i + 1, j, k + 1))) && (world.getBlock(i + 2, j, k + 2) == BlockIDs.tcRail.block || world.getBlock(i + 2, j, k + 2) == BlockIDs.tcRailGag.block || BlockRailBase.func_150051_a(world.getBlock(i + 2, j, k + 2)))) {
                             rollingStock.serverRealRotation = 45; //RIGHT
                         }

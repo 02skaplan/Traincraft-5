@@ -1080,8 +1080,10 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart
 	}
 
 	boolean flag,flag1;
-	private void updateOnTrack(int floor_posX, int floor_posY, int floor_posZ, Block block) {
-		if (canUseRail() && BlockRailBase.func_150051_a(block)) {
+	private void updateOnTrack(int floor_posX, int floor_posY, int floor_posZ, Block block)
+	{
+		if (canUseRail() && BlockRailBase.func_150051_a(block))
+		{
 			
 			Vec3 vec3d = func_514_g(posX, posY, posZ);
 			 int i1 = ((BlockRailBase) block).getBasicRailMetadata(worldObj, this, floor_posX, floor_posY, floor_posZ);
@@ -1119,9 +1121,9 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart
 			 d9 = -d9;
 			 d10 = -d10;
 			 }
-			 double d13 = Math.sqrt(motionX * motionX + motionZ * motionZ);
-			 motionX = (d13 * d9) / d11;
-			 motionZ = (d13 * d10) / d11;
+			 double motionNormalized = Math.sqrt(motionX * motionX + motionZ * motionZ);
+			 motionX = (motionNormalized * d9) / d11;
+			 motionZ = (motionNormalized * d10) / d11;
 			 if (flag1 && shouldDoRailFunctions()) {
 			 if (Math.sqrt(motionX * motionX + motionZ * motionZ) < 0.029999999999999999D) {
 			 motionX = 0.0D;
@@ -1149,46 +1151,51 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart
 			 posZ = floor_posZ + 0.5D;
 			 d17 = posX - floor_posX;
 			 }
-			 else {
-			 double d22 = posX - d18;
-			 double d24 = posZ - d19;
-			 d17 = (d22 * d9 + d24 * d10) * 2D;
-			 //double derailSpeed = 0;//0.46;
-			 //System.out.println(d13);
-			 if(bogieLoco != null) {
-				 if (! bogieLoco.isOnRail()) {
-					 derailSpeed = 0;
-					 this.unLink();
+			 else
+			 {
+				 double d22 = posX - d18;
+				 double d24 = posZ - d19;
+				 d17 = (d22 * d9 + d24 * d10) * 2D;
+				 //double derailSpeed = 0;//0.46;
+				 //System.out.println(motionNormalized);
+				 if(bogieLoco != null) {
+					 if (! bogieLoco.isOnRail()) {
+						 derailSpeed = 0;
+						 this.unLink();
+					 }
 				 }
-			 }
-			 /**
-			 * Handles derail
-			 */
-			 if (this instanceof Locomotive && d13 > derailSpeed && i1 >= 6) {
-			 if (d9 > 0 && d10 < 0) {
-			 d10 = 0;
-			 d9 += 2;
-			 }
-			 else if (d9 < 0 && d10 > 0) {
-			 d9 = 0;
-			 d10 += 2;
-			 }
-			 else if (d10 < 0 && d9 < 0) {
-			 d10 -= 2;
-			 d9 = 0;
-			 }
-			 else if (d9 > 0 && d10 > 0) {
-			 d10 += 2;
-			 d9 = 0;
-			 }
-			 if (FMLCommonHandler.instance().getMinecraftServerInstance() != null &&
-			 this.riddenByEntity != null && this.riddenByEntity instanceof EntityPlayer) {
-			 FMLCommonHandler.instance().getMinecraftServerInstance().getConfigurationManager().sendChatMsg(new
-						ChatComponentText(((EntityPlayer) this.riddenByEntity).getDisplayName() + "derailed"
-								+ this.trainOwner + "'s locomotive"));
-			 }
-			 }
-			
+				 /**
+				 * Handles derail
+				 */
+				 if ((this instanceof Locomotive || trainSpec.getBogieLocoPosition() != 0) && motionNormalized > derailSpeed && i1 >= 6)
+				 {
+					 if (d9 > 0 && d10 < 0)
+					 {
+						 d10 = 0;
+						 d9 += 2;
+					 }
+					 else if (d9 < 0 && d10 > 0)
+					 {
+						 d9 = 0;
+						 d10 += 2;
+					 }
+					 else if (d10 < 0 && d9 < 0)
+					 {
+						 d10 -= 2;
+						 d9 = 0;
+					 }
+					 else if (d9 > 0 && d10 > 0) {
+						 d10 += 2;
+						 d9 = 0;
+					 }
+					 if (FMLCommonHandler.instance().getMinecraftServerInstance() != null &&
+					 this.riddenByEntity != null && this.riddenByEntity instanceof EntityPlayer)
+					 {
+						 FMLCommonHandler.instance().getMinecraftServerInstance().getConfigurationManager().sendChatMsg(new
+									ChatComponentText(((EntityPlayer) this.riddenByEntity).getDisplayName() + "derailed"
+											+ this.trainOwner + "'s locomotive"));
+					 }
+				 }
 			 }
 			 posX = d18 + d9 * d17;
 			 posZ = d19 + d10 * d17;
@@ -2112,21 +2119,31 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart
 					}
 					else {
 
-						if (!(par1Entity instanceof EntityItem) && !(par1Entity instanceof EntityPlayer && this instanceof Locomotive) && !(par1Entity instanceof EntityCreature) && !(par1Entity instanceof EntityBogie)) {
+						if (!(par1Entity instanceof EntityItem) && !(par1Entity instanceof EntityPlayer && this instanceof Locomotive) && !(par1Entity instanceof EntityLiving) && !(par1Entity instanceof EntityBogie))
+						{
 							this.addVelocity(-d0 * 2, 0.0D, -d1 * 2);
 						}
-						else if ((par1Entity instanceof EntityBogie)) {
+						else if ((par1Entity instanceof EntityBogie))
+						{
+
 						}
 
 						// Adding velocity to coupled entity with clamping force.
-						if (par1Entity instanceof Locomotive && this instanceof Locomotive) { // Locomotive pushing another locomotive.
-							// Use reduce clamping force when running two locomotives together.
+						if (par1Entity instanceof EntityLivingBase) {
+							// Players should be pushed, but not launched.
 							par1Entity.addVelocity(d0 * 2, 0.0D, d1 * 2);
-						} else {
+						}
+						else if (par1Entity instanceof Locomotive && this instanceof Locomotive) {
+							// Locomotive pushing another locomotive gets reduced force.
+							par1Entity.addVelocity(d0 * 2, 0.0D, d1 * 2);
+						}
+						else {
+							// Keep the heavy clamp/push force for non-player entities.
 							par1Entity.addVelocity(d0 * 2 * 100, 0.0D, d1 * 2 * 100);
 						}
 
-						if (par1Entity instanceof EntityPlayer) {
+						if (par1Entity instanceof EntityPlayer)
+						{
 
 							MovingObjectPosition movingobjectposition = new MovingObjectPosition(par1Entity);
 							if (movingobjectposition.entityHit != null) {
