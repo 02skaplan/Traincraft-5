@@ -26,7 +26,7 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 
 	public ModelSD70M() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[450];
+		bodyModel = new ModelRendererTurbo[455];
 
 		initbodyModel_1();
 
@@ -215,16 +215,16 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 		bodyModel[175] = new ModelRendererTurbo(this, 1, 37, textureX, textureY, "lamp"); // Box 242 cab numberboard
 		bodyModel[176] = new ModelRendererTurbo(this, 1, 37, textureX, textureY, "lamp"); // Box 243 cab numberboard
 		bodyModel[177] = new ModelRendererTurbo(this, 59, 42, textureX, textureY); // Box 244
-		bodyModel[178] = new ModelRendererTurbo(this, 166, 177, textureX, textureY); // Box 245
-		bodyModel[179] = new ModelRendererTurbo(this, 208, 181, textureX, textureY); // Box 495
-		bodyModel[180] = new ModelRendererTurbo(this, 205, 181, textureX, textureY); // Box 498
-		bodyModel[181] = new ModelRendererTurbo(this, 163, 168, textureX, textureY); // Box 248
-		bodyModel[182] = new ModelRendererTurbo(this, 162, 172, textureX, textureY); // Box 249
+		bodyModel[178] = new ModelRendererTurbo(this, 166, 176, textureX, textureY); // Box 245
+		bodyModel[179] = new ModelRendererTurbo(this, 208, 180, textureX, textureY); // Box 495
+		bodyModel[180] = new ModelRendererTurbo(this, 205, 180, textureX, textureY); // Box 498
+		bodyModel[181] = new ModelRendererTurbo(this, 163, 167, textureX, textureY); // Box 248
+		bodyModel[182] = new ModelRendererTurbo(this, 162, 171, textureX, textureY); // Box 249
 		bodyModel[183] = new ModelRendererTurbo(this, 228, 61, textureX, textureY); // Box 483 sd70m blower
 		bodyModel[184] = new ModelRendererTurbo(this, 481, 31, textureX, textureY); // Box 251 the little small vent on the firemans side
-		bodyModel[185] = new ModelRendererTurbo(this, 211, 181, textureX, textureY); // Box 252
-		bodyModel[186] = new ModelRendererTurbo(this, 161, 176, textureX, textureY); // Box 254
-		bodyModel[187] = new ModelRendererTurbo(this, 161, 176, textureX, textureY); // Box 255
+		bodyModel[185] = new ModelRendererTurbo(this, 211, 180, textureX, textureY); // Box 252
+		bodyModel[186] = new ModelRendererTurbo(this, 161, 175, textureX, textureY); // Box 254
+		bodyModel[187] = new ModelRendererTurbo(this, 161, 175, textureX, textureY); // Box 255
 		bodyModel[188] = new ModelRendererTurbo(this, 78, 114, textureX, textureY); // Box 256 door schnoz
 		bodyModel[189] = new ModelRendererTurbo(this, 78, 132, textureX, textureY); // Box 257 door schnoz
 		bodyModel[190] = new ModelRendererTurbo(this, 85, 113, textureX, textureY); // Box 258 door schnoz
@@ -487,6 +487,11 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 		bodyModel[447] = new ModelRendererTurbo(this, 185, 6, textureX, textureY); // Box 465
 		bodyModel[448] = new ModelRendererTurbo(this, 226, 49, textureX, textureY); // Box 467 is this seriously how they do extended range db i am going to shit myself
 		bodyModel[449] = new ModelRendererTurbo(this, 226, 43, textureX, textureY); // Box 467 is this seriously how they do extended range db i am going to shit myself
+		bodyModel[450] = new ModelRendererTurbo(this, 90, 8, textureX, textureY); // Box 364 prime base
+		bodyModel[451] = new ModelRendererTurbo(this, 90, 4, textureX, textureY, "prime1"); // Box 6 PRIME2-1
+		bodyModel[452] = new ModelRendererTurbo(this, 90, 4, textureX, textureY, "prime3"); // Box 7 PRIME2-3
+		bodyModel[453] = new ModelRendererTurbo(this, 90, 4, textureX, textureY, "prime2"); // Box 8 PRIME2-2
+		bodyModel[454] = new ModelRendererTurbo(this, 90, 4, textureX, textureY, "prime4"); // Box 9 PRIME2-4
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 0, 1, 20, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F); // Box 226
 		bodyModel[0].setRotationPoint(-51F, 8F, -10F);
@@ -1046,20 +1051,20 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 		bodyModel[177].setRotationPoint(-38F, -22F, -7F);
 		bodyModel[177].rotateAngleY = 1.57079633F;
 
-		bodyModel[178].addBox(0F, 0F, 0F, 15, 5, 4, 0F); // Box 245
-		bodyModel[178].setRotationPoint(-27F, -6F, -11F);
+		bodyModel[178].addBox(0F, 0F, 0F, 15, 6, 4, 0F); // Box 245
+		bodyModel[178].setRotationPoint(-27F, -7F, -11F);
 
-		bodyModel[179].addShapeBox(0F, 0F, 0F, 1, 5, 0, 0F,0F, 0F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 495
-		bodyModel[179].setRotationPoint(-11F, -6F, -11F);
+		bodyModel[179].addShapeBox(0F, 0F, 0F, 1, 6, 0, 0F,0F, 0F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 495
+		bodyModel[179].setRotationPoint(-11F, -7F, -11F);
 
-		bodyModel[180].addBox(0F, 0F, 0F, 1, 5, 0, 0F); // Box 498
-		bodyModel[180].setRotationPoint(-12F, -6F, -11F);
+		bodyModel[180].addBox(0F, 0F, 0F, 1, 6, 0, 0F); // Box 498
+		bodyModel[180].setRotationPoint(-12F, -7F, -11F);
 
 		bodyModel[181].addBox(0F, 0F, 0F, 1, 0, 3, 0F); // Box 248
-		bodyModel[181].setRotationPoint(-12F, -4.5F, -11F);
+		bodyModel[181].setRotationPoint(-12F, -5.5F, -11F);
 
 		bodyModel[182].addBox(0F, 0F, 0F, 2, 0, 3, 0F); // Box 249
-		bodyModel[182].setRotationPoint(-12F, -2.5F, -11F);
+		bodyModel[182].setRotationPoint(-12F, -3F, -11F);
 
 		bodyModel[183].addBox(0F, 0F, 0F, 8, 15, 2, 0F); // Box 483 sd70m blower
 		bodyModel[183].setRotationPoint(-11.25F, -16F, -8.5F);
@@ -1067,14 +1072,14 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 		bodyModel[184].addShapeBox(0F, 0F, 0F, 14, 7, 1, 0F,0F, 0F, 0F, -7F, 0F, 0F, -7F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -7F, 0F, 0F, -7F, 0F, 0F, 0F, 0F, 0F); // Box 251 the little small vent on the firemans side
 		bodyModel[184].setRotationPoint(38F, -14F, -7.6F);
 
-		bodyModel[185].addShapeBox(0F, 0F, 0F, 1, 5, 0, 0F,0F, 0F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 252
-		bodyModel[185].setRotationPoint(-25F, -6F, 11F);
+		bodyModel[185].addShapeBox(0F, 0F, 0F, 1, 6, 0, 0F,0F, 0F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 252
+		bodyModel[185].setRotationPoint(-25F, -7F, 11F);
 
 		bodyModel[186].addBox(0F, 0F, 0F, 2, 0, 4, 0F); // Box 254
-		bodyModel[186].setRotationPoint(-27F, -4.5F, 7F);
+		bodyModel[186].setRotationPoint(-27F, -5F, 7F);
 
 		bodyModel[187].addBox(0F, 0F, 0F, 2, 0, 4, 0F); // Box 255
-		bodyModel[187].setRotationPoint(-26F, -2.5F, 7F);
+		bodyModel[187].setRotationPoint(-26F, -3F, 7F);
 
 		bodyModel[188].addBox(-0.5F, 0F, 0F, 1, 12, 4, 0F); // Box 256 door schnoz
 		bodyModel[188].setRotationPoint(-49F, -14F, 1F);
@@ -1377,10 +1382,10 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 		bodyModel[280].setRotationPoint(45F, -9F, 11F);
 
 		bodyModel[281].addBox(0F, 0F, 0F, 14, 8, 0, 0F); // Box 294
-		bodyModel[281].setRotationPoint(-27F, -14F, -11F);
+		bodyModel[281].setRotationPoint(-27F, -15F, -11F);
 
-		bodyModel[282].addShapeBox(0F, 0F, 0F, 1, 6, 0, 0F,0.5F, -1F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0.5F, -1F, 0F, -3F, 0F, 0F, 2.5F, -1F, 0F, 2.5F, -1F, 0F, -3F, 0F, 0F); // Box 295
-		bodyModel[282].setRotationPoint(-13F, -14F, -11.01F);
+		bodyModel[282].addShapeBox(0F, 0F, 0F, 1, 6, 0, 0F,0.5F, -1F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0.5F, -1F, 0F, -3F, 1F, 0F, 2.5F, 0F, 0F, 2.5F, 0F, 0F, -3F, 1F, 0F); // Box 295
+		bodyModel[282].setRotationPoint(-13F, -15F, -11.01F);
 
 		bodyModel[283].addBox(0F, 0F, 0F, 2, 3, 3, 0F); // Box 296 some up thing
 		bodyModel[283].setRotationPoint(14F, 0F, -10.5F);
@@ -1421,11 +1426,11 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 		bodyModel[295].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F); // Box 308 fuel shutoff
 		bodyModel[295].setRotationPoint(-11F, 0F, 9F);
 
-		bodyModel[296].addBox(0F, 0F, 0F, 2, 13, 0, 0F); // Box 309
-		bodyModel[296].setRotationPoint(-27F, -14F, 11F);
+		bodyModel[296].addBox(0F, 0F, 0F, 2, 14, 0, 0F); // Box 309
+		bodyModel[296].setRotationPoint(-27F, -15F, 11F);
 
-		bodyModel[297].addShapeBox(0F, 0F, 0F, 1, 6, 0, 0F,0.5F, -1F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0.5F, -1F, 0F, -2F, 0F, 0F, 1.5F, -1F, 0F, 1.5F, -1F, 0F, -2F, 0F, 0F); // Box 310
-		bodyModel[297].setRotationPoint(-25F, -14F, 11.01F);
+		bodyModel[297].addShapeBox(0F, 0F, 0F, 1, 6, 0, 0F,0.5F, -1F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0.5F, -1F, 0F, -2F, 1F, 0F, 1.5F, 0F, 0F, 1.5F, 0F, 0F, -2F, 1F, 0F); // Box 310
+		bodyModel[297].setRotationPoint(-25F, -15F, 11.01F);
 
 		bodyModel[298].addShapeBox(0F, 0F, 0F, 2, 6, 2, 0F,0F, 0.25F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.25F, 0F, 0F, -3.75F, 0F, 0F, -3.5F, 0F, 0F, -3.5F, 0F, 0F, -3.75F, 0F); // Box 527 why dont you filter some bitches instead
 		bodyModel[298].setRotationPoint(-16F, 0F, 8.5F);
@@ -1796,7 +1801,7 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 		bodyModel[411].setRotationPoint(-34F, -14F, -4F);
 
 		bodyModel[412].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 21F, -0.5F, 0F, 21F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 21F, -0.5F, 0F, 21F); // Box 413 cull handrail filler
-		bodyModel[412].setRotationPoint(-27F, -14F, -11F);
+		bodyModel[412].setRotationPoint(-27F, -15F, -11F);
 
 		bodyModel[413].addShapeBox(0F, 0F, 0F, 1, 5, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 21F, 0F, 0F, 21F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 21F, 0F, 0F, 21F); // Box 414 cull window partition box
 		bodyModel[413].setRotationPoint(-33.5F, -19F, -11F);
@@ -1923,6 +1928,21 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 
 		bodyModel[449].addShapeBox(0F, 0F, 0F, 9, 4, 1, 0F,0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 467 is this seriously how they do extended range db i am going to shit myself
 		bodyModel[449].setRotationPoint(-24F, -22F, -8F);
+
+		bodyModel[450].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 364 prime base
+		bodyModel[450].setRotationPoint(-35F, -23F, -1F);
+
+		bodyModel[451].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F); // Box 6 PRIME2-1
+		bodyModel[451].setRotationPoint(-35F, -23.5F, -1F);
+
+		bodyModel[452].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F); // Box 7 PRIME2-3
+		bodyModel[452].setRotationPoint(-35F, -23.5F, -1F);
+
+		bodyModel[453].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F); // Box 8 PRIME2-2
+		bodyModel[453].setRotationPoint(-35F, -23.5F, -1F);
+
+		bodyModel[454].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -1F, 0F, -1F, -1F, 0F, -1F); // Box 9 PRIME2-4
+		bodyModel[454].setRotationPoint(-35F, -23.5F, -1F);
 	}
 	ModelHTCR2_new bogie = new ModelHTCR2_new();
 
@@ -1930,18 +1950,7 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
 	{
 		ModelRenderHelper.renderModelWithRollingStockLightControls(bodyModel, entity, f5);
-		if (GetColor(entity) == 634 ||GetColor(entity) == 124) {
-			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/newBogies/ge_hiad_Silver.png"));
-			GL11.glPushMatrix();
-			GL11.glTranslatef(-2F, 0.0F, 0F);
-			bogie.render(entity, f, f1, f2, f3, f4, f5);
-
-			GL11.glRotatef(180, 0, 1, 0);
-			GL11.glTranslated(-4F, 0.0F, 0);
-			bogie.render(entity, f, f1, f2, f3, f4, f5);
-			GL11.glPopMatrix();
-
-		}else if (GetColor(entity) == 10) {
+		if (GetColor(entity) == 1) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/newBogies/HTCR_newer_itsilver.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslatef(-1.97F, 0.0F, 0F);
@@ -1952,7 +1961,7 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 			bogie.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
 
-		}else if (GetColor(entity) == 18 || GetColor(entity) == 19) {
+		}else if (GetColor(entity) == 1213) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/newBogies/HTCR_newer_bnsilver.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslatef(-1.97F, 0.0F, 0F);
@@ -1963,8 +1972,7 @@ public class ModelSD70M extends ModelConverter //Same as Filename
 			bogie.render(entity, f, f1, f2, f3, f4, f5);
 			GL11.glPopMatrix();
 
-		}else if (GetColor(entity) == 23 ||GetColor(entity) == 24
-				|| GetColor(entity) == 25 || GetColor(entity) == 26) {
+		}else if (GetColor(entity) == 232) {
 			Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/newBogies/HTCR_newer_upgrey.png"));
 			GL11.glPushMatrix();
 			GL11.glTranslatef(-1.97F, 0.0F, 0F);

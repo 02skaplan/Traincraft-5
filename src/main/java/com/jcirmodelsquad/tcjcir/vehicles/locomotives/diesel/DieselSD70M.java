@@ -18,10 +18,10 @@ public class DieselSD70M extends DieselTrain {
     public DieselSD70M(World world) {
         super(world, LiquidManager.dieselFilter());
         
-        InsertTexture(0, "Blandsville & Blankerston");
-        InsertTexture(1, "");
-        InsertTexture(2, "");
-
+        InsertTexture(0, "EMD Demo 7001");
+        InsertTexture(1, "NS (Early)");
+        InsertTexture(2, "Blandsville & Blankerston");
+        InsertTexture(3, "");
     }
 
     @Override
