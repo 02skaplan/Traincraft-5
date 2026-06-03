@@ -78,6 +78,11 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
 	 */
 	protected ITrainRecord trainSpec;
 
+	public ITrainRecord getTrainSpec()
+	{
+		return trainSpec;
+	}
+
 	private ITrainRenderRecord renderSpec;
 	private SubTrainRenderRecord subTrainRenderRecordSpec;
 

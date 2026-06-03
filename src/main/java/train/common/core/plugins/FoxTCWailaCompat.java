@@ -3,6 +3,7 @@ package train.common.core.plugins;
 import mcp.mobius.waila.api.IWailaDataProvider;
 import mcp.mobius.waila.api.IWailaEntityProvider;
 import mcp.mobius.waila.api.IWailaRegistrar;
+import train.common.api.EntityBogie;
 import train.common.api.EntityRollingStock;
 import train.common.blocks.BlockTCRail;
 import train.common.blocks.BlockTCRailGag;
@@ -62,6 +63,10 @@ public final class FoxTCWailaCompat {
         registrar.registerBodyProvider(entityProvider, EntityRollingStock.class);
         registrar.registerTailProvider(entityProvider, EntityRollingStock.class);
 
+        registrar.registerHeadProvider(entityProvider, EntityBogie.class);
+        registrar.registerBodyProvider(entityProvider, EntityBogie.class);
+        registrar.registerTailProvider(entityProvider, EntityBogie.class);
+
         /*
          * Only keep this if your WAILA jar supports entity NBT providers.
          *
@@ -69,5 +74,6 @@ public final class FoxTCWailaCompat {
          * entity getNBTData(...) method from FoxTCWailaProvider.
          */
         registrar.registerNBTProvider(entityProvider, EntityRollingStock.class);
+        registrar.registerNBTProvider(entityProvider, EntityBogie.class);
     }
 }

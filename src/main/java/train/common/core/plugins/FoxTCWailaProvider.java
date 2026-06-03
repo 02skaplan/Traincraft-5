@@ -12,6 +12,7 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import train.common.api.AbstractTrains;
+import train.common.api.EntityBogie;
 import train.common.library.track.EnumTracks;
 import train.common.library.track.ITrackDefinition;
 import train.common.tile.ITileTCRail;
@@ -136,15 +137,25 @@ public class FoxTCWailaProvider implements IWailaDataProvider, IWailaEntityProvi
             return tag;
         }
 
-        AbstractTrains stock = (AbstractTrains) entity;
+        AbstractTrains stock;
 
-        tag.setString("foxtc.entityClass", entity.getClass().getSimpleName());
-        tag.setInteger("foxtc.entityId", entity.getEntityId());
+        if (entity instanceof EntityBogie)
+        {
+            stock = ((EntityBogie)entity).entityMainTrain;
+            tag.setString("foxtc.bogienameoverride", stock.getCommandSenderName());
+        }
+        else
+        {
+            stock = (AbstractTrains) entity;
+        }
+
+        tag.setString("foxtc.entityClass", stock.getClass().getSimpleName());
+        tag.setInteger("foxtc.entityId", stock.getEntityId());
 
         Object type = firstNonNull(
-                callNoArg(entity, "getTrainType"),
-                callNoArg(entity, "type"),
-                getField(entity, "type")
+                callNoArg(stock, "getTrainType"),
+                callNoArg(stock, "type"),
+                getField(stock, "type")
         );
 
         tag.setString("foxtc.note", stock.getTrainNote());
@@ -154,10 +165,10 @@ public class FoxTCWailaProvider implements IWailaDataProvider, IWailaEntityProvi
         }
 
         Object owner = firstNonNull(
-                callNoArg(entity, "getOwner"),
-                callNoArg(entity, "getOwnerName"),
-                getField(entity, "owner"),
-                getField(entity, "ownerName")
+                callNoArg(stock, "getOwner"),
+                callNoArg(stock, "getOwnerName"),
+                getField(stock, "owner"),
+                getField(stock, "ownerName")
         );
 
         if (owner != null) {
@@ -274,7 +285,15 @@ public class FoxTCWailaProvider implements IWailaDataProvider, IWailaEntityProvi
         }
 
         currenttip.clear();
-        currenttip.add(EnumChatFormatting.GOLD + safeEntityName(entity));
+        if (accessor.getNBTData().hasKey("foxtc.bogienameoverride"))
+        {
+            currenttip.add(EnumChatFormatting.GOLD + accessor.getNBTData().getString("foxtc.bogienameoverride") + " (Bogie)");
+        }
+        else
+        {
+            currenttip.add(EnumChatFormatting.GOLD + safeEntityName(entity));
+        }
+
         return currenttip;
     }
 
