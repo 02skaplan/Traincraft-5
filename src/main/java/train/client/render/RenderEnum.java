@@ -1386,9 +1386,9 @@ public enum RenderEnum implements ITrainRenderRecord, ISubTrainRenderRecord
 			add(new double[]{2.31D, 1.4D, 0.0D});
 		}
 	}, "", null, 0, false),
-	SD70Mac( DieselSD70Mac.class, new ModelSD70Mac(), "sd70mac_", true,new float[] {-2.1F, 0.15F, 0F},  new float[] { 0F, 180F, 180F }, null, "smoke", 5,  new ArrayList<double[]>() {
+	SD70Mac( DieselSD70Mac.class, new ModelSD70Mac_new(), "sd70mac_", true,new float[] {-2.025F, 0.15F, 0F},  new float[] { 0F, 180F, 180F }, null, "smoke", 5,  new ArrayList<double[]>() {
 		{
-			add(new double[]{2.2D, 1.5D, 0.0D});
+			add(new double[]{2.31D, 1.4D, 0.0D});
 		}
 	}, "", null, 0, false),
 	SD70ACe( DieselSD70ACe.class,  new ModelSD70ACe(), "sd70ace_", true,new float[]{-2.025F, 0.15F, 0F},  new float[] { 0F, 180F, 180F }, null, "smoke", 5,  new ArrayList<double[]>() {

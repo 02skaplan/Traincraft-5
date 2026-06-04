@@ -4,6 +4,7 @@ import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.world.World;
 import train.common.api.DieselTrain;
 import train.common.api.LiquidManager;
+import train.common.core.util.TraincraftUtil;
 import train.common.enums.LockoutGroup;
 import train.common.library.EnumSounds;
 
@@ -18,23 +19,13 @@ public class DieselSD70Mac extends DieselTrain {
     public DieselSD70Mac(World world) {
         super(world, LiquidManager.dieselFilter());
 
-        InsertTexture(0, "EMD Demo");
-        InsertTexture(1, "Alaska Railroad");
-        InsertTexture(2, "CSXT (Yn2)");
-        InsertTexture(3, "ATSF (Warbonnet)");
-        InsertTexture(4, "Conrail");
-        InsertTexture(5, "Union Pacific");
-        InsertTexture(6, "Norfolk Southern");
-        InsertTexture(7, "Burlington Northern (Executive)");
-        InsertTexture(8, "BNSF (H2)");
-        InsertTexture(9, "Morristown Tenneva & Southern", LockoutGroup.MTS);
-        InsertTexture(10, "Southern Pacific");
-        InsertTexture(11, "Union Pacific (Ex-SP Patched)");
-        InsertTexture(12, "SST");
-        InsertTexture(13, "Joblogh Rail Network");
-
-
-
+        InsertTexture(0, "Alaska Railroad (Passenger MACs, 4317-4328");
+        InsertTexture(1, "CSXT (Yn2)");
+        InsertTexture(2, "CSXT (Yn3)");
+        InsertTexture(3, "Blandsville & Blankerston");
+        InsertTexture(4, "");
+        InsertTexture(5, "");
+        InsertTexture(6, "");
     }
 
     @Override
@@ -42,11 +33,31 @@ public class DieselSD70Mac extends DieselTrain {
     {
         return "US";
     }
-    
-
-
 
     @Override
+    public void updateRiderPosition() { TraincraftUtil.updateRider(this, 4.3, 0.3, -0.35); }
+
+    @Override
+    public float getOptimalDistance(EntityMinecart cart) { return 1.45F;
+    }
+
+    @Override
+    public String transportYear() {
+        return "1993-2004";
+    }
+
+    @Override
+    public String getInventoryName() {
+        return "EMD SD70Mac";
+    }
+
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
+
+    /*@Override
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
         double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
@@ -102,7 +113,9 @@ public class DieselSD70Mac extends DieselTrain {
         return "EMD SD70Mac";
     }
 
-
-
-
+    @Override
+    public int getTankCapacity()
+    {
+        return 20000;
+    }
 }

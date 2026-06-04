@@ -1800,7 +1800,7 @@ public class RegisterBAPTrains
                             .setAccelerationRate(0.8)
                             .setBrakeRate(0.87)
                             .setTankCapacity(20000)
-                            .setColors(new String[] {"Red", "Black", "LightGrey"})
+                            .setColors(new String[] {"Red", "Black", "LightGrey", "Blue", "Skin16"})
                             .setGuiRenderScale(12)
                             .setBogieLocoPosition(-4.0)
             );
@@ -1813,13 +1813,13 @@ public class RegisterBAPTrains
                             .setMaxSpeed(112)
                             .setMass(0)
                             .setFuelConsumption(40)
-                            .setHeatingTime(200)
-                            .setAccelerationRate(0.7)
+                            .setHeatingTime(180)
+                            .setAccelerationRate(0.8)
                             .setBrakeRate(0.85)
                             .setTankCapacity(20000)
-                            .setColors(new String[]{"Red", "Blue", "Grey", "LightGrey", "LightBlue", "Yellow", "Black","Green", "Orange", "Lime", "Pink", "Magenta", "Brown", "Cyan"})
+                            .setColors(new String[]{"Blue", "Grey", "Skin16", "LightGrey"})
                             .setGuiRenderScale(12)
-                            .setBogieLocoPosition(-4)
+                            .setBogieLocoPosition(-4.25)
             );
 
             // SD70ACe
