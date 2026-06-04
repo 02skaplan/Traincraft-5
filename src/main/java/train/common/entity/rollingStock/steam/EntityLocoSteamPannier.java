@@ -46,16 +46,4 @@ public class EntityLocoSteamPannier extends SteamTrain {
 	{
 		return 80;
 	}
-
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 903;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 8000;
-	}
 }

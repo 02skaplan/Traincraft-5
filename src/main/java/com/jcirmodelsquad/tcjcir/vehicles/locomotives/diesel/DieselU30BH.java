@@ -27,12 +27,6 @@ public class DieselU30BH extends DieselTrain {
         InsertTexture(5, "CRL (2006-onwards)");
     }
 
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 2950;
-    }
-
 
     @Override
     public String transportCountry()
@@ -54,11 +48,5 @@ public class DieselU30BH extends DieselTrain {
     @Override
     public boolean isFictional() {
         return true;
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
     }
 }

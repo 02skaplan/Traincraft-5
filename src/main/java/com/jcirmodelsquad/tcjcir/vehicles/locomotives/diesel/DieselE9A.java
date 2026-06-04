@@ -78,12 +78,6 @@ public class DieselE9A extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2400;
-    }
-
-    @Override
     public String transportYear() {
         return "1954-1964";
     }
@@ -91,12 +85,6 @@ public class DieselE9A extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD E9A";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 11000;
     }
 
     

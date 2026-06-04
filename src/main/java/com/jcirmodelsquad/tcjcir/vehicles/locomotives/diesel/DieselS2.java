@@ -32,12 +32,6 @@ public class DieselS2 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1000;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -99,12 +93,6 @@ public class DieselS2 extends DieselTrain {
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return (1F);
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 6000;
     }
     
 

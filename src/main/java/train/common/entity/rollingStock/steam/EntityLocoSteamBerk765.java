@@ -52,17 +52,5 @@ public class EntityLocoSteamBerk765 extends SteamTrain {
 	{
 		return "US";
 	}
-
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 2563;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 10000;
-	}
 	
 }

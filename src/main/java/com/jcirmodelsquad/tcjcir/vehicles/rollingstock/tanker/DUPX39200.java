@@ -51,12 +51,6 @@ public class DUPX39200 extends AbstractStandardTankerCar {
     }
 
     @Override
-    public int getTankCapacity()
-    {
-        return 148000;
-    }
-
-    @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return 3.5F;
     }

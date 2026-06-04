@@ -18,12 +18,6 @@ public class Thanos extends ElectricTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 696969;
-    }
-
-    @Override
     public void updateRiderPosition() {
         if(riddenByEntity==null){return;}
         riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() + 0.10F, posZ);

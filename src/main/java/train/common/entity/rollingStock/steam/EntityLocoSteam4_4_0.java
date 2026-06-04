@@ -50,10 +50,4 @@ public class EntityLocoSteam4_4_0 extends SteamTrain {
 	{
 		return 400;
 	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 5000;
-	}
 }

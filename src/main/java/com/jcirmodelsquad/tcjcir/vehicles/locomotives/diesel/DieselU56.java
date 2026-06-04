@@ -24,12 +24,6 @@ public class DieselU56 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 5600;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -49,11 +43,5 @@ public class DieselU56 extends DieselTrain {
     @Override
     public boolean isFictional() {
         return true;
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 15000;
     }
 }

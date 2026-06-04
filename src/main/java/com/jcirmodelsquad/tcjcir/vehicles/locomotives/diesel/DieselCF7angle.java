@@ -77,12 +77,6 @@ public class DieselCF7angle extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1500;
-    }
-
-    @Override
     public String transportYear() {
         return "1969-1978";
     }
@@ -90,12 +84,6 @@ public class DieselCF7angle extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD CF7 Angle Cab";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 10000;
     }
 
 

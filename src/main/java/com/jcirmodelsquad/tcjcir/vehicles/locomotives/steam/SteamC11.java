@@ -55,12 +55,6 @@ public class SteamC11 extends SteamTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 1030;
-	}
-
-	@Override
 	public String getInventoryName() {
 		return "JNR C411";
 	}
@@ -74,17 +68,5 @@ public class SteamC11 extends SteamTrain {
 	public String transportCountry()
 	{
 		return "JP";
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 100;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 16000;
 	}
 }

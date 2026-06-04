@@ -49,19 +49,7 @@ public class DieselC424 extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.3F; }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2400;
-    }
-
-    @Override
     public String getInventoryName() { return "ALCo C424"; }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 18000;
-    }
 
     
     

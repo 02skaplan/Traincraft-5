@@ -34,12 +34,6 @@ public class DieselHH660 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 660;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -87,11 +81,5 @@ public class DieselHH660 extends DieselTrain {
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return (1F);
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 6000;
     }
 }

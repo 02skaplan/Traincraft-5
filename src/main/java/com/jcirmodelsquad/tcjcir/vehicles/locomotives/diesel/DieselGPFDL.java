@@ -25,12 +25,6 @@ public class DieselGPFDL extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2250;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -81,11 +75,5 @@ public class DieselGPFDL extends DieselTrain {
     @Override
     public boolean isFictional() {
         return true;
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 18000;
     }
 }

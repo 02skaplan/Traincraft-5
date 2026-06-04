@@ -30,13 +30,6 @@ public class DieselFP45 extends DieselTrain {
         return "US";
     }
 
-
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 3600;
-    }
-
     @Override
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
@@ -91,12 +84,6 @@ public class DieselFP45 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD FP45";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 16000;
     }
 
     

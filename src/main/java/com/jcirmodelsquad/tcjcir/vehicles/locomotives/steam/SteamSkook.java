@@ -67,12 +67,6 @@ public class SteamSkook extends SteamTrain {
     }*/
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1470;
-    }
-
-    @Override
     public String getInventoryName() {
         return "Skookum 2-4-4-2";
     }
@@ -86,17 +80,5 @@ public class SteamSkook extends SteamTrain {
     public String transportCountry()
     {
         return "US";
-    }
-
-    @Override
-    public int getWaterConsumption()
-    {
-        return 75;
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 2000;
     }
 }

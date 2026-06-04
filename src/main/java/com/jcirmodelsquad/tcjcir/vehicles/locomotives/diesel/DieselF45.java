@@ -72,12 +72,6 @@ public class DieselF45 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 3600;
-    }
-
-    @Override
     public String transportYear() {
         return "1968-1971";
     }
@@ -85,12 +79,6 @@ public class DieselF45 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD F45";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 16000;
     }
 
     

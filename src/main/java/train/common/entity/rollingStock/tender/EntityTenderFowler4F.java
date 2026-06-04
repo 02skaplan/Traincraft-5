@@ -22,10 +22,4 @@ public class EntityTenderFowler4F extends Tender
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.8F;
 	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 15000;
-	}
 }

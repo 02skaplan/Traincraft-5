@@ -34,12 +34,6 @@ public class DieselH16_66 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1600;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -96,12 +90,6 @@ public class DieselH16_66 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "FM H16-66";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 16000;
     }
 
     

@@ -43,12 +43,6 @@ public class DieselBQ23 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2250;
-    }
-
-    @Override
     public String transportYear() {
         return "1978-1979";
     }
@@ -56,12 +50,6 @@ public class DieselBQ23 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "GE BQ23-7";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
     }
 
 }

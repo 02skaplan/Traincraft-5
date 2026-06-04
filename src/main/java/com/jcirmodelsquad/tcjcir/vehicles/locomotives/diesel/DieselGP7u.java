@@ -38,12 +38,6 @@ public class DieselGP7u extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1500;
-    }
-
-    @Override
     public void updateRiderPosition() { TraincraftUtil.updateRider(this, 2.55, 0.1, -0.35); }
 
     @Override
@@ -58,11 +52,5 @@ public class DieselGP7u extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD GP7u";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 18000;
     }
 }

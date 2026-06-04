@@ -55,12 +55,6 @@ public class DieselDash840C extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 4000;
-    }
-
-    @Override
     public String transportYear() {
         return "1987-1992";
     }
@@ -68,12 +62,6 @@ public class DieselDash840C extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "GE C40-8";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 21000;
     }
 
 

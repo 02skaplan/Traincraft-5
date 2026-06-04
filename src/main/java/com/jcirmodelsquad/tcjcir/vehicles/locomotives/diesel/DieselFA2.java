@@ -75,12 +75,6 @@ public class DieselFA2 extends DieselTrain {
             riddenByEntity.setPosition(bogieX1, pitch, bogieZ1);
         }
     }
-
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 1600;
-    }
     
 
 
@@ -96,12 +90,6 @@ public class DieselFA2 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "Alco FA-2";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 15000;
     }
 
     

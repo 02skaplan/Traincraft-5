@@ -42,12 +42,6 @@ public class DieselES44 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 4400;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -77,13 +71,6 @@ public class DieselES44 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "GE ES44";
-    }
-
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 21000;
     }
 
 

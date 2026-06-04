@@ -40,12 +40,6 @@ public class DieselCE8 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2250;
-    }
-
-    @Override
     public String getInventoryName() {
         return "CEE CE8";
     }
@@ -58,11 +52,5 @@ public class DieselCE8 extends DieselTrain {
     @Override
     public String transportYear() {
         return "1980";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 11000;
     }
 }

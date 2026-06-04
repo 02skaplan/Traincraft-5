@@ -20,12 +20,6 @@ public class DieselHHgregg extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 9932;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -86,12 +80,6 @@ public class DieselHHgregg extends DieselTrain {
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return (1F);
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 7000;
     }
     
 

@@ -25,12 +25,6 @@ public class SteamVBShay2 extends SteamTrain {
 	public boolean shouldRiderSit(){return false;}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 630;
-	}
-
-	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, 0, 0.5, -0.35); }
 
 	@Override
@@ -47,17 +41,5 @@ public class SteamVBShay2 extends SteamTrain {
 	public String transportCountry()
 	{
 		return "US";
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 160;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 6000;
 	}
 }

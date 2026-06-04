@@ -19,12 +19,6 @@ public class EntityTenderNS3700 extends Tender{
 	}
 
 	@Override
-	public int getTankCapacity()
-	{
-		return 16000;
-	}
-
-	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.1F;
 	}

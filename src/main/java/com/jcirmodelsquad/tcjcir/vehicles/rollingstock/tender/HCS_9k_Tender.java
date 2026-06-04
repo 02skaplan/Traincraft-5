@@ -37,12 +37,6 @@ public class HCS_9k_Tender extends Tender  {
     }
 
     @Override
-    public int getTankCapacity()
-    {
-        return 34000;
-    }
-
-    @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return 1.8F;
     }

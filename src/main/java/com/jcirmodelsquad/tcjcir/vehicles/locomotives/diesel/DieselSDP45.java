@@ -31,12 +31,6 @@ public class DieselSDP45 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 3600;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -97,12 +91,6 @@ public class DieselSDP45 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD SDP45";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 14000;
     }
 
 

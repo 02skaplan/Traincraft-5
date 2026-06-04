@@ -30,12 +30,6 @@ public class DieselGP38H3 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2000;
-    }
-
-    @Override
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
         double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
@@ -81,11 +75,5 @@ public class DieselGP38H3 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD GP38H3";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 16000;
     }
 }

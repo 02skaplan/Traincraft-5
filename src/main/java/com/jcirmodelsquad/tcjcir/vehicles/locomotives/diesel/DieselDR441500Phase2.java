@@ -54,20 +54,8 @@ public class DieselDR441500Phase2 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1500;
-    }
-
-    @Override
     public String getInventoryName() {
         return "BLW DR-4-4-1500 (Phase 2)";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 15000;
     }
 
     

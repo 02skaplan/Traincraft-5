@@ -59,12 +59,6 @@ public class SteamOnion extends SteamTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 350;
-	}
-
-	@Override
 	public String getInventoryName() {
 		return "Onion";
 	}
@@ -78,17 +72,5 @@ public class SteamOnion extends SteamTrain {
 	public String transportCountry()
 	{
 		return "Moon";
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 240;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 8000;
 	}
 }

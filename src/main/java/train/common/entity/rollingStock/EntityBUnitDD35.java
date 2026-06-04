@@ -28,12 +28,6 @@ public class EntityBUnitDD35 extends LiquidTank implements IFluidHandler {
 	}
 
 	@Override
-	public int getTankCapacity()
-	{
-		return 12000;
-	}
-
-	@Override
 	public void onUpdate() {
 		super.onUpdate();
 		checkInvent(cargoItems[0]);

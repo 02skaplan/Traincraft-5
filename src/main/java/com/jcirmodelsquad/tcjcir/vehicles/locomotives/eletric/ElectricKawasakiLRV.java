@@ -17,12 +17,6 @@ public class ElectricKawasakiLRV extends ElectricTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 200;
-	}
-
-	@Override
 	public void updateRiderPosition() {
 		double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
 		double distance = 3.75;

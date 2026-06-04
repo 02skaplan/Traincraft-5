@@ -46,16 +46,4 @@ public class EntityLocoSteamBR01_DB extends SteamTrain {
 	{
 		return "de";
 	}
-
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 2120;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 10000;
-	}
 }

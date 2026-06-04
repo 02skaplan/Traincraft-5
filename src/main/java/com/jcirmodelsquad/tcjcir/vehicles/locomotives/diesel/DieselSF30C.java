@@ -23,12 +23,6 @@ public class DieselSF30C extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 3000;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -89,12 +83,6 @@ public class DieselSF30C extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "GE SF30C";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 21000;
     }
 
     

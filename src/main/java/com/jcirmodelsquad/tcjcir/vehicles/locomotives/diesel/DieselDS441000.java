@@ -81,20 +81,8 @@ public class DieselDS441000 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1000;
-    }
-
-    @Override
     public String getInventoryName() {
         return "BLH DS-4-4-1000 (606SC)";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 8000;
     }
 
     

@@ -20,12 +20,6 @@ public class ElectricAEM7 extends ElectricTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 7000;
-	}
-
-	@Override
 	public void updateRiderPosition() {
 		TraincraftUtil.updateRider(this, 1.0, 0.0);
 	}

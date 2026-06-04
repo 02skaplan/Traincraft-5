@@ -24,12 +24,6 @@ public class DieselVO1000 extends DieselTrain {
         InsertTexture(4, "Dee Dee Valley");
 
     }
-
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 1000;
-    }
     
 
     
@@ -84,12 +78,6 @@ public class DieselVO1000 extends DieselTrain {
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return (1.05F);
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 6000;
     }
     
 

@@ -18,12 +18,6 @@ public class DieselHighrailVan extends DieselTrain {
 
     }
 
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 90;
-    }
-
 
 
 
@@ -77,12 +71,6 @@ public class DieselHighrailVan extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "Generic Highrail Van";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 1000;
     }
 
 

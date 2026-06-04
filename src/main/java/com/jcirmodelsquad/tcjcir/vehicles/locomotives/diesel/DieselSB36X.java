@@ -34,12 +34,6 @@ public class DieselSB36X extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 3600;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -63,11 +57,5 @@ public class DieselSB36X extends DieselTrain {
     @Override
     public String transportYear() {
         return "1988";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
     }
 }

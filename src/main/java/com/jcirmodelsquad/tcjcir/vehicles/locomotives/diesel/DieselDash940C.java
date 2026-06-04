@@ -36,12 +36,6 @@ public class DieselDash940C extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.3F; }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 4000;
-    }
-
-    @Override
     public String transportYear() {
         return "1995";
     }
@@ -49,12 +43,6 @@ public class DieselDash940C extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "GE Dash 9-40C";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 21000;
     }
 
 }

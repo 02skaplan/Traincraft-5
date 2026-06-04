@@ -40,17 +40,5 @@ public class EntityLocoDieselBamboo extends DieselTrain {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (0.3F);
 	}
-
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 30;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 3000;
-	}
 	
 }

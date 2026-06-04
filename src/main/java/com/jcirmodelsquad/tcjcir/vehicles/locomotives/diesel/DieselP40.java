@@ -24,12 +24,6 @@ public class DieselP40 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 4000;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -90,12 +84,6 @@ public class DieselP40 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "Ge P40";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 15000;
     }
 
 

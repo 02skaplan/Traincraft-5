@@ -25,12 +25,6 @@ public class SteamAlco0_6_0T extends SteamTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 360;
-	}
-
-	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.33, -0.23, -0.45); }
 
 	@Override
@@ -47,18 +41,6 @@ public class SteamAlco0_6_0T extends SteamTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.15F;
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 50;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 8000;
 	}
 
 }

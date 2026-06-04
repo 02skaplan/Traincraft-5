@@ -73,20 +73,8 @@ public class DieselC415H extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1500;
-    }
-
-    @Override
     public String getInventoryName() {
         return "ALCo C415 High Visibility";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 10000;
     }
 
     

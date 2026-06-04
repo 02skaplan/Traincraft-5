@@ -45,17 +45,5 @@ public class EntityLocoDieselV60_DB extends DieselTrain {
 		return (1.5F);
 	}
 
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 1058;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 8000;
-	}
-
 	
 }

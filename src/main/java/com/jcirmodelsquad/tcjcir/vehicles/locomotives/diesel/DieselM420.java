@@ -27,12 +27,6 @@ public class DieselM420 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2000;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "CA";
@@ -58,12 +52,6 @@ public class DieselM420 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "MLW M420";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
     }
 
 

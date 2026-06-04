@@ -54,12 +54,6 @@ public class DieselF3A extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1500;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -79,11 +73,5 @@ public class DieselF3A extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD F3a";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 10000;
     }
 }

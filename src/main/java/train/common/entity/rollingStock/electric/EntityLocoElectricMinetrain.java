@@ -34,11 +34,5 @@ public class EntityLocoElectricMinetrain extends ElectricTrain {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 0.53F;
 	}
-
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 500;
-	}
 	
 }

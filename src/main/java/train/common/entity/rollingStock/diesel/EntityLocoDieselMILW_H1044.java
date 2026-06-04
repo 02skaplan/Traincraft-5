@@ -37,17 +37,5 @@ public class EntityLocoDieselMILW_H1044 extends DieselTrain {
 		return (0.8F);
 	}
 
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 1618;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 8000;
-	}
-
 	
 }

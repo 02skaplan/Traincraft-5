@@ -39,12 +39,6 @@ public class DieselFP7A extends DieselTrain {
     @Override
     public void updateRiderPosition() { TraincraftUtil.updateRider(this, 2.5, 0.19, -0.35); }
 
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 1500;
-    }
-
 
     
 
@@ -62,12 +56,6 @@ public class DieselFP7A extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD FP7A";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 10000;
     }
 
     

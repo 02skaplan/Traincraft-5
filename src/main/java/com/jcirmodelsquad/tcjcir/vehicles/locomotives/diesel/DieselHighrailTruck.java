@@ -18,12 +18,6 @@ public class DieselHighrailTruck extends DieselTrain {
         
         //apparently, the reason "world" was red was cus it needed the tank capacity thingg from something else, so iDk reER
     }
-
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 90;
-    }
     
 
     @Override
@@ -77,12 +71,6 @@ public class DieselHighrailTruck extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "Generic Highrail Truck";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 1000;
     }
 
     

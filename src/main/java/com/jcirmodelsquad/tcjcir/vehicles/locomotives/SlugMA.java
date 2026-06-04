@@ -26,10 +26,4 @@ public class SlugMA extends AbstractTankSlug
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 2.5F;
 	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 18000;
-	}
 }

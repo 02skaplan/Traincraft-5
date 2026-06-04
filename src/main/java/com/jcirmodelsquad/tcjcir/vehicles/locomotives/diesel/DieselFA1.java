@@ -81,12 +81,6 @@ public class DieselFA1 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1600;
-    }
-
-    @Override
     public float getOptimalDistance(EntityMinecart cart) { return 0.93F;
     }
 
@@ -95,12 +89,6 @@ public class DieselFA1 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "Alco FA-1";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 15000;
     }
 
     

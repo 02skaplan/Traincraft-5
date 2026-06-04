@@ -73,12 +73,6 @@ public class DieselGP40Dash2 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 3000;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -98,11 +92,5 @@ public class DieselGP40Dash2 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD GP40";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
     }
 }

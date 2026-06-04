@@ -37,17 +37,5 @@ public class EntityLocoDieselWLs40 extends DieselTrain {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (1F);
 	}
-
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 60;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 3000;
-	}
 	
 }

@@ -27,10 +27,4 @@ public class TenderShay3Truck extends Tender  {
 	{
 		return "US";
 	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 10000;
-	}
 }

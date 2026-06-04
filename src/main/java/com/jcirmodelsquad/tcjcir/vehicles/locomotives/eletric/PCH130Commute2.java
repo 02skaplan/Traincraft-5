@@ -26,12 +26,6 @@ public class PCH130Commute2 extends ElectricTrain implements IAT2Compatible {
         script2 = new AutoTrain2(this);
     }
 
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 1450;
-    }
-
     
 
     @Override

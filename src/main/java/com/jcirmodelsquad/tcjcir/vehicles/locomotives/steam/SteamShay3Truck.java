@@ -21,12 +21,6 @@ public class SteamShay3Truck extends SteamTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 838;
-	}
-
-	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, +0.1, 0.0, -0.35); }
 
 	/*@Override
@@ -49,17 +43,5 @@ public class SteamShay3Truck extends SteamTrain {
 	public String transportCountry()
 	{
 		return "US";
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 75;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 4000;
 	}
 }

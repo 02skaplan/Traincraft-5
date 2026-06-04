@@ -75,12 +75,6 @@ public class PCH100H extends HydrogenTrain{
     }*/
 
     @Override
-    public int getTankCapacity()
-    {
-        return 7000;
-    }
-
-    @Override
     public void onUpdate() {
         checkInvent(locoInvent[0]);
         super.onUpdate();
@@ -129,12 +123,6 @@ public class PCH100H extends HydrogenTrain{
             }
         }
         return true;
-    }
-
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 900;
     }
 
     @Override

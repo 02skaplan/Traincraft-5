@@ -56,12 +56,6 @@ public class SteamPELoco extends SteamTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 1484;
-	}
-
-	@Override
 	public String getInventoryName() {
 		return "Polar Express Locomotive";
 	}
@@ -75,17 +69,5 @@ public class SteamPELoco extends SteamTrain {
 	public String transportCountry()
 	{
 		return "US";
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 80;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 4000;
 	}
 }

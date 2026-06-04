@@ -27,12 +27,6 @@ public class ElectricTwoBil extends ElectricTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 428;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "UK";

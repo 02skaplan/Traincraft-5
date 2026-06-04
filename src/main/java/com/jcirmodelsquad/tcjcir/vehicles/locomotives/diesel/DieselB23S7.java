@@ -43,12 +43,6 @@ public class DieselB23S7 extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.315F; }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2250;
-    }
-
-    @Override
     public String getInventoryName() {
         return "GE B23-S7";
     }
@@ -56,11 +50,5 @@ public class DieselB23S7 extends DieselTrain {
     @Override
     public String transportYear() {
         return "1989-1991";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
     }
 }

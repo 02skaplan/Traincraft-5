@@ -36,12 +36,6 @@ public class DieselFB2 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1600;
-    }
-
-    @Override
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
         double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
@@ -92,12 +86,6 @@ public class DieselFB2 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "Alco FB-2";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 15000;
     }
 
 

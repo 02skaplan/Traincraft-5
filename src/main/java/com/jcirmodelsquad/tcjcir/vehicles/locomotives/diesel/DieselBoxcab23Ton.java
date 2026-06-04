@@ -69,12 +69,6 @@ public class DieselBoxcab23Ton extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 150;
-    }
-
-    @Override
     public String transportYear() {
         return "1939";
     }
@@ -82,11 +76,5 @@ public class DieselBoxcab23Ton extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "GE 23 Ton Boxcab";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 4000;
     }
 }

@@ -26,12 +26,6 @@ public class DieselNRE3gs21b extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2100;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -88,12 +82,6 @@ public class DieselNRE3gs21b extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "NRE 3GS21B Genset";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 14000;
     }
 
     

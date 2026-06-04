@@ -58,12 +58,6 @@ public class DieselSW1500 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1500;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -83,12 +77,6 @@ public class DieselSW1500 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD SW1500";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 10000;
     }
 
 }

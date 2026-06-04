@@ -28,12 +28,6 @@ public class DieselSD40dash2B extends DieselTrain {
     {
         return "US";
     }
-
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 3000;
-    }
     
 
     @Override
@@ -90,12 +84,6 @@ public class DieselSD40dash2B extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD SD40-2B";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 12000;
     }
 
 

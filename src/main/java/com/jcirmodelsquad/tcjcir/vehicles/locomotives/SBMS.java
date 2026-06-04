@@ -42,10 +42,4 @@ public class SBMS extends AbstractTankSlug
     public boolean isFictional(){
         return true;
     }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
-    }
 }

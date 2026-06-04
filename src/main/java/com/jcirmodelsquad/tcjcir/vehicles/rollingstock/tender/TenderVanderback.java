@@ -34,10 +34,4 @@ public class TenderVanderback extends Tender  {
 	{
 		return "US";
 	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 29000;
-	}
 }

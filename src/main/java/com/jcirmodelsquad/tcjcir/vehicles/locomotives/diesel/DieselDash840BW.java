@@ -53,12 +53,6 @@ public class DieselDash840BW extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 4000;
-    }
-
-    @Override
     public String transportYear() {
         return "1988-1992";
     }
@@ -66,11 +60,5 @@ public class DieselDash840BW extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "GE Dash 8-40BW";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
     }
 }

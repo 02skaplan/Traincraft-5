@@ -31,10 +31,4 @@ public class TenderLima2_8_0 extends Tender  {
 	{
 		return "US";
 	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 26000;
-	}
 }

@@ -22,12 +22,6 @@ public class DieselH24_66C extends DieselTrain {
         InsertTexture(2, "Canadian Pacific (Twin Steam Generators)");
     }
 
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 2400;
-    }
-
 
     
 
@@ -81,12 +75,6 @@ public class DieselH24_66C extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "FM H24-66";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 18000;
     }
 
 

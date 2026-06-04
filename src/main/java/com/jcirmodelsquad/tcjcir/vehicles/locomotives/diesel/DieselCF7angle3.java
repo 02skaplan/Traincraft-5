@@ -73,12 +73,6 @@ public class DieselCF7angle3 extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.2F; }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1500;
-    }
-
-    @Override
     public String getInventoryName() {
         return "EMD CF7 (Angle Cab)";
     }
@@ -91,11 +85,5 @@ public class DieselCF7angle3 extends DieselTrain {
     @Override
     public boolean isFictional() {
         return true;
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 10000;
     }
 }

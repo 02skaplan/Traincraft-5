@@ -42,12 +42,6 @@ public class DieselU36B extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 3600;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -100,11 +94,5 @@ public class DieselU36B extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "GE U36B";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
     }
 }

@@ -26,12 +26,6 @@ public class DieselGP39TDash2B extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2300;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -55,11 +49,5 @@ public class DieselGP39TDash2B extends DieselTrain {
     @Override
     public boolean isFictional() {
         return true;
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
     }
 }

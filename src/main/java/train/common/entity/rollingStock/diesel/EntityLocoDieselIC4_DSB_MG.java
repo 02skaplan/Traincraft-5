@@ -64,17 +64,5 @@ public class EntityLocoDieselIC4_DSB_MG extends DieselTrain {
 		return (0.1f);
 	}
 
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 760;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 20000;
-	}
-
 	
 }

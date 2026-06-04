@@ -28,12 +28,6 @@ public class DieselTR4 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1200;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -60,12 +54,6 @@ public class DieselTR4 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD TR4 Cow";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 8000;
     }
 
 

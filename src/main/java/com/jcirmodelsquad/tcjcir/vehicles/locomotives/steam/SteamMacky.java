@@ -57,12 +57,6 @@ public class SteamMacky extends SteamTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2069;
-    }
-
-    @Override
     public boolean isFictional() {
         return true;
     }
@@ -81,18 +75,6 @@ public class SteamMacky extends SteamTrain {
     public String transportCountry()
     {
         return "US";
-    }
-
-    @Override
-    public int getWaterConsumption()
-    {
-        return 25;
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 2000;
     }
 
 }

@@ -20,12 +20,6 @@ public class SteamBKno2a extends SteamTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 1450;
-	}
-
-	@Override
 	public String transportCountry()
 	{
 		return "US";
@@ -74,17 +68,5 @@ public class SteamBKno2a extends SteamTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 0.6F;
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 160;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 15000;
 	}
 }

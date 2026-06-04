@@ -15,12 +15,6 @@ public class ElectricEF1B extends ElectricTrain {
     public ElectricEF1B(World world) {
         super(world);
     }
-
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 1720;
-    }
     
     @Override
     public void updateRiderPosition() {

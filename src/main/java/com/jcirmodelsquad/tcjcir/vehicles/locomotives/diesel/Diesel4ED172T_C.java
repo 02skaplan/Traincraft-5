@@ -30,12 +30,6 @@ public class Diesel4ED172T_C extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.3F; }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1200;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -47,11 +41,5 @@ public class Diesel4ED172T_C extends DieselTrain {
     @Override
     public boolean isFictional() {
         return true;
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 16000;
     }
 }

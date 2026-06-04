@@ -51,11 +51,5 @@ public class EntityLocoElectricTramWood extends ElectricTrain {
 		//float dist = 0.1F;
 		return (0.7F);
 	}
-
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 300;
-	}
 	
 }

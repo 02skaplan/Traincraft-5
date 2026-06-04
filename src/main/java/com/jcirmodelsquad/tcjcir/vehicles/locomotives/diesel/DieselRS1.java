@@ -34,12 +34,6 @@ public class DieselRS1 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1000;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -65,12 +59,6 @@ public class DieselRS1 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "ALCo RS-1";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 8000;
     }
 
     

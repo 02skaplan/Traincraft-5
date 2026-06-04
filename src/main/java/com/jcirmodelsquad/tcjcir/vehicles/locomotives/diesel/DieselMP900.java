@@ -26,12 +26,6 @@ public class DieselMP900 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 950;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -51,11 +45,5 @@ public class DieselMP900 extends DieselTrain {
     @Override
     public boolean isFictional() {
         return true;
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 8000;
     }
 }

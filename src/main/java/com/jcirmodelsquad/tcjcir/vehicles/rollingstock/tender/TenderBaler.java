@@ -37,10 +37,4 @@ public class TenderBaler extends Tender  {
     {
         return "US";
     }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 15000;
-    }
 }

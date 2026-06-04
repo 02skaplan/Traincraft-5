@@ -66,12 +66,6 @@ public class DieselF40PH extends DieselTrain {
         }
     }
 
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 3000;
-    }
-
 
     
 
@@ -90,12 +84,6 @@ public class DieselF40PH extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD F40PH";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 10000;
     }
 
     

@@ -23,12 +23,6 @@ public class SteamBrank extends SteamTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 360;
-	}
-
-	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.28, -0.23, -0.45); }
 
 	@Override
@@ -50,17 +44,5 @@ public class SteamBrank extends SteamTrain {
 	public String transportCountry()
 	{
 		return "US";
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 160;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 8000;
 	}
 }

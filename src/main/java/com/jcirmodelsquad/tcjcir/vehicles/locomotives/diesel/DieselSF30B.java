@@ -31,12 +31,6 @@ public class DieselSF30B extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 3000;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -52,11 +46,5 @@ public class DieselSF30B extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "ATSF SF30B";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 25000;
     }
 }

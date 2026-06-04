@@ -27,10 +27,4 @@ public class EntityTenderC62Class extends Tender
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 2F;
 	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 140000;
-	}
 }

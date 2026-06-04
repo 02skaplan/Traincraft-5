@@ -21,12 +21,6 @@ public class Dieselgtavthing extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1550;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -84,12 +78,6 @@ public class Dieselgtavthing extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "GTAV Locomotive";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 10000;
     }
 
     

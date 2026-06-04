@@ -28,10 +28,4 @@ public class DOT11111000 extends AbstractStandardTankerCar {
     public float getOptimalDistance(EntityMinecart cart) {
         return 1.9375F;
     }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 41000;
-    }
 }

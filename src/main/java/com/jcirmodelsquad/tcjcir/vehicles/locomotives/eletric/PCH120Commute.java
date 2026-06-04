@@ -26,12 +26,6 @@ public class PCH120Commute extends ElectricTrain {
         script2 = new AutoTrain2(this);
     }
 
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 1400;
-    }
-
 
     @Override
     public void updateRiderPosition() {

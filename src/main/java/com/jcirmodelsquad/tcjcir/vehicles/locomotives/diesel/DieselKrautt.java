@@ -23,12 +23,6 @@ public class DieselKrautt extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 3540;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "DE";
@@ -54,12 +48,6 @@ public class DieselKrautt extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "Krauss-Maffei ML-4000";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
     }
 
     

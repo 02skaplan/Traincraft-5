@@ -43,16 +43,4 @@ public class EntityLocoSteamMogulBlue extends SteamTrain {
 	{
 		return 65;
 	}
-
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 500;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 5000;
-	}
 }

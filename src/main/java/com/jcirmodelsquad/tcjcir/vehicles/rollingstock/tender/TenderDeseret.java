@@ -33,10 +33,4 @@ public class TenderDeseret extends Tender  {
         return 1.8F;
     }
 
-    @Override
-    public int getTankCapacity()
-    {
-        return 57000;
-    }
-
 }

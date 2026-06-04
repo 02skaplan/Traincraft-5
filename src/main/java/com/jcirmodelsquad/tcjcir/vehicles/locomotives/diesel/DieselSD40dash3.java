@@ -26,12 +26,6 @@ public class DieselSD40dash3 extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 3000;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -62,12 +56,6 @@ public class DieselSD40dash3 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "CSX SD40-3";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 12000;
     }
 
 

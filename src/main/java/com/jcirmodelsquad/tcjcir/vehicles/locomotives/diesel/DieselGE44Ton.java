@@ -44,12 +44,6 @@ public class DieselGE44Ton extends DieselTrain {
 		return "US";
 	}
 
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 360;
-	}
-
 
 
 	@Override
@@ -95,11 +89,5 @@ public class DieselGE44Ton extends DieselTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (0.75F);
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 7000;
 	}
 }

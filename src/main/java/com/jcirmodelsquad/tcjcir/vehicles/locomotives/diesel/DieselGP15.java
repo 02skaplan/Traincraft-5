@@ -40,12 +40,6 @@ public class DieselGP15 extends DieselTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 1500;
-	}
-
-	@Override
 	public void updateRiderPosition() {
 		if(riddenByEntity==null){return;}
 		double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
@@ -92,11 +86,5 @@ public class DieselGP15 extends DieselTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (1.0F);
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 15000;
 	}
 }

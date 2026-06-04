@@ -36,12 +36,6 @@ public class ElectricFourCor extends ElectricTrain {
         }));
     }
 
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 900;
-    }
-
     
     @Override
     public void updateRiderPosition() { TraincraftUtil.updateRider(this, 4.26, 0.0, 0.46); }

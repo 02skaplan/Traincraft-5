@@ -60,12 +60,6 @@ public class SteamF01 extends SteamTrain {
 	}*/
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 450;
-	}
-
-	@Override
 	public String getInventoryName() {
 		return "F-01 Class 2-4-4 Forney";
 	}
@@ -84,17 +78,5 @@ public class SteamF01 extends SteamTrain {
 	public String transportCountry()
 	{
 		return "US";
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 160;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 9000;
 	}
 }

@@ -19,12 +19,6 @@ public class ElectricW_A55 extends ElectricTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 200;
-    }
-
-    @Override
     public void updateRiderPosition() { TraincraftUtil.updateRider(this, 3.27, -0.3, 0.4); }
 
     

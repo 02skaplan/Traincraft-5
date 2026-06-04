@@ -38,17 +38,5 @@ public class EntityLocoDieselShunter extends DieselTrain {
 		return (0.6F);
 	}
 
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 354;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 8000;
-	}
-
 	
 }

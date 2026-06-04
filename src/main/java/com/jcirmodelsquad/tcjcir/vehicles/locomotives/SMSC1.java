@@ -28,10 +28,4 @@ public class SMSC1 extends AbstractTankSlug
     public boolean isFictional(){
         return true;
     }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 16000;
-    }
 }

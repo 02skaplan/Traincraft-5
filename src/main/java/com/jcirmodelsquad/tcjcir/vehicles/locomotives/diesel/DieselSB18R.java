@@ -32,12 +32,6 @@ public class DieselSB18R extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1800;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -94,12 +88,6 @@ public class DieselSB18R extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "CEE SB18R";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 10000;
     }
 
 }

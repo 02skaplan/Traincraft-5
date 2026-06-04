@@ -62,12 +62,6 @@ public class DieselBeep extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1500;
-    }
-
-    @Override
     public String getInventoryName() {
         return "ATSF Beep";
     }
@@ -80,13 +74,6 @@ public class DieselBeep extends DieselTrain {
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return (1.05F);
-    }
-
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 9000;
     }
 
 

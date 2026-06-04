@@ -27,12 +27,6 @@ public class DieselFBFDL extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1800;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -58,11 +52,5 @@ public class DieselFBFDL extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "CEE FB-FDL";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 12000;
     }
 }

@@ -29,12 +29,6 @@ public class GATC10000 extends AbstractStandardTankerCar {
     }
 
     @Override
-    public int getTankCapacity()
-    {
-        return 38000;
-    }
-
-    @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.1F;
     }

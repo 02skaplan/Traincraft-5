@@ -27,10 +27,4 @@ public class CoffinCar extends AbstractStandardTankerCar {
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.4F;
     }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 16000;
-    }
 }

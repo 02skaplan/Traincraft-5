@@ -69,17 +69,5 @@ public class EntityLocoDiesel44TonSwitcher extends DieselTrain
 		return (1.0F);
 	}
 
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 400;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 6850;
-	}
-
 	
 }

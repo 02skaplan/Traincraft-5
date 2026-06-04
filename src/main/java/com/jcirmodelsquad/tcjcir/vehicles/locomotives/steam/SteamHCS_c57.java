@@ -38,12 +38,6 @@ public class SteamHCS_c57 extends SteamTrain {
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.9, 0.2, -0.45); }
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 1753;
-	}
-
-	@Override
 	public String getInventoryName() {
 		return "UP-SP C57 2-8-0";
 	}
@@ -57,17 +51,5 @@ public class SteamHCS_c57 extends SteamTrain {
 	public String transportCountry()
 	{
 		return "US";
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 75;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 2000;
 	}
 }

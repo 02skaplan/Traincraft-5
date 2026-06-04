@@ -37,23 +37,11 @@ public class DieselAC4400CW extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.3F; }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 4400;
-    }
-
-    @Override
     public String getInventoryName() { return "GE AC4400CW"; }
 
     @Override
     public String transportYear() {
         return "1993-2004";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 21000;
     }
 
 }

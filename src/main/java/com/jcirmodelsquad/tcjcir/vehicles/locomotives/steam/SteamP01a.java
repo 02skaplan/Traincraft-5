@@ -29,12 +29,6 @@ public class SteamP01a extends SteamTrain {
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.9, 0.1, -0.4); }
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 1475;
-	}
-
-	@Override
 	public String getInventoryName() {
 		return "P01a 2-6-2 Prairie";
 	}
@@ -53,17 +47,5 @@ public class SteamP01a extends SteamTrain {
 	public String transportCountry()
 	{
 		return "US";
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 75;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 4000;
 	}
 }

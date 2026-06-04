@@ -60,12 +60,6 @@ public class NATX30600 extends AbstractStandardTankerCar
     }
 
     @Override
-    public int getTankCapacity()
-    {
-        return 116000;
-    }
-
-    @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.75F;
     }

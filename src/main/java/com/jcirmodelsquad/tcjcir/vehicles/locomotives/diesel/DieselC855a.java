@@ -76,20 +76,8 @@ public class DieselC855a extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 5500;
-    }
-
-    @Override
     public String getInventoryName() {
         return "ALCo C855a";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 15000;
     }
 
     

@@ -33,13 +33,6 @@ public class DieselFB1 extends DieselTrain {
         return "US";
     }
 
-
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 1600;
-    }
-
     @Override
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
@@ -91,12 +84,6 @@ public class DieselFB1 extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "Alco FB-1";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 15000;
     }
 
     

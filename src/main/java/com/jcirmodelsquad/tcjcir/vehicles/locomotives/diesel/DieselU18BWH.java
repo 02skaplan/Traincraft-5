@@ -25,12 +25,6 @@ public class DieselU18BWH extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 1800;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "US";
@@ -51,12 +45,6 @@ public class DieselU18BWH extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "GE U18B(W)H";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
     }
 
 }

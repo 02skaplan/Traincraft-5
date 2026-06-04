@@ -23,12 +23,6 @@ public class EntityLocoSteamNS3700Class extends SteamTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 1286;
-	}
-
-	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.3, 0.0, -0.45); }
 
 	@Override
@@ -39,17 +33,5 @@ public class EntityLocoSteamNS3700Class extends SteamTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 0.6F;
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 100;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 4000;
 	}
 }

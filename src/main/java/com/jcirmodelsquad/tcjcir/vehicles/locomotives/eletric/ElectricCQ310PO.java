@@ -15,12 +15,6 @@ public class ElectricCQ310PO extends ElectricTrain {
 	public ElectricCQ310PO(World world) {
 		super(world);
 	}
-
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 350;
-	}
 	
 
 	@Override

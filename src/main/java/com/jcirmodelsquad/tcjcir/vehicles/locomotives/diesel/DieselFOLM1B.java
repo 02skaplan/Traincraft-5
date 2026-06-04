@@ -21,12 +21,6 @@ public class DieselFOLM1B extends DieselTrain {
     }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 5000;
-    }
-
-    @Override
     public String transportCountry()
     {
         return "CZ";
@@ -50,11 +44,5 @@ public class DieselFOLM1B extends DieselTrain {
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return (1F);
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 15000;
     }
 }

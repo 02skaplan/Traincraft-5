@@ -43,16 +43,4 @@ public class EntityLocoSteamC62Class extends SteamTrain {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return (0.5F);
 	}
-
-	@Override
-	public float transportMetricHorsePower()
-	{
-		return 1223;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 10000;
-	}
 }

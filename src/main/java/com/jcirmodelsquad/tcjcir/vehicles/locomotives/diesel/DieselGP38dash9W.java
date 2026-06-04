@@ -63,12 +63,6 @@ public class DieselGP38dash9W extends DieselTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 1.25F; }
 
     @Override
-    public float transportMetricHorsePower()
-    {
-        return 2000;
-    }
-
-    @Override
     public String transportYear() {
         return "1985";
     }
@@ -81,11 +75,5 @@ public class DieselGP38dash9W extends DieselTrain {
     @Override
     public boolean isFictional() {
         return true;
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 10000;
     }
 }

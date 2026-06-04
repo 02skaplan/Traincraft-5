@@ -27,12 +27,6 @@ public class SteamPMNandN1 extends SteamTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 3000;
-	}
-
-	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.75, 0.15, -0.5); }
 
 	@Override
@@ -49,17 +43,5 @@ public class SteamPMNandN1 extends SteamTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.15F;
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 80;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 6000;
 	}
 }

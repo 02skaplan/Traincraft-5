@@ -31,12 +31,6 @@ public class SteamLima2_8_0 extends SteamTrain {
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.72, 0.05, -0.45); }
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 1250;
-	}
-
-	@Override
 	public String getInventoryName() {
 		return "Lima 2-8-0";
 	}
@@ -50,17 +44,5 @@ public class SteamLima2_8_0 extends SteamTrain {
 	public String transportCountry()
 	{
 		return "US";
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 130;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 3000;
 	}
 }

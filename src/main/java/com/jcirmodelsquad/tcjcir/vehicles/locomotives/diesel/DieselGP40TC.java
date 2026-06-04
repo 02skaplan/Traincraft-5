@@ -62,12 +62,6 @@ public class DieselGP40TC extends DieselTrain {
             riddenByEntity.setPosition(bogieX1, pitch, bogieZ1);
         }
     }
-
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 3000;
-    }
     
 
     
@@ -86,12 +80,6 @@ public class DieselGP40TC extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "EMD GP40TC";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 16000;
     }
 
     

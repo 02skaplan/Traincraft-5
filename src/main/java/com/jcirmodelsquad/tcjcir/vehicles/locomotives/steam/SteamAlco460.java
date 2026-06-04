@@ -29,12 +29,6 @@ public class SteamAlco460 extends SteamTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 973;
-	}
-
-	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, -0.6, 0.1, -0.45); }
 
 	@Override
@@ -51,17 +45,5 @@ public class SteamAlco460 extends SteamTrain {
 	public String transportCountry()
 	{
 		return "US";
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 130;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 3000;
 	}
 }

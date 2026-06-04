@@ -26,11 +26,6 @@ public class DieselSB18E extends DieselTrain {
         InsertTexture(5, "CSXT (Yn2, Protolance)");
         InsertTexture(6, "Morristown Tenneva & Southern", LockoutGroup.MTS);
     }
-    @Override
-    public float transportMetricHorsePower()
-    {
-        return 1800;
-    }
 
     @Override
     public String transportCountry()
@@ -89,12 +84,6 @@ public class DieselSB18E extends DieselTrain {
     @Override
     public String getInventoryName() {
         return "CEE SB18E";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 10000;
     }
 
 }

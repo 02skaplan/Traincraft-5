@@ -26,12 +26,6 @@ public class SteamClimaxB extends SteamTrain {
 	}
 
 	@Override
-	public float transportMetricHorsePower()
-	{
-		return 838;
-	}
-
-	@Override
 	public void updateRiderPosition() { TraincraftUtil.updateRider(this, 0.3, 0.0, -0.4); }
 
 	@Override
@@ -48,18 +42,6 @@ public class SteamClimaxB extends SteamTrain {
 	@Override
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.0F;
-	}
-
-	@Override
-	public int getWaterConsumption()
-	{
-		return 80;
-	}
-
-	@Override
-	public int getTankCapacity()
-	{
-		return 9000;
 	}
 
 }
