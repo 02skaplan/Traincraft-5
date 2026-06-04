@@ -265,6 +265,11 @@ public class LiquidManager {
 			this(capacity, filter);
 		}
 
+		public FluidStack[] getMultiFilter()
+		{
+			return multiFilter;
+		}
+
 		@Override
 		public int fill(FluidStack resource, boolean doFill) {
 			if (multiFilter != null) {
