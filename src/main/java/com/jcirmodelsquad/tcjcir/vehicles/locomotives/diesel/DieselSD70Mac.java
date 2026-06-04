@@ -5,9 +5,7 @@ import net.minecraft.world.World;
 import train.common.api.DieselTrain;
 import train.common.api.LiquidManager;
 import train.common.core.util.TraincraftUtil;
-import train.common.enums.LockoutGroup;
 import train.common.library.EnumSounds;
-
 import train.common.library.sounds.SoundRecord;
 
 public class DieselSD70Mac extends DieselTrain {
@@ -51,12 +49,6 @@ public class DieselSD70Mac extends DieselTrain {
         return "EMD SD70Mac";
     }
 
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
-    }
-
     /*@Override
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
@@ -90,32 +82,5 @@ public class DieselSD70Mac extends DieselTrain {
         if (pitchRads > -1.01 && pitchRads < 1.01) {
             riddenByEntity.setPosition(bogieX1, pitch, bogieZ1);
         }
-    }
-    
-
-
-
-    
-
-    
-
-    @Override
-    public float getOptimalDistance(EntityMinecart cart) { return 1.3F;
-    }
-
-    @Override
-    public String transportYear() {
-        return "1993-2004";
-    }
-
-    @Override
-    public String getInventoryName() {
-        return "EMD SD70Mac";
-    }
-
-    @Override
-    public int getTankCapacity()
-    {
-        return 20000;
-    }
+    }*/
 }
