@@ -21,7 +21,9 @@ public class DieselSD70M extends DieselTrain {
         InsertTexture(0, "EMD Demo 7001");
         InsertTexture(1, "NS (Early)");
         InsertTexture(2, "Blandsville & Blankerston");
-        InsertTexture(3, "");
+        InsertTexture(3, "CSXT (YN2)");
+        InsertTexture(4, "CSXT (YN3)");
+        InsertTexture(5, "");
     }
 
     @Override
@@ -37,7 +39,7 @@ public class DieselSD70M extends DieselTrain {
     }
         
     @Override
-    public void updateRiderPosition() { TraincraftUtil.updateRider(this, 4.15, 0.3, -0.35); }
+    public void updateRiderPosition() { TraincraftUtil.updateRider(this, 4.1, 0.3, -0.35); }
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 1.45F; }

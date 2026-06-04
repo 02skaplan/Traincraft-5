@@ -279,9 +279,14 @@ public class DieselRecipes extends AbstractRecipeHandler {
         //sd60
         cm.addRecipe(3, new ItemStack(ItemIDs.steelcab.item, 1), new ItemStack(ItemIDs.partFlexicoil.item, 2), new ItemStack(ItemIDs.steelframe.item, 4), SteelIngot(3), new ItemStack(ItemIDs.partTurboExhaust.item, 1), new ItemStack(ItemIDs.partComponentEMD.item, 6), new ItemStack(ItemIDs.partAlternator.item, 4), new ItemStack(ItemIDs.dieselengine.item, 4), new ItemStack(ItemIDs.controls.item, 1), LIGHT_BLUE_DYE, new ItemStack(ItemIDs.minecartSD60.item, 1), 1);
 
+        //sd70m
+        cm.addRecipe(3, new ItemStack(ItemIDs.steelcab.item, 1), new ItemStack(ItemIDs.bogie.item, 6), new ItemStack(ItemIDs.steelframe.item, 4), SteelIngot(3), new ItemStack(ItemIDs.partTurboExhaust.item, 1), new ItemStack(ItemIDs.partComponentEMD.item, 6), new ItemStack(ItemIDs.partAlternator.item, 4), new ItemStack(ItemIDs.dieselengine.item, 5), new ItemStack(ItemIDs.controls.item, 1), RED_DYE, new ItemStack(ItemIDs.minecartSD70M.item, 1), 1);
+
+        //sd70mac
+        cm.addRecipe(3, new ItemStack(ItemIDs.steelcab.item, 1), new ItemStack(ItemIDs.bogie.item, 6), new ItemStack(ItemIDs.steelframe.item, 4), SteelIngot(3), new ItemStack(ItemIDs.partTurboExhaust.item, 1), new ItemStack(ItemIDs.partComponentEMD.item, 6), new ItemStack(ItemIDs.partAlternator.item, 4), new ItemStack(ItemIDs.dieselengine.item, 5), new ItemStack(ItemIDs.controls.item, 1), BLUE_DYE, new ItemStack(ItemIDs.minecartSD70Mac.item, 1), 1);
+
         //sd70ace
         cm.addRecipe(3, new ItemStack(ItemIDs.steelcab.item, 1), new ItemStack(ItemIDs.bogie.item, 6), new ItemStack(ItemIDs.steelframe.item, 5), SteelIngot(3), new ItemStack(ItemIDs.partTurboExhaust.item, 1), new ItemStack(ItemIDs.partComponentEMD.item, 6), new ItemStack(ItemIDs.partAlternator.item, 4), new ItemStack(ItemIDs.dieselengine.item, 5), new ItemStack(ItemIDs.controls.item, 1), YELLOW_DYE, new ItemStack(ItemIDs.minecartSD70ACe.item, 1), 1);
-
 
     }
 }
